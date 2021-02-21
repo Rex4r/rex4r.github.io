@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="611b76e3-f98c-4842-8adf-177411c652aa" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1iEfwwUsWYF8yEqsMgcM1bjrxDd" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/help" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\openserver\OpenServer\domains\vyvoz-musora-novosibirsk.local\img\help" />
+      <recent name="D:\openserver\OpenServer\domains\vyvoz-musora-novosibirsk.local\img" />
+      <recent name="D:\openserver\OpenServer\domains\vyvoz-musora-novosibirsk.local\img\price" />
+      <recent name="D:\openserver\OpenServer\domains\vyvoz-musora-novosibirsk.local\js" />
+      <recent name="D:\fl\vlad\vyvoz-musora-novosibirsk.local\img" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="611b76e3-f98c-4842-8adf-177411c652aa" name="Default Changelist" comment="" />
+      <created>1601477913908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601477913908</updated>
+      <workItem from="1601477915117" duration="464000" />
+      <workItem from="1601479988378" duration="54523000" />
+      <workItem from="1602172530430" duration="927000" />
+      <workItem from="1602187195320" duration="2849000" />
+      <workItem from="1602265176239" duration="9419000" />
+      <workItem from="1603551443274" duration="20439000" />
+      <workItem from="1603727890346" duration="172000" />
+      <workItem from="1603728083148" duration="2508000" />
+      <workItem from="1603815260099" duration="1755000" />
+      <workItem from="1603902953010" duration="732000" />
+      <workItem from="1603903727357" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1602187457494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1602187457494" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603727993571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603727993571" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601922184039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601922184039" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1603729431962">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603729431962" />
+    <state x="648" y="252" width="753" height="606" key="find.popup" timestamp="1603729110293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="252" width="753" height="606" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603729110293" />
+    <state x="783" y="250" key="ftp.server.browser" timestamp="1602187455150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="783" y="250" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1602187455150" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602271536410">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602271536410" />
+  </component>
+</project>
