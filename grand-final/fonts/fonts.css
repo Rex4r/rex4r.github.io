@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'kyivtype_sans';
+    src: url('dmitry_rastvortsev_-_kyivtype_sans_regular-.woff2') format('woff2'),
+         url('dmitry_rastvortsev_-_kyivtype_sans_regular-.woff') format('woff'),
+         url('dmitry_rastvortsev_-_kyivtype_sans_regular-.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'nimbus_sans_novus';
+	src: url('nimbussannov-reg-.woff2') format('woff2'),
+	url('nimbussannov-reg-.woff') format('woff'),
+	url('nimbussannov-reg-.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
