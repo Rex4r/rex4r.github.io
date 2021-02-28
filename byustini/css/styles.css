@@ -1,0 +1,259 @@
+body {
+	font-family: "Oswald", sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #363636;
+}
+img {
+	max-width: 100%;
+}
+a {
+	color: #363636;
+}
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 37px;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+#fs {
+	height: 700px;
+	background: url("/img/bg.png") no-repeat center;
+}
+.fs__logo-wrapper,
+.fs__title,
+.fs__subtitle,
+.fs__contacts {
+	padding-left: 35px;
+}
+
+.fs__logo-wrapper {
+	max-width: 485px;
+	padding: 5px 0 36px;
+}
+.fs__logo {
+	width: 265px;
+}
+.fs__title {
+	margin: 0 0 120px;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 56px;
+	letter-spacing: 0.035em;
+	text-transform: uppercase;
+}
+.fs__subtitle {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 27px;
+}
+
+.fs__menu,
+.fs__address {
+	padding-right: 2px;
+}
+.fs__menu,
+.fs__products {
+	font-size: 24px;
+	line-height: 28px;
+}
+.fs__menu {
+	padding-top: 92px;
+}
+.fs__products {
+	text-transform: uppercase;
+}
+
+.fs__contacts {
+	padding-bottom: 66px;
+	line-height: 27px;
+}
+.fs__contact-item {
+	margin-right: 25px;
+}
+.fs__contact-icon {
+	max-height: 25px;
+	margin-right: 9px;
+}
+.fs__contact-icon,
+.fs__contact-link,
+.fs__address {
+	display: inline-block;
+	vertical-align: middle;
+}
+.fs__contact-link,
+.fs__address {
+	font-weight: 300;
+}
+.fs__address {
+	letter-spacing: 0.05em;
+}
+
+.catalog__header {
+	padding: 108px 0 110px;
+}
+.catalog__title {
+	margin-bottom: 22px;
+}
+.catalog__item-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.catalog__description {
+	background-color: #f4bea4;
+}
+.catalog__description-title,
+.catalog__description-subtitle {
+	max-width: 415px;
+}
+.catalog__description-title {
+	margin-bottom: 23px;
+}
+
+.review__title {
+	position: relative;
+	display: inline-block;
+	margin: 111px 0 60px;
+}
+.review__title::before {
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	z-index: 3;
+	display: block;
+	content: "";
+	width: 120px;
+	height: 0;
+	opacity: 0.7;
+	border: 2px solid #f4bea4;
+}
+
+.review__item {
+	padding-bottom: 117px;
+}
+.review__item-ava {
+	margin-right: 34px;
+}
+.review__item-img {
+	max-width: 146px;
+	max-height: 143px;
+	border-radius: 50%;
+}
+.review__item-info {
+	font-weight: 300;
+	/*max-width: 300px;*/
+}
+.review__item-title {
+	margin-bottom: 17px;
+	font-weight: 700;
+}
+
+.contacts {
+	background: #f4bea4;
+}
+.contacts__info {
+	max-width: 460px;
+	margin: 0 auto;
+}
+.contacts__group {
+	margin-top: 27px;
+}
+.contacts__item {
+	margin-bottom: 6px;
+	line-height: 27px;
+}
+.contacts__icon {
+	width: 25px;
+	margin-right: 11px;
+}
+
+@media (min-width: 1200px) {
+	.container, .bcontainer-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1305px;
+	}
+}
+
+@media (max-width: 769px) {
+	body {
+		font-size: 14px;
+		line-height: 101.19%;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 101.19%;
+	}
+	h3 {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	#fs {
+		height: 600px;
+		background: url("../img/bg-mobile.png") no-repeat center;
+	}
+	.fs__logo-wrapper {
+		width: 232px;
+		padding: 67px 0 42px;
+	}
+	.fs__logo,
+	.contacts__logo {
+		max-width: 178px;
+	}
+	.fs__title {
+		margin: 0;
+		padding-left: 9px;
+		font-size: 22px;
+		line-height: 1.05;
+		letter-spacing: 0.045em;
+	}
+
+	.fs__nav {
+		padding: 10px 17px 40px 25px;
+		background-color: #f4bea4;
+	}
+	.fs__nav-subtitle {
+		font-size: 11px;
+		font-weight: 300;
+	}
+	.fs__nav-item {
+		margin-top: 8px;
+	}
+	.fs__nav-link,
+	.fs__nav-link:active,
+	.fs__nav-link:visited,
+	.fs__nav-link:hover {
+		display: inline-block;
+		width: 195px;
+		font-size: 24px;
+		line-height: 36px;
+		text-decoration: none;
+		color: #363636;
+		background: url("../img/arrow.svg") no-repeat right center;
+	}
+
+	.catalog__header {
+		padding: 48px 15px;
+	}
+
+	.contacts__info {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
