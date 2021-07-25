@@ -1,0 +1,185 @@
+<% var data = {
+    title: "Portfolio",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container container-fluid-xl">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <span class="breadcrumbs__current">ПОРТФОЛИО</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ПРИМЕРЫ РАБОТ ЛУЧШЕЙ ОНЛАЙН ТИПОГРАФИИ <span class="d-none d-sm-inline">В МОСКВЕ</span></h1>
+
+</div>
+
+<!-- Список товаров -->
+<div class="portfolio-list container">
+    <div class="portfolio-list__items">
+        <a href="./local/uploads/portfolio.1.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.1.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">НАКЛЕЙКИ КРУГЛЫЕ</div>
+        </a>
+        <a href="./local/uploads/portfolio.2.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.2.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">НАКЛЕЙКИ ПРЯМОУГОЛЬНЫЕ</div>
+        </a>
+        <a href="./local/uploads/portfolio.1.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.1.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">НАКЛЕЙКИ СТИКЕРПАК</div>
+        </a>
+        <a href="./local/uploads/portfolio.2.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.2.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">БЛОКНОТЫ</div>
+        </a>
+        <a href="./local/uploads/portfolio.1.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.1.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">ВИЗИТКИ</div>
+        </a>
+        <a href="./local/uploads/portfolio.2.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.2.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">КОНВЕРТЫ</div>
+        </a>
+        <a href="./local/uploads/portfolio.1.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.1.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">ПАКЕТЫ</div>
+        </a>
+        <a href="./local/uploads/portfolio.2.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.2.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">БУКЛЕТЫ</div>
+        </a>
+        <a href="./local/uploads/portfolio.2.jpg" class="portfolio-list__item" data-fancybox="gallery">
+            <div class="portfolio-list__pict">
+                <img class="portfolio-list__img" src="./local/uploads/portfolio.2.jpg" alt="">
+                <svg class="portfolio-list__icon">
+                    <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                </svg>
+            </div>
+            <div class="portfolio-list__name">КАТАЛОГИ</div>
+        </a>
+    </div>
+</div>
+
+<div class="portfolio-list-bottom">
+    <div class="container">
+        <div class="portfolio-list-bottom__text">
+            <h3>ПРИМЕРЫ РАБОТ</h3>
+            Примеры работ для наших клиентов по полиграфии, интерьерной печати, фотокнигам и фотосувенирам. В разделе Примеры работ собраны различные работы по дизайну полиграфической продукции, а также примеры печати разнообразной полиграфии для наших клиентов. Также в разделе Примеры работ (портфолио) вы можете найти для себя много разных идей, которые могут быть полезны вашему бизнесу и которые вы можете воплотить в жизнь в вашей любимой онлайн-типографии Printme.ru
+        </div>
+        <div class="portfolio-list-bottom__btn">
+            <a href="javascript:;" class="btn-link btn-link_black js-show-product">
+                ВСЕ ПОСМОТРЕТЬ
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="our-ig">
+    <div class="our-ig__title">
+        НАШ INSTAGRAM <a href="javascript:;" class="our-ig__title-link">@PRINTME</a>
+    </div>
+    <div class="our-ig__slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.1.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.2.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.1.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.2.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.1.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.2.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.1.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.2.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.1.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="javascript:;" class="our-ig__link">
+                    <img src="./local/uploads/our.ig.2.jpg" alt="" class="our-ig__img">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/icons.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

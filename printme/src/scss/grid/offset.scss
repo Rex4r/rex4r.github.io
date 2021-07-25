@@ -1,0 +1,86 @@
+.offset-1 {
+    margin: 0 0 0 8.333333%;
+}
+
+.offset-2 {
+    margin: 0 0 0 16.666667%;
+}
+
+.offset-3 {
+    margin: 0 0 0 25%;
+}
+
+.offset-4 {
+    margin: 0 0 0 33.333333%;
+}
+
+.offset-5 {
+    margin: 0 0 0 41.666667%;
+}
+
+.offset-6 {
+    margin: 0 0 0 50%;
+}
+
+.offset-7 {
+    margin: 0 0 0 58.333333%;
+}
+
+.offset-8 {
+    margin: 0 0 0 66.666667%;
+}
+
+.offset-9 {
+    margin: 0 0 0 75%;
+}
+
+.offset-10 {
+    margin: 0 0 0 83.333333%;
+}
+
+.offset-11 {
+    margin: 0 0 0 91.666667%;
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths
+{
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints)
+    {
+        .offset-#{$breakpoint}-0 {
+            margin: 0 0 0 0;
+        }
+        .offset-#{$breakpoint}-1 {
+            margin: 0 0 0 8.333333%;
+        }
+        .offset-#{$breakpoint}-2 {
+            margin: 0 0 0 16.666667%;
+        }
+        .offset-#{$breakpoint}-3 {
+            margin: 0 0 0 25%;
+        }
+        .offset-#{$breakpoint}-4 {
+            margin: 0 0 0 33.333333%;
+        }
+        .offset-#{$breakpoint}-5 {
+            margin: 0 0 0 41.666667%;
+        }
+        .offset-#{$breakpoint}-6 {
+            margin: 0 0 0 50%;
+        }
+        .offset-#{$breakpoint}-7 {
+            margin: 0 0 0 58.333333%;
+        }
+        .offset-#{$breakpoint}-8 {
+            margin: 0 0 0 66.666667%;
+        }
+        .offset-#{$breakpoint}-9 {
+            margin: 0 0 0 75%;
+        }
+        .offset-#{$breakpoint}-10 {
+            margin: 0 0 0 83.333333%;
+        }
+        .offset-#{$breakpoint}-11 {
+            margin: 0 0 0 91.666667%;
+        }
+    }
+}

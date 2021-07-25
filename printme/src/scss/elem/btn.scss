@@ -1,0 +1,80 @@
+.btn-link {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 0 7px;
+    background: transparent;
+    border: none;
+    transition: all .3s;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 130px;
+        height: 2px;
+        background-color: var(--white);
+        left: 50%;
+        transform: translate(-50%, 0);
+        transition: all .3s;
+    }
+    &_fix:after {
+        width: 100%;
+    }
+    &_short:after {
+        width: 100px;
+    }
+    &_black {
+        color: var(--grey1);
+
+        &:after {
+            background-color: var(--grey1);
+            transition: all .3s;
+        }
+    }
+    &_grey {
+        color: var(--grey2);
+
+        &:after {
+            background-color: var(--grey1);
+            transition: all .3s;
+        }
+    }
+    &:hover {
+        color: var(--blue);
+
+        &:after {
+            background-color: var(--blue);
+        }
+    }
+    &:not(.btn-link_active) &__text-hide {
+        display: none;
+    }
+    &.btn-link_active &__text-show {
+        display: none;
+    }
+}
+
+.btn-one {
+    height: 56px;
+    display: inline-block;
+    line-height: 56px;
+    padding: 0 100px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--blue);
+    border: none;
+    transition: all .3s;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .1rem;
+
+    &:hover {
+        background-color: var(--light-blue);
+        color: var(--white);
+    }
+}

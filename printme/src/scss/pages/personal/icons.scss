@@ -1,0 +1,53 @@
+.personal-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin: 90px 0 100px;
+
+    &__item {
+        width: calc(100% / 6);
+        padding: 0 10px;
+    }
+    &__pict {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+        max-width: 66px;
+        max-height: 66px;
+    }
+    &__name {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 10px 0 25px;
+    }
+    &__text {
+        max-width: 260px;
+        margin: auto;
+    }
+}
+
+@include media-breakpoint-between(md, lg)
+{
+    .personal-icons {
+        margin: 50px 0 0;
+
+        &__item {
+            width: calc(100% / 3);
+            margin: 0 0 50px;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .personal-icons {
+        margin: 50px 0 0;
+
+        &__item {
+            width: 50%;
+            margin: 0 0 30px;
+        }
+    }
+}

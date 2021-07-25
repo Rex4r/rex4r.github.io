@@ -1,0 +1,33 @@
+.faq-list {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 -25px;
+
+    &__link {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--grey1);
+        display: flex;
+        margin: 0 0 25px;
+
+        &-icon {
+            height: 16px;
+            width: 16px;
+            fill: var(--blue);
+            margin: 3px 10px 0 0;
+            transform: rotate(-90deg);
+            transition: .3s;
+        }
+        &_active &-icon {
+            transform: rotate(0);
+        }
+        &-text {
+            max-width: calc(100% - 26px);
+        }
+    }
+    &__text {
+        display: none;
+        padding: 0 0 40px 26px;
+        max-width: 1430px;
+    }
+}

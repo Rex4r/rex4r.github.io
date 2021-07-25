@@ -1,0 +1,122 @@
+<% var data = {
+    title: "Order",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <span class="breadcrumbs__current">ЛИЧНЫЙ КАБИНЕТ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+
+</div>
+
+<div class="personal-tabs">
+    <div class="personal-tabs-links">
+        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">МОИ ЗАКАЗЫ</a>
+        <a href="javascript:;" class="personal-tabs-links__link">РЕКВИЗИТЫ</a>
+        <a href="javascript:;" class="personal-tabs-links__link">АДРЕСА ДОСТАВКИ</a>
+        <a href="javascript:;" class="personal-tabs-links__link">ПРОФИЛЬ</a>
+    </div>
+    <div class="personal-tabs-block">
+        <div class="personal-tabs-block__inner">
+
+            <div class="personal-btns">
+                <a href="javascript:;" class="personal-btns__btn">ЧТО ЕСТЬ</a>
+                <a href="javascript:;" class="personal-btns__btn">ЧТО БЫЛО</a>
+                <a href="javascript:;" class="personal-btns__btn personal-btns__btn_sm100">КАК ПОЛУЧИТЬ</a>
+                <a href="javascript:;" class="personal-btns__btn personal-btns__btn_sm100">ОТКАЖУСЬ ПОЖАЛУЙ</a>
+            </div>
+
+        </div>
+
+        <div class="order-head">
+            <div class="order-head__item">
+                Заказы
+                <a href="javascript:;" class="order-head__delete">
+                    <svg class="order-head__delete-icon">
+                        <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="order-head__item">
+                Статус
+            </div>
+            <div class="order-head__item">
+                Способ получения
+            </div>
+            <div class="order-head__item">
+                Оплата
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="order-table">
+    <div class="order-table__item">
+        <div class="order-table__title">
+            <svg class="order-table__icon">
+                <use xlink:href="./local/img/sprite.icon.svg#over"></use>
+            </svg>
+            № 217152 от 12.06.2020, 20:31
+        </div>
+        Визитная карточка (90x50 мм), 1000 шт.<br>
+        300 г/м², 4+4
+        <a href="javascript:;" class="order-table__delete">
+            <svg class="order-table__delete-icon">
+                <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="order-table__item">
+        <div class="order-table__title">
+            <svg class="order-table__icon">
+                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+            </svg>
+            ОЖИДАНИЕ МАКЕТА
+        </div>
+        Загрузите 15.06.2020 до 16:00 
+    </div>
+    <div class="order-table__item">
+        <div class="order-table__title">
+            <svg class="order-table__icon">
+                <use xlink:href="./local/img/sprite.icon.svg#people"></use>
+            </svg>
+            САМОВЫВОЗ СО СКЛАДА
+        </div>
+        Москва, ул. Балтийская 11.<br>
+        16.06.2020 c 10:30 
+    </div>
+    <div class="order-table__item">
+        <div class="order-table__title">
+            <svg class="order-table__icon">
+                <use xlink:href="./local/img/sprite.icon.svg#anchor"></use>
+            </svg>
+            НАЛИЧНЫЙ РАСЧЁТ
+        </div>
+        Ожидает оплаты
+    </div>
+    <div class="order-table__line">
+        <div class="order-table__btns">
+            <a href="javascript:;" class="order-table__btn btn-one">ЗАГРУЗИТЬ МАКЕТЫ</a>
+            <a href="javascript:;" class="order-table__btn btn-one">ОТКАЗАТЬСЯ</a>
+            <a href="javascript:;" class="order-table__btn btn-one">ОПЛАТИТЬ</a>
+        </div>
+        <div class="order-table__price">
+            ЦЕНА: <div class="order-table__price-value">5 607₽</div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/icons.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,809 @@
+<% var data = {
+    title: "Index",
+    classHead: '',
+    classMain: '',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Главный слайдер -->
+<div class="slider-main">
+    <div class="swiper-container slider-main__slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider-main__slide">
+                <img src="./local/uploads/main.slide.jpg" class="slider-main__img" alt="">
+                <div class="slider-main__block">
+                    <div class="slider-main__name h2">ДАВНО ПОРА</div>
+                    <div class="slider-main__desc">заказать наклейки</div>
+                </div>
+                <div class="slider-main__btn">
+                    <a href="javascript:;" class="btn-link">подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide slider-main__slide">
+                <img src="./local/uploads/main.slide.jpg" class="slider-main__img" alt="">
+                <div class="slider-main__block">
+                    <div class="slider-main__name h2">ДАВНО ПОРА</div>
+                    <div class="slider-main__desc">заказать наклейки</div>
+                </div>
+                <div class="slider-main__btn">
+                    <a href="javascript:;" class="btn-link">подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide slider-main__slide">
+                <img src="./local/uploads/main.slide.jpg" class="slider-main__img" alt="">
+                <div class="slider-main__block">
+                    <div class="slider-main__name h2">ДАВНО ПОРА</div>
+                    <div class="slider-main__desc">заказать наклейки</div>
+                </div>
+                <div class="slider-main__btn">
+                    <a href="javascript:;" class="btn-link">подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide slider-main__slide">
+                <img src="./local/uploads/main.slide.jpg" class="slider-main__img" alt="">
+                <div class="slider-main__block">
+                    <div class="slider-main__name h2">ДАВНО ПОРА</div>
+                    <div class="slider-main__desc">заказать наклейки</div>
+                </div>
+                <div class="slider-main__btn">
+                    <a href="javascript:;" class="btn-link">подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="slider-main__prev" href="javascript:;">
+        <span class="str-prev"></span>
+        <span class="slider-main__count-prev"></span>
+    </a>
+    <a class="slider-main__next" href="javascript:;">
+        <span class="slider-main__count-next"></span>
+        <span class="str-next"></span>
+    </a>
+    <div class="slider-main__pagination slider-pagination"></div>
+</div>
+
+<!-- Список товаров -->
+<div class="product-list">
+    <div class="product-list__items">
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product1.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">визитки</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product2.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">билеты</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product3.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">брошюры</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product4.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">наклейки</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product5.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">блокноты</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product6.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">буклеты</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product7.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">бейджы</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product8.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">бланки</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="product-list__item">
+            <div class="product-list__inner">
+                <a href="javascript:;" class="product-list__pict">
+                    <img class="product-list__img" src="./local/uploads/product9.jpg" alt="">
+                    <svg class="product-list__icon-scale">
+                        <use xlink:href="./local/img/sprite.svg#icon-scale"></use>
+                    </svg>
+                </a>
+                <div class="product-list__price">
+                    <div>> 900&#8381;</div>
+                    <a href="javascript:;" class="product-list__like">
+                        <svg class="product-list__like-icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="product-list__block">
+                <a href="javascript:;" class="product-list__name">воблеры</a>
+                <a href="javascript:;" class="product-list__more">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-list__btn">
+        <a href="javascript:;" class="btn-link btn-link_black">вся продукция</a>
+    </div>
+</div>
+
+<!-- Преимущества -->
+<div class="benefits-list">
+    <div class="container">
+        <div class="benefits-list__title h2">преимущества нашей типографии</div>
+        <div class="benefits-list__items">
+            <div class="benefits-list__item">
+                <div class="benefits-list__pict">
+                    <img src="./local/uploads/benefits1.svg" alt="">
+                </div>
+                <div class="benefits-list__name">
+                    ОГРОМНЫЙ ВЫБОР БУМАГ
+                </div>
+                <div class="benefits-list__text">
+                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                </div>
+            </div>
+            <div class="benefits-list__item">
+                <div class="benefits-list__pict">
+                    <img src="./local/uploads/benefits2.svg" alt="">
+                </div>
+                <div class="benefits-list__name">
+                    ПРОБНЫЙ ОБРАЗЕЦ
+                </div>
+                <div class="benefits-list__text">
+                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                </div>
+            </div>
+            <div class="benefits-list__item">
+                <div class="benefits-list__pict">
+                    <img src="./local/uploads/benefits3.svg" alt="">
+                </div>
+                <div class="benefits-list__name">
+                    БЕСПЛАТНЫЙ МАКЕТ
+                </div>
+                <div class="benefits-list__text">
+                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                </div>
+            </div>
+            <div class="benefits-list__item">
+                <div class="benefits-list__pict">
+                    <img src="./local/uploads/benefits4.svg" alt="">
+                </div>
+                <div class="benefits-list__name">
+                    СОБСТВЕННОЕ ПРОИЗВОДСТВО
+                </div>
+                <div class="benefits-list__text">
+                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Как мы работаем -->
+<div class="we-working">
+    <div class="container">
+        <div class="we-working__title h2">как мы работаем</div>
+        <div class="swiper-container we-working__slider">
+            <div class="swiper-wrapper we-working__wrapper">
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/working1.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            выберите дизайн<br>
+                            из шаблона
+                        </div>
+                        <div class="we-working__text">
+                            Направьте заявку дизайнеру<br>
+                            Через 24 часа ваш макет готов<br>
+                            Согласуйте макет
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">выбрать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/working2.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            загрузите свой<br>
+                            дизайн
+                        </div>
+                        <div class="we-working__text">
+                            Направьте заявку дизайнеру<br>
+                            Через 24 часа ваш макет готов<br>
+                            Согласуйте макет
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">выбрать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/working3.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            закажите<br>
+                            дизайн
+                        </div>
+                        <div class="we-working__text">
+                            Направьте заявку дизайнеру<br>
+                            Через 24 часа ваш макет готов<br>
+                            Согласуйте макет
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">выбрать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="we-working__pagination slider-pagination slider-pagination_black"></div>
+    </div>
+</div>
+
+<!-- Отзывы -->
+<div class="review-slider">
+    <div class="container">
+        <div class="review-slider__title h2">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</div>
+    </div>
+    <div class="review-slider__block">
+        <div class="container">
+            <div class="review-slider__inner">
+                <div class="swiper-container review-slider__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">ЕКАТЕРИНА</div>
+                            <div class="review-slider__desc">Менеджер по маркетингу</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">ИВАН</div>
+                            <div class="review-slider__desc">Дизайнер</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">ЛИЗА</div>
+                            <div class="review-slider__desc">Фотограф</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">АРКАДИЙ</div>
+                            <div class="review-slider__desc">Арт директор</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!--      <a class="review-slider__prev" href="javascript:;">
+            <span class="str-prev str-prev_black"></span>
+        </a>
+        <a class="review-slider__next" href="javascript:;">
+            <span class="str-next str-next_black"></span>
+        </a>-->
+    </div>
+    <div class="container">
+        <div class="review-slider__pagination slider-pagination slider-pagination_black"></div>
+    </div>
+</div>
+
+<!-- Клиенты -->
+<div class="client-slider">
+    <div class="client-slider__title h2">наши клиенты</div>
+    <div class="client-slider__block">
+        <div class="swiper-container client-slider__slider">
+            <div class="swiper-wrapper client-slider__wrapper">
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client1.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client2.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client3.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client4.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="client-slider__pagination slider-pagination slider-pagination_black"></div>
+</div>
+
+<!-- Новости -->
+<div class="news-slider">
+    <div class="container">
+        <div class="news-slider__title h2">БЛОГ АНОНСОВ НОВОСТЕЙ</div>
+        <div class="swiper-container news-slider__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news1.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__full">
+                            <img class="news-slider__img" src="./local/uploads/news2.jpg" alt="">
+                            <div class="news-slider__full-block">
+                                <div class="news-slider__full-name">
+                                    НОВЫЙ СТАНОК RICOH PRO C7200X
+                                </div>
+                                <div class="news-slider__full-date">
+                                    22 апреля 2020
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news3.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news4.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news5.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news6.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news1.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__full">
+                            <img class="news-slider__img" src="./local/uploads/news2.jpg" alt="">
+                            <div class="news-slider__full-block">
+                                <div class="news-slider__full-name">
+                                    НОВЫЙ СТАНОК RICOH PRO C7200X
+                                </div>
+                                <div class="news-slider__full-date">
+                                    22 апреля 2020
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news3.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news4.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news5.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news6.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news1.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__full">
+                            <img class="news-slider__img" src="./local/uploads/news2.jpg" alt="">
+                            <div class="news-slider__full-block">
+                                <div class="news-slider__full-name">
+                                    НОВЫЙ СТАНОК RICOH PRO C7200X
+                                </div>
+                                <div class="news-slider__full-date">
+                                    22 апреля 2020
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news3.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news4.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news5.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news6.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-slider__info">
+            <a class="news-slider__prev" href="javascript:;">
+                <span class="str-prev str-prev_black"></span>
+            </a>
+            <div class="news-slider__count"></div>
+            <a class="news-slider__next" href="javascript:;">
+                <span class="str-next str-next_black"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Способы оплаты -->
+<div class="pay-info">
+    <div class="container">
+        <div class="pay-info__title h2">СПОСОБЫ ОПЛАТЫ</div>
+        <div class="pay-info__items">
+            <div class="pay-info__item pay-info__item_left">
+                <svg class="pay-info__icon-anchor">
+                    <use xlink:href="./local/img/sprite.svg#icon-anchor"></use>
+                </svg>
+                <div class="pay-info__name">ОПЛАТА БАНКОВСКОЙ КАРТОЙ НА САЙТЕ</div>
+                <div class="pay-info__text">
+                    На странице оформления заказа необходимо выбрать способ оплаты "Оплата банковской картой".<br class="d-none d-lg-block">
+                    Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем:
+                    <div class="pay-system">
+                        <img class="pay-system__img" src="./local/img/visa.png" alt="">
+                        <img class="pay-system__img" src="./local/img/maestro.png" alt="">
+                        <img class="pay-system__img" src="./local/img/mastercard.png" alt="">
+                    </div>
+                    Оплата производится без комиссии (0%) платежной системы.<br>
+                    Вы оплачиваете только стоимость заказа.
+                </div>
+            </div>
+            <div class="pay-info__item pay-info__item_right">
+                <svg class="pay-info__icon-cup">
+                    <use xlink:href="./local/img/sprite.svg#icon-cup"></use>
+                </svg>
+                <div class="pay-info__name">ДРУГИЕ СПОСОБЫ ОПЛАТЫ ОНЛАЙН</div>
+                <div class="pay-info__text">
+                    Дополнительно имеется возможность оплаты заказа через терминалы оплаты, посредством электронных денег и систем интернет-банкинга.<br>
+                    Безопасность вашего платежа гарантирует платежная система Yandex.Kassa<br>
+                    Оплата производится без комиссии (0%) платежной системы. Вы оплачиваете только стоимость заказа.
+                </div>
+            </div>
+        </div>
+        <div class="pay-info__btn">
+            <a href="javascript:;" class="btn-link">ПОДРОБНЕЕ</a>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

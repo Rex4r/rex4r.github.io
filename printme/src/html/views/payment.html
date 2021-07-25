@@ -1,0 +1,253 @@
+<% var data = {
+    title: "Payment",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <a href="javascript:;" class="breadcrumbs__link">ОПЛАТА</a> / 
+        <span class="breadcrumbs__current">ДОСТАВКА</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ОПЛАТА И ДОСТАВКА<span class="d-none d-sm-inline"> ПОЛИГРАФИИ В МОСКВЕ</span></h1>
+
+</div>
+
+<!-- Шапка страницы -->
+<div class="page-head">
+    <div class="page-head__inner page-head__inner_no-shadow">
+        <img class="page-head__img" src="./local/uploads/payment.jpg" alt="">
+        <div class="page-head__block">
+            <div class="page-head__name">ЛУЧШАЯ</div>
+            <div class="page-head__desc">ДОСТАВКА В ГОРОДЕ</div>
+        </div>
+    </div>
+</div>
+
+<!-- Блоки -->
+<div class="payment-block">
+    <div class="payment-block__title h2">СПОСОБЫ ОПЛАТЫ</div>
+    <div class="payment-block__block container container-fluid-xl">
+        <div class="payment-block__items">
+            <div class="payment-block__item">
+                <div class="payment-block__pict">
+                    <svg class="payment-block__icon payment-block__icon_a">
+                        <use xlink:href="./local/img/sprite.payment.svg#a"></use>
+                    </svg>
+                </div>
+                <div class="payment-block__name">
+                    ОПЛАТА<br>
+                    ПРИ ПОЛУЧЕНИИ
+                </div>
+                <div class="payment-block__text">
+                    Вы можете произвести оплату<br>
+                    в нашем офисе наличными<br>
+                    или банковской картой
+                </div>
+            </div>
+            <div class="payment-block__item">
+                <div class="payment-block__pict">
+                    <svg class="payment-block__icon payment-block__icon_b">
+                        <use xlink:href="./local/img/sprite.payment.svg#b"></use>
+                    </svg>
+                </div>
+                <div class="payment-block__name">
+                    ОНЛАЙН-ОПЛАТА<br>
+                    БАНКОВСКОЙ КАРТОЙ
+                </div>
+                <div class="payment-block__text">
+                    Вы будете переадресованы<br>
+                    на сайт платёжной системы,<br>
+                    где сможете сейчас оплатить заказ
+                </div>
+            </div>
+            <div class="payment-block__item">
+                <div class="payment-block__pict">
+                    <svg class="payment-block__icon payment-block__icon_c">
+                        <use xlink:href="./local/img/sprite.payment.svg#c"></use>
+                    </svg>
+                </div>
+                <div class="payment-block__name">
+                    БЕЗНАЛИЧНАЯ<br>
+                    ОПЛАТА
+                </div>
+                <div class="payment-block__text">
+                    Для юридических лиц<br>
+                    с выставлением счёта на оплату
+                </div>
+            </div>
+            <div class="payment-block__item">
+                <div class="payment-block__pict">
+                    <svg class="payment-block__icon payment-block__icon_d">
+                        <use xlink:href="./local/img/sprite.payment.svg#d"></use>
+                    </svg>
+                </div>
+                <div class="payment-block__name">
+                    ЭЛЕКТРОННЫЙ<br>
+                    ПЛАТЁЖ
+                </div>
+                <div class="payment-block__text">
+                    Вы можете оплатить заказ<br>
+                    электронными деньгами
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="payment-block__desc">
+        <div class="container container-fluid-xl">
+            ПРИ ОПЛАТЕ ОНЛАЙН ПЛАТЕЖНЫМИ АГРЕГАТОРАМИ С ВАС НЕ ВЗИМАЕТСЯ ДОПОЛНИТЕЛЬНАЯ КОМИССИЯ.<br>
+            ПРИ ВЫБОРЕ ВАРИАНТА ОПЛАТЫ "ОПЛАТА НАЛИЧНЫМИ ПРИ ПОЛУЧЕНИИ" ТРЕБУЕТСЯ ВНЕСЕНИЕ ПРЕДОПЛАТЫ ОНЛАЙН В РАЗМЕРЕ 50% ОТ СТОИМОСТИ ЗАКАЗА.<br>
+            ПРИ ВЫБОРЕ ВАРИАНТА ОПЛАТЫ "БАНКОВСКИЙ ПЕРЕВОД" (ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ) ВЫСТАВЛЯЕМЫЙ НА СЛЕДУЮЩЕЙ СТРАНИЦЕ СЧЕТ НЕ БУДЕТ ВКЛЮЧАТЬ КАКИХ-ЛИБО ДОПОЛНИТЕЛЬНЫХ НАЦЕНОК И КОМИССИЙ, Т.К. ПРИ ДАННОМ СПОСОБЕ ОПЛАТЫ КОМИССИЯ НЕ ВЗИМАЕТСЯ. ОДНАКО СЛЕДУЕТ УЧЕСТЬ, ЧТО СРОК ИЗГОТОВЛЕНИЯ ЗАКАЗАННОЙ ПРОДУКЦИИ БУДЕТ УВЕЛИЧЕН НА СРОК ОБРАБОТКИ (ЗАЧИСЛЕНИЯ) БАНКОВСКОГО ПЕРЕВОДА.
+        </div>
+    </div>
+</div>
+
+<!-- Блоки -->
+<div class="payment-block">
+    <div class="payment-block__title h2">СПОСОБЫ ДОСТАВКИ</div>
+    <div class="payment-block__block container container-fluid-xl">
+        <div class="payment-block__items">
+            <div class="payment-block__item">
+                <div class="payment-block__pict">
+                    <svg class="payment-block__icon payment-block__icon_e">
+                        <use xlink:href="./local/img/sprite.payment.svg#e"></use>
+                    </svg>
+                </div>
+                <div class="payment-block__name">
+                    САМОВЫВОЗ<br>
+                    СО СКЛАДА
+                </div>
+                <div class="payment-block__text">
+                    Вы будете переадресованы<br>
+                    на сайт платёжной системы,<br>
+                    где сможете сейчас оплатить заказ
+                </div>
+            </div>
+            <div class="payment-block__item">
+                <div class="payment-block__pict">
+                    <svg class="payment-block__icon payment-block__icon_f">
+                        <use xlink:href="./local/img/sprite.payment.svg#f"></use>
+                    </svg>
+                </div>
+                <div class="payment-block__name">
+                    ДОСТАВКА<br>
+                    КУРЬЕРОМ
+                </div>
+                <div class="payment-block__text">
+                    Для юридических лиц<br>
+                    с выставлением счёта на оплату
+                </div>
+            </div>
+            <div class="payment-block__item">
+                <div class="payment-block__pict">
+                    <svg class="payment-block__icon payment-block__icon_g">
+                        <use xlink:href="./local/img/sprite.payment.svg#g"></use>
+                    </svg>
+                </div>
+                <div class="payment-block__name">
+                    ДОСТАВКА<br>
+                    КУРЬЕРСКОЙ СЛЖБОЙ
+                </div>
+                <div class="payment-block__text">
+                    Вы можете оплатить заказ<br>
+                    электронными деньгами
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="payment-block__desc">
+        <div class="container container-fluid-xl">
+            ПРОДУКЦИЯ ОТГРУЖАЕТСЯ ТОЛЬКО ПОСЛЕ 100% ОПЛАТЫ ЕЁ СТОИМОСТИ.<br>
+            ДОСТАВКА ОСУЩЕСТВЛЯЕТСЯ ПО Г. МОСКВА В ПРЕДЕЛАХ МКАД В ДЕНЬ ГОТОВНОСТИ ПРОДУКЦИИ.<br>
+            СТОИМОСТЬ ДОСТАВКИ: - ПРИ ОФОРМЛЕНИИ НА САЙТЕ – БЕСПЛАТНО. - ПРИ ОФОРМЛЕНИИ ЧЕРЕЗ МЕНЕДЖЕРА – 100 РУБ.<br>
+            • ПРОДУКЦИЯ УПАКОВЫВАЕТСЯ В СТАНДАРТНУЮ КАРТОННУЮ УПАКОВКУ И НАДЛЕЖАЩИМ ОБРАЗОМ МАРКИРУЕТСЯ.<br>
+            • ВРЕМЯ ДОСТАВКИ: С 10:00 ДО 18:00.
+        </div>
+    </div>
+</div>
+
+<!-- Вкладки -->
+<div class="tabs-block">
+    <div class="tabs-block-links tabs-block-links_brown">
+        <a href="javascript:;" class="tabs-block-links__link tabs-block-links__link_active">
+            <svg class="tabs-block-links__icon tabs-block-links__icon_a">
+                <use xlink:href="./local/img/sprite.tabs.svg#e"></use>
+            </svg>
+            НАШИ РЕКВИЗИТЫ
+        </a>
+        <a href="javascript:;" class="tabs-block-links__link">
+            <svg class="tabs-block-links__icon tabs-block-links__icon_b">
+                <use xlink:href="./local/img/sprite.tabs.svg#f"></use>
+            </svg>
+            ПРОЦЕДУРА ЗАКАЗА
+        </a>
+        <a href="javascript:;" class="tabs-block-links__link">
+            <svg class="tabs-block-links__icon tabs-block-links__icon_c">
+                <use xlink:href="./local/img/sprite.tabs.svg#g"></use>
+            </svg>
+            ПРОЦЕДУРА ОТГРУЗКИ
+        </a>
+        <a href="javascript:;" class="tabs-block-links__link">
+            <svg class="tabs-block-links__icon tabs-block-links__icon_d">
+                <use xlink:href="./local/img/sprite.tabs.svg#h"></use>
+            </svg>
+            ПРОЦЕДУРА ВОЗВРАТА
+        </a>
+    </div>
+    <div class="tabs-block-block">
+        <div class="tabs-block-block__inner tabs-block-block__inner_active">
+
+            <!-- Информация -->
+            <div class="payment-info">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <p>ООО «ПРИНТМИ ОНЛАЙН ТИПОГРАФИЯ»</p>
+                        <p>ИНН: 7813750001</p>
+                        <p>КПП: 781301001</p>
+                        <p>ОКПО: 41830297</p>
+                        <p>ОГРН: 1197847205148</p>
+                        <p>Р/С: 40702810490330003248</p>
+                        <p>ПАО «БАНК «САНКТ-ПЕТЕРБУРГ», Г. САНКТ-ПЕТЕРБУРГ</p>
+                    </div>
+                    <div class="col-xl-4">
+                        <p>К/С: 30101810900000000790</p>
+                        <p>БИК: 044030790</p>
+                        <p>
+                            ЮРИДИЧЕСКИЙ АДРЕС: 197376, Г. САНКТ-ПЕТЕРБУРГ,<br>
+                            НАБ. РЕКИ КАРПОВКИ, ДОМ 5, КОРПУС 3, ЛИТЕР Е, КОМНАТА 7
+                        </p>
+                        <p>
+                            ПОЧТОВЫЙ АДРЕС: 197022, Г. САНКТ-ПЕТЕРБУРГ,<br>
+                            УЛ. ПРОФЕССОРА ПОПОВА, Д. 4А, СТР. 3
+                        </p>
+                        <p>
+                        ТЕЛ.: <a href="tel:+78123250404" class="payment-info__link">+7 (812) 325-04-04</a>, <a href="tel:+78123252426" class="payment-info__link">+7 (812) 325-24-26</a><br>
+                        E-MAIL: <a href="mailto:PIA@GMPRINT.RU" class="payment-info__link">PIA@GMPRINT.RU</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tabs-block-block__inner">
+            ПРОЦЕДУРА ЗАКАЗА
+        </div>
+        <div class="tabs-block-block__inner">
+            ПРОЦЕДУРА ОТГРУЗКИ
+        </div>
+        <div class="tabs-block-block__inner">
+            ПРОЦЕДУРА ВОЗВРАТА
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/icons.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

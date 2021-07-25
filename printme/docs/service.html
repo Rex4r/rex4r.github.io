@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+        <title>PrintMe - Service</title>
+        <link href="./local/template_styles.css?08b1b75cd4ae7356b051" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="position-relative">
+            <!-- Форма поиска -->
+            <div class="search-form">
+                <div class="container">
+                    <form>
+                        <div class="search-form__inner">
+                            <input class="search-form__input" type="text" value="" placeholder="Поиск" />
+                            <button class="search-form__submit" type="submit">
+                                <svg class="search-form__submit-icon">
+                                    <use xlink:href="./local/img/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Шапка сайта -->
+            <header class="main-header main-header_inner">
+                <div class="main-header__left">
+                    <div class="main-header__info">
+                        <span class="main-header__addr">МОСКВА | БАЛТИЙСКАЯ 11</span>
+                        <a href="mailto:NFO@PRINT.ME" class="main-header__email">NFO@PRINT.ME</a>
+                        <a href="tel:+74953334455" class="main-header__phone">+7 495 333 44 55</a>
+                    </div>
+                    <a href="/" class="main-header__logo">
+                        <img class="main-header__logo-img" src="./local/img/logo.svg" alt="" />
+                        <span class="main-header__logo-text">Онлайн типография</span>
+                    </a>
+                </div>
+                <div class="main-header__right">
+                    <div class="main-header__right-top">
+                        <!-- Верхнее меню -->
+                        <nav class="menu-top">
+                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ПОМОЩЬ</a>
+                            <a class="menu-top__link d-none d-md-block" href="javascript:;">КАЛЬКУЛЯТОР</a>
+                            <a class="menu-top__link" href="javascript:;" data-fancybox data-src="#auth">ЛИЧНЫЙ КАБИНЕТ</a>
+                            <a class="menu-top__link" href="javascript:;">КОРЗИНА</a>
+                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ТЕХПОДДЕРЖКА</a>
+                        </nav>
+                        <a href="javascript:;" class="main-header__search">
+                            <svg class="main-header__search-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-search"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="main-header__right-bottom">
+                        <a class="menu-main-btn" href="javascript:;">
+                            <span class="menu-main-btn__icon"></span>
+                        </a>
+
+                        <!-- Главное меню -->
+                        <nav class="menu-main">
+                            <div class="menu-main__lvl1 menu-main__lvl1_parent">
+                                <a class="menu-main__lvl1-link menu-main__lvl1-link_parent" href="javascript:;">ВСЯ ПРОДУКЦИЯ</a>
+
+                                <div class="menu-main__lvl2">
+                                    <div class="menu-main__lvl2-title">
+                                        продукция
+                                    </div>
+                                    <div class="menu-main__lvl2-items">
+                                        <div class="menu-main__lvl2-item">
+                                            <a class="menu-main__lvl2-link" href="javascript:;">бейджи</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">билеты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">бланки</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">блокноты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">буклеты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">визитки</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">воблеры</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">годовые отчёты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">дипломы</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">ежедневники</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">журналы</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">защищённая полиграфия</a>
+                                        </div>
+                                        <div class="menu-main__lvl2-item">
+                                            <a class="menu-main__lvl2-link" href="javascript:;">инструкции</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">календари</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">каталоги</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">книги</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">конверты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">кубарики</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">купоны</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">листовки</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">наклейки</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">открытки</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">пакеты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">папки</a>
+                                        </div>
+                                        <div class="menu-main__lvl2-item">
+                                            <a class="menu-main__lvl2-link" href="javascript:;">плакаты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">приглашения</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">сертификаты</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">тетради</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">упаковка</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">флаеры</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">ценники</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">этикетки</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">pos материалы</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">qr генератор</a>
+                                            <a class="menu-main__lvl2-link" href="javascript:;">печать форматами</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-main__lvl1">
+                                <a class="menu-main__lvl1-link" href="javascript:;">УСЛУГИ</a>
+                            </div>
+                            <div class="menu-main__lvl1">
+                                <a class="menu-main__lvl1-link" href="javascript:;">ИНФОРМАЦИЯ</a>
+                            </div>
+                            <div class="menu-main__lvl1">
+                                <a class="menu-main__lvl1-link" href="javascript:;">О КОМПАНИИ</a>
+                            </div>
+                            <div class="menu-main__lvl1">
+                                <a class="menu-main__lvl1-link" href="javascript:;">КОНТАКТЫ</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Рабочая область -->
+            <main class="main-main main-main_inner">
+                <div class="container">
+                    <!-- Хлебные крошки -->
+                    <div class="breadcrumbs">
+                        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / <a href="javascript:;" class="breadcrumbs__link">ВСЯ ПОЛИГРАФИЯ</a> /
+                        <span class="breadcrumbs__current">ПЕЧАТЬ НАКЛЕЕК</span>
+                    </div>
+
+                    <!-- Заголовок страницы -->
+                    <h1>ПЕЧАТЬ НАКЛЕЕК В МОСКВЕ</h1>
+                </div>
+
+                <!-- Шапка страницы -->
+                <div class="page-head">
+                    <div class="page-head__inner">
+                        <img class="page-head__img" src="./local/uploads/sticker.jpg" alt="" />
+                        <div class="page-head__block">
+                            <div class="page-head__name">ЛУЧШИЕ</div>
+                            <div class="page-head__desc">НАКЛЕЙКИ В ГОРОДЕ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Список товаров -->
+                <div class="product-list2">
+                    <div class="product-list2__items grid">
+                        <div class="grid-sizer"></div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product1.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">А ПРЯМОУГОЛЬНЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product2.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">Б КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product3.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">В КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product4.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">Г ПРЯМОУГОЛЬНЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product5.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">Д КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product6.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">Е КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product7.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">Ё КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product8.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">Ж КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product9.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">З КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product4.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">И ПРЯМОУГОЛЬНЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product9.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">Й КРУГЛЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                        <div class="product-list2__item grid-item">
+                            <div class="product-list2__inner">
+                                <a href="javascript:;" class="product-list2__pict">
+                                    <img class="product-list2__img" src="./local/uploads/product4.jpg" alt="" />
+                                </a>
+                                <div class="product-list2__link">
+                                    <a href="javascript:;" class="product-list2__count">ПОСЧИТАТЬ</a>
+                                    <a href="javascript:;" class="product-list2__like">
+                                        <svg class="product-list2__like-icon">
+                                            <use xlink:href="./local/img/sprite.svg#icon-like2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-list2__block">
+                                <div class="product-list2__info">
+                                    <a href="javascript:;" class="product-list2__name">К ПРЯМОУГОЛЬНЫЕ НАКЛЕЙКИ</a>
+                                    <div class="product-list2__price">от 607₽</div>
+                                </div>
+                                <a href="javascript:;" class="product-list2__more">ВСЕ ФОРМАТЫ НАКЛЕЕК</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list2__btn">
+                        <a href="javascript:;" class="btn-link btn-link_black js-show-product">
+                            <span class="btn-link__text-show">вся продукция</span>
+                            <span class="btn-link__text-hide">СВЕРНУТЬ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Преимущества -->
+                <div class="benefits-list">
+                    <div class="container">
+                        <div class="benefits-list__title h2">преимущества нашей типографии</div>
+                        <div class="benefits-list__items">
+                            <div class="benefits-list__item">
+                                <div class="benefits-list__pict">
+                                    <img src="./local/uploads/benefits1.svg" alt="" />
+                                </div>
+                                <div class="benefits-list__name">
+                                    ОГРОМНЫЙ ВЫБОР БУМАГ
+                                </div>
+                                <div class="benefits-list__text">
+                                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                                </div>
+                            </div>
+                            <div class="benefits-list__item">
+                                <div class="benefits-list__pict">
+                                    <img src="./local/uploads/benefits2.svg" alt="" />
+                                </div>
+                                <div class="benefits-list__name">
+                                    ПРОБНЫЙ ОБРАЗЕЦ
+                                </div>
+                                <div class="benefits-list__text">
+                                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                                </div>
+                            </div>
+                            <div class="benefits-list__item">
+                                <div class="benefits-list__pict">
+                                    <img src="./local/uploads/benefits3.svg" alt="" />
+                                </div>
+                                <div class="benefits-list__name">
+                                    БЕСПЛАТНЫЙ МАКЕТ
+                                </div>
+                                <div class="benefits-list__text">
+                                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                                </div>
+                            </div>
+                            <div class="benefits-list__item">
+                                <div class="benefits-list__pict">
+                                    <img src="./local/uploads/benefits4.svg" alt="" />
+                                </div>
+                                <div class="benefits-list__name">
+                                    СОБСТВЕННОЕ ПРОИЗВОДСТВО
+                                </div>
+                                <div class="benefits-list__text">
+                                    Позволяет выполнять широкий спектр работ на различных материалах в любых тиражах и в самые короткие сроки. Парк оборудования постоянно обновляется.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Текст -->
+                <div class="service-text">
+                    <div class="container">
+                        <div>
+                            <h3>ПЕЧАТЬ ИЗГОТОВЛЕНИЕ НАКЛЕЕК МОСКВА</h3>
+                            <b>ПЕЧАТЬ НАКЛЕЕК В МОСКВЕ</b><br />
+                            Наша онлайн-типография занимается давно и на профессиональном уровне такой актуальной для мира торговли и бизнеса деятельностью, как печать наклеек на заказ.<br />
+                            Если вы владелец какой-либо организации, магазина, небольшого кафе или даже магазинчика с мороженым, то вы наверняка задумывались о том, куда лучше обратиться, чтобы осуществить печать наклеек.<br />
+                            <b>ВИДЫ НАКЛЕЕК</b><br />
+                            Мы рады предоставить вашему вниманию самые разнообразные наклейки. Наиболее востребованными и пользующимися стабильным спросом у нас являются следующие наклейки.<br />
+                            <b>НАКЛЕЙКИ СТАНДАРТНЫЕ.</b> Такие наклейки, как правило, прямоугольные или квадратные, они применяются повсеместно. По вашему желанию у нас найдется любой формат данного вида наклеек.<br />
+                            <b>НАКЛЕЙКИ КРУГЛЫЕ.</b> Такие наклейки различного диаметра (от 1 до 20 см) можно заказать на нашем сайте. Пришлите нам файл с логотипом или готовый макет, который бы вы хотели видеть изображенным на ваших
+                            наклейках, или создайте свою круглую наклейку самостоятельно и бесплатно в нашем удобном онлайн-конструкторе наклеек.<br />
+                            <b>НАКЛЕЙКИ ПРОИЗВОЛЬНОЙ ФОРМЫ</b> - это наклейки нестандартного вида. Подойдут, если вы хотите выделиться из толпы и изготовить необычную наклейку для своего предприятия.<br />
+                            Размеры наклеек для печати в Москве могут быть самыми разнообразными. Мы изготовим для вас наклейки любого размера: от совсем крошечных наклеек-стикеров, до объемных и больших наклеек на витрины и стекла, и даже
+                            наклеек для выставочных стендов.
+                        </div>
+                        <div class="service-text__btn">
+                            <a href="javascript:;" class="btn-link btn-link_black">ИНТЕРЕСНО ОЧЕНЬ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Как мы работаем -->
+                <div class="we-working">
+                    <div class="container">
+                        <div class="we-working__title h2">как мы работаем</div>
+                        <div class="swiper-container we-working__slider">
+                            <div class="swiper-wrapper we-working__wrapper">
+                                <div class="swiper-slide we-working__item">
+                                    <img class="we-working__img" src="./local/uploads/working1.jpg" alt="" />
+                                    <div class="we-working__block">
+                                        <div class="we-working__name">
+                                            выберите дизайн<br />
+                                            из шаблона
+                                        </div>
+                                        <div class="we-working__text">
+                                            Направьте заявку дизайнеру<br />
+                                            Через 24 часа ваш макет готов<br />
+                                            Согласуйте макет
+                                        </div>
+                                        <div class="we-working__btn">
+                                            <a href="javascript:;" class="btn-link btn-link_short">выбрать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide we-working__item">
+                                    <img class="we-working__img" src="./local/uploads/working2.jpg" alt="" />
+                                    <div class="we-working__block">
+                                        <div class="we-working__name">
+                                            загрузите свой<br />
+                                            дизайн
+                                        </div>
+                                        <div class="we-working__text">
+                                            Направьте заявку дизайнеру<br />
+                                            Через 24 часа ваш макет готов<br />
+                                            Согласуйте макет
+                                        </div>
+                                        <div class="we-working__btn">
+                                            <a href="javascript:;" class="btn-link btn-link_short">выбрать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide we-working__item">
+                                    <img class="we-working__img" src="./local/uploads/working3.jpg" alt="" />
+                                    <div class="we-working__block">
+                                        <div class="we-working__name">
+                                            закажите<br />
+                                            дизайн
+                                        </div>
+                                        <div class="we-working__text">
+                                            Направьте заявку дизайнеру<br />
+                                            Через 24 часа ваш макет готов<br />
+                                            Согласуйте макет
+                                        </div>
+                                        <div class="we-working__btn">
+                                            <a href="javascript:;" class="btn-link btn-link_short">выбрать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="we-working__pagination slider-pagination slider-pagination_black"></div>
+                    </div>
+                </div>
+
+                <!-- Отзывы -->
+                <div class="review-slider">
+                    <div class="container">
+                        <div class="review-slider__title h2">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</div>
+                    </div>
+                    <div class="review-slider__block">
+                        <div class="container">
+                            <div class="review-slider__inner">
+                                <div class="swiper-container review-slider__slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide review-slider__slide">
+                                            <div class="review-slider__name">ЕКАТЕРИНА</div>
+                                            <div class="review-slider__desc">Менеджер по маркетингу</div>
+                                            <div class="review-slider__text">
+                                                Прекрасная типография PRINTME быстро надёжно и очень удобно оформить заказ онлайн и получить его на следующий день. Браво, молодцы!
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide review-slider__slide">
+                                            <div class="review-slider__name">ИВАН</div>
+                                            <div class="review-slider__desc">Дизайнер</div>
+                                            <div class="review-slider__text">
+                                                Прекрасная типография PRINTME быстро надёжно и очень удобно оформить заказ онлайн и получить его на следующий день. Браво, молодцы!
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide review-slider__slide">
+                                            <div class="review-slider__name">ЛИЗА</div>
+                                            <div class="review-slider__desc">Фотограф</div>
+                                            <div class="review-slider__text">
+                                                Прекрасная типография PRINTME быстро надёжно и очень удобно оформить заказ онлайн и получить его на следующий день. Браво, молодцы!
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide review-slider__slide">
+                                            <div class="review-slider__name">АРКАДИЙ</div>
+                                            <div class="review-slider__desc">Арт директор</div>
+                                            <div class="review-slider__text">
+                                                Прекрасная типография PRINTME быстро надёжно и очень удобно оформить заказ онлайн и получить его на следующий день. Браво, молодцы!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--        <a class="review-slider__prev" href="javascript:;">
+            <span class="str-prev str-prev_black"></span>
+        </a>
+        <a class="review-slider__next" href="javascript:;">
+            <span class="str-next str-next_black"></span>
+        </a>-->
+                    </div>
+                    <div class="container">
+                        <div class="review-slider__pagination slider-pagination slider-pagination_black"></div>
+                    </div>
+                </div>
+
+                <!-- Способы оплаты -->
+                <div class="pay-info">
+                    <div class="container">
+                        <div class="pay-info__title h2">СПОСОБЫ ОПЛАТЫ</div>
+                        <div class="pay-info__items">
+                            <div class="pay-info__item pay-info__item_left">
+                                <svg class="pay-info__icon-anchor">
+                                    <use xlink:href="./local/img/sprite.svg#icon-anchor"></use>
+                                </svg>
+                                <div class="pay-info__name">ОПЛАТА БАНКОВСКОЙ КАРТОЙ НА САЙТЕ</div>
+                                <div class="pay-info__text">
+                                    На странице оформления заказа необходимо выбрать способ оплаты "Оплата банковской картой".<br class="d-none d-lg-block" />
+                                    Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем:
+                                    <div class="pay-system">
+                                        <img class="pay-system__img" src="./local/img/visa.png" alt="" />
+                                        <img class="pay-system__img" src="./local/img/maestro.png" alt="" />
+                                        <img class="pay-system__img" src="./local/img/mastercard.png" alt="" />
+                                    </div>
+                                    Оплата производится без комиссии (0%) платежной системы.<br />
+                                    Вы оплачиваете только стоимость заказа.
+                                </div>
+                            </div>
+                            <div class="pay-info__item pay-info__item_right">
+                                <svg class="pay-info__icon-cup">
+                                    <use xlink:href="./local/img/sprite.svg#icon-cup"></use>
+                                </svg>
+                                <div class="pay-info__name">ДРУГИЕ СПОСОБЫ ОПЛАТЫ ОНЛАЙН</div>
+                                <div class="pay-info__text">
+                                    Дополнительно имеется возможность оплаты заказа через терминалы оплаты, посредством электронных денег и систем интернет-банкинга.<br />
+                                    Безопасность вашего платежа гарантирует платежная система Yandex.Kassa<br />
+                                    Оплата производится без комиссии (0%) платежной системы. Вы оплачиваете только стоимость заказа.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-info__btn">
+                            <a href="javascript:;" class="btn-link">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="main-footer__items">
+                        <div class="main-footer__item">
+                            <div class="main-footer__title">основное меню</div>
+
+                            <!-- Нижнее меню -->
+                            <nav class="menu-bottom">
+                                <a class="menu-bottom__link" href="javascript:;">главная</a>
+                                <a class="menu-bottom__link" href="javascript:;">вся продукция</a>
+                                <a class="menu-bottom__link" href="javascript:;">услуги</a>
+                                <a class="menu-bottom__link" href="javascript:;">информация</a>
+                                <a class="menu-bottom__link" href="javascript:;">о компании</a>
+                                <a class="menu-bottom__link" href="javascript:;">контакты</a>
+                                <a class="menu-bottom__link" href="javascript:;">корзина</a>
+                                <a class="menu-bottom__link" href="javascript:;">техподдержка</a>
+                            </nav>
+                        </div>
+                        <div class="main-footer__item">
+                            <div class="main-footer__title">для клиентов</div>
+
+                            <!-- Нижнее меню -->
+                            <nav class="menu-bottom">
+                                <a class="menu-bottom__link" href="javascript:;">оплата</a>
+                                <a class="menu-bottom__link" href="javascript:;">доставка</a>
+                                <a class="menu-bottom__link" href="javascript:;">помощь</a>
+                                <a class="menu-bottom__link" href="javascript:;">калькулятор</a>
+                                <a class="menu-bottom__link" href="javascript:;">личный кабинет</a>
+                                <a class="menu-bottom__link" href="javascript:;">Политика конфиденциальности</a>
+                                <a class="menu-bottom__link" href="javascript:;">Пользовательское соглашение</a>
+                                <a class="menu-bottom__link" href="javascript:;">Cookie</a>
+                            </nav>
+                        </div>
+                        <div class="main-footer__item">
+                            <div class="main-footer__title">популярные услуги</div>
+
+                            <!-- Нижнее меню -->
+                            <nav class="menu-bottom">
+                                <a class="menu-bottom__link" href="javascript:;">визитки</a>
+                                <a class="menu-bottom__link" href="javascript:;">стикеры</a>
+                                <a class="menu-bottom__link" href="javascript:;">буклеты</a>
+                                <a class="menu-bottom__link" href="javascript:;">ежедневники</a>
+                                <a class="menu-bottom__link" href="javascript:;">пакеты</a>
+                                <a class="menu-bottom__link" href="javascript:;">ручки</a>
+                                <a class="menu-bottom__link" href="javascript:;">бейджи</a>
+                                <a class="menu-bottom__link" href="javascript:;">бланки</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="main-footer__search">
+                        <!-- Поиск -->
+                        <div class="search-footer">
+                            <form>
+                                <input class="search-footer__input" type="text" value="" placeholder="Поиск" />
+                                <button class="search-footer__btn" type="submit">
+                                    <svg class="search-footer__icon">
+                                        <use xlink:href="./local/img/sprite.svg#icon-search"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="/" class="main-footer__logo">
+                        <img class="main-footer__logo-img" src="./local/img/logo.svg" alt="" />
+                        <span class="main-footer__logo-text">Онлайн типография</span>
+                    </a>
+                    <div class="main-footer__social">
+                        <a href="javascript:;" class="main-footer__social-link" target="_blank">
+                            <svg class="main-footer__social-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="main-footer__social-link" target="_blank">
+                            <svg class="main-footer__social-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-ig"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="main-footer__info">
+                        <span class="main-footer__addr">
+                            <svg class="main-footer__addr-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-point"></use>
+                            </svg>
+                            <span>
+                                МОСКВА | БАЛТИЙСКАЯ 11
+                            </span>
+                        </span>
+                        <a class="main-footer__email" href="mailto:NFO@PRINT.ME">
+                            <svg class="main-footer__email-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-email"></use>
+                            </svg>
+                            NFO@PRINT.ME
+                        </a>
+                        <a class="main-footer__phone" href="tel:+74953334455">
+                            <svg class="main-footer__phone-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +7 495 333 44 55
+                        </a>
+                    </div>
+                    <div class="main-footer__copy">
+                        © 2018 – 2020 срочная печать в онлайн-типографии Printme.
+                    </div>
+                </div>
+            </footer>
+
+            <div class="window-one" id="auth">
+                <div class="window-one__title">Авторизация</div>
+                <div class="window-one__body">
+                    <div class="form-three">
+                        <div class="form-three__check">
+                            <div class="form-three__check-part">
+                                <input class="form-three__check-input js-auth-check" id="auth_check_one" type="radio" value="auth" name="auth_check" checked="checked" />
+                                <label class="form-three__check-label" for="auth_check_one">
+                                    <svg class="form-three__check-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+                                    </svg>
+                                    Я уже зарегистрирован
+                                </label>
+                            </div>
+                            <div class="form-three__check-part">
+                                <input class="form-three__check-input js-auth-check" id="auth_check_two" type="radio" value="registration" name="auth_check" />
+                                <label class="form-three__check-label" for="auth_check_two">
+                                    <svg class="form-three__check-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+                                    </svg>
+                                    Я здесь впервые
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="window-one__change" id="form-auth">
+                            <form>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">E-MAIL:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="email" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Пароль:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="password" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__check">
+                                    <div class="form-three__check-part">
+                                        <input class="form-three__check-input" id="test5" type="checkbox" value="0" name="remember" checked="checked" />
+                                        <label class="form-three__check-label" for="test5">
+                                            <svg class="form-three__check-icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#close"></use>
+                                            </svg>
+                                            Запомнить меня
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="window-one__center">
+                                    <button type="submit" class="btn-one">Войти</button>
+                                </div>
+                                <div class="window-one__center">
+                                    <a href="javascript:;">3абыли пароль?</a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="window-one__change window-one__hide" id="form-registration">
+                            <form>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Имя:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="text" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Фамилия:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="text" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Телефон:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="tel" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">E-MAIL:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="email" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="form-three__line">
+                                    <span class="form-three__info">Пароль:</span>
+                                    <input class="form-three__input form-three__input_padding-full" type="password" value="" />
+                                    <svg class="form-three__input-icon">
+                                        <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                                    </svg>
+                                </div>
+                                <div class="window-one__center">
+                                    <button type="submit" class="btn-one">Зарегистрироваться</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./local/js/script.js?08b1b75cd4ae7356b051"></script>
+    </body>
+</html>

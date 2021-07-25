@@ -1,0 +1,41 @@
+.video-block {
+    text-align: center;
+    margin: 0 0 50px;
+
+    &__block {
+        padding: 0 0 100px;
+        border-bottom: 1px solid var(--grey5);
+    }
+    &__head {
+        margin: 0 0 10px;
+    }
+    &__desc {
+        margin: 0 0 75px;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            height: 3px;
+            width: 70px;
+            background-color: var(--black);
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+    &__video {
+        max-width: 870px;
+        height: 450px;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@include media-breakpoint-down(sm)
+{
+    .video-block {
+        display: none;
+    }
+}

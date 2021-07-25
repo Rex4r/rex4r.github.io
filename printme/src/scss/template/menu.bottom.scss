@@ -1,0 +1,33 @@
+.menu-bottom {
+
+    &__link {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--white);
+        display: block;
+        margin: 0 0 10px;
+
+        &:hover {
+            color: var(--orange);
+        }
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        &__link {
+            font-size: 11px;
+            letter-spacing: .1em;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 30px;
+
+            &__link {
+                font-size: 11px;
+            }
+        }
+    }
+}

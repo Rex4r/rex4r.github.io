@@ -1,0 +1,29 @@
+.form-one {
+
+    &__line {
+        margin: 0 0 60px;
+    }
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-icon {
+            width: 15px;
+            height: 13px;
+        }
+    }
+
+    @include media-breakpoint-between(md, lg)
+    {
+        &__line {
+            margin: 0 0 40px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__line {
+            margin: 0 0 30px;
+        }
+    }
+}

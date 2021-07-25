@@ -1,0 +1,17 @@
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+
+    &,
+    &__link {
+        color: var(--grey2);
+    }
+    &__link,
+    &__current {
+        margin: 0 5px;
+    }
+}

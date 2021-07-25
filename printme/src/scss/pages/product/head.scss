@@ -1,0 +1,92 @@
+.product-head {
+    padding: 0 20px;
+    max-width: 1900px;
+    margin: 0 auto 100px;
+    display: flex;
+    align-items: flex-start;
+
+    &__left {
+        width: calc(100% - 720px);
+        position: relative;
+    }
+    &__right {
+        padding: 45px 65px 0;
+    }
+    &__text {
+        font-weight: 700;
+        line-height: 30px;
+        margin: 0 0 95px;
+    }
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            color: var(--black);
+            opacity: .5;
+            font-weight: bold;
+        }
+        &-link:hover {
+            color: var(--black);
+            opacity: 1;
+        }
+        &-prev {
+            margin: 0 0 0 20px;
+        }
+        &-next {
+            margin: 0 20px 0 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg)
+{
+    .product-head {
+        flex-direction: column;
+
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            padding: 45px 0 0;
+        }
+        &__text {
+            margin: 0 45px 50px;
+        }
+        &__more {
+            margin: 0 45px;
+        }
+    }
+}
+@include media-breakpoint-only(lg)
+{
+    .product-head {
+        width: map-get($container-max-widths, lg);
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .product-head {
+        width: map-get($container-max-widths, md);
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .product-head {
+        width: map-get($container-max-widths, sm);
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .product-head {
+        margin: 0 auto;
+
+        &__text,
+        &__more {
+            display: none;
+        }
+    }
+}

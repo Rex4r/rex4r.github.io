@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+    width: 100%;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
+body {
+	margin: 0;
+	font: 12px/1.88 'TTNorms', sans-serif;
+    letter-spacing: .1rem;
+	color: var(--black);
+	text-align: left;
+	background-color: var(--white);
+    width: 100%;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+h1, .h1 {
+    margin: 0 0 90px;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+	margin: 0 0 0.5rem;
+}
+
+h1, .h1,
+h2, .h2 {
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3, .h3 {
+    font-size: 24px;
+    letter-spacing: .1em;
+    text-align: center;
+    margin: 0 0 30px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+@include media-breakpoint-only(md)
+{
+    h1, .h1 {
+        margin: 0 0 50px;
+    }
+}
+
+@include media-breakpoint-down(sm)
+{
+    h1, .h1 {
+        font-size: 29px;
+        margin: 0 0 30px;
+    }
+    h2, .h2 {
+        font-size: 28px;
+    }
+    h3, .h3 {
+        font-size: 20px;
+    }
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+ol,
+ul,
+dl {
+	margin: 0 0 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+	margin: 0;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+sup {
+	top: -.5em;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    outline: none;
+    transition: all .3s;
+}
+
+a:hover {
+	color: var(--blue);
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg {
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	text-align: inherit;
+}
+
+label {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button {
+	border-radius: 0;
+}
+
+button:focus {
+	outline: 1px dotted;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+select {
+	word-wrap: normal;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+	cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+}

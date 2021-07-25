@@ -1,0 +1,18 @@
+.like-btn {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: var(--grey1);
+    fill: var(--grey1);
+    line-height: 1;
+
+    &:hover {
+        color: var(--orange);
+        fill: var(--orange);
+    }
+    &__icon {
+        width: 14px;
+        height: 14px;
+        margin: 0 0 0 5px;
+    }
+}

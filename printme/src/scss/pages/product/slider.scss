@@ -1,0 +1,129 @@
+.slider-product {
+    position: relative;
+
+    &__slide {
+        position: relative;
+        max-height: 1080px;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--white);
+        transition: all .3s;
+        margin: 6px 0 0;
+
+        &:hover {
+            color: var(--white);
+            opacity: .5;
+        }
+    }
+    &__prev {
+        left: 42px;
+    }
+    &__next {
+        right: 42px;
+    }
+    &__count-prev {
+        margin: 0 0 0 20px;
+    }
+    &__count-next {
+        margin: 0 20px 0 0;
+    }
+
+    &-thumbs {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        bottom: 40px;
+        width: 250px;
+        transform: translate(-50%, 0);
+
+        &__slider {
+            padding: 10px;
+        }
+        &__item {
+            position: relative;
+
+            &_active:after {
+                content: "";
+                position: absolute;
+                left: -10px;
+                right: -10px;
+                top: -10px;
+                bottom: -10px;
+                border: 10px solid var(--white);
+            }
+        }
+        &__img {
+            height: 50px;
+            width: 50px;
+            display: block;
+        }
+    }
+}
+
+@include media-breakpoint-up(md)
+{
+    .slider-product {
+
+        &__pagination {
+            display: none;
+        }
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .slider-product {
+
+        &__prev {
+            left: 30px;
+        }
+        &__next {
+            right: 30px;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .slider-product {
+
+        &__slide {
+            height: 340px;
+            overflow: hidden;
+        }
+        &__img {
+            height: 100%;
+            max-width: 1920px;
+            width: auto;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        &__prev,
+        &__next {
+            display: none;
+        }
+        &__pagination {
+            position: absolute;
+            bottom: 20px;
+            z-index: 2;
+            left: 0;
+            right: 0;
+        }
+
+        &-thumbs {
+            display: none;
+        }
+    }
+}

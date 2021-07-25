@@ -1,0 +1,23 @@
+.our-ig {
+
+    &__title {
+        background-color: var(--grey-blue);
+        color: var(--white);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 40px 0;
+
+        &-link {
+            color: var(--white);
+
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+    &__link,
+    &__img {
+        display: block;
+    }
+}

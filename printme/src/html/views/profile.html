@@ -1,0 +1,88 @@
+<% var data = {
+    title: "Profile",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <span class="breadcrumbs__current">ЛИЧНЫЙ КАБИНЕТ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+
+</div>
+
+<div class="personal-tabs">
+    <div class="personal-tabs-links">
+        <a href="javascript:;" class="personal-tabs-links__link">МОИ ЗАКАЗЫ</a>
+        <a href="javascript:;" class="personal-tabs-links__link">РЕКВИЗИТЫ</a>
+        <a href="javascript:;" class="personal-tabs-links__link">АДРЕСА ДОСТАВКИ</a>
+        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">ПРОФИЛЬ</a>
+    </div>
+    <div class="personal-tabs-block">
+        <div class="personal-tabs-block__inner">
+
+            <div class="personal-form form-three">
+                <form>
+
+                    <div class="form-three__line">
+                        <span class="form-three__info">
+                            <span class="d-none d-sm-inline-block">ФАМИЛИЯ, ИМЯ:</span>
+                            <span class="d-sm-none">ФИО:</span>
+                        </span>
+                        <input class="form-three__input form-three__input_padding-full" type="text" value="ВАСЯ ВАСИН">
+                        <svg class="form-three__input-icon">
+                            <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                        </svg>
+                    </div>
+                    <div class="form-three__line">
+                        <span class="form-three__info">E-MAIL:</span>
+                        <input class="form-three__input form-three__input_padding-full" type="email" value="VASYA@gmail.COM">
+                        <svg class="form-three__input-icon">
+                            <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                        </svg>
+                    </div>
+                    <div class="form-three__line">
+                        <span class="form-three__info">ТЕЛЕФОН:</span>
+                        <input class="form-three__input form-three__input_padding-full" type="tel" value="+7999 123 45 67">
+                        <svg class="form-three__input-icon">
+                            <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                        </svg>
+                    </div>
+                    <div class="form-three__line">
+                        <span class="form-three__info">ПАРОЛЬ:</span>
+                        <input class="form-three__input form-three__input_padding-full" type="password" value="GHHHGHHGHGGHHG">
+                        <svg class="form-three__input-icon">
+                            <use xlink:href="./local/img/sprite.icon.svg#paint"></use>
+                        </svg>
+                    </div>
+                    <div class="form-three__line">
+                        <span class="form-three__info">ВАШ МЕНЕДЖЕР: </span>
+                        <div class="form-three__input form-three__input_padding-full form-three__input_div">
+                            АНДРЕУС ЭЛИНА, ТЕЛ. 909-06-24 (ДОБ. 225), AEK@PRINTME.RU
+                        </div>
+                    </div>
+                    <div class="form-three__label form-three__label_icon">
+                        <svg class="form-three__label-icon">
+                            <use xlink:href="./local/img/sprite.icon.svg#minus"></use>
+                        </svg>
+                        ЭТА ИНФОРМАЦИЯ НЕ БУДЕТ ДОСТУПНА ТРЕТЬИМ ЛИЦАМ
+                    </div>
+
+                </form>
+            </div>
+
+        </div>        
+    </div>
+</div>
+
+<%= _.template(require('./../includes/icons.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

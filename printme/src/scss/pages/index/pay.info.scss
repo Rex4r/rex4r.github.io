@@ -1,0 +1,132 @@
+.pay-info {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 100px 0;
+    margin: 0 0 100px;
+
+    &__title {
+        margin: 0 0 85px;
+        text-align: center;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 50%;
+        position: relative;
+
+        &_left {
+            text-align: right;
+            padding: 0 115px 0 0;
+        }
+        &_right {
+            padding: 0 0 0 115px;
+        }
+    }
+    &__icon-anchor {
+        width: 54px;
+        height: 46px;
+        fill: var(--white);
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+    &__icon-cup {
+        width: 42px;
+        height: 46px;
+        fill: var(--white);
+        top: 15px;
+        position: absolute;
+        left: 35px;
+    }
+    &__name {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+    }
+    &__text {
+        font-size: 13px;
+        letter-spacing: .025em;
+    }
+    &__btn {
+        margin: 50px 0 0;
+        text-align: center;
+    }
+}
+
+.pay-system {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5px 0;
+
+    &__img {
+        margin: 0 0 0 10px;
+    }
+}
+
+@include media-breakpoint-only(md)
+{
+    .pay-info {
+        padding: 75px 0;
+        margin: 0 0 80px;
+
+        &__title {
+            margin: 0 0 80px;
+        }
+        &__text {
+            font-size: 11px;
+        }
+        &__btn {
+            margin: 35px 0 0;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .pay-info {
+        padding: 50px 0;
+        margin: 0 0 55px;
+
+        &__title {
+            margin: 0 0 40px;
+        }
+        &__items {
+            display: block;
+        }
+        &__item {
+            width: 100%;
+            padding: 0;
+            margin: 0 0 25px;
+
+            &_left {
+                text-align: left;
+            }
+        }
+        &__icon-anchor {
+            left: 0;
+            top: 0;
+        }
+        &__icon-cup {
+            left: 0;
+            top: 0;
+        }
+        &__name {
+            display: flex;
+            height: 46px;
+            align-items: center;
+            padding: 0 0 0 65px;
+            margin: 0 0 15px;
+            line-height: 1.5;
+        }
+        &__btn {
+            margin: 40px 0 0;
+        }
+    }
+
+    .pay-system {
+        justify-content: flex-start;
+    }
+}

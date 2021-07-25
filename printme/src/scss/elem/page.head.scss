@@ -1,0 +1,127 @@
+.page-head {
+    padding: 0 20px;
+    max-width: 1900px;
+    margin: 0 auto 90px;
+
+    &__inner {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: var(--black);
+            opacity: .5;
+            z-index: 2;
+        }
+        &_no-shadow:before {
+            display: none;
+        }
+    }
+    &__img {
+        display: block;
+    }
+    &__block {
+        position: absolute;
+        color: var(--white);
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 335px;
+        font-weight: 700;
+        line-height: 1;
+        z-index: 3;
+    }
+    &__name {
+        font-size: 120px;
+        margin: 0 0 10px;
+        letter-spacing: .2em;
+    }
+    &__desc {
+        font-size: 36px;
+        letter-spacing: .1em;
+    }
+
+    @media (min-width: 992px) and (max-width: 1800px)
+    {
+        &__block {
+            left: 105px;
+        }
+    }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            width: map-get($container-max-widths, md);
+            padding: 0 ($gutter / 2);
+            margin: 0 auto 55px;
+
+            &__inner {
+                height: 360px;
+                overflow: hidden;
+            }
+            &__img {
+                max-width: 200%;
+                max-height: 100%;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            &__block {
+                left: 105px;
+            }
+            &__name {
+                font-size: 76px;
+            }
+            &__desc {
+                font-size: 22px;
+            }
+        }
+    }
+    @include media-breakpoint-only(sm)
+    {
+        & {
+            width: map-get($container-max-widths, sm);
+
+            &__block {
+                left: 50px;
+            }
+            &__name {
+                font-size: 48px;
+            }
+            &__desc {
+                font-size: 18px;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 0 auto 50px;
+
+            &__inner {
+                height: 340px;
+                overflow: hidden;
+            }
+            &__img {
+                height: 100%;
+                max-width: 1000px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            &__block {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 90%;
+            }
+            &__name {
+                font-size: 48px;
+            }
+            &__desc {
+                font-size: 18px;
+            }
+        }
+    }
+}

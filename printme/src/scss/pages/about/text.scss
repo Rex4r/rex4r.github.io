@@ -1,0 +1,39 @@
+.about-text {
+    margin: 0 0 100px;
+
+    &__inner {
+        max-width: 1100px;
+        margin: auto;
+    }
+    &__title {
+        margin: 0 0 40px;
+        text-align: center;
+    }
+    &__text {
+        margin: 0 0 55px;
+        line-height: 30px;
+        font-weight: 500;
+
+        &-bold {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        &-hidden {
+            display: none;
+        }
+    }
+    &__btn {
+        text-align: center;
+    }
+
+    @include media-breakpoint-down(lg)
+    {
+        & {
+            margin: 0 0 65px;
+
+            &__text {
+                margin: 0 0 45px;
+            }
+        }
+    }
+}

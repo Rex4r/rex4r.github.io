@@ -1,0 +1,121 @@
+.faq-tabs {
+    margin: 0 0 50px;
+
+    &-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__link {
+            font-size: 22px;
+            color: var(--grey2);
+            fill: var(--grey2);
+            font-weight: bold;
+            width: 25%;
+            text-align: center;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid var(--grey4);
+
+            &:hover {
+                fill: var(--blue);
+                color: var(--blue);
+            }
+            &_active {
+                fill: var(--blue);
+                color: var(--blue);
+                border-color: var(--blue);
+                text-decoration: line-through;
+            }
+        }
+        &__icon {
+            margin: 0 10px 0 0;
+
+            &_a {
+                width: 32px;
+                height: 27px;
+            }
+            &_b {
+                width: 30px;
+                height: 32px;
+            }
+            &_c {
+                width: 40px;
+                height: 36px;
+            }
+            &_d {
+                width: 33px;
+                height: 36px;
+            }
+        }
+    }
+    &-block {
+        background-color: var(--grey7);
+        border-bottom: 2px solid var(--grey5);
+        border-top: 2px solid var(--grey5);
+
+        &__inner {
+            padding: 45px 65px;
+        }
+    }
+
+
+    @media (min-width: 1150px) and (max-width: 1440px)
+    {
+        &-links {
+
+            &__link {
+                font-size: 16px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg)
+    {
+        & {
+            margin: 0 0 10px;
+
+            &-links {
+                border-top: 1px solid var(--grey4);
+                margin: 0 0 10px;
+
+                &__link {
+                    border-bottom: 1px solid var(--grey4);
+                    width: 50%;
+                    font-size: 20px;
+
+                    &:nth-child(odd) {
+                        border-right: 1px solid var(--grey4);
+                    }
+                }
+            }
+            &-block {
+
+                &__inner {
+                    padding: 40px 20px 0;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &-links {
+
+            &__link {
+                font-size: 16px;
+                line-height: 1.4;
+                padding: 0 10px;
+            }
+            &__icon {
+                display: none;
+            }
+        }
+        &-block {
+
+            &__inner {
+                padding: 40px 20px 0;
+            }
+        }
+    }
+}

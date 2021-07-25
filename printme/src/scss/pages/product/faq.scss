@@ -1,0 +1,71 @@
+.slider-faq {
+    padding: 55px 0;
+    background-color: var(--orange);
+    margin: 0 0 100px;
+
+    &__head {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 0 55px;
+        text-align: center;
+    }
+    &__num {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--grey2);
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--grey1);
+        display: block;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            border-left: 3px solid var(--grey1);
+            border-bottom: 3px solid var(--grey1);
+            transform: rotate(-45deg);
+            height: 10px;
+            width: 10px;
+            position: relative;
+            top: -3px;
+            margin: 0 0 0 10px;
+            transition: all .3s;
+        }
+        &:hover:after {
+            border-color: var(--blue);
+        }
+    }
+    &__text {
+        display: none;
+    }
+    &__str {
+        display: flex;
+        align-items: center;
+        margin: 35px 0 0;
+        justify-content: center;
+    }
+    &__count {
+        font-size: 14px;
+        margin: 0 50px;
+    }
+}
+
+@include media-breakpoint-only(md)
+{
+    .slider-faq {
+        overflow: hidden;
+
+        &__slider {
+            max-width: 350px;
+            overflow: visible;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .slider-faq {
+        margin: 0 0 50px;
+    }
+}

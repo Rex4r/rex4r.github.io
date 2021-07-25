@@ -1,0 +1,884 @@
+<% var data = {
+    title: "Product",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <a href="javascript:;" class="breadcrumbs__link">ВСЯ ПРОДУКЦИЯ</a> / 
+        <span class="breadcrumbs__current">ВИЗИТКИ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ПЕЧАТЬ ВИЗИТОК В МОСКВЕ</h1>
+
+</div>
+
+<!-- Шапка товара -->
+<div class="product-head">
+    <div class="product-head__left">
+
+        <!-- Cлайдер товара -->
+        <div class="slider-product">
+            <div class="swiper-container slider-product__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-product__slide">
+                        <img src="./local/uploads/product.slider.jpg" class="slider-product__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product__slide">
+                        <img src="./local/uploads/product.slider.jpg" class="slider-product__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product__slide">
+                        <img src="./local/uploads/product.slider.jpg" class="slider-product__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product__slide">
+                        <img src="./local/uploads/product.slider.jpg" class="slider-product__img" alt="">
+                    </div>
+                </div>
+            </div>
+            <a class="slider-product__prev" href="javascript:;">
+                <span class="str-prev"></span>
+                <span class="slider-product__count-prev"></span>
+            </a>
+            <a class="slider-product__next" href="javascript:;">
+                <span class="slider-product__count-next"></span>
+                <span class="str-next"></span>
+            </a>
+            <div class="slider-product__pagination slider-pagination"></div>
+        </div>
+
+        <div class="slider-product-thumbs">
+            <div class="swiper-container slider-product-thumbs__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-product-thumbs__slide">
+                        <img src="./local/uploads/product.slider.thumbs.jpg" class="slider-product-thumbs__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product-thumbs__slide">
+                        <img src="./local/uploads/product.slider.thumbs.jpg" class="slider-product-thumbs__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product-thumbs__slide">
+                        <img src="./local/uploads/product.slider.thumbs.jpg" class="slider-product-thumbs__img" alt="">
+                    </div>
+                    <div class="swiper-slide slider-product-thumbs__slide">
+                        <img src="./local/uploads/product.slider.thumbs.jpg" class="slider-product-thumbs__img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="product-head__right">
+
+        <!-- Иконки товара -->
+        <div class="product-icons">
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="./local/img/sprite.product.svg#linux"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    900 РУБ. ЗА 10 ШТ.
+                </div>
+                <div class="product-icons__desc">
+                    60x25 мм,<br>
+                    пластиковые, с булавкой
+                </div>
+            </div>
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="./local/img/sprite.product.svg#bomb"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    СРОК ИЗГОТОВЛЕНИЯ
+                </div>
+                <div class="product-icons__desc">
+                    быстро
+                </div>
+            </div>
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="./local/img/sprite.product.svg#reddit"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    ЗАКАЗАТЬ ДИЗАЙН
+                </div>
+            </div>
+            <div class="product-icons__item">
+                <div class="product-icons__pict">
+                    <svg class="product-icons__icon">
+                        <use xlink:href="./local/img/sprite.product.svg#connect"></use>
+                    </svg>
+                </div>
+                <div class="product-icons__name">
+                    КОНСТРУКТОР МАКЕТОВ
+                </div>
+            </div>
+        </div>
+
+        <div class="product-head__text">
+            ПЕЧАТЬ И ИЗГОТОВЛЕНИЕ БЕЙДЖЕЙ НА ЗАКАЗ ЛЮБЫХ ФОРМ И РАЗМЕРОВ
+            ИСПОЛЬЗУЕМ ТОЛЬКО КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ (ПЛАСТИК ИЛИ МЕТАЛЛ)
+            СОБСТВЕННОЕ ОБОРУДОВАНИЕ<br>
+            В СЛУЧАЕ БРАКА, ВОЗВРАТ ДЕНЕГ В РАЗМЕРЕ 100%
+        </div>
+
+        <div class="product-head__more">
+            <a href="javascript::" class="product-head__more-link">
+                <span class="str-prev str-prev_black"></span>
+                <span class="product-head__more-prev">ЕЩЁ ПРОДУКЦИЯ</span>
+            </a>
+            <a href="javascript::" class="product-head__more-link">
+                <span class="product-head__more-next">ЕЩЁ ПРОДУКЦИЯ</span>
+                <span class="str-next str-next_black"></span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="product-calc-tabs">
+    <div class="container">
+        <div class="product-calc-tabs__block">
+            <a href="#tab1" class="product-calc-tabs__link product-calc-tabs__link_active">ПЕЧАТЬ</a>
+            <a href="#tab2" class="product-calc-tabs__link">ОБРАБОТКА</a>
+            <a href="#tab3" class="product-calc-tabs__link">ЦЕНА</a>
+        </div>
+    </div>
+</div>
+<div class="product-calc">
+    <div class="product-calc__part product-calc__part_orange product-calc__part_active" id="tab1">
+        <div class="product-calc__inner">
+            <div class="product-calc__title h3">ПЕЧАТЬ</div>
+            <div class="product-calc__items form-one">
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ФОРМАТ КАТАЛОГА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ФОРМАТ КАТАЛОГА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+				<div class="product-calc__item d-md-none">
+					<div class="form-one__line">
+						<a href="#tab2" class="product-calc__btn product-calc__btn--change-tab btn-one">Далее</a>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="product-calc__part product-calc__part_blue" id="tab2">
+        <div class="product-calc__inner">
+            <div class="product-calc__title h3">ОБРАБОТКА</div>
+            <div class="product-calc__items form-one">
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ФОРМАТ КАТАЛОГА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ФОРМАТ КАТАЛОГА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-calc__item">
+                    <div class="form-one__line">
+                        <label class="form-one__label">
+                            ТИП ПЕРЕПЛЁТА:
+                            <svg class="form-one__label-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </label>
+                        <select>
+                            <option>А4 (210х297 мм) книга</option>
+                            <option>А3 (210х297 мм) книга</option>
+                            <option>А2 (210х297 мм) книга</option>
+                            <option>А1 (210х297 мм) книга</option>
+                        </select>
+                    </div>
+                </div>
+				<div class="product-calc__item d-md-none">
+					<div class="form-one__line">
+						<a href="#tab3" class="product-calc__btn product-calc__btn--change-tab btn-one">Далее</a>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="product-calc__part product-calc__part_brown" id="tab3">
+        <div class="product-calc__inner">
+            <div class="h3">ДАТА: 26.05.2020</div>
+            <div class="product-calc__price">
+                <div>ЦЕНА:</div>
+                <div class="product-calc__price-value">5 607₽</div>
+            </div>
+            <div class="product-calc__btns">
+                <a href="javascript:;" class="product-calc__btn btn-one">
+                    РАССЧИТАТЬ ЗАКАЗ
+                </a>
+                <a href="javascript:;" class="product-calc__btn btn-one">
+                    ОФОРМИТЬ ЗАКАЗ
+                </a>
+            </div>
+            <div class="product-calc__info">
+                <div class="product-calc__info-head">КАК ВСЁ ПРОИСХОДИТ:</div>
+                Мы отправим вам подтверждение в течение 1 рабочего дня после отправки вашего заказа. Время производства начинается после того, как вы утвердите свой вариант.<br>
+                Выбор жесткого доказательства продлит продолжительность процесса проверки, поскольку для его доставки потребуется дополнительное время.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Блок ссылок -->
+<div class="link-block">
+    <a href="javascript:;" class="link-block__link">ТРЕБОВАНИЯ К МАКЕТАМ</a>
+    <a href="javascript:;" class="link-block__link">ЗАГРУЗИТЬ МАКЕТ</a>
+    <a href="javascript:;" class="link-block__link">ВЫБРАТЬ ШАБЛОН</a>
+    <a href="javascript:;" class="link-block__link link-block__link_active">ПУЛЬНУТЬ ТУДА СЮДА</a>
+    <a href="javascript:;" class="link-block__link link-block__link_disabled">ЧТО-ТО ПОШЛО НЕ ТАК</a>
+</div>
+
+<!-- Короткий текст -->
+<div class="product-text">
+    <div class="container">
+        <div class="product-text__block">
+            <div class="product-text__head">
+                ОПИСАНИЕ ПРОДУКТА
+            </div>
+            <div class="product-text__text" id="text-one">
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+                Составление, распечатка и распространение каталогов является важной составной частью рыночной деятельности (маркетинга). Скомпонованный в едином объеме перечень товаров или услуг доносит до потенциального потребителя расширенную информацию о производителе, помогает определиться с выбором.<br>
+            </div>
+            <div class="product-text__btn">
+                <a href="javascript:;" class="btn-link btn-link_black js-show-text-two" data-id="text-one">
+                    <span class="btn-link__text-show">ЧИТАТЬ БОЛЬШЕ</span>
+                    <span class="btn-link__text-hide">СВЕРНУТЬ</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="price-table">
+    <div class="container">
+        <div class="price-table__head">ЦЕНЫ НА ПЕЧАТЬ КАТАЛОГОВ (A4 (КНИГА), МЕЛОВАННАЯ 200 Г/М², МЕЛОВАННАЯ 130 Г/М², НА СКОБУ, 2 ДНЯ)</div>
+        <table>
+            <tr class="price-table__no-hover">
+                <th rowspan="2">
+                    КОЛ-ВО<br>
+                    СТРАНИЦ (ПОЛОС)<br>
+                    (БЕЗ УЧЁТА ОБЛОЖКИ)
+                </th>
+                <th colspan="10">
+                    СТОИМОСТЬ* ТИРАЖА КАТАЛОГОВ, РУБ.
+                </th>
+            </tr>
+            <tr>
+                <td>50 шт.</td>
+                <td>100 шт.</td>
+                <td>200 шт.</td>
+                <td>300 шт.</td>
+                <td>400 шт.</td>
+                <td>1000 шт.</td>
+                <td>2000 шт.</td>
+                <td>3000 шт.</td>
+                <td>4000 шт.</td>
+                <td>5000 шт.</td>
+            </tr>
+            <tr>
+                <td>8 стр.</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+                <td>5050₽</td>
+            </tr>
+            <tr>
+                <td>16 стр.</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+                <td>7050₽</td>
+            </tr>
+            <tr>
+                <td>20 стр.</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+                <td>8050₽</td>
+            </tr>
+            <tr>
+                <td>24 стр.</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+                <td>9050₽</td>
+            </tr>
+            <tr>
+                <td>28 стр.</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+                <td>10050₽</td>
+            </tr>
+            <tr>
+                <td>32 стр.</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+                <td>11050₽</td>
+            </tr>
+            <tr>
+                <td>36 стр.</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+                <td>12050₽</td>
+            </tr>
+            <tr>
+                <td>40 стр.</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+                <td>13050₽</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Cлайдер товара -->
+<div class="slider-faq">
+    <div class="container">
+        <div class="slider-faq__head">ЧАСТЫЕ ВОПРОСЫ</div>
+        <div class="slider-faq__slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider-faq__slide">
+                    <div class="slider-faq__num">01/</div>
+                    <a href="javascript::" class="slider-faq__name">ЕСЛИ ПИЗДЕЦ, ТО ЧТО Я ДОЛЖЕН ДЕЛАТЬ?</a>
+                    <div class="slider-faq__text">
+                        <p>Оптимальный (стандартный) вариант обложки - это "Мелованная 200 г/м²" (200 г/м² - это плотность в граммах на метр квадратный).</p>
+                        <p>Внутренним листам отлично подходит "Мелованная 130 г/м²". Если нужны более жёсткие листы, то нужно брать бОльшую плотность (её цена будет дороже).</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-faq__slide">
+                    <div class="slider-faq__num">02/</div>
+                    <a href="javascript::" class="slider-faq__name">ЧТО ДЕЛАТЬ ЕСЛИ ПИЗДЕЦ НЕ ПРЕКРАЩАЕТСЯ?</a>
+                    <div class="slider-faq__text">
+                        <p>Оптимальный (стандартный) вариант обложки - это "Мелованная 200 г/м²" (200 г/м² - это плотность в граммах на метр квадратный).</p>
+                        <p>Внутренним листам отлично подходит "Мелованная 130 г/м²". Если нужны более жёсткие листы, то нужно брать бОльшую плотность (её цена будет дороже).</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-faq__slide">
+                    <div class="slider-faq__num">03/</div>
+                    <a href="javascript::" class="slider-faq__name">ЕСЛИ ВООБЩЕ НИ ХУЯ НЕ ПОНЯТНО, ТО КАК С ЭТИМ ЖИТЬ?</a>
+                    <div class="slider-faq__text">
+                        <p>Оптимальный (стандартный) вариант обложки - это "Мелованная 200 г/м²" (200 г/м² - это плотность в граммах на метр квадратный).</p>
+                        <p>Внутренним листам отлично подходит "Мелованная 130 г/м²". Если нужны более жёсткие листы, то нужно брать бОльшую плотность (её цена будет дороже).</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-faq__slide">
+                    <div class="slider-faq__num">04/</div>
+                    <a href="javascript::" class="slider-faq__name">ЕСЛИ ПИЗДЕЦ, ТО ЧТО Я ДОЛЖЕН ДЕЛАТЬ?</a>
+                    <div class="slider-faq__text">
+                        <p>Оптимальный (стандартный) вариант обложки - это "Мелованная 200 г/м²" (200 г/м² - это плотность в граммах на метр квадратный).</p>
+                        <p>Внутренним листам отлично подходит "Мелованная 130 г/м²". Если нужны более жёсткие листы, то нужно брать бОльшую плотность (её цена будет дороже).</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-faq__slide">
+                    <div class="slider-faq__num">05/</div>
+                    <a href="javascript::" class="slider-faq__name">ЧТО ДЕЛАТЬ ЕСЛИ ПИЗДЕЦ НЕ ПРЕКРАЩАЕТСЯ?</a>
+                    <div class="slider-faq__text">
+                        <p>Оптимальный (стандартный) вариант обложки - это "Мелованная 200 г/м²" (200 г/м² - это плотность в граммах на метр квадратный).</p>
+                        <p>Внутренним листам отлично подходит "Мелованная 130 г/м²". Если нужны более жёсткие листы, то нужно брать бОльшую плотность (её цена будет дороже).</p>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-faq__slide">
+                    <div class="slider-faq__num">06/</div>
+                    <a href="javascript::" class="slider-faq__name">ЕСЛИ ВООБЩЕ НИ ХУЯ НЕ ПОНЯТНО, ТО КАК С ЭТИМ ЖИТЬ?</a>
+                    <div class="slider-faq__text">
+                        <p>Оптимальный (стандартный) вариант обложки - это "Мелованная 200 г/м²" (200 г/м² - это плотность в граммах на метр квадратный).</p>
+                        <p>Внутренним листам отлично подходит "Мелованная 130 г/м²". Если нужны более жёсткие листы, то нужно брать бОльшую плотность (её цена будет дороже).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-faq__str">
+            <a class="slider-faq__prev" href="javascript:;">
+                <span class="str-prev str-prev_black"></span>
+            </a>
+            <span class="slider-faq__count"></span>
+            <a class="slider-faq__next" href="javascript:;">
+                <span class="str-next str-next_black"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Блок видео -->
+<div class="video-block">
+    <div class="container">
+        <div class="video-block__block">
+            <div class="video-block__head h3">
+                ВИДЕО ПРОЦЕССА ПРОИЗВОДСТВА
+            </div>
+            <div class="video-block__desc">
+                Посмотрите на процесс производства в нашей типографии. Технология: цифровая печать.
+            </div>
+            <div class="video-block__inner">
+                <iframe class="video-block__video" src="https://www.youtube.com/embed/mdBGAXxh63Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Блок отзывов -->
+<div class="review-block">
+    <div class="container">
+        <div class="review-block__block">
+            <div class="review-block__head h3">
+                ОТЗЫВЫ И ОЦЕНКИ НАШИХ КЛИЕНТОВ
+            </div>
+            <div class="review-block__items">
+                <div class="review-block__left">
+
+                    <!-- Cлайдер отзывов -->
+                    <div class="review-slider2 swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="review-slider2__slide swiper-slide">
+                                <div class="review-slider2__item">
+                                    <div class="review-slider2__top">
+                                        <div class="review-slider2__name">
+                                            ЛИЗА ДИЗАЙНЕР:
+                                        </div>
+                                        <div class="star-line">
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                    </div>
+                                    <div class="review-slider2__date">
+                                        14 мая, 2020
+                                    </div>
+                                    <div class="review-slider2__text">
+                                        Все в срок, качественно и прекрасно, отличный сервис! Всем рекомендую!
+                                    </div>
+                                </div>
+                                <div class="review-slider2__item">
+                                    <div class="review-slider2__top">
+                                        <div class="review-slider2__name">
+                                            КОЛЯ МЕНЕДЖЕР:
+                                        </div>
+                                        <div class="star-line">
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                        </div>
+                                    </div>
+                                    <div class="review-slider2__date">
+                                        10 мая, 2020
+                                    </div>
+                                    <div class="review-slider2__text">
+                                        Удобство сайта, спектр услуг, конструктор, он-лайн поддержка.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-slider2__slide swiper-slide">
+                                <div class="review-slider2__item">
+                                    <div class="review-slider2__top">
+                                        <div class="review-slider2__name">
+                                            ЛИЗА ДИЗАЙНЕР:
+                                        </div>
+                                        <div class="star-line">
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                    </div>
+                                    <div class="review-slider2__date">
+                                        14 мая, 2020
+                                    </div>
+                                    <div class="review-slider2__text">
+                                        Все в срок, качественно и прекрасно, отличный сервис! Всем рекомендую!
+                                    </div>
+                                </div>
+                                <div class="review-slider2__item">
+                                    <div class="review-slider2__top">
+                                        <div class="review-slider2__name">
+                                            КОЛЯ МЕНЕДЖЕР:
+                                        </div>
+                                        <div class="star-line">
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                        </div>
+                                    </div>
+                                    <div class="review-slider2__date">
+                                        10 мая, 2020
+                                    </div>
+                                    <div class="review-slider2__text">
+                                        Удобство сайта, спектр услуг, конструктор, он-лайн поддержка.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-slider2__slide swiper-slide">
+                                <div class="review-slider2__item">
+                                    <div class="review-slider2__top">
+                                        <div class="review-slider2__name">
+                                            ЛИЗА ДИЗАЙНЕР:
+                                        </div>
+                                        <div class="star-line">
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                    </div>
+                                    <div class="review-slider2__date">
+                                        14 мая, 2020
+                                    </div>
+                                    <div class="review-slider2__text">
+                                        Все в срок, качественно и прекрасно, отличный сервис! Всем рекомендую!
+                                    </div>
+                                </div>
+                                <div class="review-slider2__item">
+                                    <div class="review-slider2__top">
+                                        <div class="review-slider2__name">
+                                            КОЛЯ МЕНЕДЖЕР:
+                                        </div>
+                                        <div class="star-line">
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                            <span class="star-line__item star-line__item_active"></span>
+                                        </div>
+                                    </div>
+                                    <div class="review-slider2__date">
+                                        10 мая, 2020
+                                    </div>
+                                    <div class="review-slider2__text">
+                                        Удобство сайта, спектр услуг, конструктор, он-лайн поддержка.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-slider2__pagination slider-pagination slider-pagination_black"></div>
+                    </div>
+
+                </div>
+                <div class="review-block__right">
+
+                    <!-- Форма отзыва -->
+                    <div class="review-form">
+                        <div class="review-form__title">
+                            ОСТАВИТЬ ОТЗЫВ
+                        </div>
+                        <form>
+                            <div class="form-two">
+                                <div class="form-two__part">
+                                    <input class="form-two__input" type="text" value="" placeholder="имя и должность:">
+                                </div>
+                                <div class="form-two__part">
+                                    <input class="form-two__input" type="email" value="" placeholder="email:">
+                                </div>
+                                <div class="form-two__line">
+                                    <div class="form-two__rating">
+                                        <div class="form-two__rating-title">твой рейтинг:</div>
+                                        <input type="hidden" name="rating" value="0" id="some_rating">
+                                        <div class="star-line star-line_active js-set-rating" data-input="some_rating" data-value="1">
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                        <div class="star-line star-line_active js-set-rating" data-input="some_rating" data-value="2">
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                        <div class="star-line star-line_active js-set-rating" data-input="some_rating" data-value="3">
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                        <div class="star-line star-line_active js-set-rating" data-input="some_rating" data-value="4">
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                        <div class="star-line star-line_active js-set-rating" data-input="some_rating" data-value="5">
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                            <span class="star-line__item"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-two__line">
+                                    <textarea class="form-two__textarea" placeholder="отзыв:"></textarea>
+                                </div>
+                                <div class="form-two__btn">
+                                    <button type="submit" class="btn-link btn-link_black btn-link_fix">ОТПРАВИТЬ</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

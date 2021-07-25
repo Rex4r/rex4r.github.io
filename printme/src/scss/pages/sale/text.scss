@@ -1,0 +1,61 @@
+.sale-text {
+
+    &__title {
+        margin: 0 0 95px;
+        text-align: center;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto 45px;
+    }
+    &__name {
+        margin: 0 0 15px;
+    }
+    &__date {
+        text-align: center;
+        color: var(--grey1);
+        position: relative;
+        margin: 0 0 55px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            height: 3px;
+            width: 70px;
+            background-color: var(--black);
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &__text {
+        color: var(--grey3);
+        padding: 0 35px 50px;
+        border-bottom: 1px solid var(--grey5);
+    }
+
+    @include media-breakpoint-between(sm, md)
+    {
+        &__title {
+            margin: 0 0 60px;
+        }
+        &__img {
+            margin: 0 auto 60px;
+        }
+        &__text {
+            padding: 0 0 40px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__title {
+            margin: 0 0 50px;
+        }
+        &__img {
+            margin: 0 auto 50px;
+        }
+        &__text {
+            padding: 0 0 40px;
+        }
+    }
+}

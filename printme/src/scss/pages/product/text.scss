@@ -1,0 +1,40 @@
+.product-text {
+    text-align: center;
+    margin: 0 0 100px;
+
+    &__head {
+        margin: 0 0 30px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    &__text {
+        letter-spacing: .05em;
+        line-height: 23px;
+        height: 345px;
+        overflow: hidden;
+
+        &_show {
+            height: auto;
+        }
+    }
+    &__btn {
+        margin: 20px 0 0;
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .product-text {
+
+        &__block {
+            padding: 0 0 50px;
+            border-bottom: 1px solid var(--grey5);
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .product-text {
+        margin: 0 0 55px;
+    }
+}

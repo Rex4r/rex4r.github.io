@@ -1,0 +1,91 @@
+// Основное
+@import "./main/fonts"; // Шрифты
+@import "./main/variables"; // Переменные
+@import "./main/grid"; // Сетка
+@import "./main/reboot"; // Сброс стилей
+
+// Общие элементы
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
+@import "./elem/swiper"; // Общие стили сайдера
+@import "./elem/slider.str"; // Стрелки слайдеров
+@import "./elem/slider.pagination"; // Пагинация слайдеров
+@import "./elem/btn"; // Кнопки
+@import "./elem/breadcrumbs"; // Хлебные крошки
+@import "./elem/form.one"; // Первая форма
+@import "./elem/form.two"; // Вторая форма
+@import "./elem/form.three"; // Третья форма
+@import "./elem/jquery.formstyler"; // Стилизация элементов
+@import "./elem/star"; // Звёздочки
+@import "./elem/search"; // Форма поиска
+@import "./elem/window.one"; // Окно
+@import "./elem/tabs"; // Вкладки
+@import "./elem/our.ig"; // Наш инстаграм
+@import "./elem/page.head"; // Заголовки страниц
+@import "./elem/like.btn"; // Лайк в статье
+
+// Шаблон
+@import "./template/header"; // Шапка сайта
+@import "./template/menu.top"; // Верхнее меню
+@import "./template/menu.main"; // Главное меню
+@import "./template/main"; // Рабочая область
+@import "./template/footer"; // Подвал сайта
+@import "./template/menu.bottom"; // Нижнее меню
+
+// Главная страница
+@import "./pages/index/slider.main"; // Сетка
+@import "./pages/index/product.list"; // Список товаров
+@import "./pages/index/benefits.list"; // Преимуществаwe.working
+@import "./pages/index/we.working"; // Как мы работаем
+@import "./pages/index/review.slider"; // Отзывы
+@import "./pages/index/pay.info"; // Способы оплаты
+@import "./pages/index/client.slider"; // Клиенты
+@import "./pages/index/news.slider.scss"; // Новости
+
+// Страница Услуги
+@import "./pages/service/text"; // Текст
+@import "./pages/service/product.list"; // Список товаров
+
+// Страница Товара
+@import "./pages/product/head"; // Шапка
+@import "./pages/product/slider"; // Слайдер
+@import "./pages/product/icons"; // Иконки
+@import "./pages/product/calc"; // Печать / Обработка
+@import "./pages/product/link"; // Печать / Обработка
+@import "./pages/product/text"; // Текстовый блок
+@import "./pages/product/table"; // Таблица цен
+@import "./pages/product/faq"; // Частые вопросы
+@import "./pages/product/video"; // Блок видео
+@import "./pages/product/review"; // Блок отзывов
+
+// Личный кабинет
+@import "./pages/personal/tabs"; // Вкладки
+@import "./pages/personal/icons"; // Иконки
+@import "./pages/personal/btns"; // Линия кнопок
+@import "./pages/personal/order"; // Таблица заказов
+@import "./pages/personal/requisites"; // Реквизиты
+@import "./pages/personal/form"; // Формы
+
+// Страница Портфолио
+@import "./pages/portfolio/list"; // Список
+@import "./pages/portfolio/inner"; // Фотки
+
+// Скидки
+@import "./pages/sale/text"; // Текст с картинкой
+
+// Вопрос ответ
+@import "./pages/faq/list"; // Список вопросов
+
+// Оплата
+@import "./pages/payment/block"; // Блоки
+@import "./pages/payment/info"; // Информация
+
+// О нас
+@import "./pages/about/info"; // Информация
+@import "./pages/about/step"; // Пункты
+@import "./pages/about/team"; // Команда
+@import "./pages/about/text"; // Текст
+
+// Публикации
+@import "./pages/information/article"; // Статья
+@import "./pages/information/comments.block"; // Список комментариев
+@import "./pages/information/comments.form"; // Форма

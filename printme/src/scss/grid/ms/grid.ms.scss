@@ -1,0 +1,43 @@
+@import "container";
+@import "col";
+@import "order";
+
+@each $breakpoint in map-keys($grid-breakpoints)
+{
+    @include media-breakpoint-up($breakpoint)
+    {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .d#{$infix}-flex { display: -ms-flexbox !important; }
+        .d#{$infix}-inline-flex { display: -ms-inline-flexbox !important; }
+
+        .flex#{$infix}-wrap         { -ms-flex-wrap: wrap !important; }
+        .flex#{$infix}-nowrap       { -ms-flex-wrap: nowrap !important; }
+
+        .justify-content#{$infix}-start   { -ms-flex-align: start !important; }
+        .justify-content#{$infix}-end     { -ms-flex-align: end !important; }
+        .justify-content#{$infix}-center  { -ms-flex-align: center !important; }
+        .justify-content#{$infix}-between { -ms-flex-align: justify !important; }
+        .justify-content#{$infix}-around  { -ms-flex-align: distribute !important; }
+
+        .align-items#{$infix}-start    { -ms-flex-align: start !important; }
+        .align-items#{$infix}-end      { -ms-flex-align: end !important; }
+        .align-items#{$infix}-center   { -ms-flex-align: center !important; }
+        .align-items#{$infix}-baseline { -ms-flex-align: baseline !important; }
+        .align-items#{$infix}-stretch  { -ms-flex-align: stretch !important; }
+
+        .align-content#{$infix}-start   { -ms-flex-line-pack: start !important; }
+        .align-content#{$infix}-end     { -ms-flex-line-pack: end !important; }
+        .align-content#{$infix}-center  { -ms-flex-line-pack: center !important; }
+        .align-content#{$infix}-between { -ms-flex-line-pack: justify !important; }
+        .align-content#{$infix}-around  { -ms-flex-line-pack: distribute !important; }
+        .align-content#{$infix}-stretch { -ms-flex-line-pack: stretch !important; }
+
+        .align-self#{$infix}-auto     { -ms-flex-item-align: auto !important; }
+        .align-self#{$infix}-start    { -ms-flex-item-align: start !important; }
+        .align-self#{$infix}-end      { -ms-flex-item-align: end !important; }
+        .align-self#{$infix}-center   { -ms-flex-item-align: center !important; }
+        .align-self#{$infix}-baseline { -ms-flex-item-align: baseline !important; }
+        .align-self#{$infix}-stretch  { -ms-flex-item-align: stretch !important; }
+    }
+}

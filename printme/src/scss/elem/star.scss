@@ -1,0 +1,26 @@
+.star-line {
+    display: flex;
+
+    &__item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(img/star.svg);
+        height: 12px;
+        width: 13px;
+        margin: 0 3px;
+
+        &_active {
+            background-image: url(img/star.active.svg);
+        }
+    }
+    &_active {
+        cursor: pointer;
+    }
+    &_set,
+    &_active:hover {
+
+        & .star-line__item {
+            background-image: url(img/star.active.svg);
+        }
+    }
+}

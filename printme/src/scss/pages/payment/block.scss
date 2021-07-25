@@ -1,0 +1,149 @@
+.payment-block {
+    margin: 0 0 70px;
+    text-align: center;
+
+    &__title {
+        margin: 0 0 90px;
+    }
+    &__items {
+        padding: 0 5px;
+        max-width: 1900px;
+        margin: 0 auto 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        width: calc(25% - 30px);
+        margin: 0 15px;
+        border: 2px solid var(--brown);
+        padding: 60px 15px 40px;
+    }
+    &__pict {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        margin: 0 0 25px;
+    }
+    &__icon {
+
+        &_a {
+            width: 77px;
+            height: 49px;
+        }
+        &_b {
+            width: 68px;
+            height: 53px;
+        }
+        &_c {
+            width: 68px;
+            height: 60px;
+        }
+        &_d {
+            width: 68px;
+            height: 53px;
+        }
+        &_e {
+            width: 75px;
+            height: 60px;
+        }
+        &_f {
+            width: 45px;
+            height: 60px;
+        }
+        &_g {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__name {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold;
+        margin: 0 0 45px;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            height: 3px;
+            width: 70px;
+            background-color: var(--brown);
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--grey6);
+    }
+    &__desc {
+        font-weight: 500;
+        color: var(--grey3);
+        letter-spacing: -.005em;
+        max-width: 1640px;
+        margin: auto;
+        text-transform: uppercase;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__block {
+            padding: 0;
+        }
+    }
+    @media (min-width: 1150px) and (max-width: 1440px)
+    {
+        &__name {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+    {
+        & {
+            margin: 0 0 45px;
+
+            &__title {
+                margin: 0 0 60px;
+            }
+            &__items {
+                padding: 0;
+                margin: 0 -20px 10px;
+            }
+            &__item {
+                width: calc(50% - 40px);
+                margin: 0 20px 40px;
+                padding: 50px 15px;
+            }
+            &__name {
+                font-size: 22px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 35px;
+
+            &__title {
+                margin: 0 0 30px;
+            }
+            &__items {
+                padding: 0;
+                margin: 0;
+            }
+            &__item {
+                width: 100%;
+                margin: 0 0 35px;
+                padding: 50px 15px;
+            }
+            &__name {
+                font-size: 22px;
+            }
+        }
+    }
+}

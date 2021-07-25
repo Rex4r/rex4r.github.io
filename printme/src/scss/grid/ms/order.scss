@@ -1,0 +1,97 @@
+.order-0 {
+    -ms-flex-order: 0;
+}
+
+.order-1 {
+    -ms-flex-order: 1;
+}
+
+.order-2 {
+    -ms-flex-order: 2;
+}
+
+.order-3 {
+    -ms-flex-order: 3;
+}
+
+.order-4 {
+    -ms-flex-order: 4;
+}
+
+.order-5 {
+    -ms-flex-order: 5;
+}
+
+.order-6 {
+    -ms-flex-order: 6;
+}
+
+.order-7 {
+    -ms-flex-order: 7;
+}
+
+.order-8 {
+    -ms-flex-order: 8;
+}
+
+.order-9 {
+    -ms-flex-order: 9;
+}
+
+.order-10 {
+    -ms-flex-order: 10;
+}
+
+.order-11 {
+    -ms-flex-order: 11;
+}
+
+.order-12 {
+    -ms-flex-order: 12;
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths
+{
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints)
+    {
+        .order-#{$breakpoint}-0 {
+            -ms-flex-order: 0;
+        }
+        .order-#{$breakpoint}-1 {
+            -ms-flex-order: 1;
+        }
+        .order-#{$breakpoint}-2 {
+            -ms-flex-order: 2;
+        }
+        .order-#{$breakpoint}-3 {
+            -ms-flex-order: 3;
+        }
+        .order-#{$breakpoint}-4 {
+            -ms-flex-order: 4;
+        }
+        .order-#{$breakpoint}-5 {
+            -ms-flex-order: 5;
+        }
+        .order-#{$breakpoint}-6 {
+            -ms-flex-order: 6;
+        }
+        .order-#{$breakpoint}-7 {
+            -ms-flex-order: 7;
+        }
+        .order-#{$breakpoint}-8 {
+            -ms-flex-order: 8;
+        }
+        .order-#{$breakpoint}-9 {
+            -ms-flex-order: 9;
+        }
+        .order-#{$breakpoint}-10 {
+            -ms-flex-order: 10;
+        }
+        .order-#{$breakpoint}-11 {
+            -ms-flex-order: 11;
+        }
+        .order-#{$breakpoint}-12 {
+            -ms-flex-order: 12;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+:root {
+    --black: #000;
+    --white: #FFF;
+    --blue: #34558b;
+    --orange: #F5B995;
+    --yellow: #F4DBB2;
+    --brown: #a48e81;
+    --brown-opacity: rgba(164, 142, 129, .5);
+
+    --grey-blue: #B4C7D6;
+    --light-blue: #6a8dc3;
+
+    --grey1: #222;
+    --grey2: #999;
+    --grey3: #666;
+    --grey4: #CCC;
+    --grey5: #EEE;
+    --grey6: #707070;
+    --grey7: #FAFAFA;
+}
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1150px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 754px,
+    lg: 960px,
+    xl: 1130px
+);
+
+$gutter: 30px;

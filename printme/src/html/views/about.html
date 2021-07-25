@@ -1,0 +1,328 @@
+<% var data = {
+    title: "About",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <span class="breadcrumbs__current">О КОМПАНИИ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ОНЛАЙН ТИПОГРАФИЯ PRINTME</h1>
+
+</div>
+
+<!-- Шапка страницы -->
+<div class="page-head">
+    <div class="page-head__inner">
+        <img class="page-head__img" src="./local/uploads/about.jpg" alt="">
+        <div class="page-head__block">
+            <div class="page-head__name">ЛУЧШАЯ</div>
+            <div class="page-head__desc">ОНЛАЙН ТИПОГРАФИЯ В ГОРОДЕ</div>
+        </div>
+    </div>
+</div>
+
+<div class="about-info">
+    <div class="container">
+        <div class="about-info__items">
+            <div class="about-info__item">
+                <div class="about-info__name">ЧАШЕК КОФЕ</div>
+                <div class="about-info__count">230</div>
+            </div>
+            <div class="about-info__sep"></div>
+            <div class="about-info__item">
+                <div class="about-info__name">ПРОЕКТОВ</div>
+                <div class="about-info__count">85</div>
+            </div>
+            <div class="about-info__sep d-none d-md-block"></div>
+            <div class="about-info__item">
+                <div class="about-info__name">НАГРАД</div>
+                <div class="about-info__count">12</div>
+            </div>
+            <div class="about-info__sep"></div>
+            <div class="about-info__item">
+                <div class="about-info__name">СЧАСТЛИВЫХ <br class="d-lg-none">КЛИЕНТОВ</div>
+                <div class="about-info__count">160</div>
+            </div>
+            <div class="about-info__sep d-none d-md-block"></div>
+            <div class="about-info__item">
+                <div class="about-info__name">ЗАКАЗОВ</div>
+                <div class="about-info__count">337</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-step">
+    <div class="container container-fluid-xl">
+        <div class="about-step__items">
+            <div class="about-step__item">
+                <div class="about-step__num">01/</div>
+                <div class="about-step__name">ИСТОРИЯ</div>
+                <div class="about-step__text">В настоящий момент является одним из ведущих участников рынка полиграфической продукции.</div>
+            </div>
+            <div class="about-step__item">
+                <div class="about-step__num">02/</div>
+                <div class="about-step__name">ОБЪЁМЫ</div>
+                <div class="about-step__text">Наша типография выпускает широкий выбор полиграфической продукции от производства сложной упаковки, многополосных каталогов , календарей , до небольших брошюр и буклетов А4 в два и более фальцев.</div>
+            </div>
+            <div class="about-step__item">
+                <div class="about-step__num">03/</div>
+                <div class="about-step__name">МИССИЯ</div>
+                <div class="about-step__text">Мы стремимся внести по-настоящему весомый вклад в развитие современного российского рынка полиграфических услуг, так как создаем только качественную продукцию и высочайший сервис для клиентов с любыми заказами и любыми бюджетами. Стремимся дать каждому клиенту максимальную выгоду от нашего сотрудничества.</div>
+            </div>
+            <div class="about-step__item about-step__item_last">
+                <div class="about-step__num">04/</div>
+                <div class="about-step__name">СТРЕМЛЕНИЕ</div>
+                <div class="about-step__text">Постоянно совершенствовать свой профессионализм для того, чтобы всегда оставаться гарантом качественного выполнения заказа любой сложности в условленный срок.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-team">
+    <div class="container container-fluid-xl">
+        <div class="about-team__title h2">НАША КОМАНДА</div>
+        <div class="about-team__slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="about-team__pict">
+                        <img src="./local/uploads/about.team.1.jpg" alt="" class="about-team__img">
+                    </div>
+                    <div class="about-team__name">НАТАЛЬЯ</div>
+                    <div class="about-team__dolg">Старший менеджер</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-team__pict">
+                        <img src="./local/uploads/about.team.2.jpg" alt="" class="about-team__img">
+                    </div>
+                    <div class="about-team__name">АЛЕКСАНДРА</div>
+                    <div class="about-team__dolg">SMM</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-team__pict">
+                        <img src="./local/uploads/about.team.1.jpg" alt="" class="about-team__img">
+                    </div>
+                    <div class="about-team__name">КАТЯ</div>
+                    <div class="about-team__dolg">Менеджер</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-team__pict">
+                        <img src="./local/uploads/about.team.2.jpg" alt="" class="about-team__img">
+                    </div>
+                    <div class="about-team__name">АЛЕКСАНДРА</div>
+                    <div class="about-team__dolg">Менеджер</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-team__pict">
+                        <img src="./local/uploads/about.team.1.jpg" alt="" class="about-team__img">
+                    </div>
+                    <div class="about-team__name">НАТАЛЬЯ</div>
+                    <div class="about-team__dolg">Старший менеджер</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-team__pict">
+                        <img src="./local/uploads/about.team.2.jpg" alt="" class="about-team__img">
+                    </div>
+                    <div class="about-team__name">АЛЕКСАНДРА</div>
+                    <div class="about-team__dolg">SMM</div>
+                </div>
+            </div>                
+        </div>
+        <div class="about-team__pagination slider-pagination slider-pagination_black"></div>
+    </div>
+</div>
+
+<div class="about-text">
+    <div class="container">
+        <div class="about-text__inner">
+            <div class="about-text__title h2">МЫ ОТКРЫТЫ ДЛЯ СОТРУДНИЧЕСТВА:</div>
+            <div class="about-text__text">
+                •  ПОЛНЫЙ СПЕКТР ПОЛИГРАФИЧЕСКИХ УСЛУГ И: ДИЗАЙНЕРСКИЕ, ПРЕДПЕЧАТНЫЕ, ПЕЧАТНЫЕ И ПОСЛЕПЕЧАТНЫЕ УСЛУГИ<br>
+                •  МЕСТОРАСПОЛОЖЕНИЕ ТИПОГРАФИИ В ЦЕНТРАЛЬНОЙ ЧАСТИ МОСКВЫ<br>
+                •  ИНДИВИДУАЛЬНЫЙ ПОДХОД К КАЖДОМУ КЛИЕНТУ<br>
+                •  ПЕРЕДОВОЙ ТЕХНОЛОГИЧЕСКИЙ УРОВЕНЬ<br>
+                •  СПЕЦИАЛИСТЫ ВЫСОЧАЙШЕЙ КВАЛИФИКАЦИИ<br>
+                •  ОБНОВЛЕННЫЙ ПАРК ОБОРУДОВАНИЯ ВЕДУЩИХ ЕВРОПЕЙСКИХ ПРОИЗВОДИТЕЛЕЙ<br>
+                •  СЛОЖНАЯ ПЕЧАТЬ CMYK+ПАНТОНЫ<br>
+                •  ПЕЧАТЬ МЕТАЛЛИЗИРОВАННЫМИ И ТРАФАРЕТНЫМИ КРАСКАМИ<br>
+                •  КОМБИНИРОВАНИЕ ОФСЕТНОЙ И ТРАФАРЕТНОЙ ПЕЧАТИ<br>
+                •  УНИКАЛЬНЫЙ УРОВЕНЬ СЕРВИСА<br>
+                •  СИСТЕМА БОНУСОВ И СКИДОК<br>
+                •  ДОСТАВКА ТИРАЖЕЙ ЗАКАЗЧИКУ
+                <div class="about-text__text-bold">НАШУ РАБОТУ ЦЕНЯТ ПРОФЕССИОНАЛЫ. НАШ ОПЫТ — КАЧЕСТВО ВАШЕЙ ПОЛИГРАФИЧЕСКОЙ ПРОДУКЦИИ!</div>
+                <div class="about-text__text-hidden" id="txt">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+                </div>
+            </div>
+            <div class="about-text__btn">
+                <a href="javascript:;" data-id="txt" class="btn-link btn-link_grey js-show-text">
+                    <span class="btn-link__text-show">ЧИТАТЬ БОЛЬШЕ</span>
+                    <span class="btn-link__text-hide">ЧИТАТЬ МЕНЬШЕ</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="we-working">
+    <div class="container">
+        <div class="swiper-container we-working__slider">
+            <div class="swiper-wrapper we-working__wrapper">
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/about.slider.1.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            ОБОРУДОВАНИЕ
+                        </div>
+                        <div class="we-working__text">
+                            Цифровая печать<br>
+                            Широкоформатная печать<br>
+                            Сувенирная печать
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/about.slider.2.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            ЭКО ПЕЧАТЬ
+                        </div>
+                        <div class="we-working__text">
+                            Типография PRINTME<br>
+                            развивается и живет мирно<br>
+                            с окружающей средой.
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/about.slider.3.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            CЕРТИФИКАЦИЯ
+                        </div>
+                        <div class="we-working__text">
+                            Типография PRINTME<br>
+                            является держателем<br>
+                            сертификата цепочки поставок<br>
+                            FSC® (License Code FSC-C141361)
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="we-working__pagination slider-pagination slider-pagination_black"></div>
+    </div>
+</div>
+
+<!-- Клиенты -->
+<div class="client-slider">
+    <div class="client-slider__title h2">наши клиенты</div>
+    <div class="client-slider__block">
+        <div class="swiper-container client-slider__slider">
+            <div class="swiper-wrapper client-slider__wrapper">
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client1.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client2.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client3.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client4.png" alt="">
+                </div>
+                <div class="swiper-slide client-slider__slide">
+                    <img src="./local/uploads/client5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="client-slider__pagination slider-pagination slider-pagination_black"></div>
+</div>
+
+<!-- Отзывы -->
+<div class="review-slider">
+    <div class="container">
+        <div class="review-slider__title h2">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</div>
+    </div>
+    <div class="review-slider__block">
+        <div class="container">
+            <div class="review-slider__inner">
+                <div class="swiper-container review-slider__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">ЕКАТЕРИНА</div>
+                            <div class="review-slider__desc">Менеджер по маркетингу</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">ИВАН</div>
+                            <div class="review-slider__desc">Дизайнер</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">ЛИЗА</div>
+                            <div class="review-slider__desc">Фотограф</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-slider__slide">
+                            <div class="review-slider__name">АРКАДИЙ</div>
+                            <div class="review-slider__desc">Арт директор</div>
+                            <div class="review-slider__text">
+                                Прекрасная типография PRINTME быстро надёжно
+                                и очень удобно оформить заказ онлайн
+                                и получить его на следующий день.
+                                Браво, молодцы!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!--      <a class="review-slider__prev" href="javascript:;">
+            <span class="str-prev str-prev_black"></span>
+        </a>
+        <a class="review-slider__next" href="javascript:;">
+            <span class="str-next str-next_black"></span>
+        </a>-->
+    </div>
+    <div class="container">
+        <div class="review-slider__pagination slider-pagination slider-pagination_black"></div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

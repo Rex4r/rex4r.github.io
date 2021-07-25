@@ -1,0 +1,23 @@
+.window-one {
+    display: none;
+    background-color: var(--brown);
+    padding: 0;
+
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px;
+    }
+    &__body {
+        padding: 0 20px 30px;
+    }
+    &__center {
+        text-align: center;
+        margin: 0 0 10px;
+    }
+    &__hide {
+        display: none;
+    }
+}

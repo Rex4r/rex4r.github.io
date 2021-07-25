@@ -1,0 +1,52 @@
+.comments-form {
+    max-width: 870px;
+    margin: 0 auto 150px;
+    padding: 65px 0 0;
+
+    &__title {
+        text-align: left;
+        margin: 0 0 40px;
+    }
+    &__line {
+        margin: 0 0 30px;
+    }
+    &__input,
+    &__textarea {
+        width: 100%;
+        padding: 15px 20px;
+        color: var(--grey3);
+
+        &:hover,
+        &:focus {
+            border-color: var(--blue) !important;
+            color: var(--blue);
+        }
+    }
+    &__input {
+        border: none;
+        border-bottom: 1px solid var(--grey4);
+    }
+    &__textarea {
+        border: 1px solid var(--grey4);
+        height: 110px;
+        resize: none;
+    }
+
+    @include media-breakpoint-only(md)
+    {
+        & {
+            margin: 0 auto 75px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 50px;
+            padding: 50px 0 0;
+
+            &__title {
+                margin: 0 0 15px;
+            }
+        }
+    }
+}

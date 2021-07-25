@@ -1,0 +1,17 @@
+.service-text {
+    letter-spacing: .05em;
+    margin: 0 0 70px;
+
+    &__btn {
+        display: none;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        &__btn {
+            margin: 25px 0 0;
+            display: block;
+            text-align: center;
+        }
+    }
+}

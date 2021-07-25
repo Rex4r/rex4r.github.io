@@ -1,0 +1,413 @@
+<% var data = {
+    title: "Information",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <a href="javascript:;" class="breadcrumbs__link">ИНФОРМАЦИЯ</a> / 
+        <span class="breadcrumbs__current">ПУБЛИКАЦИИ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ОКОЛО 200 ТЫСЯЧ ОТТИСКОВ В МЕСЯЦ</h1>
+
+</div>
+
+<div class="information-article">
+    <div class="container container-fluid-xl">
+        <div class="information-article__inner">
+            <img src="./local/uploads/information.jpg" alt="" class="information-article__img-big">
+            <div class="information-article__block">
+                <div class="information-article__title h3">ОКОЛО 200 ТЫСЯЧ ОТТИСКОВ В МЕСЯЦ ПЕЧАТАЮТ НА ЦИФРОВОЙ МАШИНЕ LINOPRINT CV В «ПОЛИГРАФ МЕДИА ГРУПП»</div>
+                <div class="information-article__date">16 Июня 2018, 2 Комментария</div>
+                <div class="information-article__text">
+                    За 3 месяца, прошедшие с момента запуска новой машины Linoprint CV, на ней отпечатано около 600 тыс. оттисков
+                    Машина Linoprint CV обеспечивает эффективный производственный процесс, который обеспечит типографии выход на рынок печати персонализированной и малотиражной упаковки
+                    Высококачественная печать на картоне
+                    Компании «Гейдельберг-СНГ» и «Полиграф Медиа Групп» (г. Москва) летом текущего года во время выставки Printech заключили контракт на поставку первой в России 6-цветной цифровой печатной машины Linoprint CV (Ricoh Pro C7100X). В конце июня 2015 г. состоялись установка и запуск машины в Московской типографии «Полиграф Медиа Групп».
+                    За прошедшие 3 месяца на новом оборудовании отпечатано…
+                </div>
+            </div>
+            <div class="information-article__picts">
+                <div class="information-article__picts-left">
+                    <img src="./local/uploads/information.article.1.jpg" alt="" class="information-article__picts-img">
+                    <div class="information-article__picts-name">Замена тонера с пятой краской.-</div>
+                </div>
+                <div class="information-article__picts-right">
+                    <img src="./local/uploads/information.article.2.jpg" alt="" class="information-article__picts-img">
+                    <div class="information-article__picts-name">Картриджи с тонером с белой краской, лаком и красками CMYK.</div>
+                </div>
+            </div>
+            <div class="information-article__block">
+                Сергей Колчин, генеральный директор типографии, говорит, что ожидания от эксплуатации цифровой печатной машины Linoprint CV оправдались по всем параметрам: высокая скорость печати, бесперебойная вакуумная подача листа, идеальное совмещение лица и оборота оттиска.
+            </div>
+            <div class="information-article__action">
+                <div class="information-article__action-like">
+                    <a href="javascript:;" class="like-btn">
+                        <span class="like-btn__count">21</span>
+                        <svg class="like-btn__icon">
+                            <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="information-article__action-share">
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2" data-curtain data-color-scheme="whiteblack" data-services="vkontakte,facebook,telegram,twitter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comments-block">
+    <div class="container container-fluid-xl">
+        <div class="comments-block__title h3">2 КОММЕНТАРИЯ</div>
+        <div class="comments-block__items">
+            <div class="comments-block__item">
+                <div class="comments-block__pict">
+                    <img src="./local/uploads/comments.jpg" alt="" class="comments-block__img">
+                </div>
+                <div class="comments-block__block">
+                    <div class="comments-block__name">ЕКАТЕРИНА</div>
+                    <div class="comments-block__date">15 июня, 2020</div>
+                    <div class="comments-block__text">Очень классная машина! Мне нравится)</div>
+                    <a href="javascript:;" class="comments-block__link">Ответить</a>
+                </div>
+            </div>
+            <div class="comments-block__item">
+                <div class="comments-block__pict">
+                    <img src="./local/uploads/comments.jpg" alt="" class="comments-block__img">
+                </div>
+                <div class="comments-block__block">
+                    <div class="comments-block__name">ИВАН</div>
+                    <div class="comments-block__date">16 июня, 2020</div>
+                    <div class="comments-block__text">
+                        Качество и скорость печати завораживает!<br>
+                        Ничего подобного я раньше не видел!
+                   </div>
+                    <a href="javascript:;" class="comments-block__link">Ответить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comments-form">
+    <div class="container container-fluid-xl">
+        <div class="comments-form__title h3">ДОБАВИТЬ КОММЕНТАРИЙ</div>
+        <form>
+            <div class="row">
+                <div class="col-6">
+                    <div class="comments-form__line">
+                        <input class="comments-form__input" type="text" value="" placeholder="имя:">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="comments-form__line">
+                        <input class="comments-form__input" type="email" value="" placeholder="email:">
+                    </div>
+                </div>
+            </div>
+            <div class="comments-form__line">
+                <textarea class="comments-form__textarea" placeholder="сообщение:"></textarea>
+            </div>
+            <button type="submit" class="btn-link btn-link_black btn-link_fix">ОТПРАВИТЬ</button>
+        </form>
+    </div>
+</div>
+
+<!-- Новости -->
+<div class="news-slider">
+    <div class="container">
+        <div class="news-slider__title h2">БЛОГ АНОНСОВ НОВОСТЕЙ</div>
+        <div class="swiper-container news-slider__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news1.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__full">
+                            <img class="news-slider__img" src="./local/uploads/news2.jpg" alt="">
+                            <div class="news-slider__full-block">
+                                <div class="news-slider__full-name">
+                                    НОВЫЙ СТАНОК RICOH PRO C7200X
+                                </div>
+                                <div class="news-slider__full-date">
+                                    22 апреля 2020
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news3.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news4.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news5.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news6.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news1.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__full">
+                            <img class="news-slider__img" src="./local/uploads/news2.jpg" alt="">
+                            <div class="news-slider__full-block">
+                                <div class="news-slider__full-name">
+                                    НОВЫЙ СТАНОК RICOH PRO C7200X
+                                </div>
+                                <div class="news-slider__full-date">
+                                    22 апреля 2020
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news3.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news4.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news5.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news6.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news1.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__full">
+                            <img class="news-slider__img" src="./local/uploads/news2.jpg" alt="">
+                            <div class="news-slider__full-block">
+                                <div class="news-slider__full-name">
+                                    НОВЫЙ СТАНОК RICOH PRO C7200X
+                                </div>
+                                <div class="news-slider__full-date">
+                                    22 апреля 2020
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news3.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news4.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК RICOH PRO C7200X
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news-slider__slide">
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news5.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                    <div class="news-slider__item">
+                        <a href="javascript:;" class="news-slider__pict">
+                            <img class="news-slider__img" src="./local/uploads/news6.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="news-slider__name">
+                            НОВЫЙ СТАНОК
+                        </a>
+                        <div class="news-slider__date">
+                            22 апреля 2020
+                        </div>
+                        <div class="news-slider__text">
+                            Пятицветное устройство, разработано и спроектировано для решения полиграфических задач. Наличие пятой печатающей станции позволяет расширить портфолио предлагаемых печатных услуг благодаря возможности печати за один проход любых
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-slider__info">
+            <a class="news-slider__prev" href="javascript:;">
+                <span class="str-prev str-prev_black"></span>
+            </a>
+            <div class="news-slider__count"></div>
+            <a class="news-slider__next" href="javascript:;">
+                <span class="str-next str-next_black"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

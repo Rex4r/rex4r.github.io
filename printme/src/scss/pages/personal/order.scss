@@ -1,0 +1,203 @@
+.order-head {
+    padding: 0 0 25px 90px;
+    display: flex;
+    align-items: center;
+
+    &__item {
+        font-size: 16px;
+        font-weight: 500;
+        width: 20%;
+        position: relative;
+
+        &:first-child {
+            margin: 0 auto 0 0;
+            width: 40%;
+        }
+    }
+    &__delete {
+        position: absolute;
+        left: -40px;
+        top: -2px;
+        border-bottom: 1px solid var(--blue);
+        height: 24px;
+
+        &-icon {
+            height: 15px;
+            width: 15px;
+            fill: var(--blue);
+        }
+        &:hover {
+            border-color: var(--black);
+
+            & .order-head__delete-icon {
+                fill: var(--black);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg)
+{
+    .order-head {
+        display: none;
+    }
+}
+
+.order-table {
+    padding: 45px 0 45px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    background-color: var(--grey7);
+    border-top: 2px solid var(--grey5);
+    border-bottom: 2px solid var(--grey5);
+
+    &__item {
+        padding: 0 20px 0 0;
+        position: relative;
+    }
+    &__title {
+        font-weight: bold;
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        max-width: 20px;
+        max-height: 20px;
+        fill: var(--blue);
+        left: -30px;
+        top: 2px;
+    }
+    &__line {
+        width: 100%;
+        margin: 25px 0 0;
+        display: flex;
+        align-items: center;
+    }
+    &__btns {
+        display: flex;
+        width: 67%;
+    }
+    &__btn {
+        padding: 0;
+        width: 100%;
+        margin: 0 35px 0 0;
+        max-width: calc(100% / 3);
+    }
+    &__price {
+        font-weight: 500;
+        font-size: 24px;
+        display: flex;
+        align-items: baseline;
+        margin: 0 auto;
+
+        &-value {
+            font-weight: bold;
+            font-size: 35px;
+            margin: 0 0 0 5px;
+        }
+    }
+    &__delete {
+        position: absolute;
+        left: -40px;
+        bottom: 0;
+        border-bottom: 1px solid var(--grey2);
+        height: 24px;
+
+        &-icon {
+            height: 15px;
+            width: 15px;
+            fill: var(--grey2);
+        }
+        &:hover {
+            border-color: var(--black);
+
+            & .order-table__delete-icon {
+                fill: var(--black);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl)
+{
+    .order-table {
+
+        &__item {
+            width: 20%;
+
+            &:first-child {
+                margin: 0 auto 0 0;
+                width: 40%;
+            }
+        }
+    }
+}
+@include media-breakpoint-between(md, lg)
+{
+    .order-table {
+        padding: 75px 20px 15px;
+
+        &__item {
+            padding: 0 10px 20px 0;
+            width: calc(50% - 30px);
+            margin: 0 0 0 30px;
+        }
+        &__line {
+            margin: 0;
+            flex-direction: column;
+        }
+        &__btns {
+            width: 100%;
+            order: 2;
+            flex-direction: column;
+        }
+        &__btn {
+            margin: 0 auto 30px;
+            max-width: 370px;
+        }
+        &__price {
+            order: 1;
+            margin: -10px auto 10px;
+        }
+        &__delete {
+            top: -40px;
+            bottom: auto;
+            left: -30px;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .order-table {
+        padding: 70px 20px 15px;
+
+        &__item {
+            padding: 0 0 20px;
+            width: 100%;
+            margin: 0 0 0 30px;
+        }
+        &__line {
+            margin: 0;
+            flex-direction: column;
+        }
+        &__btns {
+            width: 100%;
+            order: 2;
+            flex-direction: column;
+        }
+        &__btn {
+            margin: 0 auto 20px;
+            max-width: 370px;
+        }
+        &__price {
+            order: 1;
+            margin: -10px auto 10px;
+        }
+        &__delete {
+            top: -40px;
+            bottom: auto;
+            left: -30px;
+        }
+    }
+}

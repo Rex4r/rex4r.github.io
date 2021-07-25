@@ -1,0 +1,82 @@
+.about-step {
+    margin: 0 0 90px;
+
+    &__items {
+        border-top: 1px solid var(--grey5);
+        border-bottom: 1px solid var(--grey5);
+        padding: 70px 20px 130px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__num {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: bold;
+        color: var(--grey2);
+    }
+    &__name {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: bold;
+        color: var(--grey1);
+        margin: 0 0 40px;
+    }
+    &__text {
+        font-size: 13px;
+        letter-spacing: .025em;
+    }
+
+    @include media-breakpoint-only(xl)
+    {
+        &__item {
+            width: calc(25% - 60px);
+        }
+    }
+    @media (min-width: 1150px) and (max-width: 1400px)
+    {
+        &__name {
+            font-size: 24px;
+        }
+    }
+    @include media-breakpoint-between(sm, lg)
+    {
+        & {
+            margin: 0 0 60px;
+
+            &__items {
+                padding: 70px 0 0;
+            }
+            &__item {
+                width: calc(50% - 30px);
+                margin: 0 0 85px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__num {
+            font-size: 29px;
+            line-height: 34px;
+        }
+        &__name {
+            font-size: 29px;
+            line-height: 34px;
+            margin: 0 0 30px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 0 0 50px;
+
+            &__items {
+                padding: 50px 0 0;
+            }
+            &__item {
+                width: 100%;
+                margin: 0 0 45px;
+            }
+        }
+    }
+}

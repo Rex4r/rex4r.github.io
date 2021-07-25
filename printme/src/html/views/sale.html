@@ -1,0 +1,126 @@
+<% var data = {
+    title: "Sale",
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <span class="breadcrumbs__current">АКЦИИ И СКИДКИ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ЛУЧШИЕ СКИДКИ НА ПОЛИГРАФИЮ В МОСКВЕ</h1>
+
+</div>
+
+<!-- Шапка страницы -->
+<div class="page-head">
+    <div class="page-head__inner">
+        <img class="page-head__img" src="./local/uploads/sale.jpg" alt="">
+        <div class="page-head__block">
+            <div class="page-head__name">ЛУЧШИЕ</div>
+            <div class="page-head__desc">СКИДКИ В ГОРОДЕ</div>
+        </div>
+    </div>
+</div>
+
+<!-- Как мы работаем -->
+<div class="we-working we-working_short">
+    <div class="container">
+        <div class="we-working__title h2">ВСЕ АКЦИИ</div>
+        <div class="swiper-container we-working__slider">
+            <div class="swiper-wrapper we-working__wrapper">
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/sale.action.1.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            ВИЗИТКИ<br>
+                            ЗА ПОЛЦЕНЫ
+                        </div>
+                        <div class="we-working__text">
+                            Направьте заявку дизайнеру<br>
+                            Через 24 часа ваш макет готов<br>
+                            Согласуйте макет
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/sale.action.2.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            СКИДКА 15%<br>
+                            НА ПАКЕТЫ
+                        </div>
+                        <div class="we-working__text">
+                            Направьте заявку дизайнеру<br>
+                            Через 24 часа ваш макет готов<br>
+                            Согласуйте макет
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide we-working__item">
+                    <img class="we-working__img" src="./local/uploads/sale.action.3.jpg" alt="">
+                    <div class="we-working__block">
+                        <div class="we-working__name">
+                            ДОСТАВКА<br>
+                            В ПОДАРОК
+                        </div>
+                        <div class="we-working__text">
+                            Направьте заявку дизайнеру<br>
+                            Через 24 часа ваш макет готов<br>
+                            Согласуйте макет
+                        </div>
+                        <div class="we-working__btn">
+                            <a href="javascript:;" class="btn-link btn-link_short">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="we-working__pagination slider-pagination slider-pagination_black"></div>
+        <div class="we-working__bottom">
+            <a href="javascript:;" class="btn-link btn-link_black js-show-product">
+                ВСЕ ПОСМОТРЕТЬ
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="sale-text">
+    <div class="container">
+        <div class="sale-text__title h2">СКИДКА 15% НА БУМАЖНЫЕ ПАКЕТЫ</div>
+    </div>
+    <div class="container container-fluid-xl">
+        <img src="./local/uploads/sale.text.jpg" alt="" class="sale-text__img d-none d-sm-block">
+        <img src="./local/uploads/sale.text.mobile.jpg" alt="" class="sale-text__img d-sm-none">
+    </div>
+    <div class="container">
+        <div class="sale-text__name h3">
+            ОКОЛО 200 ТЫСЯЧ ОТТИСКОВ В МЕСЯЦ ПЕЧАТАЮТ НА ЦИФРОВОЙ МАШИНЕ LINOPRINT CV В «ПОЛИГРАФ МЕДИА ГРУПП»
+        </div>
+        <div class="sale-text__date">16 Июня 2018, 2 Комментария</div>
+        <div class="sale-text__text">
+            За 3 месяца, прошедшие с момента запуска новой машины Linoprint CV, на ней отпечатано около 600 тыс. оттисков<br>
+            Машина Linoprint CV обеспечивает эффективный производственный процесс, который обеспечит типографии выход на рынок печати персонализированной и малотиражной упаковки<br>
+            Высококачественная печать на картоне<br>
+            Компании «Гейдельберг-СНГ» и «Полиграф Медиа Групп» (г. Москва) летом текущего года во время выставки Printech заключили контракт на поставку первой в России 6-цветной цифровой печатной машины Linoprint CV (Ricoh Pro C7100X). В конце июня 2015 г. состоялись установка и запуск машины в Московской типографии «Полиграф Медиа Групп».<br>
+            За прошедшие 3 месяца на новом оборудовании отпечатано…
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/icons.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

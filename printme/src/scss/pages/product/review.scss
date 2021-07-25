@@ -1,0 +1,122 @@
+.review-block {
+    margin: 0 0 100px;
+
+    &__block {
+        padding: 0 0 50px;
+        border-bottom: 1px solid var(--grey5);
+    }
+    &__head {
+        margin: 0 0 70px;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            height: 3px;
+            width: 70px;
+            background-color: var(--black);
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        max-width: 535px;
+    }
+    &__right {
+        max-width: 465px;
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .review-block__left {
+        max-width: 440px;
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .review-block {
+
+        &__left,
+        &__right {
+            max-width: 49%;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .review-block {
+        margin: 0 0 55px;
+
+        &__block {
+            padding: 0;
+            border: none;
+        }
+        &__head {
+
+            &:after {
+                bottom: -15px;
+                height: 2px;
+            }
+        }
+        &__items {
+            flex-direction: column;
+        }
+        &__left,
+        &__right {
+            max-width: 100%;
+        }
+        &__left {
+            margin: 0 0 50px;
+        }
+    }
+}
+
+.review-slider2 {
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__name {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__date {
+        font-weight: 300;
+        margin: 0 0 25px;
+    }
+    &__text {
+        font-size: 13px;
+        letter-spacing: .05em;
+        margin: 0 0 50px;
+    }
+    &__pagination {
+        margin: 40px 0 0;
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .review-slider2 {
+
+        &__pagination {
+            margin: 0;
+        }
+    }
+}
+
+.review-form {
+
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 0 20px;
+    }
+}
