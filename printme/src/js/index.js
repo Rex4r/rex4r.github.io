@@ -408,6 +408,12 @@ $(function() {
 
 		$('.product-calc__part_active').removeClass('product-calc__part_active');
 		$(tabId).addClass('product-calc__part_active');
+
+		let positionTop = $(".product-calc-tabs").offset().top - ($('.main-header').outerHeight() + 5);
+		$('html').animate({
+				scrollTop: positionTop
+			}, 200
+		);
 	}
 
     $('.product-calc-tabs__link').click(function(){

@@ -68,13 +68,14 @@
         margin: 0 0 30px;
         max-width: 100%;
 
-	    &--change-tab {
+	    &--change-tab:last-child {
 		    margin: 0;
 		}
     }
     &__info {
         text-align: center;
         letter-spacing: .05em;
+        margin-bottom: 30px;
 
         &-head {
             font-size: 14px;
