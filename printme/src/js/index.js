@@ -423,7 +423,17 @@ $(function() {
     });
 
 	$('.product-calc__btn--change-tab').on('click', function() {
-		changeTab($(this).attr('href'));
+		let currentTab = $(".product-calc-tabs__link_active");
+		let changeTo = $(this).data("changeTo");
+		let nextTab;
+
+		if (changeTo === "next") {
+			nextTab = currentTab.next();
+		} else if (changeTo === "prev") {
+			nextTab = currentTab.prev();
+		}
+
+		nextTab.trigger("click");
 	})
 
     // Наш инстаграм

@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 100px;
-    flex-wrap: wrap;
 
     &__part {
-        width: calc(100% / 3);
+        min-width: calc(100% / 3);
+	    flex: 50% 1 1;
         padding: 85px 30px 40px;
         position: relative;
 
@@ -93,9 +93,10 @@
 @include media-breakpoint-between(md, lg)
 {
     .product-calc {
+	  flex-wrap: wrap;
 
         &__part {
-            width: 100%;
+            flex: 100% 0 0;
             padding: 65px 0 35px;
         }
         &__inner {
@@ -142,7 +143,8 @@
                 color: var(--grey2);
                 padding: 0 0 5px;
                 border-bottom: 3px solid var(--grey2);
-                width: calc(100% / 3);
+                min-width: calc(100% / 3);
+			    flex: 50% 1 1;
                 text-align: center;
 
                 &_active {
