@@ -1,0 +1,31 @@
+.window-three {
+    background-color: var(--orange);
+    padding: 70px 35px;
+    max-width: 1100px;
+    width: 100%;
+    display: none;
+
+    &_blue {
+        background-color: var(--light-blue2);
+    }
+    &__info {
+        margin: 30px 0 60px;
+
+        &-line {
+            text-align: center;
+            font-size: 14px;
+            margin: -20px 0 0;
+        }
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            padding: 45px 20px;
+
+            &__info {
+                margin: 0 0 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,255 @@
+<% var data = {
+    title: "Favorites",
+    classBody: '',
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <a href="javascript:;" class="breadcrumbs__link">ЛИЧНЫЙ КАБИНЕТ</a> / 
+        <span class="breadcrumbs__current">ЕВГЕНИЙ</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>ЕВГЕНИЙ</h1>
+
+</div>
+
+<div class="personal-tabs">
+    <div class="personal-tabs-links">
+        <a href="javascript:;" class="personal-tabs-links__link">ПРОФИЛЬ</a>
+        <a href="javascript:;" class="personal-tabs-links__link">МОИ ЗАКАЗЫ</a>
+        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">Избранное</a>
+        <a href="javascript:;" class="personal-tabs-links__link">Корзина</a>
+    </div>
+    <div class="personal-tabs-block">
+        <div class="personal-tabs-block__inner">
+
+            <div class="favorites-page">
+
+                <div class="favorites-head">
+                    <div class="container">
+                        ВИЗИТКИ
+                    </div>
+                </div>
+
+                <div class="container">
+
+                     <div class="favorites-list">
+                        <div class="favorites-list__top">
+                            <div class="favorites-list__pict">
+                                <div class="favorites-list__pict-inner">
+                                    <img src="./local/uploads/order.product.jpg" alt="" class="favorites-list__img">
+                                    <div class="favorites-list__pict-shadow"></div>
+                                    <div class="favorites-list__pict-word">
+                                        СОЗДАЙТЕ МАКЕТ ИЛИ ЗАГРУЗИТЕ ОНЛАЙН
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="favorites-list__block">
+                                <div class="favorites-list__inner">
+                                    <div class="favorites-list__inner-left">
+                                        <svg class="favorites-list__icon-minus">
+                                            <use xlink:href="./local/img/sprite.basket.svg#minus"></use>
+                                        </svg>
+                                        <div class="favorites-list__name">ВИЗИТНАЯ КАРТОЧКА</div>
+                                        <div class="favorites-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                                        <div class="favorites-list__time">СРОК ИЗГОТОВЛЕНИЯ: 12.03.2021</div>
+                                    </div>
+                                    <div class="favorites-list__inner-right">
+                                        <div class="favorites-list-actions">
+                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                <svg class="favorites-list-actions__icon">
+                                                    <use xlink:href="./local/img/sprite.basket.svg#edit"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                <svg class="favorites-list-actions__icon">
+                                                    <use xlink:href="./local/img/sprite.basket.svg#delete"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favorites-list__middle">
+                                    <div class="favorites-list__links">
+                                        <a href="javascript:;" class="favorites-list__link">
+                                            <svg class="favorites-list__link-icon favorites-list__link-icon_cat favorites-list__link-icon_disabled">
+                                                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                            </svg>
+                                            ЗАГРУЗИТЕ МАКЕТ
+                                        </a>
+                                        <a href="javascript:;" class="favorites-list__link">
+                                            <svg class="favorites-list__link-icon favorites-list__link-icon_like">
+                                                <use xlink:href="./local/img/sprite.svg#icon-like-set"></use>
+                                            </svg>
+                                            НЕ НРАВИТСЯ
+                                        </a>
+                                    </div>
+                                    <div class="favorites-list__price">5 607¤</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorites-list__bottom">
+                            <div class="favorites-list__bottom-left">ВАШ ЗАКАЗ:</div>
+                            <div class="favorites-list__bottom-center">1 ЗАКАЗ (ВЕС 5,6 КГ)</div>
+                            <div class="favorites-list__bottom-right">
+                                <a href="javascript:;" class="btn-one">В КОРЗИНУ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="favorites-list-sep"></div>
+
+                    <div class="favorites-list">
+                        <div class="favorites-list__top">
+                            <div class="favorites-list__pict">
+                                <div class="favorites-list__pict-inner">
+                                    <img src="./local/uploads/order.product.jpg" alt="" class="favorites-list__img">
+                                </div>
+                            </div>
+                            <div class="favorites-list__block">
+                                <div class="favorites-list__inner">
+                                    <div class="favorites-list__inner-left">
+                                        <svg class="favorites-list__icon-check">
+                                            <use xlink:href="./local/img/sprite.basket.svg#check"></use>
+                                        </svg>
+                                        <div class="favorites-list__name">ВИЗИТНАЯ КАРТОЧКА</div>
+                                        <div class="favorites-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                                        <div class="favorites-list__time">СРОК ИЗГОТОВЛЕНИЯ: 12.03.2021</div>
+                                    </div>
+                                    <div class="favorites-list__inner-right">
+                                        <div class="favorites-list-actions">
+                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                <svg class="favorites-list-actions__icon">
+                                                    <use xlink:href="./local/img/sprite.basket.svg#edit"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                <svg class="favorites-list-actions__icon">
+                                                    <use xlink:href="./local/img/sprite.basket.svg#delete"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favorites-list__middle">
+                                    <div class="favorites-list__links">
+                                        <a href="javascript:;" class="favorites-list__link">
+                                            <svg class="favorites-list__link-icon favorites-list__link-icon_cat">
+                                                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                            </svg>
+                                            ЗАГРУЗИТЕ МАКЕТ
+                                        </a>
+                                        <a href="javascript:;" class="favorites-list__link">
+                                            <svg class="favorites-list__link-icon favorites-list__link-icon_like">
+                                                <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            НРАВИТСЯ
+                                        </a>
+                                    </div>
+                                    <div class="favorites-list__price">5 607¤</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorites-list__bottom">
+                            <div class="favorites-list__bottom-left">ВАШ ЗАКАЗ:</div>
+                            <div class="favorites-list__bottom-center">1 ЗАКАЗ (ВЕС 5,6 КГ)</div>
+                            <div class="favorites-list__bottom-right">
+                                <a href="javascript:;" class="btn-one">В КОРЗИНУ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="favorites-head">
+                    <div class="container">
+                        КАЛЕНДАРИ
+                    </div>
+                </div>
+
+                <div class="container">
+
+                    <div class="favorites-list">
+                        <div class="favorites-list__top">
+                            <div class="favorites-list__pict">
+                                <div class="favorites-list__pict-inner">
+                                    <img src="./local/uploads/order.product.jpg" alt="" class="favorites-list__img">
+                                    <div class="favorites-list__pict-shadow"></div>
+                                    <div class="favorites-list__pict-word">
+                                        СОЗДАЙТЕ МАКЕТ ИЛИ ЗАГРУЗИТЕ ОНЛАЙН
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="favorites-list__block">
+                                <div class="favorites-list__inner">
+                                    <div class="favorites-list__inner-left">
+                                        <svg class="favorites-list__icon-minus">
+                                            <use xlink:href="./local/img/sprite.basket.svg#minus"></use>
+                                        </svg>
+                                        <div class="favorites-list__name">КАЛЕНДАРЬ ПЕРЕКИДНОЙ</div>
+                                        <div class="favorites-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                                        <div class="favorites-list__time">СРОК ИЗГОТОВЛЕНИЯ: 12.03.2021</div>
+                                    </div>
+                                    <div class="favorites-list__inner-right">
+                                        <div class="favorites-list-actions">
+                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                <svg class="favorites-list-actions__icon">
+                                                    <use xlink:href="./local/img/sprite.basket.svg#edit"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                <svg class="favorites-list-actions__icon">
+                                                    <use xlink:href="./local/img/sprite.basket.svg#delete"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favorites-list__middle">
+                                    <div class="favorites-list__links">
+                                        <a href="javascript:;" class="favorites-list__link">
+                                            <svg class="favorites-list__link-icon favorites-list__link-icon_cat favorites-list__link-icon_disabled">
+                                                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                            </svg>
+                                            ЗАГРУЗИТЕ МАКЕТ
+                                        </a>
+                                        <a href="javascript:;" class="favorites-list__link">
+                                            <svg class="favorites-list__link-icon favorites-list__link-icon_like">
+                                                <use xlink:href="./local/img/sprite.svg#icon-like-set"></use>
+                                            </svg>
+                                            НЕ НРАВИТСЯ
+                                        </a>
+                                    </div>
+                                    <div class="favorites-list__price">5 607¤</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorites-list__bottom">
+                            <div class="favorites-list__bottom-left">ВАШ ЗАКАЗ:</div>
+                            <div class="favorites-list__bottom-center">1 ЗАКАЗ (ВЕС 5,6 КГ)</div>
+                            <div class="favorites-list__bottom-right">
+                                <a href="javascript:;" class="btn-one">В КОРЗИНУ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/icons.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

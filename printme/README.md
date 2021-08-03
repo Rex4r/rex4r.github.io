@@ -1,18 +1,20 @@
-https://brekot.github.io/tip-webpack/index.html<br>
-https://brekot.github.io/tip-webpack/addr.html<br>
-https://brekot.github.io/tip-webpack/addr_btn.html<br>
-https://brekot.github.io/tip-webpack/order.html<br>
-https://brekot.github.io/tip-webpack/product.html<br>
-https://brekot.github.io/tip-webpack/profile.html<br>
-https://brekot.github.io/tip-webpack/requisites.html<br>
-https://brekot.github.io/tip-webpack/service.html<br>
-https://brekot.github.io/tip-webpack/portfolio1.html<br>
-https://brekot.github.io/tip-webpack/portfolio2.html<br>
-https://brekot.github.io/tip-webpack/sale.html<br>
-https://brekot.github.io/tip-webpack/faq.html<br>
-https://brekot.github.io/tip-webpack/payment.html<br>
-https://brekot.github.io/tip-webpack/about.html<br>
-https://brekot.github.io/tip-webpack/information.html<br>
+https://rex4r.github.io/printme/docs/index.html <br>
+https://rex4r.github.io/printme/docs/order.html<br>
+https://rex4r.github.io/printme/docs/addr.html <br>
+https://rex4r.github.io/printme/docs/addr_btn.html <br>
+https://rex4r.github.io/printme/docs/order.html <br>
+https://rex4r.github.io/printme/docs/product.html <br>
+https://rex4r.github.io/printme/docs/product-2-tab.html <br>
+https://rex4r.github.io/printme/docs/profile.html <br>
+https://rex4r.github.io/printme/docs/requisites.html <br>
+https://rex4r.github.io/printme/docs/service.html <br>
+https://rex4r.github.io/printme/docs/portfolio1.html <br>
+https://rex4r.github.io/printme/docs/portfolio2.html <br>
+https://rex4r.github.io/printme/docs/sale.html <br>
+https://rex4r.github.io/printme/docs/faq.html <br>
+https://rex4r.github.io/printme/docs/payment.html <br>
+https://rex4r.github.io/printme/docs/about.html <br>
+https://rex4r.github.io/printme/docs/information.html <br>
 
 <hr>
 

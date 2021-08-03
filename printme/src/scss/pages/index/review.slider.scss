@@ -9,6 +9,9 @@
     }
     &__block {
         position: relative;
+        max-width: 1900px;
+        margin: auto;
+        overflow: hidden;
     }
     &__inner {
         max-width: 910px;

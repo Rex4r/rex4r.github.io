@@ -1,0 +1,44 @@
+.city-window {
+
+    &__title {
+        margin: 0 0 30px;
+    }
+    &__form {
+        width: 50%;
+    }
+    &__block {
+        height: 400px;
+        background-color: var(--white);
+        border: 1px solid var(--grey4);
+        overflow-y: auto;
+    }
+    &__links {
+        padding: 20px 30px;
+        column-count: 3;
+        column-gap: 30px;
+        font-size: 14px;
+    }
+    &__link {
+        display: block;
+        text-decoration: underline;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &__form {
+            width: 100%;
+        }
+        &__links {
+            padding: 10px 20px;
+            column-count: 2;
+            column-gap: 20px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__links {
+            padding: 10px 10px;
+            column-count: 1;
+        }
+    }
+}

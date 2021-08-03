@@ -11,6 +11,9 @@
     }
     &__block {
         margin: 0 0 100px;
+        max-width: 1900px;
+        margin: auto;
+        overflow: hidden;
     }
     &__wrapper {
         align-items: center;

@@ -1,0 +1,27 @@
+.preloader-set {
+    position: relative;
+
+    &:after {
+        content: "";
+        background-color: var(--blue-opacity);
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &:before {
+        content: "";
+        background: url(img/loading.gif) no-repeat center / contain;
+        position: fixed;
+        z-index: 101;
+        left: 50%;
+        top: 50%;
+        width: 946px;
+        height: 270px;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        max-height: 90%;
+    }
+}

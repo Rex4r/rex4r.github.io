@@ -5,27 +5,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
         <title>PrintMe - About</title>
-        <link href="./local/template_styles.css?9b11a9c3d0d2381f771e" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="./local/template_styles.css?72c6c9917735dfa179ab" rel="stylesheet" />
     </head>
 
-    <body>
+    <body class="">
         <div class="position-relative">
-            <!-- Форма поиска -->
-            <div class="search-form">
-                <div class="container">
-                    <form>
-                        <div class="search-form__inner">
-                            <input class="search-form__input" type="text" value="" placeholder="Поиск" />
-                            <button class="search-form__submit" type="submit">
-                                <svg class="search-form__submit-icon">
-                                    <use xlink:href="./local/img/sprite.svg#icon-search"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
             <!-- Шапка сайта -->
             <header class="main-header main-header_inner">
                 <div class="main-header__left">
@@ -39,21 +24,57 @@
                         <span class="main-header__logo-text">Онлайн типография</span>
                     </a>
                 </div>
+
+                <!-- Форма поиска -->
+                <div class="search-form">
+                    <form>
+                        <input class="search-form__input" type="text" value="" placeholder="Поиск" />
+                        <button class="search-form__submit" type="submit">
+                            <svg class="search-form__submit-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
                 <div class="main-header__right">
                     <div class="main-header__right-top">
                         <!-- Верхнее меню -->
                         <nav class="menu-top">
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ПОМОЩЬ</a>
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">КАЛЬКУЛЯТОР</a>
-                            <a class="menu-top__link" href="javascript:;" data-fancybox data-src="#auth">ЛИЧНЫЙ КАБИНЕТ</a>
-                            <a class="menu-top__link" href="javascript:;">КОРЗИНА</a>
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ТЕХПОДДЕРЖКА</a>
+                            <a class="menu-top__link" href="javascript:;">ТЕХПОДДЕРЖКА</a>
+                            <a class="menu-top__link" href="javascript:;">ПОМОЩЬ</a>
+                            <a class="menu-top__link" href="javascript:;">КАЛЬКУЛЯТОР</a>
                         </nav>
-                        <a href="javascript:;" class="main-header__search">
-                            <svg class="main-header__search-icon">
-                                <use xlink:href="./local/img/sprite.svg#icon-search"></use>
-                            </svg>
-                        </a>
+
+                        <div class="header-panel">
+                            <div class="header-panel__part">
+                                <a class="header-panel__link" href="javascript:;" data-fancybox data-src="#auth">
+                                    <svg class="header-panel__icon header-panel__icon_like">
+                                        <use xlink:href="./local/img/sprite.svg#bug"></use>
+                                    </svg>
+                                    Евгений
+                                </a>
+                                <div class="header-panel__sub">
+                                    <a href="javascript:;" class="header-panel__sub-link">ПРОФИЛЬ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">МОИ ЗАКАЗЫ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">ИЗБРАННОЕ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">КОРЗИНА</a>
+                                </div>
+                            </div>
+                            <a class="header-panel__link d-none d-sm-flex" href="javascript:;">
+                                <svg class="header-panel__icon header-panel__icon_like">
+                                    <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                                </svg>
+                                Избранное
+                            </a>
+                            <a class="header-panel__link" href="javascript:;">
+                                <svg class="header-panel__icon header-panel__icon_basket">
+                                    <use xlink:href="./local/img/sprite.svg#basket"></use>
+                                </svg>
+                                <div class="header-panel__basket-count">25</div>
+                                Корзина
+                            </a>
+                        </div>
                     </div>
                     <div class="main-header__right-bottom">
                         <a class="menu-main-btn" href="javascript:;">
@@ -660,6 +681,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?9b11a9c3d0d2381f771e"></script>
+        <script type="text/javascript" src="./local/js/script.js?72c6c9917735dfa179ab"></script>
     </body>
 </html>

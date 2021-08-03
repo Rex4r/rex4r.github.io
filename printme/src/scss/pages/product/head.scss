@@ -1,7 +1,7 @@
 .product-head {
     padding: 0 20px;
     max-width: 1900px;
-    margin: 0 auto 100px;
+    margin: 0 auto 50px;
     display: flex;
     align-items: flex-start;
 
@@ -10,12 +10,12 @@
         position: relative;
     }
     &__right {
-        padding: 45px 65px 0;
+        padding: 30px 65px 0;
     }
     &__text {
         font-weight: 700;
         line-height: 30px;
-        margin: 0 0 95px;
+        margin: 0 0 90px;
     }
     &__more {
         display: flex;

@@ -7,12 +7,12 @@
     display: flex;
     padding: 26px 42px 0;
     height: 114px;
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid var(--white-opacity);
 
     &_fixed,
     &_inner {
         position: fixed;
-        background-color: rgba(52,85,139,.7);
+        background-color: var(--blue-opacity);
     }
     &__info {
         color: var(--white);
@@ -55,20 +55,6 @@
         align-items: center;
         justify-content: flex-end;
         margin: 0 0 20px;
-    }
-    &__search {
-        display: flex;
-        align-items: center;
-    }
-    &__search-icon {
-        fill: var(--white);
-        height: 10px;
-        width: 10px;
-        transition: all .3s;
-
-        &:hover {
-            fill: var(--orange);
-        }
     }
 
     @include media-breakpoint-only(lg)

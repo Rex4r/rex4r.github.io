@@ -1,0 +1,17 @@
+.basket-btn {
+    max-width: 370px;
+    margin: 50px auto 0;
+
+    @media (min-width:1150px) AND (max-width:1500px)
+    {
+        & {
+            margin: 20px auto 0;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 20px auto 0;
+        }
+    }
+}

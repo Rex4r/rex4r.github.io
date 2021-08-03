@@ -57,24 +57,84 @@
     }
 }
 
-.btn-one {
+.btn-one,
+.btn-two,
+.btn-three,
+.btn-four {
     height: 56px;
     display: inline-block;
     line-height: 56px;
     padding: 0 100px;
-    color: var(--white);
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: var(--blue);
-    border: none;
     transition: all .3s;
     cursor: pointer;
     text-align: center;
     letter-spacing: .1rem;
 
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 0 60px;
+        }
+    }
+}
+
+.btn-one,
+.btn-three {
+    color: var(--white);
+    border: none;
+
     &:hover {
-        background-color: var(--light-blue);
         color: var(--white);
     }
+}
+
+.btn-one {
+    background-color: var(--blue);
+
+    &:hover {
+        background-color: var(--light-blue);
+    }
+}
+
+.btn-two {
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    background-color: transparent;
+
+    &:hover {
+        border-color: var(--light-blue);
+        color: var(--light-blue);
+    }
+}
+
+.btn-three {
+    background-color: var(--brown);
+
+    &:hover {
+        background-color: var(--brown-opacity);
+    }
+}
+
+.btn-four {
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    background-color: var(--light-blue2);
+
+    &:hover {
+        border-color: var(--light-blue);
+        color: var(--light-blue);
+        background-color: transparent;
+    }
+}
+
+.btn-full-width {
+    width: 100%;
+    padding: 0;
+}
+
+.btn-big-font {
+    font-size: 18px;
 }

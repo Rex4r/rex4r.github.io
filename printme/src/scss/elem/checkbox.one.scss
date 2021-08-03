@@ -1,0 +1,39 @@
+.checkbox-one {
+    position: relative;
+    margin: 0 0 40px;
+    cursor: pointer;
+
+    &_short {
+        margin: 0 0 20px;
+    }
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+    &__icon {
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        top: 6px;
+        fill: var(--blue);
+    }
+    &__label {
+        padding: 0 0 0 25px;
+        position: relative;
+        display: block;
+
+        &:after {
+            height: 14px;
+            width: 14px;
+            background-color: var(--blue);
+            border-radius: 50%;
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 6px;
+        }
+    }
+    &__input:checked ~ &__label:after {
+        display: none;
+    }
+}

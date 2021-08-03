@@ -1,0 +1,327 @@
+.basket-list {
+    margin: 0 -35px 0 0;
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 0 45px;
+    }
+    &__pict {
+
+        &-inner {
+            display: flex;
+            position: relative;
+        }
+        &-shadow {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: var(--black);
+            opacity: .7;
+            transition: .5s;
+        }
+        &:hover &-shadow {
+            opacity: .5;
+        }
+        &-word {
+            position: absolute;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--white);
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 190px;
+            z-index: 2;
+        }
+    }
+    &__block {
+        width: calc(100% - 270px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 24px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            padding: 0 0 0 45px;
+            position: relative;
+            width: calc(100% - 150px);
+        }
+    }
+    &__icon {
+
+        &-check {
+            width: 24px;
+            height: 18px;
+            fill: var(--blue);
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+        &-minus {
+            width: 21px;
+            height: 5px;
+            fill: var(--grey2);
+            position: absolute;
+            left: 0;
+            top: 9px;
+        }
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    &__info {
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    &__time {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--grey1);
+        fill: var(--blue1);
+        margin: 0 30px 0 0;
+
+        &-icon {
+            margin: 0 10px 0 0;
+
+            &_disabled {
+                fill: var(--grey2);
+            }
+            &_cat {
+                width: 27px;
+                height: 24px;
+            }
+            &_like {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__middle {
+        border-bottom: 1px solid var(--grey6);
+        display: flex;
+        align-items: flex-end;
+        line-height: 1;
+        padding: 0 0 20px;
+
+        &-left {
+            font-size: 24px;
+            font-weight: bold;
+            width: 270px;
+        }
+        &-center {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &-right {
+            font-size: 18px;
+            font-weight: bold;
+            width: 140px;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    &__bottom {
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1;
+        padding: 20px 0 0;
+
+        &-right {
+            width: 140px;
+        }
+    }
+
+    &-actions {
+        display: flex;
+        align-items: center;
+
+        &__link {
+            margin: 0 25px 0 0;
+            fill: var(--grey2);
+        }
+        &__link:hover {
+            fill: var(--blue);
+        }
+        &__icon {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &-sep {
+        margin: 50px -50px 60px;
+        height: 2px;
+        background-color: var(--grey7);
+    }
+
+    @media (min-width:1150px) AND (max-width:1500px)
+    {
+        & {
+            margin: 0;
+
+            &__top {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &__block {
+                width: 100%;
+                padding: 20px 0 0;
+            }
+
+            &__middle {
+
+                &-left {
+                    font-size: 18px;
+                    width: auto;
+                }
+                &-center {
+                    font-size: 14px;
+                    margin: 0 0 0 auto;
+                }
+            }
+
+            &-actions__link {
+                margin: 0 0 0 25px;
+            }
+
+            &-sep {
+                margin: 20px -20px;
+            }
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 0;
+
+            &__block {
+                width: calc(100% - 250px);
+            }
+            &__inner-left {
+                width: calc(100% - 120px);
+            }
+            &__name {
+                font-size: 18px;
+            }
+
+            &-actions__link {
+                margin: 0 0 0 15px;
+            }
+
+            &-sep {
+                margin: 20px -20px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__top {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__block {
+            width: 100%;
+            padding: 20px 0 0;
+        }
+        &__middle {
+
+            &-left {
+                font-size: 18px;
+                width: auto;
+            }
+            &-center {
+                font-size: 14px;
+                margin: 0 0 0 auto;
+            }
+            &-right {
+                width: 100px;
+            }
+        }
+        &__bottom {
+            font-size: 20px;
+
+            &-right {
+                width: 100px;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__top {
+            padding: 0 0 10px;
+        }
+        &__inner {
+            flex-direction: column;
+
+            &-left {
+                width: 100%;
+                padding: 0 40px 0 0;
+            }
+        }
+        &__icon {
+
+            &-check,
+            &-minus {
+                left: auto;
+                right: 0;
+            }
+        }
+        &__time {
+            margin: 0;
+        }
+
+        &-actions {
+            margin: 15px 0;
+
+            &__link {
+                margin: 0 15px 0 0;
+            }
+        }
+
+        &__links {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &__link {
+            margin: 0 0 15px;
+        }
+        &__middle {
+            align-items: flex-start;
+            flex-direction: column;
+
+            &-center {
+                margin: 10px 0;
+            }
+            &-right {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}

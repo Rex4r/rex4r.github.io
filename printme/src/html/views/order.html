@@ -1,5 +1,6 @@
 <% var data = {
     title: "Order",
+    classBody: '',
     classHead: 'main-header_inner',
     classMain: 'main-main_inner',
 }; %>
@@ -11,111 +12,187 @@
     <!-- Хлебные крошки -->
     <div class="breadcrumbs">
         <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
-        <span class="breadcrumbs__current">ЛИЧНЫЙ КАБИНЕТ</span>
+        <a href="javascript:;" class="breadcrumbs__link">ЛИЧНЫЙ КАБИНЕТ</a> / 
+        <span class="breadcrumbs__current">ЕВГЕНИЙ</span>
     </div>
 
     <!-- Заголовок страницы -->
-    <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+    <h1>ЕВГЕНИЙ</h1>
 
 </div>
 
 <div class="personal-tabs">
     <div class="personal-tabs-links">
-        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">МОИ ЗАКАЗЫ</a>
-        <a href="javascript:;" class="personal-tabs-links__link">РЕКВИЗИТЫ</a>
-        <a href="javascript:;" class="personal-tabs-links__link">АДРЕСА ДОСТАВКИ</a>
         <a href="javascript:;" class="personal-tabs-links__link">ПРОФИЛЬ</a>
+        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">МОИ ЗАКАЗЫ</a>
+        <a href="javascript:;" class="personal-tabs-links__link">Избранное</a>
+        <a href="javascript:;" class="personal-tabs-links__link">Корзина</a>
     </div>
     <div class="personal-tabs-block">
         <div class="personal-tabs-block__inner">
 
-            <div class="personal-btns">
-                <a href="javascript:;" class="personal-btns__btn">ЧТО ЕСТЬ</a>
-                <a href="javascript:;" class="personal-btns__btn">ЧТО БЫЛО</a>
-                <a href="javascript:;" class="personal-btns__btn personal-btns__btn_sm100">КАК ПОЛУЧИТЬ</a>
-                <a href="javascript:;" class="personal-btns__btn personal-btns__btn_sm100">ОТКАЖУСЬ ПОЖАЛУЙ</a>
+            <div class="order-head">
+                <div class="container">
+                    <div class="order-head__inner">
+                        <div class="order-head__left">
+                            <div class="order-head__name">ЗАКАЗ № Ф3256987</div>
+                            <div class="order-head__date">(11:25, 10.03.2021)</div>
+                            <div class="order-status">
+                                <svg class="order-status__icon order-status__icon_1">
+                                    <use xlink:href="./local/img/sprite.status.svg#status1"></use>
+                                </svg>
+                                НЕ ОПЛАЧЕН
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="order-repeat">
+                            ПОВТОРИТЬ
+                            <svg class="order-repeat__icon">
+                                <use xlink:href="./local/img/sprite.icon.svg#repeat"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container">
+
+                <div class="order-list">
+                    <div class="order-list__line">
+                        <div class="order-list__line-text">
+                            <svg class="order-list__line-icon">
+                                <use xlink:href="./local/img/sprite.icon.svg#alarm"></use>
+                            </svg>
+                            СРОКИ ИЗГОТОВЛЕНИЯ ИЗМЕНИЛИСЬ
+                        </div>
+                    </div>
+                    <div class="order-list__pict">
+                        <img src="./local/uploads/order.product.jpg" alt="" class="order-list__img">
+                    </div>
+                    <div class="order-list__block">
+                        <div class="order-list__top">
+                            <div class="order-list__top-left">
+                                <div class="order-list__name">ВИЗИТНАЯ КАРТОЧКА</div>
+                                <div class="order-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                            </div>
+                            <div>
+                                <div class="order-list__status">
+                                    СТАТУС ТОВАРА:
+                                    <span class="order-list__status-point order-list__status-point_active"></span>
+                                    <span class="order-list__status-point"></span>
+                                    <span class="order-list__status-point"></span>
+                                    <span class="order-list__status-point"></span>
+                                    <span class="order-list__status-point"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-list__bottom">
+                            <div class="order-list__links">
+                                <a href="javascript:;" class="order-list__link">
+                                    <svg class="order-list__link-icon order-list__link-icon_cat">
+                                        <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                    </svg>
+                                    МАКЕТ ЗАГРУЖЕН
+                                </a>
+                                <a href="javascript:;" class="order-list__link">
+                                    <svg class="order-list__link-icon order-list__link-icon_like">
+                                        <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                                    </svg>
+                                    НРАВИТСЯ
+                                </a>
+                            </div>
+                            <div>
+                                <div class="order-list__price">5 607¤</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-list">
+                    <div class="order-list__line">
+                        <div class="order-list__line-text">
+                            <svg class="order-list__line-icon">
+                                <use xlink:href="./local/img/sprite.icon.svg#alarm"></use>
+                            </svg>
+                            СРОКИ ИЗГОТОВЛЕНИЯ ИЗМЕНИЛИСЬ
+                        </div>
+                    </div>
+                    <div class="order-list__pict">
+                        <img src="./local/uploads/order.product.jpg" alt="" class="order-list__img">
+                    </div>
+                    <div class="order-list__block">
+                        <div class="order-list__top">
+                            <div class="order-list__top-left">
+                                <div class="order-list__name">ВИЗИТНАЯ КАРТОЧКА</div>
+                                <div class="order-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                            </div>
+                            <div>
+                                <div class="order-list__status">
+                                    СТАТУС ТОВАРА:
+                                    <span class="order-list__status-point order-list__status-point_active"></span>
+                                    <span class="order-list__status-point"></span>
+                                    <span class="order-list__status-point"></span>
+                                    <span class="order-list__status-point"></span>
+                                    <span class="order-list__status-point"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-list__bottom">
+                            <div class="order-list__links">
+                                <a href="javascript:;" class="order-list__link">
+                                    <svg class="order-list__link-icon order-list__link-icon_cat">
+                                        <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                    </svg>
+                                    МАКЕТ ЗАГРУЖЕН
+                                </a>
+                                <a href="javascript:;" class="order-list__link">
+                                    <svg class="order-list__link-icon order-list__link-icon_like">
+                                        <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                                    </svg>
+                                    НРАВИТСЯ
+                                </a>
+                            </div>
+                            <div>
+                                <div class="order-list__price">5 607¤</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-delivery">
+                    <div class="order-delivery__left">
+                        <div class="order-delivery__date">15</div>
+                        <div class="order-delivery__mounth">ДЕКАБРЯ</div>
+                    </div>
+                    <div class="order-delivery__center">
+                        <div class="order-delivery__name">DPD</div>
+                        <div class="order-delivery__info">(ДО ТЕРМИНАЛА)</div>
+                        <a href="javascript:;" class="order-delivery__link">ИЗМЕНИТЬ</a>
+                    </div>
+                    <div class="order-delivery__right">
+                        607¤
+                    </div>
+                </div>
+
+                <div class="order-bottom">
+                    <div class="order-bottom__left">
+                        <a href="javascript:;" class="btn-one">ОПЛАТИТЬ</a>
+                    </div>
+                    <div class="order-bottom__right">
+                        <div class="order-bottom__info">
+                            2 ЗАКАЗА (ВЕС 5,6 КГ)
+                        </div>
+                        <div class="order-bottom__price">
+                            12 014¤
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-        <div class="order-head">
-            <div class="order-head__item">
-                Заказы
-                <a href="javascript:;" class="order-head__delete">
-                    <svg class="order-head__delete-icon">
-                        <use xlink:href="./local/img/sprite.icon.svg#close"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="order-head__item">
-                Статус
-            </div>
-            <div class="order-head__item">
-                Способ получения
-            </div>
-            <div class="order-head__item">
-                Оплата
-            </div>
-        </div>
-        
     </div>
 </div>
 
-<div class="order-table">
-    <div class="order-table__item">
-        <div class="order-table__title">
-            <svg class="order-table__icon">
-                <use xlink:href="./local/img/sprite.icon.svg#over"></use>
-            </svg>
-            № 217152 от 12.06.2020, 20:31
-        </div>
-        Визитная карточка (90x50 мм), 1000 шт.<br>
-        300 г/м², 4+4
-        <a href="javascript:;" class="order-table__delete">
-            <svg class="order-table__delete-icon">
-                <use xlink:href="./local/img/sprite.icon.svg#close"></use>
-            </svg>
-        </a>
-    </div>
-    <div class="order-table__item">
-        <div class="order-table__title">
-            <svg class="order-table__icon">
-                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
-            </svg>
-            ОЖИДАНИЕ МАКЕТА
-        </div>
-        Загрузите 15.06.2020 до 16:00 
-    </div>
-    <div class="order-table__item">
-        <div class="order-table__title">
-            <svg class="order-table__icon">
-                <use xlink:href="./local/img/sprite.icon.svg#people"></use>
-            </svg>
-            САМОВЫВОЗ СО СКЛАДА
-        </div>
-        Москва, ул. Балтийская 11.<br>
-        16.06.2020 c 10:30 
-    </div>
-    <div class="order-table__item">
-        <div class="order-table__title">
-            <svg class="order-table__icon">
-                <use xlink:href="./local/img/sprite.icon.svg#anchor"></use>
-            </svg>
-            НАЛИЧНЫЙ РАСЧЁТ
-        </div>
-        Ожидает оплаты
-    </div>
-    <div class="order-table__line">
-        <div class="order-table__btns">
-            <a href="javascript:;" class="order-table__btn btn-one">ЗАГРУЗИТЬ МАКЕТЫ</a>
-            <a href="javascript:;" class="order-table__btn btn-one">ОТКАЗАТЬСЯ</a>
-            <a href="javascript:;" class="order-table__btn btn-one">ОПЛАТИТЬ</a>
-        </div>
-        <div class="order-table__price">
-            ЦЕНА: <div class="order-table__price-value">5 607₽</div>
-        </div>
-    </div>
-</div>
 
 <%= _.template(require('./../includes/icons.html'))(data) %>
 

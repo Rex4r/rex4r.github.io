@@ -1,0 +1,39 @@
+.send-friend {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    margin: 0 0 15px;
+    color: var(--grey1);
+
+    &__icon {
+        fill: var(--blue);
+        margin: 0 10px 0 0;
+        width: 24px;
+
+        &_check {
+            height: 18px;
+            display: none;
+        }
+        &_minus {
+            height: 5px;
+        }
+    }
+    &_active &__icon_minus {
+        display: none;
+    }
+    &_active &__icon_check {
+        display: block;
+    }
+
+    &-form {
+        display: none;
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            font-size: 14px;
+        }
+    }
+}

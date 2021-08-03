@@ -20,7 +20,7 @@ function generateHtmlPlugins(templateDir)
             filename: `${name}.html`,
             template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
             inject: 'body',
-            //favicon: 'src/favicon.ico',
+            favicon: 'src/favicon.ico',
             hash: true,
             minify: true
         });

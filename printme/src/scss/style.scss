@@ -9,23 +9,33 @@
 @import "./elem/swiper"; // Общие стили сайдера
 @import "./elem/slider.str"; // Стрелки слайдеров
 @import "./elem/slider.pagination"; // Пагинация слайдеров
+@import "./elem/preloader"; // Прелоадер
+@import "./elem/elem"; // Элементы
 @import "./elem/btn"; // Кнопки
 @import "./elem/breadcrumbs"; // Хлебные крошки
 @import "./elem/form.one"; // Первая форма
 @import "./elem/form.two"; // Вторая форма
 @import "./elem/form.three"; // Третья форма
 @import "./elem/jquery.formstyler"; // Стилизация элементов
+@import "./elem/checkbox.one"; // Чекбоксы #1
+@import "./elem/checkbox.two"; // Чекбоксы #2
+@import "./elem/file"; // Фвйлы
 @import "./elem/star"; // Звёздочки
-@import "./elem/search"; // Форма поиска
-@import "./elem/window.one"; // Окно
-@import "./elem/tabs"; // Вкладки
+@import "./elem/window.one"; // Окно #1
+@import "./elem/window.two"; // Окно #2
+@import "./elem/window.three"; // Окно #3
+@import "./elem/tabs.1"; // Вкладки #1
+@import "./elem/tabs.2"; // Вкладки #2
 @import "./elem/our.ig"; // Наш инстаграм
 @import "./elem/page.head"; // Заголовки страниц
 @import "./elem/like.btn"; // Лайк в статье
+@import "./elem/tool.block"; // Подсказки
 
 // Шаблон
 @import "./template/header"; // Шапка сайта
 @import "./template/menu.top"; // Верхнее меню
+@import "./template/search.form"; // Форма поиска
+@import "./template/header.panel"; // Верхняя панель
 @import "./template/menu.main"; // Главное меню
 @import "./template/main"; // Рабочая область
 @import "./template/footer"; // Подвал сайта
@@ -50,7 +60,6 @@
 @import "./pages/product/slider"; // Слайдер
 @import "./pages/product/icons"; // Иконки
 @import "./pages/product/calc"; // Печать / Обработка
-@import "./pages/product/link"; // Печать / Обработка
 @import "./pages/product/text"; // Текстовый блок
 @import "./pages/product/table"; // Таблица цен
 @import "./pages/product/faq"; // Частые вопросы
@@ -60,10 +69,8 @@
 // Личный кабинет
 @import "./pages/personal/tabs"; // Вкладки
 @import "./pages/personal/icons"; // Иконки
-@import "./pages/personal/btns"; // Линия кнопок
 @import "./pages/personal/order"; // Таблица заказов
-@import "./pages/personal/requisites"; // Реквизиты
-@import "./pages/personal/form"; // Формы
+@import "./pages/personal/favorites"; // Избранное
 
 // Страница Портфолио
 @import "./pages/portfolio/list"; // Список
@@ -89,3 +96,23 @@
 @import "./pages/information/article"; // Статья
 @import "./pages/information/comments.block"; // Список комментариев
 @import "./pages/information/comments.form"; // Форма
+
+// Поиск
+@import "./pages/search/page"; // Страница
+
+// Корзина
+@import "./pages/basket/main"; // Главный блок
+@import "./pages/basket/list"; // Список товаров
+@import "./pages/basket/delivery"; // Доставка
+@import "./pages/basket/send.friend"; // Отправить другу
+@import "./pages/basket/payer"; // Выбор плательщика
+@import "./pages/basket/check"; // НДС
+@import "./pages/basket/payments"; // Оплата
+@import "./pages/basket/result"; // Результат
+@import "./pages/basket/regulations"; // 
+@import "./pages/basket/btn"; // Финальные кнопки
+@import "./pages/basket/maket.window"; // Загрузить макет
+@import "./pages/basket/city.window"; // Выбрать город
+
+// Результат оформления заказа
+@import "./pages/result/page"; // Страница

@@ -1,0 +1,109 @@
+<% var data = {
+    title: "Basket",
+    classBody: '',
+    classHead: 'main-header_inner',
+    classMain: 'main-main_inner',
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / 
+        <a href="javascript:;" class="breadcrumbs__link">ЛИЧНЫЙ КАБИНЕТ</a> / 
+        <a href="javascript:;" class="breadcrumbs__link">ЕВГЕНИЙ</a> / 
+        <span class="breadcrumbs__current">Корзина</span>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <h1>Оформление заказа</h1>
+
+</div>
+
+<div class="container">
+
+    <div class="result-page">
+        <div class="result-page__top">
+
+            <a href="/" class="result-logo">
+                <img class="result-logo__img" src="./local/img/logo.blue.svg" alt="">
+                <span class="result-logo__text">Онлайн типография</span>
+            </a>
+            <div class="result-social">
+                <a href="javascript:;" class="result-social__link" target="_blank">
+                    <svg class="result-social__icon">
+                        <use xlink:href="./local/img/sprite.svg#icon-fb"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="result-social__link" target="_blank">
+                    <svg class="result-social__icon">
+                        <use xlink:href="./local/img/sprite.svg#icon-ig"></use>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+        <div class="result-page__middle">
+            <div class="result-page__middle-title h2">ВАШ ЗАКАЗ УСПЕШНО ОФОРМЛЕН</div>
+            <div class="result-page__middle-desc">БЛАНК ЗАКАЗА ОТПРАВЛЕН ВАМ НА ЭЛЕКТРОННУЮ ПОЧТУ</div>
+        </div>
+        <div class="result-page__bottom">
+
+            <div class="result-line">
+                <svg class="result-line__icon result-line__icon_shs">
+                    <use xlink:href="./local/img/sprite.basket.svg#shs"></use>
+                </svg>
+                <div class="result-line__info">
+                    <div class="result-line__name">ВИЗИТНАЯ КАРТОЧКА</div>
+                    <div class="result-line__text result-line__text_upper">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                    <div class="result-line__date">№ 217152 от 12.06.2020, 20:31</div>
+                </div>
+                <div class="result-line__price">
+                    5 607¤
+                </div>
+            </div>
+            <div class="result-line">
+                <svg class="result-line__icon result-line__icon_car">
+                    <use xlink:href="./local/img/sprite.basket.svg#method1"></use>
+                </svg>
+                <div class="result-line__info">
+                    <div class="result-line__name">ДОСТАВКА КУРЬЕРОМ</div>
+                    <div class="result-line__text">
+                        Москва, ул. Балтийская 11.<br>
+                        16.06.2020 c 10:30<br>
+                        Вес: 1,7 кг
+                    </div>
+                    <a href="javascript:;" class="result-line__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+
+            <div class="result-attention">
+                ВНИМАНИЕ!<br>
+                Загрузите макет до 16:00, иначе срок готовности будет увеличен!
+            </div>
+
+            <div class="result-end">
+                <a href="javascript:;" class="result-end__print">
+                    <svg class="result-end__print-icon">
+                        <use xlink:href="./local/img/sprite.basket.svg#print"></use>
+                    </svg>
+                </a>
+                <div class="result-end__result">
+                    ИТОГО: <span class="result-end__result-price">6 607¤</span>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+
+    <div class="result-page-btn">
+        <a href="javascript:;" class="btn-one">ФУХ! ГОТОВО</a>
+    </div>
+
+</div>
+
+<%= _.template(require('./../includes/icons.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

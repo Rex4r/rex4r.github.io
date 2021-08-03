@@ -2,6 +2,7 @@ import $ from "jquery";
 import Swiper from './swiper.js';
 import formstyler from './jquery.formstyler.js';
 import Masonry from 'masonry-layout';
+import filedrag from './filedrag';
 
 window.jQuery = $;
 window.$ = $;
@@ -20,7 +21,7 @@ $(function() {
             //"download",
             //"thumbs",
             "close"
-        ],
+        ]
     });
 
     // 
@@ -45,22 +46,6 @@ $(function() {
 		else $(".main-header").removeClass("main-header_fixed");
     });
 
-    // Форма поиска
-    $('.main-header__search').click(function(){
-
-        $('.search-form').addClass('search-form_active');
-    });
-
-	$(document).mouseup(function (e){
-
-        let div = $(".search-form");
-
-        if (!div.is(e.target) && div.has(e.target).length === 0)
-        {
-            div.removeClass('search-form_active');
-        }
-	});
-
     // Меню
     if ($(window).width() < 768)
     {
@@ -82,7 +67,7 @@ $(function() {
         });
     }
 
-    // Табы
+    // Табы #1
     $('.tabs-block-links__link').click(function(){
 
         var block = $(this).parents('.tabs-block');
@@ -96,6 +81,24 @@ $(function() {
         $(this).addClass('tabs-block-links__link_active');
 
         block.find('.tabs-block-block__inner').eq(num).addClass('tabs-block-block__inner_active');
+    });
+
+    // Табы #2
+    $('.tabs2-block-links__link').click(function(){
+
+        if ($(this).hasClass('tabs2-block-links__link_disabled')) return false;
+
+        var block = $(this).parents('.tabs2-block');
+
+        var num = block.find('.tabs2-block-links__link').index($(this));
+
+        block.find('.tabs2-block-links__link_active').removeClass('tabs2-block-links__link_active');
+
+        block.find('.tabs2-block-block__inner_active').removeClass('tabs2-block-block__inner_active');
+
+        $(this).addClass('tabs2-block-links__link_active');
+
+        block.find('.tabs2-block-block__inner').eq(num).addClass('tabs2-block-block__inner_active');
     });
 
     // Раскрытие текста
@@ -403,10 +406,10 @@ $(function() {
 
     // Табы на мобилке (product-calc)
 	function changeTab(tabId) {
-		$('.product-calc-tabs__link_active').removeClass('product-calc-tabs__link_active');
+        $('.product-calc-tabs__link_active').removeClass('product-calc-tabs__link_active');
 		$('.product-calc-tabs__link[href="' + tabId + '"]').addClass('product-calc-tabs__link_active');
 
-		$('.product-calc__part_active').removeClass('product-calc__part_active');
+        $('.product-calc__part_active').removeClass('product-calc__part_active');
 		$(tabId).addClass('product-calc__part_active');
 
 		let positionTop = $(".product-calc-tabs").offset().top - ($('.main-header').outerHeight() + 5);
@@ -487,11 +490,118 @@ $(function() {
             bulletActiveClass: 'slider-pagination__point_active',
         },
     });
+
+    // Показ кнопок на странице Product после расчета
+    $('body').on("click", ".js-show-basket", function() {
+
+        $('.product-select__price_active').removeClass('product-select__price_active');
+
+        $(this).addClass('product-select__price_active');
+
+        $('.product-calc__btn').addClass('d-none');
+
+        $('#btn-show-basket').removeClass('d-none');
+    });
+
+    $('body').on("click", ".js-show-order", function() {
+
+        $('.product-select__price_active').removeClass('product-select__price_active');
+
+        $(this).addClass('product-select__price_active');
+
+        $('.product-calc__btn').addClass('d-none');
+
+        $('#btn-show-order').removeClass('d-none');
+    });
+
+    // Оформление заказа (шаги, кнопка "Изменить")
+    $('.basket-main__action-link').on('click', function(){
+
+        $('.basket-main__block_active').removeClass('basket-main__block_active');
+
+        var elem = $(this).parents('.basket-main__block');
+
+        elem.addClass('basket-main__block_active');
+
+        $('html, body').animate({
+
+            scrollTop: elem.offset().top - 110
+
+        }, 500);
+    });
+
+    $('.js-basket-next').on('click', function(){
+
+        $('.basket-main__block_active').removeClass('basket-main__block_active');
+
+        var elem = $(this).parents('.basket-main__block').next('.basket-main__block');
+
+        elem.addClass('basket-main__block_active');
+
+        $('html, body').animate({
+
+            scrollTop: elem.offset().top - 110
+
+        }, 500);
+    });
+
+    // Оформление заказа (доставка, выбор способа доставки)
+    $('.delivery-method__link').click(function(){
+
+        $('.delivery-method__link_active').removeClass('delivery-method__link_active');
+
+        $(this).addClass('delivery-method__link_active');
+
+        $('.delivery-method-choice_active').removeClass('delivery-method-choice_active');
+
+        $('#' + $(this).data('id')).addClass('delivery-method-choice_active');
+    });
+
+    // Оформление заказа (доставка, выбор доставки)
+    $('.delivery-line').click(function(){
+
+        $('.delivery-line_active').removeClass('delivery-line_active');
+
+        $(this).addClass('delivery-line_active');
+
+        $('.delivery-block_active').removeClass('delivery-block_active');
+
+        $(this).next('.delivery-block').addClass('delivery-block_active');
+    });
+
+    // Оформление заказа (отправить другу)
+    $('.send-friend').click(function(){
+
+        $(this).toggleClass('send-friend_active');
+
+        $('.send-friend-form').slideToggle()
+    });
+
+    // Оформление заказа (юр лицо скрыть)
+    $('.js-payer-hide').click(function(){
+
+        $('.basket-payer-form').slideUp()
+    });
+
+    // Оформление заказа (юр лицо показать)
+    $('.js-payer-show').click(function(){
+
+        $('.basket-payer-form').slideDown()
+    });
+
+    $('.tool-block-activate').mouseenter(function() {
+
+        $($(this).find('.tool-block')).addClass('tool-block_active');
+
+    }).mouseleave(function() {
+
+        $($(this).find('.tool-block')).removeClass('tool-block_active');
+    });
 });
 
 $(window).bind('load', function() {
 
-    // Расположение бловков
+    // Расположение блоков
     if ($('.grid').length > 0 && $(window).width() > 575)
     {
         new Masonry('.grid', {
@@ -499,4 +609,6 @@ $(window).bind('load', function() {
             percentPosition: true
         });
     }
+
+    $('body').removeClass('preloader-set');
 });

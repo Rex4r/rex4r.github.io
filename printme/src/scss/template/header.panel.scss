@@ -1,0 +1,80 @@
+.header-panel {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+
+    &__part {
+        position: relative;
+        padding: 0 0 5px 0;
+        margin: 0 0 -5px;
+    }
+    &__link {
+	  	position: relative;
+        font-weight: 700;
+        fill: var(--white);
+        color: var(--white);
+        margin: 0 0 0 15px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            fill: var(--orange);
+            color: var(--orange);
+        }
+    }
+  	&__basket-count {
+		position: absolute;
+		bottom: -10px;
+		left: 11px;
+		width: 15px;
+		height: 15px;
+		font-size: 8px;
+		line-height: 15px;
+		text-align: center;
+		border-radius: 50%;
+		background: red;
+	}
+    &__icon {
+        margin: 0 10px 0 0;
+
+        &_bug {
+            width: 15px;
+            height: 15px;
+        }
+        &_like {
+            width: 17px;
+            height: 17px;
+        }
+        &_basket {
+            width: 19px;
+            height: 17px;
+        }
+    }
+    &__sub {
+        display: none;
+        position: absolute;
+        background-color: var(--blue-opacity);
+        z-index: 10;
+        padding: 15px 25px;
+        line-height: 36px;
+        bottom: 0;
+        transform: translate(-50%, 100%);
+        left: 50%;
+        margin: 0 0 0 5px;
+
+        &-link {
+            color: var(--white);
+            display: block;
+            white-space: nowrap;
+
+            &:hover {
+                color: var(--orange);
+            }
+        }
+    }
+    &__part:hover &__sub {
+        display: block;
+    }
+}

@@ -16,75 +16,60 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            text-transform: uppercase;
 
-            &_active {
-                text-decoration: line-through;
-                background-color: var(--brown-opacity);
+            &_active,
+            &_active:hover {
+                color: var(--white);
+                background-color: var(--blue-opacity);
             }
         }
     }
     &-block {
-        background-color: var(--brown-opacity);
+        background-color: var(--light-blue3);
+        border-top: 2px solid var(--blue);
 
         &__inner {
-            padding: 50px 60px;
+            padding: 50px 0;
         }
     }
-}
 
-@include media-breakpoint-only(xl)
-{
-    .personal-tabs {
+    @include media-breakpoint-only(xl)
+    {
+        &-links_link {
+            border-left: 1px solid var(--grey2);
 
-        &-links {
-
-            &__link {
-                border-left: 1px solid var(--grey2);
-
-                &:first-child {
-                    border: none;
-                }
+            &:first-child {
+                border: none;
             }
         }
     }
-}
-@include media-breakpoint-down(lg)
-{
-    .personal-tabs {
-        margin: 0 0 10px;
-
-        &-links {
-            border-top: 1px solid var(--grey4);
+    @include media-breakpoint-down(lg)
+    {
+        & {
             margin: 0 0 10px;
 
-            &__link {
-                border-bottom: 1px solid var(--grey4);
-                width: 50%;
+            &-links {
+                border-top: 1px solid var(--grey4);
+                margin: 0 0 10px;
 
-                &:nth-child(odd) {
-                    border-right: 1px solid var(--grey4);
+                &__link {
+                    border-bottom: 1px solid var(--grey4);
+                    width: 50%;
+
+                    &:nth-child(odd) {
+                        border-right: 1px solid var(--grey4);
+                    }
                 }
             }
         }
     }
-}
-@include media-breakpoint-down(sm)
-{
-    .personal-tabs {
-
-        &-links {
-
-            &__link {
-                font-size: 16px;
-                line-height: 1.4;
-                padding: 0 10px;
-            }
-        }
-        &-block {
-
-            &__inner {
-                padding: 40px 25px;
-            }
+    @include media-breakpoint-down(sm)
+    {
+        &-links__link {
+            font-size: 16px;
+            line-height: 1.4;
+            padding: 0 10px;
         }
     }
 }

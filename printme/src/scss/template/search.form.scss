@@ -1,0 +1,46 @@
+.search-form {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 230px;
+    top: 25px;
+
+    &__input {
+        border: 0;
+        border-bottom: 1px solid var(--white);
+        background-color: transparent;
+        color: var(--white);
+        font-size: 10px;
+        text-transform: uppercase;
+        padding: 2px 0;
+        width: 100%;
+
+        &::placeholder {
+            color: var(--white);
+        }
+    }
+    &__submit {
+        background: transparent;
+        padding: 0;
+        border: none;
+        fill: var(--white);
+        transition: all .3s;
+        position: absolute;
+        right: 0;
+
+        &:hover {
+            fill: var(--orange);
+        }
+        &-icon {
+            height: 10px;
+            width: 10px;
+        }
+    }
+
+    @media (max-width: 1500px)
+    {
+        & {
+            display: none;
+        }
+    }
+}

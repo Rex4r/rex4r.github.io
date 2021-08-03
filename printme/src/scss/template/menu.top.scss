@@ -2,23 +2,24 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 10px;
+    font-weight: 700;
 
     &__link {
         color: var(--white);
-        font-size: 10px;
-        font-weight: 700;
-        margin: 0 16px 0 0;
-        letter-spacing: .05em;
+        margin: 0 0 0 15px;
 
         &:hover {
             color: var(--orange);
         }
     }
 
-    @include media-breakpoint-down(sm)
+    @include media-breakpoint-down(md)
     {
-        &__link {
-            margin: 0 10px 0 0;
+        & {
+            display: none;
         }
     }
 }

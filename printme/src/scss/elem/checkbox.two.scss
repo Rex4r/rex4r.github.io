@@ -1,0 +1,36 @@
+.checkbox-two {
+    display: flex;
+    align-items: center;
+
+    &__label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &__block {
+        position: relative;
+        width: 57px;
+        height: 30px;
+        border: 2px solid var(--grey4);
+        border-radius: 15px;
+        margin: 0 5px;
+        background-color: var(--white);
+        cursor: pointer;
+    }
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+    &__elem {
+        position: absolute;
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        background-color: var(--blue);
+        left: 0;
+        top: 0;
+        transition: .3s;
+    }
+    &__input:checked + &__elem {
+        left: 27px;
+    }
+}

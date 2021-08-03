@@ -4,28 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-        <title>PrintMe - Addr</title>
-        <link href="./local/template_styles.css?9b11a9c3d0d2381f771e" rel="stylesheet" />
+        <title>PrintMe - Favorites</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="./local/template_styles.css?72c6c9917735dfa179ab" rel="stylesheet" />
     </head>
 
-    <body>
+    <body class="">
         <div class="position-relative">
-            <!-- Форма поиска -->
-            <div class="search-form">
-                <div class="container">
-                    <form>
-                        <div class="search-form__inner">
-                            <input class="search-form__input" type="text" value="" placeholder="Поиск" />
-                            <button class="search-form__submit" type="submit">
-                                <svg class="search-form__submit-icon">
-                                    <use xlink:href="./local/img/sprite.svg#icon-search"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
             <!-- Шапка сайта -->
             <header class="main-header main-header_inner">
                 <div class="main-header__left">
@@ -39,21 +24,57 @@
                         <span class="main-header__logo-text">Онлайн типография</span>
                     </a>
                 </div>
+
+                <!-- Форма поиска -->
+                <div class="search-form">
+                    <form>
+                        <input class="search-form__input" type="text" value="" placeholder="Поиск" />
+                        <button class="search-form__submit" type="submit">
+                            <svg class="search-form__submit-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
                 <div class="main-header__right">
                     <div class="main-header__right-top">
                         <!-- Верхнее меню -->
                         <nav class="menu-top">
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ПОМОЩЬ</a>
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">КАЛЬКУЛЯТОР</a>
-                            <a class="menu-top__link" href="javascript:;" data-fancybox data-src="#auth">ЛИЧНЫЙ КАБИНЕТ</a>
-                            <a class="menu-top__link" href="javascript:;">КОРЗИНА</a>
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ТЕХПОДДЕРЖКА</a>
+                            <a class="menu-top__link" href="javascript:;">ТЕХПОДДЕРЖКА</a>
+                            <a class="menu-top__link" href="javascript:;">ПОМОЩЬ</a>
+                            <a class="menu-top__link" href="javascript:;">КАЛЬКУЛЯТОР</a>
                         </nav>
-                        <a href="javascript:;" class="main-header__search">
-                            <svg class="main-header__search-icon">
-                                <use xlink:href="./local/img/sprite.svg#icon-search"></use>
-                            </svg>
-                        </a>
+
+                        <div class="header-panel">
+                            <div class="header-panel__part">
+                                <a class="header-panel__link" href="javascript:;" data-fancybox data-src="#auth">
+                                    <svg class="header-panel__icon header-panel__icon_like">
+                                        <use xlink:href="./local/img/sprite.svg#bug"></use>
+                                    </svg>
+                                    Евгений
+                                </a>
+                                <div class="header-panel__sub">
+                                    <a href="javascript:;" class="header-panel__sub-link">ПРОФИЛЬ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">МОИ ЗАКАЗЫ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">ИЗБРАННОЕ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">КОРЗИНА</a>
+                                </div>
+                            </div>
+                            <a class="header-panel__link d-none d-sm-flex" href="javascript:;">
+                                <svg class="header-panel__icon header-panel__icon_like">
+                                    <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                                </svg>
+                                Избранное
+                            </a>
+                            <a class="header-panel__link" href="javascript:;">
+                                <svg class="header-panel__icon header-panel__icon_basket">
+                                    <use xlink:href="./local/img/sprite.svg#basket"></use>
+                                </svg>
+                                <div class="header-panel__basket-count">25</div>
+                                Корзина
+                            </a>
+                        </div>
                     </div>
                     <div class="main-header__right-bottom">
                         <a class="menu-main-btn" href="javascript:;">
@@ -136,91 +157,229 @@
                 <div class="container">
                     <!-- Хлебные крошки -->
                     <div class="breadcrumbs">
-                        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> /
-                        <span class="breadcrumbs__current">ЛИЧНЫЙ КАБИНЕТ</span>
+                        <a href="javascript:;" class="breadcrumbs__link">ГЛАВНАЯ</a> / <a href="javascript:;" class="breadcrumbs__link">ЛИЧНЫЙ КАБИНЕТ</a> /
+                        <span class="breadcrumbs__current">ЕВГЕНИЙ</span>
                     </div>
 
                     <!-- Заголовок страницы -->
-                    <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
+                    <h1>ЕВГЕНИЙ</h1>
                 </div>
 
                 <div class="personal-tabs">
                     <div class="personal-tabs-links">
-                        <a href="javascript:;" class="personal-tabs-links__link">МОИ ЗАКАЗЫ</a>
-                        <a href="javascript:;" class="personal-tabs-links__link">РЕКВИЗИТЫ</a>
-                        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">АДРЕСА ДОСТАВКИ</a>
                         <a href="javascript:;" class="personal-tabs-links__link">ПРОФИЛЬ</a>
+                        <a href="javascript:;" class="personal-tabs-links__link">МОИ ЗАКАЗЫ</a>
+                        <a href="javascript:;" class="personal-tabs-links__link personal-tabs-links__link_active">Избранное</a>
+                        <a href="javascript:;" class="personal-tabs-links__link">Корзина</a>
                     </div>
                     <div class="personal-tabs-block">
                         <div class="personal-tabs-block__inner">
-                            <div class="personal-form form-three">
-                                <form>
-                                    <div class="form-three__label">
-                                        <svg class="form-three__label-icon-big">
-                                            <use xlink:href="./local/img/sprite.icon.svg#home"></use>
-                                        </svg>
-                                        AДРЕС ДЛЯ ДОСТАВКИ ЗАКАЗА<span class="d-none d-sm-inline-block">&nbsp;НАХОДИТСЯ</span>
+                            <div class="favorites-page">
+                                <div class="favorites-head">
+                                    <div class="container">
+                                        ВИЗИТКИ
                                     </div>
-                                    <div class="form-three__check">
-                                        <div class="form-three__check-part">
-                                            <input class="form-three__check-input" id="test1" type="radio" value="0" name="test" checked="checked" />
-                                            <label class="form-three__check-label" for="test1">
-                                                <svg class="form-three__check-icon">
-                                                    <use xlink:href="./local/img/sprite.icon.svg#close"></use>
-                                                </svg>
-                                                В ГОРОДЕ
-                                            </label>
-                                        </div>
-                                        <div class="form-three__check-part">
-                                            <input class="form-three__check-input" id="test2" type="radio" value="1" name="test" />
-                                            <label class="form-three__check-label" for="test2">
-                                                <svg class="form-three__check-icon">
-                                                    <use xlink:href="./local/img/sprite.icon.svg#close"></use>
-                                                </svg>
-                                                ЗА ГОРОДОМ
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-three__label">ВВЕДИТЕ АДРЕС ДОСТАВКИ<span class="d-none d-sm-inline-block">&nbsp;(НОМЕР ДОМА, КОРПУС, КВАРТИРА И Т.Д.)</span></div>
-                                    <div class="form-three__line">
-                                        <a href="javascript:;" class="form-three__info form-three__info_short form-three__info_link">Москва</a>
-                                        <input class="form-three__input form-three__input_padding-short" type="text" value="" />
-                                    </div>
-                                    <div class="personal-form__double">
-                                        <div class="personal-form__double-part">
-                                            <div class="form-three__label">
-                                                КОНТАКТНОЕ ЛИЦО*
+                                </div>
+
+                                <div class="container">
+                                    <div class="favorites-list">
+                                        <div class="favorites-list__top">
+                                            <div class="favorites-list__pict">
+                                                <div class="favorites-list__pict-inner">
+                                                    <img src="./local/uploads/order.product.jpg" alt="" class="favorites-list__img" />
+                                                    <div class="favorites-list__pict-shadow"></div>
+                                                    <div class="favorites-list__pict-word">
+                                                        СОЗДАЙТЕ МАКЕТ ИЛИ ЗАГРУЗИТЕ ОНЛАЙН
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="form-three__line">
-                                                <input class="form-three__input" type="text" value="" />
+                                            <div class="favorites-list__block">
+                                                <div class="favorites-list__inner">
+                                                    <div class="favorites-list__inner-left">
+                                                        <svg class="favorites-list__icon-minus">
+                                                            <use xlink:href="./local/img/sprite.basket.svg#minus"></use>
+                                                        </svg>
+                                                        <div class="favorites-list__name">ВИЗИТНАЯ КАРТОЧКА</div>
+                                                        <div class="favorites-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                                                        <div class="favorites-list__time">СРОК ИЗГОТОВЛЕНИЯ: 12.03.2021</div>
+                                                    </div>
+                                                    <div class="favorites-list__inner-right">
+                                                        <div class="favorites-list-actions">
+                                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                                <svg class="favorites-list-actions__icon">
+                                                                    <use xlink:href="./local/img/sprite.basket.svg#edit"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                                <svg class="favorites-list-actions__icon">
+                                                                    <use xlink:href="./local/img/sprite.basket.svg#delete"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="favorites-list__middle">
+                                                    <div class="favorites-list__links">
+                                                        <a href="javascript:;" class="favorites-list__link">
+                                                            <svg class="favorites-list__link-icon favorites-list__link-icon_cat favorites-list__link-icon_disabled">
+                                                                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                                            </svg>
+                                                            ЗАГРУЗИТЕ МАКЕТ
+                                                        </a>
+                                                        <a href="javascript:;" class="favorites-list__link">
+                                                            <svg class="favorites-list__link-icon favorites-list__link-icon_like">
+                                                                <use xlink:href="./local/img/sprite.svg#icon-like-set"></use>
+                                                            </svg>
+                                                            НЕ НРАВИТСЯ
+                                                        </a>
+                                                    </div>
+                                                    <div class="favorites-list__price">5 607¤</div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="personal-form__double-part">
-                                            <div class="form-three__label">
-                                                ТЕЛЕФОН*
-                                            </div>
-                                            <div class="form-three__line">
-                                                <input class="form-three__input" type="tel" value="" />
+                                        <div class="favorites-list__bottom">
+                                            <div class="favorites-list__bottom-left">ВАШ ЗАКАЗ:</div>
+                                            <div class="favorites-list__bottom-center">1 ЗАКАЗ (ВЕС 5,6 КГ)</div>
+                                            <div class="favorites-list__bottom-right">
+                                                <a href="javascript:;" class="btn-one">В КОРЗИНУ</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-three__label form-three__label_icon">
-                                        <svg class="form-three__label-icon">
-                                            <use xlink:href="./local/img/sprite.icon.svg#check"></use>
-                                        </svg>
-                                        НАДО ВСЁ ЗАПОЛНИТЬ!
+
+                                    <div class="favorites-list-sep"></div>
+
+                                    <div class="favorites-list">
+                                        <div class="favorites-list__top">
+                                            <div class="favorites-list__pict">
+                                                <div class="favorites-list__pict-inner">
+                                                    <img src="./local/uploads/order.product.jpg" alt="" class="favorites-list__img" />
+                                                </div>
+                                            </div>
+                                            <div class="favorites-list__block">
+                                                <div class="favorites-list__inner">
+                                                    <div class="favorites-list__inner-left">
+                                                        <svg class="favorites-list__icon-check">
+                                                            <use xlink:href="./local/img/sprite.basket.svg#check"></use>
+                                                        </svg>
+                                                        <div class="favorites-list__name">ВИЗИТНАЯ КАРТОЧКА</div>
+                                                        <div class="favorites-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                                                        <div class="favorites-list__time">СРОК ИЗГОТОВЛЕНИЯ: 12.03.2021</div>
+                                                    </div>
+                                                    <div class="favorites-list__inner-right">
+                                                        <div class="favorites-list-actions">
+                                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                                <svg class="favorites-list-actions__icon">
+                                                                    <use xlink:href="./local/img/sprite.basket.svg#edit"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                                <svg class="favorites-list-actions__icon">
+                                                                    <use xlink:href="./local/img/sprite.basket.svg#delete"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="favorites-list__middle">
+                                                    <div class="favorites-list__links">
+                                                        <a href="javascript:;" class="favorites-list__link">
+                                                            <svg class="favorites-list__link-icon favorites-list__link-icon_cat">
+                                                                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                                            </svg>
+                                                            ЗАГРУЗИТЕ МАКЕТ
+                                                        </a>
+                                                        <a href="javascript:;" class="favorites-list__link">
+                                                            <svg class="favorites-list__link-icon favorites-list__link-icon_like">
+                                                                <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                                                            </svg>
+                                                            НРАВИТСЯ
+                                                        </a>
+                                                    </div>
+                                                    <div class="favorites-list__price">5 607¤</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="favorites-list__bottom">
+                                            <div class="favorites-list__bottom-left">ВАШ ЗАКАЗ:</div>
+                                            <div class="favorites-list__bottom-center">1 ЗАКАЗ (ВЕС 5,6 КГ)</div>
+                                            <div class="favorites-list__bottom-right">
+                                                <a href="javascript:;" class="btn-one">В КОРЗИНУ</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-three__label">
-                                        КОММЕНТАРИЙ К АДРЕСУ
+                                </div>
+
+                                <div class="favorites-head">
+                                    <div class="container">
+                                        КАЛЕНДАРИ
                                     </div>
-                                    <div class="form-three__line">
-                                        <textarea class="form-three__textarea" placeholder="Укажите номер офиса, наличие документов на въезд, ну и вообще надо вам это или нет?"></textarea>
+                                </div>
+
+                                <div class="container">
+                                    <div class="favorites-list">
+                                        <div class="favorites-list__top">
+                                            <div class="favorites-list__pict">
+                                                <div class="favorites-list__pict-inner">
+                                                    <img src="./local/uploads/order.product.jpg" alt="" class="favorites-list__img" />
+                                                    <div class="favorites-list__pict-shadow"></div>
+                                                    <div class="favorites-list__pict-word">
+                                                        СОЗДАЙТЕ МАКЕТ ИЛИ ЗАГРУЗИТЕ ОНЛАЙН
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="favorites-list__block">
+                                                <div class="favorites-list__inner">
+                                                    <div class="favorites-list__inner-left">
+                                                        <svg class="favorites-list__icon-minus">
+                                                            <use xlink:href="./local/img/sprite.basket.svg#minus"></use>
+                                                        </svg>
+                                                        <div class="favorites-list__name">КАЛЕНДАРЬ ПЕРЕКИДНОЙ</div>
+                                                        <div class="favorites-list__info">(90Х50 ММ), 1000 ШТ. 300 Г/М², 4+4</div>
+                                                        <div class="favorites-list__time">СРОК ИЗГОТОВЛЕНИЯ: 12.03.2021</div>
+                                                    </div>
+                                                    <div class="favorites-list__inner-right">
+                                                        <div class="favorites-list-actions">
+                                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                                <svg class="favorites-list-actions__icon">
+                                                                    <use xlink:href="./local/img/sprite.basket.svg#edit"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <a href="javascript:;" class="favorites-list-actions__link">
+                                                                <svg class="favorites-list-actions__icon">
+                                                                    <use xlink:href="./local/img/sprite.basket.svg#delete"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="favorites-list__middle">
+                                                    <div class="favorites-list__links">
+                                                        <a href="javascript:;" class="favorites-list__link">
+                                                            <svg class="favorites-list__link-icon favorites-list__link-icon_cat favorites-list__link-icon_disabled">
+                                                                <use xlink:href="./local/img/sprite.icon.svg#cat"></use>
+                                                            </svg>
+                                                            ЗАГРУЗИТЕ МАКЕТ
+                                                        </a>
+                                                        <a href="javascript:;" class="favorites-list__link">
+                                                            <svg class="favorites-list__link-icon favorites-list__link-icon_like">
+                                                                <use xlink:href="./local/img/sprite.svg#icon-like-set"></use>
+                                                            </svg>
+                                                            НЕ НРАВИТСЯ
+                                                        </a>
+                                                    </div>
+                                                    <div class="favorites-list__price">5 607¤</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="favorites-list__bottom">
+                                            <div class="favorites-list__bottom-left">ВАШ ЗАКАЗ:</div>
+                                            <div class="favorites-list__bottom-center">1 ЗАКАЗ (ВЕС 5,6 КГ)</div>
+                                            <div class="favorites-list__bottom-right">
+                                                <a href="javascript:;" class="btn-one">В КОРЗИНУ</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="personal-form__btns">
-                                        <button type="submit" class="personal-form__btn btn-one">СОХРАНИТЬ</button>
-                                        <a href="javascript:;" class="personal-form__btn btn-one">ОТКАЗАТЬСЯ</a>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -532,6 +691,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?9b11a9c3d0d2381f771e"></script>
+        <script type="text/javascript" src="./local/js/script.js?72c6c9917735dfa179ab"></script>
     </body>
 </html>

@@ -5,27 +5,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
         <title>PrintMe - Product</title>
-        <link href="./local/template_styles.css?9b11a9c3d0d2381f771e" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="./local/template_styles.css?72c6c9917735dfa179ab" rel="stylesheet" />
     </head>
 
-    <body>
+    <body class="">
         <div class="position-relative">
-            <!-- Форма поиска -->
-            <div class="search-form">
-                <div class="container">
-                    <form>
-                        <div class="search-form__inner">
-                            <input class="search-form__input" type="text" value="" placeholder="Поиск" />
-                            <button class="search-form__submit" type="submit">
-                                <svg class="search-form__submit-icon">
-                                    <use xlink:href="./local/img/sprite.svg#icon-search"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
             <!-- Шапка сайта -->
             <header class="main-header main-header_inner">
                 <div class="main-header__left">
@@ -39,21 +24,57 @@
                         <span class="main-header__logo-text">Онлайн типография</span>
                     </a>
                 </div>
+
+                <!-- Форма поиска -->
+                <div class="search-form">
+                    <form>
+                        <input class="search-form__input" type="text" value="" placeholder="Поиск" />
+                        <button class="search-form__submit" type="submit">
+                            <svg class="search-form__submit-icon">
+                                <use xlink:href="./local/img/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
                 <div class="main-header__right">
                     <div class="main-header__right-top">
                         <!-- Верхнее меню -->
                         <nav class="menu-top">
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ПОМОЩЬ</a>
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">КАЛЬКУЛЯТОР</a>
-                            <a class="menu-top__link" href="javascript:;" data-fancybox data-src="#auth">ЛИЧНЫЙ КАБИНЕТ</a>
-                            <a class="menu-top__link" href="javascript:;">КОРЗИНА</a>
-                            <a class="menu-top__link d-none d-md-block" href="javascript:;">ТЕХПОДДЕРЖКА</a>
+                            <a class="menu-top__link" href="javascript:;">ТЕХПОДДЕРЖКА</a>
+                            <a class="menu-top__link" href="javascript:;">ПОМОЩЬ</a>
+                            <a class="menu-top__link" href="javascript:;">КАЛЬКУЛЯТОР</a>
                         </nav>
-                        <a href="javascript:;" class="main-header__search">
-                            <svg class="main-header__search-icon">
-                                <use xlink:href="./local/img/sprite.svg#icon-search"></use>
-                            </svg>
-                        </a>
+
+                        <div class="header-panel">
+                            <div class="header-panel__part">
+                                <a class="header-panel__link" href="javascript:;" data-fancybox data-src="#auth">
+                                    <svg class="header-panel__icon header-panel__icon_like">
+                                        <use xlink:href="./local/img/sprite.svg#bug"></use>
+                                    </svg>
+                                    Евгений
+                                </a>
+                                <div class="header-panel__sub">
+                                    <a href="javascript:;" class="header-panel__sub-link">ПРОФИЛЬ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">МОИ ЗАКАЗЫ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">ИЗБРАННОЕ</a>
+                                    <a href="javascript:;" class="header-panel__sub-link">КОРЗИНА</a>
+                                </div>
+                            </div>
+                            <a class="header-panel__link d-none d-sm-flex" href="javascript:;">
+                                <svg class="header-panel__icon header-panel__icon_like">
+                                    <use xlink:href="./local/img/sprite.svg#icon-like"></use>
+                                </svg>
+                                Избранное
+                            </a>
+                            <a class="header-panel__link" href="javascript:;">
+                                <svg class="header-panel__icon header-panel__icon_basket">
+                                    <use xlink:href="./local/img/sprite.svg#basket"></use>
+                                </svg>
+                                <div class="header-panel__basket-count">25</div>
+                                Корзина
+                            </a>
+                        </div>
                     </div>
                     <div class="main-header__right-bottom">
                         <a class="menu-main-btn" href="javascript:;">
@@ -199,11 +220,16 @@
                         <!-- Иконки товара -->
                         <div class="product-icons">
                             <div class="product-icons__item">
-                                <div class="product-icons__pict">
+                                <a href="javascript:;" class="product-icons__pict tool-block-activate">
                                     <svg class="product-icons__icon">
                                         <use xlink:href="./local/img/sprite.product.svg#linux"></use>
                                     </svg>
-                                </div>
+
+                                    <div class="tool-block">
+                                        <div class="tool-block__title">ЧТО ТАКОЕ ПЛОТНОСТЬ БУМАГИ?:</div>
+                                        <p>Вообще мерой плотности бумаги является количество грамм на квадратный метр поверхности листа – гр./кв. м.</p>
+                                    </div>
+                                </a>
                                 <div class="product-icons__name">
                                     900 РУБ. ЗА 10 ШТ.
                                 </div>
@@ -265,6 +291,17 @@
                     </div>
                 </div>
 
+                <!-- Вкладки №2 -->
+                <div class="tabs2-block">
+                    <div class="tabs2-block-links">
+                        <a href="javascript:;" class="tabs2-block-links__link tabs2-block-links__link_active">ТРЕБОВАНИЯ К МАКЕТАМ</a>
+                        <a href="javascript:;" class="tabs2-block-links__link">ЗАГРУЗИТЬ МАКЕТ</a>
+                        <a href="javascript:;" class="tabs2-block-links__link">ВЫБРАТЬ ШАБЛОН</a>
+                        <a href="javascript:;" class="tabs2-block-links__link">ПУЛЬНУТЬ ТУДА СЮДА</a>
+                        <a href="javascript:;" class="tabs2-block-links__link tabs2-block-links__link_disabled">ЧТО-ТО ПОШЛО НЕ ТАК</a>
+                    </div>
+                </div>
+
                 <div class="product-calc-tabs">
                     <div class="container">
                         <div class="product-calc-tabs__block">
@@ -274,6 +311,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="product-calc">
                     <div class="product-calc__part product-calc__part_orange product-calc__part_active" id="tab1">
                         <div class="product-calc__inner">
@@ -281,12 +319,14 @@
                             <div class="product-calc__items form-one">
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
+                                        <div class="form-one__label">
                                             ФОРМАТ КАТАЛОГА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                         <select>
                                             <option>А4 (210х297 мм) книга</option>
                                             <option>А3 (210х297 мм) книга</option>
@@ -297,12 +337,14 @@
                                 </div>
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
+                                        <div class="form-one__label">
                                             ФОРМАТ КАТАЛОГА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                         <select>
                                             <option>А4 (210х297 мм) книга</option>
                                             <option>А3 (210х297 мм) книга</option>
@@ -313,12 +355,14 @@
                                 </div>
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
+                                        <div class="form-one__label">
                                             ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                         <select>
                                             <option>А4 (210х297 мм) книга</option>
                                             <option>А3 (210х297 мм) книга</option>
@@ -329,12 +373,14 @@
                                 </div>
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
+                                        <div class="form-one__label">
                                             ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                         <select>
                                             <option>А4 (210х297 мм) книга</option>
                                             <option>А3 (210х297 мм) книга</option>
@@ -345,12 +391,14 @@
                                 </div>
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
+                                        <div class="form-one__label">
                                             ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                         <select>
                                             <option>А4 (210х297 мм) книга</option>
                                             <option>А3 (210х297 мм) книга</option>
@@ -361,25 +409,20 @@
                                 </div>
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
+                                        <div class="form-one__label">
                                             ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
-                                        <select>
-                                            <option>А4 (210х297 мм) книга</option>
-                                            <option>А3 (210х297 мм) книга</option>
-                                            <option>А2 (210х297 мм) книга</option>
-                                            <option>А1 (210х297 мм) книга</option>
-                                        </select>
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <input type="text" value="" class="form-one__input" placeholder="" />
                                     </div>
                                 </div>
-                                <div class="product-calc__item d-md-none">
-                                    <div class="form-one__line">
-                                        <a class="product-calc__btn product-calc__btn--change-tab btn-one" data-change-to="next">Далее</a>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="product-calc__btns d-md-none">
+                                <a class="product-calc__btn product-calc__btn--change-tab btn-one" data-change-to="next">Далее</a>
                             </div>
                         </div>
                     </div>
@@ -389,128 +432,134 @@
                             <div class="product-calc__items form-one">
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
-                                            ФОРМАТ КАТАЛОГА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                        <div class="form-one__label">
+                                            ПОСТПЕЧАТНЫЕ РАБОТЫ:
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <label class="checkbox-one">
+                                            <input class="checkbox-one__input" type="checkbox" value="" checked="checked" />
+                                            <svg class="checkbox-one__icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#check"></use>
                                             </svg>
+                                            <span class="checkbox-one__label">ЭТО</span>
                                         </label>
-                                        <select>
-                                            <option>А4 (210х297 мм) книга</option>
-                                            <option>А3 (210х297 мм) книга</option>
-                                            <option>А2 (210х297 мм) книга</option>
-                                            <option>А1 (210х297 мм) книга</option>
-                                        </select>
+                                        <label class="checkbox-one">
+                                            <input class="checkbox-one__input" type="checkbox" value="" />
+                                            <svg class="checkbox-one__icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#check"></use>
+                                            </svg>
+                                            <span class="checkbox-one__label">ИЛИ ЭТО</span>
+                                        </label>
+                                        <label class="checkbox-one">
+                                            <input class="checkbox-one__input" type="checkbox" value="" />
+                                            <svg class="checkbox-one__icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#check"></use>
+                                            </svg>
+                                            <span class="checkbox-one__label">МОЖЕТ БЫТЬ ЭТО</span>
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="product-calc__item">
                                     <div class="form-one__line">
-                                        <label class="form-one__label">
-                                            ФОРМАТ КАТАЛОГА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                        <div class="form-one__label">
+                                            ДОПОЛНИТЕЛЬНО:
+                                            <a class="form-one__label-link" href="javascript:;" data-fancybox data-src="#window1">
+                                                <svg class="form-one__label-icon">
+                                                    <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <label class="checkbox-one">
+                                            <input class="checkbox-one__input" type="radio" name="radio" value="" checked="checked" />
+                                            <svg class="checkbox-one__icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#check"></use>
                                             </svg>
+                                            <span class="checkbox-one__label">ЭТО ТОЖЕ НЕ ПЛОХО</span>
                                         </label>
-                                        <select>
-                                            <option>А4 (210х297 мм) книга</option>
-                                            <option>А3 (210х297 мм) книга</option>
-                                            <option>А2 (210х297 мм) книга</option>
-                                            <option>А1 (210х297 мм) книга</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="product-calc__item">
-                                    <div class="form-one__line">
-                                        <label class="form-one__label">
-                                            ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                        <label class="checkbox-one">
+                                            <input class="checkbox-one__input" type="radio" name="radio" value="" />
+                                            <svg class="checkbox-one__icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#check"></use>
                                             </svg>
+                                            <span class="checkbox-one__label">ЕСЛИ ТО НЕ ПОДОШЛО</span>
                                         </label>
-                                        <select>
-                                            <option>А4 (210х297 мм) книга</option>
-                                            <option>А3 (210х297 мм) книга</option>
-                                            <option>А2 (210х297 мм) книга</option>
-                                            <option>А1 (210х297 мм) книга</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="product-calc__item">
-                                    <div class="form-one__line">
-                                        <label class="form-one__label">
-                                            ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
+                                        <label class="checkbox-one">
+                                            <input class="checkbox-one__input" type="radio" name="radio" value="" />
+                                            <svg class="checkbox-one__icon">
+                                                <use xlink:href="./local/img/sprite.icon.svg#check"></use>
                                             </svg>
+                                            <span class="checkbox-one__label">ОХ, ЭТО?</span>
                                         </label>
-                                        <select>
-                                            <option>А4 (210х297 мм) книга</option>
-                                            <option>А3 (210х297 мм) книга</option>
-                                            <option>А2 (210х297 мм) книга</option>
-                                            <option>А1 (210х297 мм) книга</option>
-                                        </select>
                                     </div>
                                 </div>
-                                <div class="product-calc__item">
-                                    <div class="form-one__line">
-                                        <label class="form-one__label">
-                                            ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
-                                        <select>
-                                            <option>А4 (210х297 мм) книга</option>
-                                            <option>А3 (210х297 мм) книга</option>
-                                            <option>А2 (210х297 мм) книга</option>
-                                            <option>А1 (210х297 мм) книга</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="product-calc__item">
-                                    <div class="form-one__line">
-                                        <label class="form-one__label">
-                                            ТИП ПЕРЕПЛЁТА:
-                                            <svg class="form-one__label-icon">
-                                                <use xlink:href="./local/img/sprite.svg#icon-eye"></use>
-                                            </svg>
-                                        </label>
-                                        <select>
-                                            <option>А4 (210х297 мм) книга</option>
-                                            <option>А3 (210х297 мм) книга</option>
-                                            <option>А2 (210х297 мм) книга</option>
-                                            <option>А1 (210х297 мм) книга</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="product-calc__item d-md-none">
-                                    <div class="form-one__line">
-                                        <a class="product-calc__btn product-calc__btn--change-tab btn-one" data-change-to="next">Далее</a>
-                                        <a class="product-calc__btn product-calc__btn--change-tab btn-one" data-change-to="prev">Назад</a>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="product-calc__btns d-md-none">
+                                <a class="product-calc__btn product-calc__btn--change-tab btn-one" data-change-to="next">Далее</a>
+                                <a class="product-calc__btn product-calc__btn--change-tab btn-one" data-change-to="prev">Назад</a>
                             </div>
                         </div>
                     </div>
                     <div class="product-calc__part product-calc__part_brown" id="tab3">
                         <div class="product-calc__inner">
-                            <div class="h3">ДАТА: 26.05.2020</div>
-                            <div class="product-calc__price">
-                                <div>ЦЕНА:</div>
-                                <div class="product-calc__price-value">5 607₽</div>
+                            <div class="product-calc__title h3">СРОК И СТОИМОСТЬ</div>
+                            <div class="product-select">
+                                <div class="product-select__item">
+                                    <a href="javascript:;" class="product-select__top tool-block-activate">
+                                        <div class="product-select__pict">
+                                            <svg class="product-select__icon product-select__icon_1">
+                                                <use xlink:href="./local/img/sprite.product.svg#calc1"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-select__label"></div>
+
+                                        <div class="tool-block tool-block_top">
+                                            <div class="tool-block__title">ЧТО ТАКОЕ ПЛОТНОСТЬ БУМАГИ?:</div>
+                                            <p>Вообще мерой плотности бумаги является количество грамм на квадратный метр поверхности листа – гр./кв. м.</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="product-select__price"></a>
+                                </div>
+                                <div class="product-select__item">
+                                    <a href="javascript:;" class="product-select__top tool-block-activate">
+                                        <div class="product-select__pict">
+                                            <svg class="product-select__icon product-select__icon_2">
+                                                <use xlink:href="./local/img/sprite.product.svg#calc2"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-select__label"></div>
+
+                                        <div class="tool-block tool-block_top">
+                                            <div class="tool-block__title">ЧТО ТАКОЕ ПЛОТНОСТЬ БУМАГИ?:</div>
+                                            <p>Вообще мерой плотности бумаги является количество грамм на квадратный метр поверхности листа – гр./кв. м.</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="product-select__price"></a>
+                                </div>
+                                <div class="product-select__item">
+                                    <a href="javascript:;" class="product-select__top tool-block-activate">
+                                        <div class="product-select__pict">
+                                            <svg class="product-select__icon product-select__icon_3">
+                                                <use xlink:href="./local/img/sprite.product.svg#calc3"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-select__label"></div>
+
+                                        <div class="tool-block tool-block_top">
+                                            <div class="tool-block__title">ЧТО ТАКОЕ ПЛОТНОСТЬ БУМАГИ?:</div>
+                                            <p>Вообще мерой плотности бумаги является количество грамм на квадратный метр поверхности листа – гр./кв. м.</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="product-select__price"></a>
+                                </div>
                             </div>
                             <div class="product-calc__btns">
-                                <a href="javascript:;" class="product-calc__btn btn-one">
-                                    РАССЧИТАТЬ ЗАКАЗ
+                                <a href="./product_calc.html" class="product-calc__btn btn-one">
+                                    РАССЧИТАТЬ
                                 </a>
-                                <a href="javascript:;" class="product-calc__btn btn-one">
-                                    ОФОРМИТЬ ЗАКАЗ
-                                </a>
-                            </div>
-                            <div class="product-calc__info">
-                                <div class="product-calc__info-head">КАК ВСЁ ПРОИСХОДИТ:</div>
-                                Мы отправим вам подтверждение в течение 1 рабочего дня после отправки вашего заказа. Время производства начинается после того, как вы утвердите свой вариант.<br />
-                                Выбор жесткого доказательства продлит продолжительность процесса проверки, поскольку для его доставки потребуется дополнительное время.
                             </div>
                             <div class="product-calc__btns d-md-none">
                                 <a class="product-calc__btn product-calc__btn--change-tab btn-one" data-change-to="prev">Назад</a>
@@ -519,13 +568,12 @@
                     </div>
                 </div>
 
-                <!-- Блок ссылок -->
-                <div class="link-block">
-                    <a href="javascript:;" class="link-block__link">ТРЕБОВАНИЯ К МАКЕТАМ</a>
-                    <a href="javascript:;" class="link-block__link">ЗАГРУЗИТЬ МАКЕТ</a>
-                    <a href="javascript:;" class="link-block__link">ВЫБРАТЬ ШАБЛОН</a>
-                    <a href="javascript:;" class="link-block__link link-block__link_active">ПУЛЬНУТЬ ТУДА СЮДА</a>
-                    <a href="javascript:;" class="link-block__link link-block__link_disabled">ЧТО-ТО ПОШЛО НЕ ТАК</a>
+                <div class="window-two" id="window1">
+                    <div class="window-two__head">ПОДСКАЗКИ</div>
+                    <div class="window-two__body">
+                        <div class="window-two__title">ЧТО ТАКОЕ ПЛОТНОСТЬ БУМАГИ?:</div>
+                        <p>Вообще мерой плотности бумаги является количество грамм на квадратный метр поверхности листа – гр./кв. м.</p>
+                    </div>
                 </div>
 
                 <!-- Короткий текст -->
@@ -1244,6 +1292,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?9b11a9c3d0d2381f771e"></script>
+        <script type="text/javascript" src="./local/js/script.js?72c6c9917735dfa179ab"></script>
     </body>
 </html>

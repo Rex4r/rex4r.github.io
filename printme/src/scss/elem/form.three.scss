@@ -1,14 +1,21 @@
 .form-three {
 
     &__label {
-        font-size: 14px;
+        letter-spacing: .1em;
         font-weight: bold;
         margin: 0 0 25px;
         text-transform: uppercase;
         position: relative;
+        display: flex;
 
+        &_mb {
+            margin: 0;
+        }
         &_icon {
             padding: 0 0 0 30px;
+        }
+        &_big {
+            font-size: 18px;
         }
         &-icon {
             height: 15px;
@@ -16,7 +23,7 @@
             fill: var(--blue);
             position: absolute;
             left: 0;
-            top: 5px;
+            top: 3px;
 
             &-big {
                 height: 25px;
@@ -26,9 +33,17 @@
                 left: -35px;
             }
         }
+        &-link {
+            color: inherit;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     &__line {
-        margin: 0 0 45px;
+        margin: 0 0 35px;
         position: relative;
     }
     &__info {
@@ -63,8 +78,8 @@
         width: 100%;
         line-height: 60px;
         font-size: 14px;
-        font-weight: 500;
-        border: 1px solid var(--grey5);
+        //font-weight: 500;
+        border: 1px solid var(--grey4);
         transition: all .3s;
         background-color: var(--white);
         text-transform: uppercase;
@@ -89,6 +104,9 @@
         &_padding-short {
             padding: 0 15px 0 175px;
         }
+        &_padding-icon {
+            padding: 0 50px 0 15px;
+        }
         &-icon {
             height: 15px;
             width: 15px;
@@ -108,8 +126,8 @@
         width: 100%;
         height: 110px;
         font-size: 14px;
-        font-weight: 500;
-        border: 1px solid var(--grey5);
+        //font-weight: 500;
+        border: 1px solid var(--grey4);
         transition: all .3s;
         resize: none;
 
@@ -159,26 +177,26 @@
             border-bottom-color: var(--blue);
         }
     }
-}
 
-@include media-breakpoint-down(lg)
-{
-    .form-three__label-icon-big {
-        position: static;
-        left: auto;
-        margin: 0 10px 0 0;
+    @include media-breakpoint-down(lg)
+    {
+        &__label-icon-big {
+            position: static;
+            left: auto;
+            margin: 0 10px 0 0;
+        }
     }
-}
-@include media-breakpoint-down(sm)
-{
-    .form-three__line {
-        margin: 0 0 30px;
+    @include media-breakpoint-down(sm)
+    {
+        &__line {
+            margin: 0 0 15px;
+        }
+        &__label {
+            margin: 0 0 10px;
+        }
     }
-}
-@include media-breakpoint-down(xs)
-{
-    .form-three {
-
+    @include media-breakpoint-only(xs)
+    {
         &__info:not(.form-three__info_short) {
             text-align: left;
             padding: 0 0 0 15px;

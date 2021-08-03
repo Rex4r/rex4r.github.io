@@ -1,0 +1,141 @@
+.search-bg-grey {
+    padding: 30px 0 0;
+    background-color: var(--grey7);
+    border: 1px solid var(--grey5);
+    margin: 0 0 25px;
+}
+
+.search-bg-blue {
+    padding: 35px 0 25px;
+    background-color: var(--light-blue1);
+    border: 1px solid var(--grey5);
+    margin: 0 0 65px;
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 0 0 50px;
+        }
+    }
+}
+
+.search-padding {
+    padding: 0 70px;
+
+    &__width {
+        max-width: 1030px;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+
+    @include media-breakpoint-up(lg)
+    {
+        &__btn-first {
+            margin: 0 35px 0 0;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            padding: 0;
+        }
+    }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__btns {
+            margin: 0 -15px;
+
+            & a {
+                margin: 0 15px;
+                width: calc(50% - 30px);
+                padding: 0;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__btns {
+            flex-direction: column;
+
+            & a {
+                width: 100%;
+            }
+        }
+        &__btn-first {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+.search-checkbox-block {
+    display: flex;
+    margin: 0 0 40px;
+
+    &__item {
+        width: 255px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            display: block;
+            margin: 0 0 20px;
+        }
+    }
+}
+
+.search-hands-icon {
+    width: 30px;
+    height: 23px;
+    margin: 0 0 0 5px;
+}
+
+.search-select-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px 25px;
+    flex-wrap: wrap;
+
+    &__item {
+        max-width: 300px;
+        width: 20%;
+        padding: 0 15px 20px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            justify-content: space-around;
+
+            &__item {
+                width: 50%;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__item {
+            width: 100%;
+        }
+    }
+}
+
+.search-label-link {
+    flex-wrap: wrap;
+
+    &__label {
+        margin: 0 40px 0 0;
+    }
+    &__link {
+        text-decoration: underline;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        &__label {
+            margin: 0 0 15px;
+        }
+    }
+}

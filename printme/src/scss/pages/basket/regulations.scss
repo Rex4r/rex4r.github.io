@@ -1,0 +1,12 @@
+.basket-regulations {
+    font-weight: normal;
+    font-size: 11px;
+    width: calc(100% - 210px);
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            width: 100%;
+        }
+    }
+}
