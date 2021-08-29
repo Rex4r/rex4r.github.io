@@ -1,0 +1,155 @@
+.main {
+  background-image: url("/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section {
+  padding-bottom: 80px;
+}
+
+.title {
+  display: inline-block;
+  margin: 40px 0 20px;
+  padding: 10px 20px;
+  font: 800 41px/1 "Montserrat", sans-serif;
+  color: #ffffff;
+  border-radius: 30px;
+  background-color: #b254d7;
+  text-shadow: 3px 5px 7px black;
+}
+
+.text {
+  font: 18px/26px "Montserrat", sans-serif;
+  color: #ffffff;
+}
+.text--additional {
+  color: #fdd238;
+}
+.text--medium {
+  font: 800 22px/26px "Montserrat", sans-serif;
+}
+.text--hurry {
+  margin: 15px 0 20px;
+  font: bold 27px/29px "Montserrat", sans-serif;
+}
+.text--bigger {
+  margin-left: 10px;
+  font: bold 68px/1 "Montserrat", sans-serif;
+}
+.text--small {
+  font: 800 12px/1.2 "Montserrat", sans-serif;
+}
+.text--smaller {
+  font: 9px/11px "Montserrat", sans-serif;
+}
+.text--center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-direction-column {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-align: center;
+  display: block;
+  text-decoration: none !important;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-block;
+  margin-right: -20px;
+  padding: 15px 25px 15px 15px;
+  text-decoration: none;
+  border: 3px solid #ffb355;
+  border-radius: 30px 0 0 30px;
+  background: linear-gradient(135deg, #ff6a43 0%, #ffb656 100%);
+}
+a:hover .button {
+  background: linear-gradient(135deg, #fd592e 0%, #fcaa40 100%);
+}
+
+.price {
+  max-width: 310px;
+  margin-left: 20px;
+}
+
+.price__img {
+  width: 245px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bg-red {
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #fd3f22;
+}
+
+.img-wrapper {
+  flex: 0 0 80px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: 28px;
+    margin: 40px 10px 20px;
+  }
+
+  .section {
+    padding-bottom: 50px;
+  }
+
+  .button {
+    padding: 15px;
+    border-radius: 30px;
+    margin: 0 0 20px;
+  }
+
+  a img {
+    display: none;
+  }
+
+  .flex-column-mobile {
+    flex-direction: column;
+  }
+
+  .price {
+    margin: 30px auto 20px;
+  }
+
+  .list__item {
+    margin-bottom: 30px;
+  }
+
+  .img-wrapper {
+    flex: 0 0 auto;
+    margin-bottom: 10px;
+  }
+}
