@@ -133,9 +133,17 @@ a:hover .button {
   }
 
   .button {
-    margin: 0 0 20px;
+    margin: 5px 0 20px;
     padding: 15px;
     border-radius: 30px;
+  }
+
+  a:hover .button {
+    margin: 2px 0 17px;
+    padding: 18px 18px 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #fd4a19 0%, #fcae1d 100%);
+    border-radius: 33px;
   }
 
   a img {
