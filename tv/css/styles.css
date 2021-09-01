@@ -67,14 +67,16 @@
 }
 
 a {
-  text-align: center;
   display: block;
-  text-decoration: none !important;
   margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none !important;
 }
 
 .button {
   display: inline-block;
+  width: 315px;
+  box-sizing: content-box;
   margin-right: -20px;
   padding: 15px 25px 15px 15px;
   text-decoration: none;
@@ -83,7 +85,11 @@ a {
   background: linear-gradient(135deg, #ff6a43 0%, #ffb656 100%);
 }
 a:hover .button {
-  background: linear-gradient(135deg, #fd592e 0%, #fcaa40 100%);
+  margin-left: -3px;
+  padding: 18px 25px 18px 18px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #fd4a19 0%, #fcae1d 100%);
+  border-radius: 33px 0 0 33px;
 }
 
 .price {
@@ -118,8 +124,8 @@ a:hover .button {
 
 @media (max-width: 575px) {
   .title {
-    font-size: 28px;
     margin: 40px 10px 20px;
+    font-size: 28px;
   }
 
   .section {
@@ -127,9 +133,9 @@ a:hover .button {
   }
 
   .button {
+    margin: 0 0 20px;
     padding: 15px;
     border-radius: 30px;
-    margin: 0 0 20px;
   }
 
   a img {
