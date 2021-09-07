@@ -73,13 +73,6 @@
   margin-left: -60px;
 }
 
-.button__link {
-  display: inline-block;
-  height: 100px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
 .button__button {
   display: inline-block;
   box-sizing: content-box;
@@ -104,14 +97,17 @@
 
 .button__circle {
   position: absolute;
-  left: 365px;
+  left: 100%;
   margin-left: -50px;
-  cursor: ew-resize;
 }
 
-.button__circle--animation {
-  left: -10px !important;
-  transition: left linear 1.2s;
+.button--animate .button__link {
+  opacity: 0 !important;
+  transition: opacity linear 0.5s;
+}
+.button--animate .button__circle {
+  left: 0 !important;
+  transition: left linear 0.5s;
 }
 
 .price {
@@ -160,12 +156,24 @@
     padding-bottom: 50px;
   }
 
+  .button {
+    max-width: 90%;
+    white-space: nowrap;
+  }
+
   .button__button {
     box-sizing: border-box;
+    margin: 10px 0 !important;
+    padding: 5px !important;
+  }
+
+  .button__link {
+    font-size: 14px;
   }
 
   .button__circle {
-    display: none;
+    width: 60px;
+    margin-left: -30px;
   }
 
   .flex-column-mobile {
