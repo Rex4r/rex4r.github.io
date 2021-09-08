@@ -1,3 +1,10 @@
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .main {
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
@@ -27,12 +34,18 @@
 .text--additional {
   color: #fdd238;
 }
+.text--red {
+  color: #ff0000;
+}
 .text--medium {
   font: 800 22px/26px "Montserrat", sans-serif;
 }
 .text--hurry {
   margin: 15px 0 20px;
   font: bold 27px/29px "Montserrat", sans-serif;
+}
+.text--big {
+  font: bold 30px/1.2 "Montserrat", sans-serif;
 }
 .text--bigger {
   margin-left: 10px;
@@ -46,6 +59,9 @@
 }
 .text--center {
   text-align: center;
+}
+.text--italic {
+  font-style: italic;
 }
 
 .d-flex {
@@ -70,7 +86,6 @@
   position: relative;
   display: inline-block;
   max-width: 100%;
-  margin-left: -60px;
 }
 
 .button__button {
