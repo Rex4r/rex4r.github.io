@@ -1,12 +1,28 @@
 .basket-result {
-    display: flex;
-    justify-content: space-between;
-
-    &__left {
-        width: 320px;
+    &__top {
+        margin-bottom: 30px;
     }
-    &__right {
-        width: calc(100% - 400px);
+    &__promocode {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+
+        &-input {
+            margin: 0 20px 0 0;
+
+            @include media-breakpoint-down(sm) {
+                margin: 0 0 20px 0;
+            }
+        }
+
+        &-btn {
+            height: 62px;
+            margin: 0 auto;
+        }
     }
     &__count {
         font-size: 14px;
@@ -30,33 +46,8 @@
         }
     }
 
-    @media (min-width:1150px) AND (max-width:1500px)
-    {
-        & {
-            flex-direction: column;
-
-            &__right {
-                width: 100%;
-                padding: 30px 0 0;
-            }
-        }
-    }
-    @include media-breakpoint-down(md)
-    {
-        & {
-            flex-direction: column;
-
-            &__right {
-                width: 100%;
-                padding: 30px 0 0;
-            }
-        }
-    }
     @include media-breakpoint-only(xs)
     {
-        &__left {
-            width: 100%;
-        }
         &__table {
             font-size: 12px;
             line-height: 26px;

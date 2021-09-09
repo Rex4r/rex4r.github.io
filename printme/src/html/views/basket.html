@@ -348,6 +348,28 @@
 
                 </div>
 
+
+
+
+                <div class="basket-btn">
+                    <a href="javascript:;" class="btn-one btn-full-width btn-big-font">РАССЧИТАТЬ СТОИМОСТЬ</a>
+                </div>
+
+                <div class="delivery-total">
+                    <div class="delivery-total__row">
+                        <div class="delivery-total__col delivery-total__col--name">Размер:</div>
+                        <div class="delivery-total__col delivery-total__col--val" id="shippingParams">100см×30см×20см</div>
+                    </div>
+                    <div class="delivery-total__row">
+                        <div class="delivery-total__col delivery-total__col--name">Вес:</div>
+                        <div class="delivery-total__col delivery-total__col--val" id="shippingWeight">1.5кг</div>
+                    </div>
+                    <div class="delivery-total__row">
+                        <div class="delivery-total__col delivery-total__col--name">Цена:</div>
+                        <div class="delivery-total__col delivery-total__col--val" id="shippingPrice" data="400">400¤</div>
+                    </div>
+                </div>
+
                 <div class="basket-btn">
                     <a href="javascript:;" class="btn-one btn-full-width btn-big-font js-basket-next">ДАЛЕЕ</a>
                 </div>
@@ -580,18 +602,18 @@
             <div class="basket-main__inner">
 
                 <div class="basket-result">
-                    <div class="basket-result__left">
-
+                    <div class="basket-result__top">
                         <div class="form-three">
                             <div class="form-three__line">
                                 <div class="form-three__label">ПРОМОКОД</div>
-                                <input class="form-three__input" value="">
+                                <div class="basket-result__promocode">
+                                    <input class="form-three__input basket-result__promocode-input" value="">
+                                    <button type="submit" class="btn-four basket-result__promocode-btn">ПРИМЕНИТЬ</button>
+                                </div>
                             </div>
-                            <button type="submit" class="btn-four btn-full-width">ПРИМЕНИТЬ</button>
                         </div>
-
                     </div>
-                    <div class="basket-result__right">
+                    <div class="basket-result__bottom">
                         <div class="basket-result__count">1 ЗАКАЗ</div>
                         <div class="basket-result__table">
                             <div>СТОИМОСТЬ ЗАКАЗА:</div>

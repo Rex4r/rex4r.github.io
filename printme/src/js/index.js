@@ -589,13 +589,22 @@ $(function() {
         $('.basket-payer-form').slideDown()
     });
 
-    $('.tool-block-activate').mouseenter(function() {
+    $('.tool-block-activate').on('mouseenter mouseleave', function(event) {
+        let isModalShow = event.type === 'mouseenter';
+        let $toolBlock = $(this);
+        let $toolModal = $toolBlock.find('.tool-block');
 
-        $($(this).find('.tool-block')).addClass('tool-block_active');
+        if ($toolModal.hasClass('tool-block_adaptive')) {
+            let toolModalHeight = $toolModal.outerHeight() + 45;
+            let toolBlockTop = $toolBlock.offset().top;
+            let windowScrollTop = $(window).scrollTop();
+            let mainHeaderHeight = $('.main-header').outerHeight();
+            let isEnoughSpaceInTop = toolBlockTop - (windowScrollTop + mainHeaderHeight) > toolModalHeight;
 
-    }).mouseleave(function() {
+            $toolModal.toggleClass('tool-block_top', isEnoughSpaceInTop);
+        }
 
-        $($(this).find('.tool-block')).removeClass('tool-block_active');
+        $toolModal.toggleClass('tool-block_active', isModalShow);
     });
 });
 

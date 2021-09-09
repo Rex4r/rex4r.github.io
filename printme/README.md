@@ -1,20 +1,31 @@
-https://rex4r.github.io/printme/docs/index.html <br>
-https://rex4r.github.io/printme/docs/order.html<br>
-https://rex4r.github.io/printme/docs/addr.html <br>
-https://rex4r.github.io/printme/docs/addr_btn.html <br>
-https://rex4r.github.io/printme/docs/order.html <br>
-https://rex4r.github.io/printme/docs/product.html <br>
-https://rex4r.github.io/printme/docs/product-2-tab.html <br>
-https://rex4r.github.io/printme/docs/profile.html <br>
-https://rex4r.github.io/printme/docs/requisites.html <br>
-https://rex4r.github.io/printme/docs/service.html <br>
-https://rex4r.github.io/printme/docs/portfolio1.html <br>
-https://rex4r.github.io/printme/docs/portfolio2.html <br>
-https://rex4r.github.io/printme/docs/sale.html <br>
-https://rex4r.github.io/printme/docs/faq.html <br>
-https://rex4r.github.io/printme/docs/payment.html <br>
-https://rex4r.github.io/printme/docs/about.html <br>
-https://rex4r.github.io/printme/docs/information.html <br>
+[Главная](https://rex4r.github.io/printme/docs/index.html) <br>
+[Поиск](https://rex4r.github.io/printme/docs/search.html) <br>
+
+Личный кабинет: <br>
+[Профиль](https://rex4r.github.io/printme/docs/profile.html) <br>
+[Мои заказы](https://rex4r.github.io/printme/docs/order.html) <br>
+[Избранное](https://rex4r.github.io/printme/docs/favorites.html) <br>
+[Корзина](https://rex4r.github.io/printme/docs/basket.html) <br>
+
+Продукт: <br>
+[Продукт](https://rex4r.github.io/printme/docs/product.html) <br>
+[Продукт - без блока "Обработка"](https://rex4r.github.io/printme/docs/product-2-tab.html) <br>
+[Продукт - одна колонка в блоке "Обработка"](https://rex4r.github.io/printme/docs/product-processing.html) <br>
+[Продукт - рассчитаны срок и стоимость](https://rex4r.github.io/printme/docs/product_calc.html) <br>
+
+Услуги: <br>
+[Услуги](https://rex4r.github.io/printme/docs/service.html) <br>
+
+Портфолио: <br>
+[Портфолио 1](https://rex4r.github.io/printme/docs/portfolio1.html) <br>
+[Портфолио 2](https://rex4r.github.io/printme/docs/portfolio2.html) <br>
+
+Информационные страницы: <br>
+[Скидки](https://rex4r.github.io/printme/docs/sale.html) <br>
+[FAQ](https://rex4r.github.io/printme/docs/faq.html) <br>
+[Оплата и доставка](https://rex4r.github.io/printme/docs/payment.html) <br>
+[О компании](https://rex4r.github.io/printme/docs/about.html) <br>
+[Информация](https://rex4r.github.io/printme/docs/information.html) <br>
 
 <hr>
 
