@@ -86,8 +86,10 @@
     color: var(--white);
     border: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: var(--white);
+        text-decoration: none;
     }
 }
 

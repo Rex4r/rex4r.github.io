@@ -500,16 +500,25 @@ $(function() {
 
         $('.product-calc__btn').addClass('d-none');
 
+        if ($(this).data('showCalcBtn')) {
+            $('.product-calc__btn--calc').removeClass('d-none');
+        }
+
         $('#btn-show-basket').removeClass('d-none');
     });
 
     $('body').on("click", ".js-show-order", function() {
+        let hideButton = $(this).data('hideCalcBtn');
 
         $('.product-select__price_active').removeClass('product-select__price_active');
 
         $(this).addClass('product-select__price_active');
 
         $('.product-calc__btn').addClass('d-none');
+
+        if ($(this).data('showCalcBtn')) {
+            $('.product-calc__btn--calc').removeClass('d-none');
+        }
 
         $('#btn-show-order').removeClass('d-none');
     });

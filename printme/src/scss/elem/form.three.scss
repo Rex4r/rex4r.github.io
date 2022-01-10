@@ -78,11 +78,9 @@
         width: 100%;
         line-height: 60px;
         font-size: 14px;
-        //font-weight: 500;
         border: 1px solid var(--grey4);
         transition: all .3s;
         background-color: var(--white);
-        text-transform: uppercase;
 
         &:hover {
             border-color: var(--blue);
