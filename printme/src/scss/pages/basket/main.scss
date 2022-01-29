@@ -52,6 +52,10 @@
             &:hover {
                 fill: var(--blue);
             }
+
+		  	&:first-child {
+			  margin-left: 0;
+			}
         }
         &-icon {
             margin: 0 0 0 10px;
@@ -140,7 +144,7 @@
         &__title {
             flex-direction: column;
             height: auto;
-            padding: 10px 0;
+            padding: 10px 15px;
         }
     }
 }
