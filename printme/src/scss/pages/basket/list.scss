@@ -105,17 +105,11 @@
 
         &-icon {
             margin: 0 10px 0 0;
+            width: 27px;
+            height: 24px;
 
             &_disabled {
                 fill: var(--grey2);
-            }
-            &_cat {
-                width: 27px;
-                height: 24px;
-            }
-            &_like {
-                width: 24px;
-                height: 24px;
             }
         }
     }
