@@ -2,29 +2,29 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+        <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport" />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
+        <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <title>PMG - Главная</title>
-        <link href="./local/template_styles.css?7c09a479bb3149c06a5b" rel="stylesheet" />
+        <link href="./local/template_styles.css?2443d412bfede0cc93ca" rel="stylesheet" />
     </head>
 
     <body class="text">
         <header class="header">
             <div class="header__top text--white">
                 <div class="header__wrapper container">
-                    <div class="header__address">
+                    <div class="header__address d-none d-md-block">
                         Москва, ул. Балтийская, 11<br />
                         <span class="text--gray text--small">Работаем в будние дни с 9:00 до 19:00</span>
                     </div>
-                    <a href="/payment" class="header__help">Оплата и доставка</a>
-                    <a href="tel:84993482567" class="header__phone">+7 (499) 348-25-97</a>
+                    <a class="header__help d-none d-xl-block" href="#">Оплата и доставка</a>
+                    <a class="header__phone" href="tel:84993482567">+7 (499) 348-25-97</a>
                     <div class="header__callback">
-                        <button class="button button--white header__button">Перезвоним</button>
+                        <button class="button button--white header__button d-none d-md-block">Перезвоним</button>
                     </div>
-                    <a href="mailto:order14@tipografiya.online" class="header__email">order14@tipografiya.online</a>
+                    <a class="header__email d-none d-lg-block" href="mailto:order14@tipografiya.online">order14@tipografiya.online</a>
                     <div class="header__lang">EN</div>
                 </div>
             </div>
@@ -32,78 +32,118 @@
             <div class="header__bottom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-3 col-md-2">
                             <a href="/">
-                                <img src="./local/img/logo.svg" alt="PMG" class="header__logo-img" />
+                                <img alt="PMG" class="header__logo-img" src="./local/img/logo.svg" />
                             </a>
                         </div>
-                        <div class="col-10 d-flex align-items-center">
+                        <div class="col-9 col-md-10 d-flex align-items-center">
                             <nav class="header__nav nav">
-                                <ul class="nav__list nav__list--line">
-                                    <li class="nav__item nav__item--drop_down" data-drop-down="client">Клиентам</li>
-                                    <li class="nav__item nav__item--drop_down" data-drop-down="product">Полиграфическая продукция</li>
-                                    <li class="nav__item nav__item--drop_down">Услуги</li>
-                                    <li class="nav__item nav__item--drop_down">Дизайн-студия</li>
-                                    <li class="nav__item">Сувенирная продукция</li>
-                                    <li class="nav__item">Контакты</li>
-                                    <li class="nav__item nav__item--search">
-                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-width="2" stroke-linejoin="round" />
-                                            <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-width="2" stroke-linejoin="round" />
-                                        </svg>
-                                    </li>
-                                </ul>
+                                <div class="nav__wrapper nav__wrapper--mobile">
+                                    <ul class="nav__list">
+                                        <li class="nav__item">
+                                            <a class="tile tile--white" href="">
+                                                <svg class="nav__ico nav__ico--editor" fill="none" height="30" viewBox="0 0 31 30" width="31" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4 16L20 4" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle cx="3.0332" cy="16.7998" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle cx="21.2646" cy="3" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle cx="12.5" cy="9.62891" fill="#002677" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path
+                                                        clip-rule="evenodd"
+                                                        d="M18.1631 8.05335C18.5259 8.01804 18.8935 8 19.265 8C19.6365 8 20.004 8.01804 20.3668 8.05335L20.1731 10.0439C19.8746 10.0149 19.5717 10 19.265 10C18.9583 10 18.6553 10.0149 18.3568 10.0439L18.1631 8.05335ZM13.9604 9.32689C14.6048 8.98179 15.2868 8.69748 15.9988 8.48177L16.5787 10.3958C15.9943 10.5729 15.4342 10.8063 14.9048 11.0899L13.9604 9.32689ZM22.5312 8.48177C23.2432 8.69748 23.9252 8.98179 24.5695 9.32689L23.6252 11.0899C23.0957 10.8063 22.5356 10.5729 21.9512 10.3958L22.5312 8.48177ZM10.5692 12.1123C11.0367 11.5433 11.5589 11.021 12.1279 10.5535L13.3976 12.0988C12.9292 12.4837 12.4993 12.9136 12.1145 13.382L10.5692 12.1123ZM8.49739 15.9831C8.71311 15.2711 8.99742 14.5891 9.34252 13.9448L11.1055 14.8891C10.822 15.4186 10.5885 15.9787 10.4115 16.5631L8.49739 15.9831ZM8.01562 19.2493C8.01562 18.8778 8.03367 18.5103 8.06897 18.1475L10.0596 18.3412C10.0305 18.6397 10.0156 18.9426 10.0156 19.2493C10.0156 19.6161 10.0369 19.9774 10.0783 20.3323L8.09169 20.5637C8.04142 20.1322 8.01562 19.6936 8.01562 19.2493ZM9.89144 25.471C9.40807 24.7441 9.00678 23.9574 8.70107 23.1242L10.5787 22.4353C10.8296 23.1193 11.1593 23.7657 11.5568 24.3636L9.89144 25.471ZM12.6064 28.3172C12.252 28.0566 11.9135 27.7757 11.5926 27.4763L12.957 26.014C13.2211 26.2604 13.4997 26.4916 13.7913 26.706C13.9878 26.8505 14.6375 27.1842 14.8453 27.313L13.7913 29.0127C13.5386 28.856 13.092 28.6743 12.6064 28.3172Z"
+                                                        fill="#002677"
+                                                        fill-rule="evenodd"
+                                                    />
+                                                    <path
+                                                        d="M19.3935 14.1577C19.3158 13.3081 20.2692 12.7576 20.9661 13.2497L29.0234 18.9388C29.736 19.4419 29.5078 20.5525 28.6545 20.7338L25.0391 21.502C24.8324 21.5459 24.645 21.6541 24.5037 21.8111L22.0307 24.5581C21.447 25.2064 20.3711 24.8488 20.2917 23.9801L19.3935 14.1577Z"
+                                                        fill="white"
+                                                        stroke="#002677"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                    />
+                                                </svg>
+                                                <span class="d-none d-md-inline">Онлайн-редактор</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="tile tile--white" href="#">
+                                                <svg class="nav__ico nav__ico--account" fill="none" height="24" viewBox="0 0 27 24" width="27" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect height="16" rx="1" stroke="#002677" stroke-linejoin="round" stroke-width="2" width="13" x="13" y="1" />
+                                                    <path d="M0 10H9" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path
+                                                        d="M17 7.80705C17 7.48036 17.1596 7.17426 17.4274 6.98721L24.4274 2.09831C25.0903 1.63536 26 2.10962 26 2.91816V16.193C26 16.5196 25.8404 16.8257 25.5726 17.0128L18.5726 21.9017C17.9097 22.3646 17 21.8904 17 21.0818V7.80705Z"
+                                                        fill="white"
+                                                        stroke="#002677"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                    />
+                                                    <path d="M5 5L9.29289 9.29289C9.68342 9.68342 9.68342 10.3166 9.29289 10.7071L5 15" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                </svg>
+                                                <span class="d-none d-md-inline">Личный кабинет</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav__item nav__item--search">
+                                            <a href="#" class="tile tile--white">
+                                                <svg fill="none" height="18" viewBox="0 0 17 18" width="17" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav__item nav__item--menu">
+                                            <svg fill="none" height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                                                <rect fill="#E35205" height="38" rx="6" width="38" />
+                                                <rect fill="white" height="2" width="20" x="9" y="12" />
+                                                <rect fill="white" height="2" width="20" x="9" y="18" />
+                                                <rect fill="white" height="2" width="20" x="9" y="24" />
+                                            </svg>
+                                        </li>
+                                    </ul>
 
-                                <div class="nav__drop_down_list d-none">
-                                    <div class="nav__drop_down_item nav__drop_down_item--client d-none">
-                                        <div class="grid grid-2">
-                                            <ul class="nav__list">
+                                    <div class="nav__modal">
+                                        <div class="nav__modal-top">
+                                            <a href="/">
+                                                <img alt="PMG" class="header__logo-img" src="./local/img/logo.svg" />
+                                            </a>
+                                            <svg class="nav__close" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="38" height="38" rx="6" fill="#333333" />
+                                                <rect x="11.2217" y="25.3638" width="20" height="2" transform="rotate(-45 11.2217 25.3638)" fill="white" />
+                                                <rect x="12.636" y="11.2217" width="20" height="2" transform="rotate(45 12.636 11.2217)" fill="white" />
+                                            </svg>
+                                        </div>
+
+                                        <ul class="nav__list nav__list--modal">
+                                            <li class="nav__item nav__item--dropdown" data-dropdown="client">
+                                                <a href="javascript:void(0);">Клиентам</a>
+                                            </li>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="client">
                                                 <li class="nav__item"><a href="#">Акции</a></li>
                                                 <li class="nav__item"><a href="#">Новости</a></li>
                                                 <li class="nav__item"><a href="#">О компании</a></li>
                                                 <li class="nav__item"><a href="#">Портфолио</a></li>
                                                 <li class="nav__item"><a href="#">Статьи</a></li>
                                                 <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
-                                            </ul>
-                                            <ul class="nav__list">
                                                 <li class="nav__item"><a href="#">Требования к файлам</a></li>
                                                 <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
                                                 <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
                                             </ul>
-                                        </div>
-                                        <div class="grid grid-2">
-                                            <a href="#" class="nav__preview">
-                                                <img class="nav__preview_img" src="./local/demodata/demo1.png" alt="Промо упаковка" />
-                                                <div class="nav__preview_text">Для чего нужна промо упаковка?</div>
-                                            </a>
-                                            <a href="#" class="nav__preview">
-                                                <img class="nav__preview_img" src="./local/demodata/demo2.png" alt="Ricoh Pro C7100X" />
-                                                <div class="nav__preview_text">Первая в России 6-цветная цифровая печатная машина Ricoh Pro C7100X</div>
-                                            </a>
-                                        </div>
-                                    </div>
 
-                                    <div class="nav__drop_down_item nav__drop_down_item--product d-none">
-                                        <div class="grid grid-3">
-                                            <ul class="nav__list">
+                                            <li class="nav__item nav__item--dropdown" data-dropdown="product">
+                                                <a href="javascript:void(0);">Полиграфическая продукция</a>
+                                            </li>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="product">
                                                 <li class="nav__item"><a href="#">Офсетная печать</a></li>
                                                 <li class="nav__item"><a href="#">Цифровая печать</a></li>
                                                 <li class="nav__item"><a href="#">Широкоформатная печать</a></li>
                                                 <li class="nav__item"><a href="#">Плоттерная резка</a></li>
                                                 <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
                                                 <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
-                                            </ul>
-
-                                            <ul class="nav__list">
                                                 <li class="nav__item"><a href="#">Срочная пeчать</a></li>
                                                 <li class="nav__item"><a href="#">Черно-белая печать</a></li>
                                                 <li class="nav__item"><a href="#">Цветная печать</a></li>
                                                 <li class="nav__item"><a href="#">Шелкография</a></li>
                                                 <li class="nav__item"><a href="#">Печать переменных данных</a></li>
                                                 <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
-                                            </ul>
-
-                                            <ul class="nav__list">
                                                 <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
                                                 <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
                                                 <li class="nav__item"><a href="#">Печать на бэклите</a></li>
@@ -111,12 +151,114 @@
                                                 <li class="nav__item"><a href="#">Печать больших форматов</a></li>
                                                 <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
                                             </ul>
-                                        </div>
-                                        <div class="grid grid-1">
-                                            <a href="#" class="nav__preview">
-                                                <img class="nav__preview_img" src="./local/demodata/demo3.png" alt="Промо упаковка" />
-                                                <div class="nav__preview_text">Когда начнется революция? Рассматриваем технологию LANDA</div>
+
+                                            <li class="nav__item nav__item--dropdown">
+                                                <a href="javascript:void(0);">Услуги</a>
+                                            </li>
+
+                                            <li class="nav__item nav__item--dropdown">
+                                                <a href="javascript:void(0);">Дизайн-студия</a>
+                                            </li>
+
+                                            <li class="nav__item">
+                                                <a href="#">Сувенирная продукция</a>
+                                            </li>
+
+                                            <li class="nav__item">
+                                                <a href="#">Контакты</a>
+                                            </li>
+
+                                            <li class="nav__item">
+                                                <a href="#">Оплата и доставка</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="nav__wrapper nav__wrapper--desktop">
+                                    <ul class="nav__list nav__list--main">
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="client"><a href="#">Клиентам</a></li>
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="product">
+                                            <a href="#">Полиграфическая продукция</a>
+                                        </li>
+                                        <li class="nav__item nav__item--dropdown"><a href="#">Услуги</a></li>
+                                        <li class="nav__item nav__item--dropdown"><a href="#">Дизайн-студия</a></li>
+                                        <li class="nav__item"><a href="#">Сувенирная продукция</a></li>
+                                        <li class="nav__item"><a href="#">Контакты</a></li>
+                                        <li class="nav__item nav__item--search">
+                                            <a href="#" class="tile tile--white">
+                                                <svg fill="none" height="18" viewBox="0 0 17 18" width="17" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                </svg>
                                             </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="nav__dropdown">
+                                        <div class="nav__dropdown-menu d-none" data-dropdown="client">
+                                            <div class="grid grid-4">
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Акции</a></li>
+                                                    <li class="nav__item"><a href="#">Новости</a></li>
+                                                    <li class="nav__item"><a href="#">О компании</a></li>
+                                                    <li class="nav__item"><a href="#">Портфолио</a></li>
+                                                    <li class="nav__item"><a href="#">Статьи</a></li>
+                                                    <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
+                                                </ul>
+
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Требования к файлам</a></li>
+                                                    <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
+                                                    <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
+                                                </ul>
+
+                                                <a class="nav__preview" href="#">
+                                                    <img alt="Промо упаковка" class="nav__preview_img" src="./local/demodata/demo1.png" />
+                                                    <div class="nav__preview_text">Для чего нужна промо упаковка?</div>
+                                                </a>
+
+                                                <a class="nav__preview" href="#">
+                                                    <img alt="Ricoh Pro C7100X" class="nav__preview_img" src="./local/demodata/demo2.png" />
+                                                    <div class="nav__preview_text">Первая в России 6-цветная цифровая печатная машина Ricoh Pro C7100X</div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="nav__dropdown-menu d-none" data-dropdown="product">
+                                            <div class="grid grid-4">
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Офсетная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Цифровая печать</a></li>
+                                                    <li class="nav__item"><a href="#">Широкоформатная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Плоттерная резка</a></li>
+                                                    <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
+                                                    <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
+                                                </ul>
+
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Срочная пeчать</a></li>
+                                                    <li class="nav__item"><a href="#">Черно-белая печать</a></li>
+                                                    <li class="nav__item"><a href="#">Цветная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Шелкография</a></li>
+                                                    <li class="nav__item"><a href="#">Печать переменных данных</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                </ul>
+
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на бэклите</a></li>
+                                                    <li class="nav__item"><a href="#">Пур клей</a></li>
+                                                    <li class="nav__item"><a href="#">Печать больших форматов</a></li>
+                                                    <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
+                                                </ul>
+
+                                                <a class="nav__preview" href="#">
+                                                    <img alt="Промо упаковка" class="nav__preview_img" src="./local/demodata/demo3.png" />
+                                                    <div class="nav__preview_text">Когда начнется революция? Рассматриваем технологию LANDA</div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -131,25 +273,31 @@
             <section class="section section--first-screen">
                 <div class="container">
                     <div class="row">
-                        <div class="col-9">
+                        <div class="col-12 col-xl-9">
                             <div class="swiper swiper swiper--main">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="./local/demodata/main-slider.png" alt="" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title text--white">Визитные карточки</div>
                                             <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/demodata/main-slider.png" alt="" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title text--white">Визитные карточки</div>
                                             <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/demodata/main-slider.png" alt="" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title text--white">Визитные карточки</div>
                                             <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
@@ -162,48 +310,46 @@
                                 <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="tile tile--white">
-                                <a href="#" class="link link--button link--account">
+                        <div class="col-12 col-xl-3">
+                            <div class="tile tile--white d-none d-xl-block">
+                                <a class="link link--button link--account" href="#">
                                     <div>Личный кабинет</div>
                                     <div class="text--gray text--small text--gray4">Проверить статус заказа</div>
                                 </a>
                             </div>
-                            <div class="tile tile--white">
-                                <a href="#" class="link link--button link--editor">
+                            <div class="tile tile--white d-none d-xl-block">
+                                <a class="link link--button link--editor" href="#">
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
-                            <div class="tile tile--white">
-                                <form action="#" class="form">
-                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
-                                    <div class="form__row">
-                                        <select name="type" id="type" class="form__select form__field select field">
-                                            <option value="" disabled="disabled" selected="selected">Выберите тип проекта</option>
-                                            <option value="Тип 1">Тип 1</option>
-                                            <option value="Тип 2">Тип 2</option>
-                                            <option value="Тип 3">Тип 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row">
-                                        <select name="type" id="count" class="form__select form__field select field">
-                                            <option value="" disabled="disabled" selected="selected">Выберите тираж</option>
-                                            <option value="50">до 50</option>
-                                            <option value="100">до 100</option>
-                                            <option value="500">до 500</option>
-                                            <option value="1000">до 1000</option>
-                                            <option value="5000">до 5000</option>
-                                            <option value="5000+">от 5000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row">
-                                        <input type="email" id="email" class="form__field field input d-none" placeholder="Куда отправить расчет?" />
-                                    </div>
-                                    <div class="form__row form__row--button">
-                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
-                                    </div>
-                                </form>
-                            </div>
+                            <form action="#" class="form form--calculate tile tile--white">
+                                <div class="form__title">Узнайте стоимость вашего проекта</div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="type" name="type">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
+                                        <option value="Тип 1">Тип 1</option>
+                                        <option value="Тип 2">Тип 2</option>
+                                        <option value="Тип 3">Тип 3</option>
+                                    </select>
+                                </div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="circulation" name="circulation">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
+                                        <option value="50">до 50</option>
+                                        <option value="100">до 100</option>
+                                        <option value="500">до 500</option>
+                                        <option value="1000">до 1000</option>
+                                        <option value="5000">до 5000</option>
+                                        <option value="5000+">от 5000</option>
+                                    </select>
+                                </div>
+                                <div class="form__row">
+                                    <input class="form__field form__field--email field input d-none" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
+                                </div>
+                                <div class="form__row form__row--button">
+                                    <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -214,45 +360,45 @@
                     <div class="row">
                         <div class="col-12 col-xl-9">
                             <section class="section advantage">
-                                <h2 class="advantage__title">Преимущества типографии PMG</h2>
-                                <div class="advantage__list grid grid-md-3">
-                                    <div class="advantage__item tile tile--with-img">
-                                        <img src="./local/img/advantage/advantage-1.svg" alt="Решение любой задачи" class="tile__img" />
+                                <h2 class="advantage__title">Преимущества типографии&nbsp;PMG</h2>
+                                <div class="advantage__list grid grid-md-2 grid-lg-3">
+                                    <div class="tile tile--advantage tile--with-img">
+                                        <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-1.svg" />
                                         <div class="tile__info">
                                             <div class="tile__title">Решение любой задачи</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
                                         </div>
                                     </div>
-                                    <div class="advantage__item tile tile--with-img">
-                                        <img src="./local/img/advantage/advantage-2.svg" alt="Решение любой задачи" class="tile__img" />
+                                    <div class="tile tile--advantage tile--with-img">
+                                        <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-2.svg" />
                                         <div class="tile__info">
                                             <div class="tile__title">Срочные заказы</div>
                                             <div class="tile__text text--small text--gray4">В литературе неоднократно описано, как призма доступна</div>
                                         </div>
                                     </div>
-                                    <div class="advantage__item tile tile--with-img">
-                                        <img src="./local/img/advantage/advantage-3.svg" alt="Решение любой задачи" class="tile__img" />
+                                    <div class="tile tile--advantage tile--with-img">
+                                        <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-3.svg" />
                                         <div class="tile__info">
                                             <div class="tile__title">Нестандартные решения</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось</div>
                                         </div>
                                     </div>
-                                    <div class="advantage__item tile tile--with-img">
-                                        <img src="./local/img/advantage/advantage-4.svg" alt="Решение любой задачи" class="tile__img" />
+                                    <div class="tile tile--advantage tile--with-img">
+                                        <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-4.svg" />
                                         <div class="tile__info">
                                             <div class="tile__title">Гарантия качества</div>
                                             <div class="tile__text text--small text--gray4">Гуминовая кислота отражает удельный фрактал как при нагреве.</div>
                                         </div>
                                     </div>
-                                    <div class="advantage__item tile tile--with-img">
-                                        <img src="./local/img/advantage/advantage-5.svg" alt="Решение любой задачи" class="tile__img" />
+                                    <div class="tile tile--advantage tile--with-img">
+                                        <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-5.svg" />
                                         <div class="tile__info">
                                             <div class="tile__title">Современное автоматизированное производство</div>
                                             <div class="tile__text text--small text--gray4">Гумин увлажняет ортзанд</div>
                                         </div>
                                     </div>
-                                    <div class="advantage__item tile tile--with-img">
-                                        <img src="./local/img/advantage/advantage-6.svg" alt="Решение любой задачи" class="tile__img" />
+                                    <div class="tile tile--advantage tile--with-img">
+                                        <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-6.svg" />
                                         <div class="tile__info">
                                             <div class="tile__title">Только проверенные надежные материалы</div>
                                             <div class="tile__text text--small text--gray4">Сорбция адсорбирует смешанный</div>
@@ -265,166 +411,184 @@
                                 <div class="production__top">
                                     <h2 class="production__title">Продукция</h2>
                                     <div class="production__nav">
-                                        <a href="javascript:void(0);" class="production__link link__active">Вся продукция</a>
-                                        <a href="javascript:void(0);" class="production__link d-none d-md-inline">Упаковка</a>
-                                        <a href="javascript:void(0);" class="production__link d-none d-md-inline">Конверты</a>
-                                        <a href="javascript:void(0);" class="production__link d-none d-md-inline">Буклеты</a>
-                                        <a href="javascript:void(0);" class="production__link d-none d-md-inline">Открытки</a>
-                                        <a href="javascript:void(0);" class="production__link d-none d-md-inline">Листовая продукция</a>
+                                        <a class="production__link link__active" href="#">Вся&nbsp;продукция</a>
+                                        <a class="production__link d-none d-lg-inline" href="#">Упаковка</a>
+                                        <a class="production__link d-none d-lg-inline" href="#">Конверты</a>
+                                        <a class="production__link d-none d-lg-inline" href="#">Буклеты</a>
+                                        <a class="production__link d-none d-lg-inline" href="#">Открытки</a>
+                                        <a class="production__link d-none d-xxl-inline" href="#">Листовая продукция</a>
                                     </div>
                                 </div>
-                                <div class="production__list grid grid-auto grid-md-3 text--main2">
+                                <div class="production__list grid grid-6 grid-md-3 text--main2">
                                     <div class="production__item production__item--new tile tile--white">
-                                        <img src="./local/img/product/product-1.png" alt="Коробки и упаковка" class="production__img" />
+                                        <img alt="Коробки и упаковка" class="production__img" src="./local/img/product/product-1.png" />
                                         <div class="production__info">
                                             <div class="tile__title">Коробки и упаковка</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                            <a class="tile__link" href="javascript:void(0);">Заказать упаковку</a>
+                                            <a class="tile__link" href="#">Заказать упаковку</a>
                                         </div>
                                     </div>
                                     <div class="production__item tile tile--white">
-                                        <img src="./local/img/product/product-2.png" alt="Конверты" class="production__img" />
+                                        <img alt="Конверты" class="production__img" src="./local/img/product/product-2.png" />
                                         <div class="production__info">
                                             <div class="tile__title">Конверты</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                            <a class="tile__link" href="javascript:void(0);">Заказать конверты</a>
+                                            <a class="tile__link" href="#">Заказать конверты</a>
                                         </div>
                                     </div>
                                     <div class="production__item tile tile--white">
-                                        <img src="./local/img/product/product-3.png" alt="Блокноты" class="production__img" />
+                                        <img alt="Блокноты" class="production__img" src="./local/img/product/product-3.png" />
                                         <div class="production__info">
                                             <div class="tile__title">Блокноты</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                            <a class="tile__link" href="javascript:void(0);">Заказать блокноты</a>
+                                            <a class="tile__link" href="#">Заказать блокноты</a>
                                         </div>
                                     </div>
                                     <div class="production__item tile tile--white">
-                                        <img src="./local/img/product/product-4.png" alt="Открытки" class="production__img" />
+                                        <img alt="Открытки" class="production__img" src="./local/img/product/product-4.png" />
                                         <div class="production__info">
                                             <div class="tile__title">Открытки</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                            <a class="tile__link" href="javascript:void(0);">Заказать открытки</a>
+                                            <a class="tile__link" href="#">Заказать открытки</a>
                                         </div>
                                     </div>
                                     <div class="production__item tile tile--white">
-                                        <img src="./local/img/product/product-5.png" alt="Буклеты" class="production__img" />
+                                        <img alt="Буклеты" class="production__img" src="./local/img/product/product-5.png" />
                                         <div class="production__info">
                                             <div class="tile__title">Буклеты</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                            <a class="tile__link" href="javascript:void(0);">Заказать буклеты</a>
+                                            <a class="tile__link" href="#">Заказать буклеты</a>
                                         </div>
                                     </div>
                                     <div class="production__item tile tile--white">
-                                        <img src="./local/img/product/product-6.png" alt="Визитки" class="production__img" />
+                                        <img alt="Визитки" class="production__img" src="./local/img/product/product-6.png" />
                                         <div class="production__info">
                                             <div class="tile__title">Визитки</div>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                            <a class="tile__link" href="javascript:void(0);">Заказать визитки</a>
+                                            <a class="tile__link" href="#">Заказать визитки</a>
                                         </div>
                                     </div>
                                 </div>
                             </section>
 
                             <section class="section how-we-work">
-                                Смотрите видео Как мы работаем?
+                                <div class="how-we-work__bg"></div>
+                                <a class="how-we-work__inner" href="#" target="_blank">
+                                    <div class="how-we-work__play">
+                                        <svg class="how-we-work__icon" fill="none" height="37" viewBox="0 0 33 37" width="33" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M31 15.0359C33.6667 16.5755 33.6667 20.4245 31 21.9641L6.24999 36.2535C3.58333 37.7931 0.25 35.8686 0.25 32.7894L0.250001 4.21055C0.250001 1.13135 3.58334 -0.793144 6.25 0.746457L31 15.0359Z"
+                                                fill="#002677"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="how-we-work__text-area">
+                                        <div class="how-we-work__text text--gray4">Смотрите видео</div>
+                                        <div class="how-we-work__title text--main2">Как мы работаем?</div>
+                                    </div>
+                                </a>
                             </section>
 
                             <section class="section clients">
                                 <h2 class="clients__title">Наши клиенты</h2>
                                 <div class="clients__list grid grid-3 grid-md-6">
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-1.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-1.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-2.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-2.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-3.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-3.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-4.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-4.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-5.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-5.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-6.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-6.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-7.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-7.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-8.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-8.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-9.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-9.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-10.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-10.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-11.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-11.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-12.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-12.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-13.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-13.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-14.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-14.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-15.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-15.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-16.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-16.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-17.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-17.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-18.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-18.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-19.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-19.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-20.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-20.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-21.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-21.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-22.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-22.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-23.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-23.png" />
                                     </div>
                                     <div class="client__item">
-                                        <img src="./local/img/client/client-24.png" alt="Клиент" class="client__img" />
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-24.png" />
                                     </div>
                                 </div>
                             </section>
 
                             <section class="section review">
-                                <h2 class="review__title"></h2>
+                                <h2 class="review__title">Отзывы о работе с типографией</h2>
                                 <div class="review__list swiper">
-                                    <div class="review__swiper swiper swiper--review swiper">
+                                    <div class="review__swiper swiper swiper--review">
                                         <div class="swiper-wrapper">
                                             <div class="review__slide swiper-slide">
                                                 <div class="swiper__content">
-                                                    <img src="./local/img/review/review-1.png" alt="Review" class="swiper__img" />
+                                                    <div class="swiper__img-wrapper">
+                                                        <img alt="Review" class="swiper__img" src="./local/img/review/review-1.png" />
+                                                    </div>
                                                     <div class="swiper__title">Выражаем Вам благодарность за вклад в организацию и проведение XXII Олимпийских игр 2014 года в городе Сочи!</div>
                                                     <div class="swiper__text text--small">Выражаем Вам благодарность за вклад в организацию и проведение XXII Олимпийских игр 2014 года в городе Сочи!</div>
                                                     <div class="swiper__author-name text--gray4">АНО "Оргкомитет "Сочи 2014"</div>
-                                                    <a href="https://www.olympic.org/ioc" class="swiper__link">www.olympic.org/ioc</a>
+                                                    <a class="swiper__link" href="https://www.olympic.org/ioc">www.olympic.org/ioc</a>
                                                 </div>
                                             </div>
 
                                             <div class="review__slide swiper-slide">
                                                 <div class="swiper__content">
-                                                    <img src="./local/img/review/review-2.png" alt="Review" class="swiper__img" />
+                                                    <div class="swiper__img-wrapper">
+                                                        <img alt="Review" class="swiper__img" src="./local/img/review/review-2.png" />
+                                                    </div>
                                                     <div class="swiper__title">ООО "Полиграф Медиа Групп" является нашим партнером в области изготовления полиграфической продукции.</div>
                                                     <div class="swiper__text text--small">
                                                         За время сотрудничества ООО "ПМГ" подтвердило свой высокий профессиональный статус, компетентность и активность в решении поставленных задач. Все работы выполняются вовремя, в строго
@@ -432,23 +596,27 @@
                                                         компанию как надежного и ответственного партнера. Руководитель отдела рекламы ОАО "ЕДИНАЯ ЕВРОПА -С. Б."
                                                     </div>
                                                     <div class="swiper__author-name text--gray4">Иль Де Ботэ</div>
-                                                    <a href="https://www.iledebeaute.ru" class="swiper__link">www.iledebeaute.ru</a>
+                                                    <a class="swiper__link" href="https://www.iledebeaute.ru">www.iledebeaute.ru</a>
                                                 </div>
                                             </div>
 
                                             <div class="review__slide swiper-slide">
                                                 <div class="swiper__content">
-                                                    <img src="./local/img/review/review-1.png" alt="Review" class="swiper__img" />
+                                                    <div class="swiper__img-wrapper">
+                                                        <img alt="Review" class="swiper__img" src="./local/img/review/review-1.png" />
+                                                    </div>
                                                     <div class="swiper__title">Выражаем Вам благодарность за вклад в организацию и проведение XXII Олимпийских игр 2014 года в городе Сочи!</div>
                                                     <div class="swiper__text text--small">Выражаем Вам благодарность за вклад в организацию и проведение XXII Олимпийских игр 2014 года в городе Сочи!</div>
                                                     <div class="swiper__author-name text--gray4">АНО "Оргкомитет "Сочи 2014"</div>
-                                                    <a href="https://www.olympic.org/ioc" class="swiper__link">www.olympic.org/ioc</a>
+                                                    <a class="swiper__link" href="https://www.olympic.org/ioc">www.olympic.org/ioc</a>
                                                 </div>
                                             </div>
 
                                             <div class="review__slide swiper-slide">
                                                 <div class="swiper__content">
-                                                    <img src="./local/img/review/review-2.png" alt="Review" class="swiper__img" />
+                                                    <div class="swiper__img-wrapper">
+                                                        <img alt="Review" class="swiper__img" src="./local/img/review/review-2.png" />
+                                                    </div>
                                                     <div class="swiper__title">ООО "Полиграф Медиа Групп" является нашим партнером в области изготовления полиграфической продукции.</div>
                                                     <div class="swiper__text text--small">
                                                         За время сотрудничества ООО "ПМГ" подтвердило свой высокий профессиональный статус, компетентность и активность в решении поставленных задач. Все работы выполняются вовремя, в строго
@@ -456,14 +624,14 @@
                                                         компанию как надежного и ответственного партнера. Руководитель отдела рекламы ОАО "ЕДИНАЯ ЕВРОПА -С. Б."
                                                     </div>
                                                     <div class="swiper__author-name text--gray4">Иль Де Ботэ</div>
-                                                    <a href="https://www.iledebeaute.ru" class="swiper__link">www.iledebeaute.ru</a>
+                                                    <a class="swiper__link" href="https://www.iledebeaute.ru">www.iledebeaute.ru</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-pagination"></div>
 
-                                        <div class="swiper__button swiper__button--prev d-none d-md-flex"></div>
-                                        <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
+                                        <div class="swiper__button swiper__button--prev d-none d-lg-flex"></div>
+                                        <div class="swiper__button swiper__button--next d-none d-lg-flex"></div>
                                     </div>
                                 </div>
                             </section>
@@ -471,10 +639,10 @@
                             <section class="section services">
                                 <h2 class="services__title"></h2>
                                 <div class="services__list">
-                                    <div class="services__list grid grid-1 grid-md-2 grid-xl-3">
+                                    <div class="services__list grid grid-9__full-width grid-md-2 grid-xl-3">
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-1.png" alt="Офсетная печать" class="services__img" />
+                                                <img alt="Офсетная печать" class="services__img" src="./local/img/service/service-1.png" />
                                             </div>
                                             <div class="services__item-title">Офсетная печать</div>
                                             <div class="services__item-content text--gray4">
@@ -484,7 +652,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-2.png" alt="Цифровая печать" class="services__img" />
+                                                <img alt="Цифровая печать" class="services__img" src="./local/img/service/service-2.png" />
                                             </div>
                                             <div class="services__item-title">Цифровая печать</div>
                                             <div class="services__item-content text--gray4">
@@ -494,7 +662,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-3.png" alt="Широкоформатная печать" class="services__img" />
+                                                <img alt="Широкоформатная печать" class="services__img" src="./local/img/service/service-3.png" />
                                             </div>
                                             <div class="services__item-title">Широкоформатная печать</div>
                                             <div class="services__item-content text--gray4">
@@ -504,7 +672,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-4.png" alt="Разработка дизайна" class="services__img" />
+                                                <img alt="Разработка дизайна" class="services__img" src="./local/img/service/service-4.png" />
                                             </div>
                                             <div class="services__item-title">Разработка дизайна</div>
                                             <div class="services__item-content text--gray4">
@@ -514,7 +682,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-5.png" alt="Ульрафиолетовая печать" class="services__img" />
+                                                <img alt="Ульрафиолетовая печать" class="services__img" src="./local/img/service/service-5.png" />
                                             </div>
                                             <div class="services__item-title">Ульрафиолетовая печать</div>
                                             <div class="services__item-content text--gray4">
@@ -524,7 +692,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-6.png" alt="Рекламная полиграфия" class="services__img" />
+                                                <img alt="Рекламная полиграфия" class="services__img" src="./local/img/service/service-6.png" />
                                             </div>
                                             <div class="services__item-title">Рекламная полиграфия</div>
                                             <div class="services__item-content text--gray4">
@@ -534,7 +702,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-7.png" alt="Офисная полиграфия" class="services__img" />
+                                                <img alt="Офисная полиграфия" class="services__img" src="./local/img/service/service-7.png" />
                                             </div>
                                             <div class="services__item-title">Офисная полиграфия</div>
                                             <div class="services__item-content text--gray4">
@@ -544,7 +712,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-8.png" alt="Срочная печать" class="services__img" />
+                                                <img alt="Срочная печать" class="services__img" src="./local/img/service/service-8.png" />
                                             </div>
                                             <div class="services__item-title">Срочная печать</div>
                                             <div class="services__item-content text--gray4">
@@ -554,7 +722,7 @@
                                         </div>
                                         <div class="services__item">
                                             <div class="services__img-wrapper">
-                                                <img src="./local/img/service/service-9.png" alt="Цветная печать" class="services__img" />
+                                                <img alt="Цветная печать" class="services__img" src="./local/img/service/service-9.png" />
                                             </div>
                                             <div class="services__item-title">Цветная печать</div>
                                             <div class="services__item-content text--gray4">
@@ -568,7 +736,7 @@
 
                             <section class="section step">
                                 <h2 class="step__title">Этапы печати</h2>
-                                <div class="step__list grid grid-md-4 grid-lg-5">
+                                <div class="step__list grid grid-10 grid-md-4 grid-lg-5">
                                     <div class="step__item step__item--1 tile tile--lightgray">
                                         <img class="step__img" src="./local/img/step/step-1.svg" />
                                         <div class="tile__title">Заявка</div>
@@ -614,20 +782,20 @@
                         </div>
 
                         <div class="d-none d-xl-block col-xl-3 sidebar">
-                            <div class="tile tile--white sidebar__form-wrapper">
-                                <form action="" class="form form--callback">
-                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
+                            <div class="sidebar__form-wrapper">
+                                <form action="" class="form form--callback tile tile--white">
+                                    <div class="form__title">Мы вам перезвоним</div>
                                     <div class="form__row">
-                                        <input type="text" name="callback-name" id="callback-name" class="form__field field input" placeholder="Как вас зовут?" />
+                                        <input class="form__field field input" name="name" placeholder="Как вас зовут?" type="text" />
                                     </div>
                                     <div class="form__row">
-                                        <textarea name="callback--question" id="callback--question" cols="30" rows="10" class="form__field form__textarea textarea" placeholder="Ваш вопрос"></textarea>
+                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
                                     </div>
                                     <div class="form__row">
-                                        <input type="tel" name="callback-phone" id="callback-phone" class="form__field field input" placeholder="Ваш телефон" />
+                                        <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
                                     </div>
                                     <div class="form__row">
-                                        <input type="email" name="callback-email" id="callback-email" class="form__field field input" placeholder="Ваш e-mail" />
+                                        <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
                                     </div>
                                     <div class="form__row form__row--button">
                                         <button class="form__button form__button--submit button button--full-width" type="submit">Отправить</button>
@@ -710,67 +878,83 @@
                             <div class="swiper swiper--portfolio text--white">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-1.png" alt="Буклет Райфайзен Банк" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Буклет Райфайзен Банк" class="swiper__img" src="./local/img/portfolio/portfolio-1.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Буклет Райфайзен Банк</div>
                                             <div class="swiper__text text--small text--gray2">Мы выполняем буклеты на любых типах бумаги, любой плотности, размера и способа печати.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать буклет</a>
+                                            <a class="swiper__link text--white" href="#">Заказать буклет</a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-2.png" alt="Каталог Митино О2" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Каталог Митино О2" class="swiper__img" src="./local/img/portfolio/portfolio-2.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Каталог Митино О2</div>
                                             <div class="swiper__text text--small text--gray2">Изготавливаем каталоги на высочайшем уровне, офсетная печать, биговка, склейка и покрытие пленкой.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать каталог</a>
+                                            <a class="swiper__link text--white" href="#">Заказать каталог</a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-3.png" alt="Папка РосКульт" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Папка РосКульт" class="swiper__img" src="./local/img/portfolio/portfolio-3.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Папка РосКульт</div>
                                             <div class="swiper__text text--small text--gray2">Изготавливаем каталоги на высочайшем уровне, офсетная печать, биговка, склейка и покрытие пленкой.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать изготовление папки</a>
+                                            <a class="swiper__link text--white" href="#">Заказать изготовление папки</a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-4.png" alt="Брошюра WWF" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Брошюра WWF" class="swiper__img" src="./local/img/portfolio/portfolio-4.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Брошюра WWF</div>
                                             <div class="swiper__text text--small text--gray2">Изготавливаем каталоги на высочайшем уровне, офсетная печать, биговка, склейка и покрытие пленкой.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать изготовление папки</a>
+                                            <a class="swiper__link text--white" href="#">Заказать изготовление папки</a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-1.png" alt="Буклет Райфайзен Банк" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Буклет Райфайзен Банк" class="swiper__img" src="./local/img/portfolio/portfolio-1.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Буклет Райфайзен Банк</div>
                                             <div class="swiper__text text--small text--gray2">Мы выполняем буклеты на любых типах бумаги, любой плотности, размера и способа печати.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать буклет</a>
+                                            <a class="swiper__link text--white" href="#">Заказать буклет</a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-2.png" alt="Каталог Митино О2" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Каталог Митино О2" class="swiper__img" src="./local/img/portfolio/portfolio-2.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Каталог Митино О2</div>
                                             <div class="swiper__text text--small text--gray2">Изготавливаем каталоги на высочайшем уровне, офсетная печать, биговка, склейка и покрытие пленкой.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать каталог</a>
+                                            <a class="swiper__link text--white" href="#">Заказать каталог</a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-3.png" alt="Папка РосКульт" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Папка РосКульт" class="swiper__img" src="./local/img/portfolio/portfolio-3.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Папка РосКульт</div>
                                             <div class="swiper__text text--small text--gray2">Изготавливаем каталоги на высочайшем уровне, офсетная печать, биговка, склейка и покрытие пленкой.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать изготовление папки</a>
+                                            <a class="swiper__link text--white" href="#">Заказать изготовление папки</a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./local/img/portfolio/portfolio-4.png" alt="Брошюра WWF" class="swiper__img" />
+                                        <div class="swiper__img-wrapper">
+                                            <img alt="Брошюра WWF" class="swiper__img" src="./local/img/portfolio/portfolio-4.png" />
+                                        </div>
                                         <div class="swiper__content">
                                             <div class="swiper__title">Брошюра WWF</div>
                                             <div class="swiper__text text--small text--gray2">Изготавливаем каталоги на высочайшем уровне, офсетная печать, биговка, склейка и покрытие пленкой.</div>
-                                            <a href="#" class="swiper__link text--white">Заказать изготовление папки</a>
+                                            <a class="swiper__link text--white" href="#">Заказать изготовление папки</a>
                                         </div>
                                     </div>
                                 </div>
@@ -789,36 +973,36 @@
                     <div class="row">
                         <div class="col-12 col-lg-4 cooperation">
                             <div class="cooperation__wrapper">
-                                <img src="./local/img/cooperation/cooperation-1.svg" alt="С частными лицами" class="cooperation__img" />
+                                <img alt="С частными лицами" class="cooperation__img" src="./local/img/cooperation/cooperation-1.svg" />
                                 <div class="cooperation__title">С частными лицами</div>
                                 <div class="cooperation__text">Полиграфическая печать, несмотря на стремительное развитие цифровых технологий, продолжает оставаться основным средством не только информации, но и рекламы.</div>
                                 <div class="cooperation__note text--small text--gray4">
                                     PMG — это типография со своим производством , которая оперативно выпускает дешевые и эксклюзивные печатные издания в большом ассортименте, разные по назначению и периодичности:
                                 </div>
-                                <a href="" class="cooperation__link button button--full-width">Начать сотрудничество</a>
+                                <a class="cooperation__link button button--full-width" href="">Начать сотрудничество</a>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 cooperation">
                             <div class="cooperation__wrapper">
-                                <img src="./local/img/cooperation/cooperation-2.svg" alt="С корпоративными клиентами" class="cooperation__img" />
+                                <img alt="С корпоративными клиентами" class="cooperation__img" src="./local/img/cooperation/cooperation-2.svg" />
                                 <div class="cooperation__title">С корпоративными клиентами</div>
                                 <div class="cooperation__text">
                                     Для того, чтобы постоянно поддерживать статус лучшей в МСК типографии, мы совершенствуем собственный профессионализм, обучаемся, оснащаем производство лучшим импортным оборудованием.
                                 </div>
                                 <div class="cooperation__note text--small text--gray4">Это позволяет гарантировать каждому клиенту изготовление печатной продукции точно в срок, независимо от сложности проекта и объема тиража.</div>
-                                <a href="" class="cooperation__link button button--full-width">Начать сотрудничество</a>
+                                <a class="cooperation__link button button--full-width" href="">Начать сотрудничество</a>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 cooperation">
                             <div class="cooperation__wrapper">
-                                <img src="./local/img/cooperation/cooperation-3.svg" alt="С рекламными агентствами" class="cooperation__img" />
+                                <img alt="С рекламными агентствами" class="cooperation__img" src="./local/img/cooperation/cooperation-3.svg" />
                                 <div class="cooperation__title">С рекламными агентствами</div>
                                 <div class="cooperation__text">Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат.</div>
                                 <div class="cooperation__note text--small text--gray4">
                                     К тому же на сайте компании есть онлайн-калькулятор, позволяющий рассчитать примерную стоимость заказа. Удобное сотрудничество. Хорошее месторасположение в Москве (находится типография возле метро, до нее
                                     удобно добраться на городском или личном транспорте).
                                 </div>
-                                <a href="" class="cooperation__link button button--full-width">Начать сотрудничество</a>
+                                <a class="cooperation__link button button--full-width" href="">Начать сотрудничество</a>
                             </div>
                         </div>
                     </div>
@@ -1109,7 +1293,7 @@
                             <div class="col-12 col-sm-5 footer__col">
                                 <div>
                                     <a href="/">
-                                        <img src="./local/img/logo.svg" alt="PMG" />
+                                        <img alt="PMG" src="./local/img/logo.svg" />
                                     </a>
                                 </div>
                                 <div class="d-none d-sm-block text--small text--gray4">© 2006-2021<br />сайт полиграфических услуг типографии PMG.</div>
@@ -1118,57 +1302,57 @@
                                 <div class="contact">
                                     <div class="footer__title">Москва, ул. Балтийская, 11</div>
                                     <div class="text--small text--gray4">Работаем в будние дни с 9:00 до 19:00</div>
-                                    <a href="mailto:order10@tipografiya.online" class="footer__link">order10@tipografiya.online</a>
-                                    <a href="tel:+74993482597" class="footer__link">+7 (499) 348-25-97</a>
+                                    <a class="footer__link" href="mailto:order10@tipografiya.online">order10@tipografiya.online</a>
+                                    <a class="footer__link" href="tel:+74993482597">+7 (499) 348-25-97</a>
                                 </div>
                                 <div class="social">
-                                    <a href="#" class="social__item"><img src="./local/img/social/facebook.svg" alt="Facebook"/></a>
-                                    <a href="#" class="social__item"><img src="./local/img/social/youtube.svg" alt="YouTube"/></a>
-                                    <a href="#" class="social__item"><img src="./local/img/social/instagram.svg" alt="instagram"/></a>
-                                    <a href="#" class="social__item"><img src="./local/img/social/vk.svg" alt="ВКонтакте"/></a>
+                                    <a class="social__item" href="#"><img alt="Facebook" src="./local/img/social/facebook.svg"/></a>
+                                    <a class="social__item" href="#"><img alt="YouTube" src="./local/img/social/youtube.svg"/></a>
+                                    <a class="social__item" href="#"><img alt="instagram" src="./local/img/social/instagram.svg"/></a>
+                                    <a class="social__item" href="#"><img alt="ВКонтакте" src="./local/img/social/vk.svg"/></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="footer__title">Услуги</div>
-                        <a href="" class="footer__link">Офсетная печать</a>
-                        <a href="" class="footer__link">Цифровая печать</a>
-                        <a href="" class="footer__link">Широкоформатная печать</a>
-                        <a href="" class="footer__link">Плоттерная резка</a>
-                        <a href="" class="footer__link">УФ Печать</a>
-                        <a href="" class="footer__link">Рекламная полиграфия</a>
-                        <a href="" class="footer__link">Срочная печать</a>
-                        <a href="" class="footer__link">Чёрно-белая печать</a>
+                        <a class="footer__link" href="">Офсетная печать</a>
+                        <a class="footer__link" href="">Цифровая печать</a>
+                        <a class="footer__link" href="">Широкоформатная печать</a>
+                        <a class="footer__link" href="">Плоттерная резка</a>
+                        <a class="footer__link" href="">УФ Печать</a>
+                        <a class="footer__link" href="">Рекламная полиграфия</a>
+                        <a class="footer__link" href="">Срочная печать</a>
+                        <a class="footer__link" href="">Чёрно-белая печать</a>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="footer__title">Клиентам</div>
-                        <a href="" class="footer__link">Требования к файлам</a>
-                        <a href="" class="footer__link">О компании</a>
-                        <a href="" class="footer__link">Публикации</a>
-                        <a href="" class="footer__link">Сгенерировать QR-код</a>
-                        <a href="" class="footer__link">Справочник Полиграфии</a>
-                        <a href="" class="footer__link">Акции</a>
-                        <a href="" class="footer__link">Оплата и доставка</a>
-                        <a href="" class="footer__link">Контакты</a>
+                        <a class="footer__link" href="">Требования к файлам</a>
+                        <a class="footer__link" href="">О компании</a>
+                        <a class="footer__link" href="">Публикации</a>
+                        <a class="footer__link" href="">Сгенерировать QR-код</a>
+                        <a class="footer__link" href="">Справочник Полиграфии</a>
+                        <a class="footer__link" href="">Акции</a>
+                        <a class="footer__link" href="">Оплата и доставка</a>
+                        <a class="footer__link" href="">Контакты</a>
                     </div>
                     <div class="col-12 col-md-4 col-lg-3 footer__col">
                         <div>
                             <div class="footer__title">Оплата</div>
                             <p class="text--gray4">Мы принимаем разные виды оплаты, как от физических, так и от юридических лиц</p>
                             <div class="payment">
-                                <img src="./local/img/payment/visa.svg" alt="Visa" class="payment__item" />
-                                <img src="./local/img/payment/mastercard.svg" alt="Mastercard" class="payment__item" />
-                                <img src="./local/img/payment/maestro.svg" alt="Maestro" class="payment__item" />
+                                <img alt="Visa" class="payment__item" src="./local/img/payment/visa.svg" />
+                                <img alt="Mastercard" class="payment__item" src="./local/img/payment/mastercard.svg" />
+                                <img alt="Maestro" class="payment__item" src="./local/img/payment/maestro.svg" />
                             </div>
                             <p class="text--gray4">Реквизиты<br />ИНН: 7733321953 ОГРН: 1177746637749</p>
                         </div>
-                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a class="footer__link" href="#">Политика конфиденциальности</a>
                     </div>
                 </div>
             </div>
         </footer>
 
-        <script type="text/javascript" src="./local/js/script.js?7c09a479bb3149c06a5b"></script>
+        <script type="text/javascript" src="./local/js/script.js?2443d412bfede0cc93ca"></script>
     </body>
 </html>
