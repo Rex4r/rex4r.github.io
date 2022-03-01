@@ -8,7 +8,7 @@
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <title>PMG - Главная</title>
-        <link href="./local/template_styles.css?2443d412bfede0cc93ca" rel="stylesheet" />
+        <link href="./local/template_styles.css?3b19f775d40121a7277a" rel="stylesheet" />
     </head>
 
     <body class="text">
@@ -32,12 +32,12 @@
             <div class="header__bottom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-3 col-md-2">
+                        <div class="col-4 col-md-2">
                             <a href="/">
                                 <img alt="PMG" class="header__logo-img" src="./local/img/logo.svg" />
                             </a>
                         </div>
-                        <div class="col-9 col-md-10 d-flex align-items-center">
+                        <div class="col-8 col-md-10 d-flex align-items-center">
                             <nav class="header__nav nav">
                                 <div class="nav__wrapper nav__wrapper--mobile">
                                     <ul class="nav__list">
@@ -310,7 +310,8 @@
                                 <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-3">
+
+                        <div class="col-12 col-xl-3 sidebar sidebar--fs">
                             <div class="tile tile--white d-none d-xl-block">
                                 <a class="link link--button link--account" href="#">
                                     <div>Личный кабинет</div>
@@ -322,34 +323,46 @@
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
-                            <form action="#" class="form form--calculate tile tile--white">
-                                <div class="form__title">Узнайте стоимость вашего проекта</div>
-                                <div class="form__row">
-                                    <select class="form__select form__field select field" id="type" name="type">
-                                        <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
-                                        <option value="Тип 1">Тип 1</option>
-                                        <option value="Тип 2">Тип 2</option>
-                                        <option value="Тип 3">Тип 3</option>
-                                    </select>
+                            <div class="float">
+                                <form action="#" class="form form--calculate tile tile--white">
+                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
+                                    <div class="form__row">
+                                        <select class="form__select form__field select field" id="type" name="type">
+                                            <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
+                                            <option value="Тип 1">Тип 1</option>
+                                            <option value="Тип 2">Тип 2</option>
+                                            <option value="Тип 3">Тип 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__row">
+                                        <select class="form__select form__field select field" id="circulation" name="circulation">
+                                            <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
+                                            <option value="50">до 50</option>
+                                            <option value="100">до 100</option>
+                                            <option value="500">до 500</option>
+                                            <option value="1000">до 1000</option>
+                                            <option value="5000">до 5000</option>
+                                            <option value="5000+">от 5000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__row d-none">
+                                        <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
+                                    </div>
+                                    <div class="form__row d-none">
+                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
+                                    </div>
+                                    <div class="form__row form__row--button">
+                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                    </div>
+                                </form>
+                                <div class="aside">
+                                    <div class="aside__title aside__title--bg">Требования к файлам</div>
+                                    <div class="aside__text text--small text--gray4">
+                                        Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.
+                                    </div>
+                                    <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
                                 </div>
-                                <div class="form__row">
-                                    <select class="form__select form__field select field" id="circulation" name="circulation">
-                                        <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                        <option value="50">до 50</option>
-                                        <option value="100">до 100</option>
-                                        <option value="500">до 500</option>
-                                        <option value="1000">до 1000</option>
-                                        <option value="5000">до 5000</option>
-                                        <option value="5000+">от 5000</option>
-                                    </select>
-                                </div>
-                                <div class="form__row">
-                                    <input class="form__field form__field--email field input d-none" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
-                                </div>
-                                <div class="form__row form__row--button">
-                                    <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -567,6 +580,25 @@
                                 </div>
                             </section>
 
+                            <form action="" class="form form--callback tile tile--white">
+                                <div class="form__title">Мы вам перезвоним</div>
+                                <div class="form__row">
+                                    <input class="form__field field input" name="name" placeholder="Как вас зовут?" type="text" />
+                                </div>
+                                <div class="form__row">
+                                    <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
+                                </div>
+                                <div class="form__row">
+                                    <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
+                                </div>
+                                <div class="form__row">
+                                    <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
+                                </div>
+                                <div class="form__row form__row--button">
+                                    <button class="form__button form__button--submit button button--full-width" type="submit">Отправить</button>
+                                </div>
+                            </form>
+
                             <section class="section review">
                                 <h2 class="review__title">Отзывы о работе с типографией</h2>
                                 <div class="review__list swiper">
@@ -637,98 +669,96 @@
                             </section>
 
                             <section class="section services">
-                                <h2 class="services__title"></h2>
-                                <div class="services__list">
-                                    <div class="services__list grid grid-9__full-width grid-md-2 grid-xl-3">
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Офсетная печать" class="services__img" src="./local/img/service/service-1.png" />
-                                            </div>
-                                            <div class="services__item-title">Офсетная печать</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Офсетный вид остаётся самым популярным и одновременно классическим способом.</div>
-                                                <a class="services__link" href="#">Заказать офсетную печать</a>
-                                            </div>
+                                <h2 class="services__title">Наши услуги</h2>
+                                <div class="services__list grid grid-9__full-width grid-md-2 grid-xl-3">
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Офсетная печать" class="services__img" src="./local/img/service/service-1.png" />
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Цифровая печать" class="services__img" src="./local/img/service/service-2.png" />
-                                            </div>
-                                            <div class="services__item-title">Цифровая печать</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Цифровой вид намного оперативнее и быстро решает вопросы, связанные со скоростью и сложностью выполнения любых работ.</div>
-                                                <a class="services__link" href="#">Заказать цифровую печать</a>
-                                            </div>
+                                        <div class="services__item-title">Офсетная печать</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Офсетный вид остаётся самым популярным и одновременно классическим способом.</div>
+                                            <a class="services__link" href="#">Заказать офсетную печать</a>
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Широкоформатная печать" class="services__img" src="./local/img/service/service-3.png" />
-                                            </div>
-                                            <div class="services__item-title">Широкоформатная печать</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Широкоформатная — используется для баннеров перетяжек, стендов.</div>
-                                                <a class="services__link" href="#">Заказать широкоформатную печать</a>
-                                            </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Цифровая печать" class="services__img" src="./local/img/service/service-2.png" />
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Разработка дизайна" class="services__img" src="./local/img/service/service-4.png" />
-                                            </div>
-                                            <div class="services__item-title">Разработка дизайна</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Мы предлагаем услуги разработки дизайна, верстки различной рекламной продукции.</div>
-                                                <a class="services__link" href="#">Заказать дизайн</a>
-                                            </div>
+                                        <div class="services__item-title">Цифровая печать</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Цифровой вид намного оперативнее и быстро решает вопросы, связанные со скоростью и сложностью выполнения любых работ.</div>
+                                            <a class="services__link" href="#">Заказать цифровую печать</a>
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Ульрафиолетовая печать" class="services__img" src="./local/img/service/service-5.png" />
-                                            </div>
-                                            <div class="services__item-title">Ульрафиолетовая печать</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>УФ — это технология с использованием красок, твердеющих при просвечивании лучами ультрафиолета.</div>
-                                                <a class="services__link" href="#">Заказать ультрафиолетовую печать</a>
-                                            </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Широкоформатная печать" class="services__img" src="./local/img/service/service-3.png" />
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Рекламная полиграфия" class="services__img" src="./local/img/service/service-6.png" />
-                                            </div>
-                                            <div class="services__item-title">Рекламная полиграфия</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Это любой вид продукции используемой для продвижения товаров, услуг или компании.</div>
-                                                <a class="services__link" href="#">Заказать рекламную полиграфию</a>
-                                            </div>
+                                        <div class="services__item-title">Широкоформатная печать</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Широкоформатная — используется для баннеров перетяжек, стендов.</div>
+                                            <a class="services__link" href="#">Заказать широкоформатную печать</a>
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Офисная полиграфия" class="services__img" src="./local/img/service/service-7.png" />
-                                            </div>
-                                            <div class="services__item-title">Офисная полиграфия</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Различная продукция для офисов.</div>
-                                                <a class="services__link" href="#">Заказать офисную печать</a>
-                                            </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Разработка дизайна" class="services__img" src="./local/img/service/service-4.png" />
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Срочная печать" class="services__img" src="./local/img/service/service-8.png" />
-                                            </div>
-                                            <div class="services__item-title">Срочная печать</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Как правило, выполняется с использованием цифровых технологий, поскольку допечатная подготовка в этом случае не требует значительного времени.</div>
-                                                <a class="services__link" href="#">Заказать срочную печать</a>
-                                            </div>
+                                        <div class="services__item-title">Разработка дизайна</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Мы предлагаем услуги разработки дизайна, верстки различной рекламной продукции.</div>
+                                            <a class="services__link" href="#">Заказать дизайн</a>
                                         </div>
-                                        <div class="services__item">
-                                            <div class="services__img-wrapper">
-                                                <img alt="Цветная печать" class="services__img" src="./local/img/service/service-9.png" />
-                                            </div>
-                                            <div class="services__item-title">Цветная печать</div>
-                                            <div class="services__item-content text--gray4">
-                                                <div>Большую часть продукции заказчики сегодня предполагают распечатать в цвете. Возможно с использованием как офсетной, так и цифровой технологии.</div>
-                                                <a class="services__link" href="#">Заказать цветную печать</a>
-                                            </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Ульрафиолетовая печать" class="services__img" src="./local/img/service/service-5.png" />
+                                        </div>
+                                        <div class="services__item-title">Ульрафиолетовая печать</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">УФ — это технология с использованием красок, твердеющих при просвечивании лучами ультрафиолета.</div>
+                                            <a class="services__link" href="#">Заказать ультрафиолетовую печать</a>
+                                        </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Рекламная полиграфия" class="services__img" src="./local/img/service/service-6.png" />
+                                        </div>
+                                        <div class="services__item-title">Рекламная полиграфия</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Это любой вид продукции используемой для продвижения товаров, услуг или компании.</div>
+                                            <a class="services__link" href="#">Заказать рекламную полиграфию</a>
+                                        </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Офисная полиграфия" class="services__img" src="./local/img/service/service-7.png" />
+                                        </div>
+                                        <div class="services__item-title">Офисная полиграфия</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Различная продукция для офисов.</div>
+                                            <a class="services__link" href="#">Заказать офисную печать</a>
+                                        </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Срочная печать" class="services__img" src="./local/img/service/service-8.png" />
+                                        </div>
+                                        <div class="services__item-title">Срочная печать</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Как правило, выполняется с использованием цифровых технологий, поскольку допечатная подготовка в этом случае не требует значительного времени.</div>
+                                            <a class="services__link" href="#">Заказать срочную печать</a>
+                                        </div>
+                                    </div>
+                                    <div class="services__item">
+                                        <div class="services__img-wrapper">
+                                            <img alt="Цветная печать" class="services__img" src="./local/img/service/service-9.png" />
+                                        </div>
+                                        <div class="services__item-title">Цветная печать</div>
+                                        <div class="services__item-content text--gray4">
+                                            <div class="services__item-text">Большую часть продукции заказчики сегодня предполагают распечатать в цвете. Возможно с использованием как офсетной, так и цифровой технологии.</div>
+                                            <a class="services__link" href="#">Заказать цветную печать</a>
                                         </div>
                                     </div>
                                 </div>
@@ -781,28 +811,7 @@
                             </section>
                         </div>
 
-                        <div class="d-none d-xl-block col-xl-3 sidebar">
-                            <div class="sidebar__form-wrapper">
-                                <form action="" class="form form--callback tile tile--white">
-                                    <div class="form__title">Мы вам перезвоним</div>
-                                    <div class="form__row">
-                                        <input class="form__field field input" name="name" placeholder="Как вас зовут?" type="text" />
-                                    </div>
-                                    <div class="form__row">
-                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
-                                    </div>
-                                    <div class="form__row">
-                                        <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
-                                    </div>
-                                    <div class="form__row">
-                                        <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
-                                    </div>
-                                    <div class="form__row form__row--button">
-                                        <button class="form__button form__button--submit button button--full-width" type="submit">Отправить</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <div class="d-none d-xl-block col-xl-3 track"></div>
                     </div>
                 </div>
             </section>
@@ -972,8 +981,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С частными лицами" class="cooperation__img" src="./local/img/cooperation/cooperation-1.svg" />
                             <div class="cooperation__wrapper">
-                                <img alt="С частными лицами" class="cooperation__img" src="./local/img/cooperation/cooperation-1.svg" />
                                 <div class="cooperation__title">С частными лицами</div>
                                 <div class="cooperation__text">Полиграфическая печать, несмотря на стремительное развитие цифровых технологий, продолжает оставаться основным средством не только информации, но и рекламы.</div>
                                 <div class="cooperation__note text--small text--gray4">
@@ -983,8 +992,8 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С корпоративными клиентами" class="cooperation__img" src="./local/img/cooperation/cooperation-2.svg" />
                             <div class="cooperation__wrapper">
-                                <img alt="С корпоративными клиентами" class="cooperation__img" src="./local/img/cooperation/cooperation-2.svg" />
                                 <div class="cooperation__title">С корпоративными клиентами</div>
                                 <div class="cooperation__text">
                                     Для того, чтобы постоянно поддерживать статус лучшей в МСК типографии, мы совершенствуем собственный профессионализм, обучаемся, оснащаем производство лучшим импортным оборудованием.
@@ -994,8 +1003,8 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С рекламными агентствами" class="cooperation__img" src="./local/img/cooperation/cooperation-3.svg" />
                             <div class="cooperation__wrapper">
-                                <img alt="С рекламными агентствами" class="cooperation__img" src="./local/img/cooperation/cooperation-3.svg" />
                                 <div class="cooperation__title">С рекламными агентствами</div>
                                 <div class="cooperation__text">Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат.</div>
                                 <div class="cooperation__note text--small text--gray4">
@@ -1353,6 +1362,6 @@
             </div>
         </footer>
 
-        <script type="text/javascript" src="./local/js/script.js?2443d412bfede0cc93ca"></script>
+        <script type="text/javascript" src="./local/js/script.js?3b19f775d40121a7277a"></script>
     </body>
 </html>
