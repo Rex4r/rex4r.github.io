@@ -8,7 +8,7 @@
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <title>PMG - Главная</title>
-        <link href="./local/template_styles.css?3b19f775d40121a7277a" rel="stylesheet" />
+        <link href="./local/template_styles.css?78695f3f888e6928393e" rel="stylesheet" />
     </head>
 
     <body class="text">
@@ -423,60 +423,60 @@
                             <section class="section production">
                                 <div class="production__top">
                                     <h2 class="production__title">Продукция</h2>
-                                    <div class="production__nav">
-                                        <a class="production__link link__active" href="#">Вся&nbsp;продукция</a>
-                                        <a class="production__link d-none d-lg-inline" href="#">Упаковка</a>
-                                        <a class="production__link d-none d-lg-inline" href="#">Конверты</a>
-                                        <a class="production__link d-none d-lg-inline" href="#">Буклеты</a>
-                                        <a class="production__link d-none d-lg-inline" href="#">Открытки</a>
-                                        <a class="production__link d-none d-xxl-inline" href="#">Листовая продукция</a>
+                                    <div class="production__nav controls">
+                                        <a class="production__link link__active" data-filter="all" href="javascript:void(0);">Вся&nbsp;продукция</a>
+                                        <a class="production__link" data-filter=".production__item--pack" href="javascript:void(0);">Упаковка</a>
+                                        <a class="production__link" data-filter=".production__item--envelope" href="javascript:void(0);">Конверты</a>
+                                        <a class="production__link" data-filter=".production__item--booklet" href="javascript:void(0);">Буклеты</a>
+                                        <a class="production__link" data-filter=".production__item--card" href="javascript:void(0);">Открытки</a>
+                                        <a class="production__link" data-filter=".production__item--list" href="javascript:void(0);">Листовая продукция</a>
                                     </div>
                                 </div>
                                 <div class="production__list grid grid-6 grid-md-3 text--main2">
-                                    <div class="production__item production__item--new tile tile--white">
+                                    <div class="mix production__item production__item--pack production__item--new tile tile--white" data-order="1">
                                         <img alt="Коробки и упаковка" class="production__img" src="./local/img/product/product-1.png" />
                                         <div class="production__info">
-                                            <div class="tile__title">Коробки и упаковка</div>
+                                            <a class="tile__title" href="#">Коробки и упаковка</a>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
                                             <a class="tile__link" href="#">Заказать упаковку</a>
                                         </div>
                                     </div>
-                                    <div class="production__item tile tile--white">
+                                    <div class="mix production__item production__item--pack production__item--envelope tile tile--white" data-order="2">
                                         <img alt="Конверты" class="production__img" src="./local/img/product/product-2.png" />
                                         <div class="production__info">
-                                            <div class="tile__title">Конверты</div>
+                                            <a class="tile__title" href="#">Конверты</a>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
                                             <a class="tile__link" href="#">Заказать конверты</a>
                                         </div>
                                     </div>
-                                    <div class="production__item tile tile--white">
+                                    <div class="mix production__item tile tile--white" data-order="3">
                                         <img alt="Блокноты" class="production__img" src="./local/img/product/product-3.png" />
                                         <div class="production__info">
-                                            <div class="tile__title">Блокноты</div>
+                                            <a class="tile__title" href="#">Блокноты</a>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
                                             <a class="tile__link" href="#">Заказать блокноты</a>
                                         </div>
                                     </div>
-                                    <div class="production__item tile tile--white">
+                                    <div class="mix production__item production__item--card tile tile--white" data-order="4">
                                         <img alt="Открытки" class="production__img" src="./local/img/product/product-4.png" />
                                         <div class="production__info">
-                                            <div class="tile__title">Открытки</div>
+                                            <a class="tile__title" href="#">Открытки</a>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
                                             <a class="tile__link" href="#">Заказать открытки</a>
                                         </div>
                                     </div>
-                                    <div class="production__item tile tile--white">
+                                    <div class="mix production__item production__item--list production__item--booklet tile tile--white" data-order="5">
                                         <img alt="Буклеты" class="production__img" src="./local/img/product/product-5.png" />
                                         <div class="production__info">
-                                            <div class="tile__title">Буклеты</div>
+                                            <a class="tile__title" href="#">Буклеты</a>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
                                             <a class="tile__link" href="#">Заказать буклеты</a>
                                         </div>
                                     </div>
-                                    <div class="production__item tile tile--white">
+                                    <div class="mix production__item tile tile--white" data-order="6">
                                         <img alt="Визитки" class="production__img" src="./local/img/product/product-6.png" />
                                         <div class="production__info">
-                                            <div class="tile__title">Визитки</div>
+                                            <a class="tile__title" href="#">Визитки</a>
                                             <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
                                             <a class="tile__link" href="#">Заказать визитки</a>
                                         </div>
@@ -675,7 +675,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Офсетная печать" class="services__img" src="./local/img/service/service-1.png" />
                                         </div>
-                                        <div class="services__item-title">Офсетная печать</div>
+                                        <a class="services__item-title" href="#">Офсетная печать</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Офсетный вид остаётся самым популярным и одновременно классическим способом.</div>
                                             <a class="services__link" href="#">Заказать офсетную печать</a>
@@ -685,7 +685,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Цифровая печать" class="services__img" src="./local/img/service/service-2.png" />
                                         </div>
-                                        <div class="services__item-title">Цифровая печать</div>
+                                        <a class="services__item-title" href="#">Цифровая печать</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Цифровой вид намного оперативнее и быстро решает вопросы, связанные со скоростью и сложностью выполнения любых работ.</div>
                                             <a class="services__link" href="#">Заказать цифровую печать</a>
@@ -695,7 +695,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Широкоформатная печать" class="services__img" src="./local/img/service/service-3.png" />
                                         </div>
-                                        <div class="services__item-title">Широкоформатная печать</div>
+                                        <a class="services__item-title" href="#">Широкоформатная печать</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Широкоформатная — используется для баннеров перетяжек, стендов.</div>
                                             <a class="services__link" href="#">Заказать широкоформатную печать</a>
@@ -705,7 +705,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Разработка дизайна" class="services__img" src="./local/img/service/service-4.png" />
                                         </div>
-                                        <div class="services__item-title">Разработка дизайна</div>
+                                        <a class="services__item-title" href="#">Разработка дизайна</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Мы предлагаем услуги разработки дизайна, верстки различной рекламной продукции.</div>
                                             <a class="services__link" href="#">Заказать дизайн</a>
@@ -715,7 +715,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Ульрафиолетовая печать" class="services__img" src="./local/img/service/service-5.png" />
                                         </div>
-                                        <div class="services__item-title">Ульрафиолетовая печать</div>
+                                        <a class="services__item-title" href="#">Ульрафиолетовая печать</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">УФ — это технология с использованием красок, твердеющих при просвечивании лучами ультрафиолета.</div>
                                             <a class="services__link" href="#">Заказать ультрафиолетовую печать</a>
@@ -725,7 +725,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Рекламная полиграфия" class="services__img" src="./local/img/service/service-6.png" />
                                         </div>
-                                        <div class="services__item-title">Рекламная полиграфия</div>
+                                        <a class="services__item-title" href="#">Рекламная полиграфия</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Это любой вид продукции используемой для продвижения товаров, услуг или компании.</div>
                                             <a class="services__link" href="#">Заказать рекламную полиграфию</a>
@@ -735,7 +735,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Офисная полиграфия" class="services__img" src="./local/img/service/service-7.png" />
                                         </div>
-                                        <div class="services__item-title">Офисная полиграфия</div>
+                                        <a class="services__item-title" href="#">Офисная полиграфия</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Различная продукция для офисов.</div>
                                             <a class="services__link" href="#">Заказать офисную печать</a>
@@ -745,7 +745,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Срочная печать" class="services__img" src="./local/img/service/service-8.png" />
                                         </div>
-                                        <div class="services__item-title">Срочная печать</div>
+                                        <a class="services__item-title" href="#">Срочная печать</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Как правило, выполняется с использованием цифровых технологий, поскольку допечатная подготовка в этом случае не требует значительного времени.</div>
                                             <a class="services__link" href="#">Заказать срочную печать</a>
@@ -755,7 +755,7 @@
                                         <div class="services__img-wrapper">
                                             <img alt="Цветная печать" class="services__img" src="./local/img/service/service-9.png" />
                                         </div>
-                                        <div class="services__item-title">Цветная печать</div>
+                                        <a class="services__item-title" href="#">Цветная печать</a>
                                         <div class="services__item-content text--gray4">
                                             <div class="services__item-text">Большую часть продукции заказчики сегодня предполагают распечатать в цвете. Возможно с использованием как офсетной, так и цифровой технологии.</div>
                                             <a class="services__link" href="#">Заказать цветную печать</a>
@@ -1362,6 +1362,6 @@
             </div>
         </footer>
 
-        <script type="text/javascript" src="./local/js/script.js?3b19f775d40121a7277a"></script>
+        <script type="text/javascript" src="./local/js/script.js?78695f3f888e6928393e"></script>
     </body>
 </html>
