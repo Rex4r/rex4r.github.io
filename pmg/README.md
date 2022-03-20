@@ -3,7 +3,7 @@
 
 ## Услуги: <br>
 [Услуги](https://rex4r.github.io/pmg/2/services.html) <br>
-[Услуга - Широкоформатная печать](https://rex4r.github.io/pmg/service.html) <br>
+[Услуга - Широкоформатная печать](https://rex4r.github.io/pmg/2/service.html) <br>
 
 # В работе: <br>
 [Поиск](https://rex4r.github.io/pmg/) <br>
