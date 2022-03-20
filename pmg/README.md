@@ -4,6 +4,7 @@
 ## Услуги: <br>
 [Услуги](https://rex4r.github.io/pmg/2/services.html) <br>
 [Услуга - Широкоформатная печать](https://rex4r.github.io/pmg/2/service.html) <br>
+[Полиграфическая продукция](https://rex4r.github.io/pmg/2/products.html) <br>
 
 # В работе: <br>
 [Поиск](https://rex4r.github.io/pmg/) <br>
@@ -12,7 +13,6 @@
 [Продукция](https://rex4r.github.io/pmg/) <br>
 
 ## Услуги: <br>
-[Полиграфическая продукция](https://rex4r.github.io/pmg/) <br>
 [Изготовление упаковки](https://rex4r.github.io/pmg/) <br>
 [Дизайн брошюр](https://rex4r.github.io/pmg/) <br>
 [Классификация конвертов](https://rex4r.github.io/pmg/) <br>
