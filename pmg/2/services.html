@@ -8,7 +8,7 @@
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <title>PMG - Наши услуги</title>
-        <link href="./local/template_styles.css?64bc38f84785ffd33ca1" rel="stylesheet" />
+        <link href="./local/template_styles.css?388aa2a6a024cff6c448" rel="stylesheet" />
     </head>
 
     <body class="text">
@@ -140,7 +140,16 @@
                                             <ul class="nav__list nav__list--secondary" data-dropdown="client">
                                                 <li class="nav__item"><a href="#">Акции</a></li>
                                                 <li class="nav__item"><a href="#">Новости</a></li>
-                                                <li class="nav__item"><a href="#">О компании</a></li>
+                                                <li class="nav__item nav__item--dropdown" data-dropdown="about">
+                                                    <a href="javascript:void(0);">О компании</a>
+                                                </li>
+                                                <ul class="nav__list nav__list--secondary" data-dropdown="about">
+                                                    <li class="nav__item"><a href="#">Отзывы</a></li>
+                                                    <li class="nav__item"><a href="#">Cертификация</a></li>
+                                                    <li class="nav__item"><a href="#">Вакансии</a></li>
+                                                    <li class="nav__item"><a href="#">Реквизиты</a></li>
+                                                    <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
+                                                </ul>
                                                 <li class="nav__item"><a href="/services.html">Наши услуги</a></li>
                                                 <li class="nav__item"><a href="#">Портфолио</a></li>
                                                 <li class="nav__item"><a href="#">Статьи</a></li>
@@ -241,7 +250,16 @@
                                                 <ul class="nav__list nav__list--secondary">
                                                     <li class="nav__item"><a href="#">Акции</a></li>
                                                     <li class="nav__item"><a href="#">Новости</a></li>
-                                                    <li class="nav__item"><a href="#">О компании</a></li>
+                                                    <li class="nav__item nav__item--subdropdown">
+                                                        <a href="#">О компании</a>
+                                                        <ul class="nav__list nav__list--tertiary">
+                                                            <li class="nav__item"><a href="#">Отзывы</a></li>
+                                                            <li class="nav__item"><a href="#">Cертификация</a></li>
+                                                            <li class="nav__item"><a href="#">Вакансии</a></li>
+                                                            <li class="nav__item"><a href="#">Реквизиты</a></li>
+                                                            <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
+                                                        </ul>
+                                                    </li>
                                                     <li class="nav__item"><a href="#">Портфолио</a></li>
                                                     <li class="nav__item"><a href="#">Статьи</a></li>
                                                     <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
@@ -1035,6 +1053,6 @@
             <span>Вверх</span>
         </a>
 
-        <script type="text/javascript" src="./local/js/script.js?64bc38f84785ffd33ca1"></script>
+        <script type="text/javascript" src="./local/js/script.js?388aa2a6a024cff6c448"></script>
     </body>
 </html>
