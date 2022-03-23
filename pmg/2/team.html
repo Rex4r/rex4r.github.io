@@ -7,7 +7,7 @@
         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <title>PMG - Главная</title>
+        <title>PMG - Наша команда</title>
         <link href="./local/template_styles.css?08d57e9446d028c4bd1f" rel="stylesheet" />
     </head>
 
@@ -328,49 +328,31 @@
             </div>
         </header>
 
+        <section class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb__list text--small">
+                            <div class="breadcrumb__item"><a href="/">Главная</a></div>
+                            <div class="breadcrumb__item"><a href="/">Клиентам</a></div>
+                            <div class="breadcrumb__item"><a href="/">Компания</a></div>
+                            <div class="breadcrumb__item text--gray4">Наша Команда</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <main class="main">
-            <section class="section section--first-screen">
+            <section class="section section--first-screen first-screen first-screen__slider">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-xl-9">
-                            <div class="swiper swiper--main">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper">
-                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
-                                        </div>
-                                        <div class="swiper__content">
-                                            <div class="swiper__title text--white">Визитные карточки</div>
-                                            <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper">
-                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
-                                        </div>
-                                        <div class="swiper__content">
-                                            <div class="swiper__title text--white">Визитные карточки</div>
-                                            <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper">
-                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
-                                        </div>
-                                        <div class="swiper__content">
-                                            <div class="swiper__title text--white">Визитные карточки</div>
-                                            <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-
-                                <div class="swiper__button swiper__button--prev d-none d-md-flex"></div>
-                                <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
-                            </div>
+                            <h2 class="first-screen__title">Наша команда</h2>
+                            <div class="first-screen__text">Команда профессионалов PMG предлагает комплексные услуги по изготовлению всех видов полиграфической продукции, включая, разумеется, услуги печати.</div>
                         </div>
 
-                        <div class="col-12 col-xl-3 sidebar sidebar--fs">
+                        <div class="d-none d-xl-block col-xl-3 sidebar sidebar--fs">
                             <div class="tile tile--white d-none d-xl-block">
                                 <a class="link link--button link--account" href="#">
                                     <div>Личный кабинет</div>
@@ -382,7 +364,7 @@
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
-                            <div class="float">
+                            <div class="float" data-track-selector=".track" data-breakpoint="xl">
                                 <form action="#" class="form form--calculate tile tile--white">
                                     <div class="form__title">Узнайте стоимость вашего проекта</div>
                                     <div class="form__row">
@@ -414,15 +396,85 @@
                                         <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
                                     </div>
                                 </form>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Требования к файлам</div>
-                                    <div class="aside__text text--small text--gray4">
-                                        Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xl-9">
+                            <div class="team grid grid--centred grid-1 grid-sm-2 grid-lg-3">
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-1.png" alt="Андреев Лев" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Андреев Лев</div>
+                                        <div class="team__position text--small">Главный технолог широкоформатной печати</div>
+                                        <a href="mailto:adreev_l@pmg.ru" class="team__email text--small">adreev_l@pmg.ru</a>
                                     </div>
-                                    <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
+                                </div>
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-2.png" alt="Грищенко Леонид" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Грищенко Леонид</div>
+                                        <div class="team__position text--small">Руководитель производства сувенирной продукции</div>
+                                        <a href="mailto:grishchenko_l@pmg.ru" class="team__email text--small">grishchenko_l@pmg.ru</a>
+                                    </div>
+                                </div>
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-3.png" alt="Куксин Игорь" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Куксин Игорь</div>
+                                        <div class="team__position text--small">Главный заправщик бумаги в принтеры</div>
+                                        <a href="mailto:kuksin_i@pmg.ru" class="team__email text--small">kuksin_i@pmg.ru</a>
+                                    </div>
+                                </div>
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-4.png" alt="Болотов Евгений" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Болотов Евгений</div>
+                                        <div class="team__position text--small">Руководитель команды обслуживания оборудования</div>
+                                        <a href="mailto:bolotov_e@pmg.ru" class="team__email text--small">bolotov_e@pmg.ru</a>
+                                    </div>
+                                </div>
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-5.png" alt="Николаев Илья" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Николаев Илья</div>
+                                        <div class="team__position text--small">Менеджер по работе с клиентами, которые не знают что хотят</div>
+                                        <a href="mailto:nikolaev_i@pmg.ru" class="team__email text--small">nikolaev_i@pmg.ru</a>
+                                    </div>
+                                </div>
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-6.png" alt="Прокофьев Михаил" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Прокофьев Михаил</div>
+                                        <div class="team__position text--small">Менеджер по работе с остальными клиентами</div>
+                                        <a href="mailto:prokofiev_m@pmg.ru" class="team__email text--small">prokofiev_m@pmg.ru</a>
+                                    </div>
+                                </div>
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-7.png" alt="Аверьянова Татьяна" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Аверьянова Татьяна</div>
+                                        <div class="team__position text--small">Руководитель дизайн-студии</div>
+                                        <a href="mailto:averyanova_t@pmg.ru" class="team__email text--small">averyanova_t@pmg.ru</a>
+                                    </div>
+                                </div>
+                                <div class="team__item tile tile--white">
+                                    <img src="./local/img/team/team-8.png" alt="Разин Святослав" class="team__photo" />
+                                    <div class="team__info">
+                                        <div class="team__name">Разин Святослав</div>
+                                        <div class="team__position text--small">Просто руководитель (не важно чего)</div>
+                                        <a href="mailto:razin_s@pmg.ru" class="team__email text--small">razin_s@pmg.ru</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="d-none d-xl-block col-xl-3 track"></div>
                     </div>
                 </div>
             </section>
