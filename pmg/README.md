@@ -11,6 +11,7 @@
 [Наша команда](https://rex4r.github.io/pmg/2/team.html) <br>
 [Наше оборудование](https://rex4r.github.io/pmg/2/equipment.html) <br>
 [Наше производство](https://rex4r.github.io/pmg/2/our-production.html) <br>
+[Наши партнёры](https://rex4r.github.io/pmg/2/partners.html) <br>
 
 # В работе: <br>
 [Поиск](https://rex4r.github.io/pmg/) <br>
@@ -26,7 +27,6 @@
 [Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
 
 ## Компания: <br>
-[Наши партнёры](https://rex4r.github.io/pmg/) <br>
 [О компании](https://rex4r.github.io/pmg/) <br>
 [Оплата и доставка](https://rex4r.github.io/pmg/) <br>
 [Отзывы](https://rex4r.github.io/pmg/) <br>
