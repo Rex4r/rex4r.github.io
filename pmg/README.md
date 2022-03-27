@@ -7,6 +7,11 @@
 [Полиграфическая продукция](https://rex4r.github.io/pmg/2/products.html) <br>
 [Продукция - Изготовление упаковки](https://rex4r.github.io/pmg/2/product.html) <br>
 
+## Компания: <br>
+[Наша команда](https://rex4r.github.io/pmg/2/team.html) <br>
+[Наше оборудование](https://rex4r.github.io/pmg/2/equipment.html) <br>
+[Наше производство](https://rex4r.github.io/pmg/2/our-production.html) <br>
+
 # В работе: <br>
 [Поиск](https://rex4r.github.io/pmg/) <br>
 [Онлайн-редактор макетов](https://rex4r.github.io/pmg/) <br>
@@ -21,9 +26,6 @@
 [Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
 
 ## Компания: <br>
-[Наша команда](https://rex4r.github.io/pmg/) <br>
-[Нашe оборудование](https://rex4r.github.io/pmg/) <br>
-[Наше производство](https://rex4r.github.io/pmg/) <br>
 [Наши партнёры](https://rex4r.github.io/pmg/) <br>
 [О компании](https://rex4r.github.io/pmg/) <br>
 [Оплата и доставка](https://rex4r.github.io/pmg/) <br>

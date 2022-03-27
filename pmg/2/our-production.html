@@ -329,11 +329,222 @@
         </header>
 
         <main class="main">
-            <section class="section section--first-screen first-screen first-screen__slider">
+            <section class="section section--first-screen">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-xl-9">
-                            <div class="swiper swiper--main">
+                            <iframe
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                class="first-screen__video"
+                                frameborder="0"
+                                src="https://www.youtube.com/embed/1b6R0-sw5gM"
+                                title="YouTube video player"
+                            ></iframe>
+                        </div>
+
+                        <div class="col-12 col-xl-3 sidebar sidebar--fs">
+                            <div class="tile tile--white d-none d-xl-block">
+                                <a class="link link--button link--account" href="#">
+                                    <div>Личный кабинет</div>
+                                    <div class="text--gray text--small text--gray4">Проверить статус заказа</div>
+                                </a>
+                            </div>
+                            <div class="tile tile--white d-none d-xl-block">
+                                <a class="link link--button link--editor" href="#">
+                                    <div>Онлайн-редактор</div>
+                                </a>
+                            </div>
+                            <form action="#" class="form form--calculate tile tile--white">
+                                <div class="form__title">Узнайте стоимость вашего проекта</div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="type" name="type">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
+                                        <option value="Тип 1">Тип 1</option>
+                                        <option value="Тип 2">Тип 2</option>
+                                        <option value="Тип 3">Тип 3</option>
+                                    </select>
+                                </div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="circulation" name="circulation">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
+                                        <option value="50">до 50</option>
+                                        <option value="100">до 100</option>
+                                        <option value="500">до 500</option>
+                                        <option value="1000">до 1000</option>
+                                        <option value="5000">до 5000</option>
+                                        <option value="5000+">от 5000</option>
+                                    </select>
+                                </div>
+                                <div class="form__row d-none">
+                                    <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
+                                </div>
+                                <div class="form__row d-none">
+                                    <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
+                                </div>
+                                <div class="form__row form__row--button">
+                                    <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section step">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="step__title">Этапы печати</h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="step__list grid grid-10 grid-md-4 grid-lg-5">
+                                <div class="step__item tile tile--lightgray" data-step="1">
+                                    <img class="step__img" src="./local/img/step/step-1.svg" />
+                                    <div class="tile__title">Заявка</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="2">
+                                    <img class="step__img" src="./local/img/step/step-2.svg" />
+                                    <div class="tile__title">Расчёт стоимости</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="3">
+                                    <img class="step__img" src="./local/img/step/step-3.svg" />
+                                    <div class="tile__title">Проверка макета</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="4">
+                                    <img class="step__img" src="./local/img/step/step-4.svg" />
+                                    <div class="tile__title">Оплата</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="5">
+                                    <img class="step__img" src="./local/img/step/step-5.svg" />
+                                    <div class="tile__title">Допечатная подготовка</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="6">
+                                    <img class="step__img" src="./local/img/step/step-6.svg" />
+                                    <div class="tile__title">Согласование</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="7">
+                                    <img class="step__img" src="./local/img/step/step-7.svg" />
+                                    <div class="tile__title">Печать</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="8">
+                                    <img class="step__img" src="./local/img/step/step-8.svg" />
+                                    <div class="tile__title">Постпечатная обработка</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="9">
+                                    <img class="step__img" src="./local/img/step/step-9.svg" />
+                                    <div class="tile__title">Контроль качества</div>
+                                </div>
+                                <div class="step__item tile tile--lightgray" data-step="10">
+                                    <img class="step__img" src="./local/img/step/step-10.svg" />
+                                    <div class="tile__title">Доставка/самовывоз</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section round-the-clock">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-2">
+                            <h2 class="round-the-clock__time">24/7</h2>
+                        </div>
+                        <div class="col-9 col-xl-8 col-xxl-7">
+                            <h3 class="round-the-clock__title">Наше производство работает круглосуточно и без выходных</h3>
+                            <div class="round-the-clock__text">Наша типография круглосуточно производит качественную печать и другие смежные услуги, чтобы покрыть сдавать работу качественно, в срок, и радовать клиентов.</div>
+                        </div>
+                        <div class="d-none d-xl-block col-1 col-xxl-2"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--cooperation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="portfolio__title">Сотрудничество с типографией PMG</h2>
+                        </div>
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С частными лицами" class="cooperation__img" src="./local/img/cooperation/cooperation-1.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С частными лицами</div>
+                                <div class="cooperation__text">Полиграфическая печать, несмотря на стремительное развитие цифровых технологий, продолжает оставаться основным средством не только информации, но и рекламы.</div>
+                                <div class="cooperation__note text--small text--gray4">
+                                    PMG — это типография со своим производством , которая оперативно выпускает дешевые и эксклюзивные печатные издания в большом ассортименте, разные по назначению и периодичности:
+                                </div>
+                                <a class="cooperation__link button button--full-width" href="">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С корпоративными клиентами" class="cooperation__img" src="./local/img/cooperation/cooperation-2.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С корпоративными клиентами</div>
+                                <div class="cooperation__text">
+                                    Для того, чтобы постоянно поддерживать статус лучшей в МСК типографии, мы совершенствуем собственный профессионализм, обучаемся, оснащаем производство лучшим импортным оборудованием.
+                                </div>
+                                <div class="cooperation__note text--small text--gray4">Это позволяет гарантировать каждому клиенту изготовление печатной продукции точно в срок, независимо от сложности проекта и объема тиража.</div>
+                                <a class="cooperation__link button button--full-width" href="">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С рекламными агентствами" class="cooperation__img" src="./local/img/cooperation/cooperation-3.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С рекламными агентствами</div>
+                                <div class="cooperation__text">Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат.</div>
+                                <div class="cooperation__note text--small text--gray4">
+                                    К тому же на сайте компании есть онлайн-калькулятор, позволяющий рассчитать примерную стоимость заказа. Удобное сотрудничество. Хорошее месторасположение в Москве (находится типография возле метро, до нее
+                                    удобно добраться на городском или личном транспорте).
+                                </div>
+                                <a class="cooperation__link button button--full-width" href="">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="info__subtitle">Типография PMG</div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>
+                                        Голоцен анизотропно сбрасывает неоцен. Верховое болото занимает трог. Габбро обедняет грубообломочный кварцит, что свидетельствует о проникновении днепровских льдов в бассейн Дона. Апатит сменяет
+                                        плейстоцен. Элювиальное образование слагает силурийский гетит. Исследование указанной связи должно опираться на тот факт, что формация однослойна.
+                                    </p>
+                                    <p>
+                                        >Малиньит опускает кайнозой. Метаморфическая фация, а также в преимущественно песчаных и песчано-глинистых отложениях верхней и средней юры, изогнута. Океаническое ложе поднимает третичный базальтовый
+                                        слой.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>Движение плит, как считают многие, - это ложе косвенно прекращает эрозионный бараний лоб.</p>
+                                    <p>
+                                        Имея такие данные, можно сделать существенный вывод о том, что выветривание аккумулирует цокольный делювий, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа
+                                        поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Дельта закарстована. Замерзание, так же, как и в других регионах, изменяет сель.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="swiper swiper--one-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="swiper__img-wrapper swiper__img-wrapper--fill">
@@ -357,287 +568,7 @@
                                 <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
                             </div>
                         </div>
-
-                        <div class="col-12 col-xl-3 sidebar sidebar--fs">
-                            <div class="tile tile--white d-none d-xl-block">
-                                <a class="link link--button link--account" href="#">
-                                    <div>Личный кабинет</div>
-                                    <div class="text--gray text--small text--gray4">Проверить статус заказа</div>
-                                </a>
-                            </div>
-                            <div class="tile tile--white d-none d-xl-block">
-                                <a class="link link--button link--editor" href="#">
-                                    <div>Онлайн-редактор</div>
-                                </a>
-                            </div>
-                            <div class="float" data-track-selector=".track" data-breakpoint="xl">
-                                <form action="#" class="form form--calculate tile tile--white">
-                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="type" name="type">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
-                                            <option value="Тип 1">Тип 1</option>
-                                            <option value="Тип 2">Тип 2</option>
-                                            <option value="Тип 3">Тип 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="circulation" name="circulation">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                            <option value="50">до 50</option>
-                                            <option value="100">до 100</option>
-                                            <option value="500">до 500</option>
-                                            <option value="1000">до 1000</option>
-                                            <option value="5000">до 5000</option>
-                                            <option value="5000+">от 5000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row d-none">
-                                        <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
-                                    </div>
-                                    <div class="form__row d-none">
-                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
-                                    </div>
-                                    <div class="form__row form__row--button">
-                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
-                                    </div>
-                                </form>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">FAQ</div>
-                                    <div class="aside__text text--small text--gray4">
-                                        Если у вас остались вопросы, вы можете найти ответы в нашем разделе equipment или позвоните нам по телефону <a href="tel:+74993482597">+7&nbsp;(499)&nbsp;348-25-97</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="section section--equipment equipment">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-xl-9">
-                            <h2 class="equipment__title">Наше оборудование</h2>
-                            <div class="equipment__info">
-                                Около 200 тысяч оттисков в месяц печатают на цифровой машине Linoprint CV в «Полиграф Медиа Групп». За 3 месяца, прошедшие с момента запуска новой машины Linoprint CV, на ней отпечатано около 600 тыс.
-                                оттисков.
-                            </div>
-                            <div class="equipment__list">
-                                <div class="equipment__item">
-                                    <h3 class="equipment__subtitle"><a href="/">Linoprint CV (Ricoh Pro C7100X)</a></h3>
-                                    <div class="equipment__wrapper">
-                                        <div class="equipment__text">
-                                            <p>
-                                                Компании «Гейдельберг-СНГ» и «Полиграф Медиа Групп» (г. Москва) летом текущего года во время выставки Printech заключили контракт на поставку первой в России 6-цветной цифровой печатной машины
-                                                Linoprint CV (Ricoh Pro C7100X). В конце июня 2015 г. состоялись установка и запуск машины в Московской типографии «Полиграф Медиа Групп».
-                                            </p>
-                                        </div>
-                                        <img alt="" class="equipment__img" src="./local/demodata/equipment-text.png" />
-                                    </div>
-                                </div>
-                                <div class="equipment__item">
-                                    <h3 class="equipment__subtitle"><a href="/">Canon imagePROGRAF TM-200 MFP L24EI</a></h3>
-                                    <div class="equipment__wrapper">
-                                        <div class="equipment__text">
-                                            <p>
-                                                Летом текущего года во время выставки Printech заключили контракт на поставку первой в России 6-цветной цифровой печатной машины Linoprint CV (Ricoh Pro C7100X). В конце июня 2015 г.
-                                                состоялись установка и запуск машины в Московской типографии «Полиграф Медиа Групп».
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="equipment__item">
-                                    <h3 class="equipment__subtitle"><a href="/">Ricoh MP W6700SP</a></h3>
-                                    <div class="equipment__wrapper">
-                                        <div class="equipment__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="equipment__item">
-                                    <h3 class="equipment__subtitle"><a href="/">Canon imagePROGRAF iPF TX-3100 MFP Z36</a></h3>
-                                    <div class="equipment__wrapper">
-                                        <div class="equipment__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="equipment__item">
-                                    <h3 class="equipment__subtitle"><a href="/">ROWE ecoPrint i4 & ROWE Scan 450i</a></h3>
-                                    <div class="equipment__wrapper">
-                                        <div class="equipment__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="equipment__item">
-                                    <h3 class="equipment__subtitle"><a href="/">Epson SureColor SC-T5200D MFP</a></h3>
-                                    <div class="equipment__wrapper">
-                                        <div class="equipment__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="equipment__item">
-                                    <h3 class="equipment__subtitle"><a href="/">Plotwave 5000 P4R</a></h3>
-                                    <div class="equipment__wrapper">
-                                        <div class="equipment__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-none d-xl-block col-xl-3 track"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section clients">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="clients__title">Наши клиенты</h2>
-                            <div class="clients__list grid grid-3 grid-md-6 grid-xl-8">
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-1.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-2.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-3.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-4.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-5.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-6.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-7.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-8.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-9.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-10.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-11.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-12.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-13.svg" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-14.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-15.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-16.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-17.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-18.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-19.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-20.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-21.svg" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-22.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-23.png" />
-                                </div>
-                                <div class="client__item">
-                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-24.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <div class="container">
-                    <form action="" class="form form--feedback tile tile--white">
-                        <h2 class="form__title">Свяжитесь с нами</h2>
-                        <div class="row form__row">
-                            <div class="col-4">
-                                <div class="form__row">
-                                    <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="form__row">
-                                    <input class="form__field field input" name="email" placeholder="Ваш телефон" type="tel" />
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="form__row">
-                                    <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="form__row">
-                                    <textarea class="form__field field textarea" name="message" placeholder="Ваш вопрос"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="form__row">
-                                    recaptcha
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="form__row form__row--button">
-                                    <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Отправить</button>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="text--small text--gray4">Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных в соответствии с <a href="#">правилами сайта</a></div>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </section>
         </main>
