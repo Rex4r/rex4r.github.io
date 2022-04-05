@@ -7,8 +7,8 @@
         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <title>PMG - Главная</title>
-        <link href="./local/template_styles.css?3296f06b4959f1278af9" rel="stylesheet" />
+        <title>PMG - Вакансии</title>
+        <link href="./local/template_styles.css?6e649306bda90ea877c4" rel="stylesheet" />
     </head>
 
     <body class="text">
@@ -335,7 +335,7 @@
                         <div class="breadcrumb__list text--small">
                             <div class="breadcrumb__item"><a href="/">Главная</a></div>
                             <div class="breadcrumb__item"><a href="/">Компания</a></div>
-                            <div class="breadcrumb__item text--gray4">Наши партнёры</div>
+                            <div class="breadcrumb__item text--gray4">Вакансии</div>
                         </div>
                     </div>
                 </div>
@@ -350,30 +350,18 @@
                             <div class="swiper swiper--main">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper">
-                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
-                                        </div>
-                                        <div class="swiper__content">
-                                            <div class="swiper__title text--white">Визитные карточки</div>
-                                            <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
+                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
+                                            <img alt="" class="swiper__img" src="./local/demodata/about.png" />
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper">
-                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
-                                        </div>
-                                        <div class="swiper__content">
-                                            <div class="swiper__title text--white">Визитные карточки</div>
-                                            <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
+                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
+                                            <img alt="" class="swiper__img" src="./local/demodata/about.png" />
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper">
-                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
-                                        </div>
-                                        <div class="swiper__content">
-                                            <div class="swiper__title text--white">Визитные карточки</div>
-                                            <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
+                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
+                                            <img alt="" class="swiper__img" src="./local/demodata/about.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +372,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-xl-3 sidebar sidebar--fs">
+                        <div class="col-12 col-xl-3">
                             <div class="tile tile--white d-none d-xl-block">
                                 <a class="link link--button link--account" href="#">
                                     <div>Личный кабинет</div>
@@ -396,44 +384,279 @@
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
-                            <div class="float">
-                                <form action="#" class="form form--calculate tile tile--white">
-                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="type" name="type">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
-                                            <option value="Тип 1">Тип 1</option>
-                                            <option value="Тип 2">Тип 2</option>
-                                            <option value="Тип 3">Тип 3</option>
-                                        </select>
+                            <form action="#" class="form form--calculate tile tile--white">
+                                <div class="form__title">Узнайте стоимость вашего проекта</div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="type" name="type">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
+                                        <option value="Тип 1">Тип 1</option>
+                                        <option value="Тип 2">Тип 2</option>
+                                        <option value="Тип 3">Тип 3</option>
+                                    </select>
+                                </div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="circulation" name="circulation">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
+                                        <option value="50">до 50</option>
+                                        <option value="100">до 100</option>
+                                        <option value="500">до 500</option>
+                                        <option value="1000">до 1000</option>
+                                        <option value="5000">до 5000</option>
+                                        <option value="5000+">от 5000</option>
+                                    </select>
+                                </div>
+                                <div class="form__row d-none">
+                                    <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
+                                </div>
+                                <div class="form__row d-none">
+                                    <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
+                                </div>
+                                <div class="form__row form__row--button">
+                                    <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xl-9 vacancy">
+                            <h2>Хотите попасть в нашу команду мечты?</h2>
+
+                            <section class="section">
+                                <ul class="vacancy__questions text--big">
+                                    <li>Загружаться на все 100 процентов?</li>
+                                    <li>Работать в ярком и стильном офисе на Соколе и получать самый высокий на рынке процент с продаж?</li>
+                                    <li>Работать с содержательными, креативными и эксклюзивными, и, что не менее ценно, всегда интересными заказами?</li>
+                                    <li>Мечтаете раскрыть свой потенциал в продажах?</li>
+                                </ul>
+                                <h2 class="vacancy__answer text--secondary2">Тогда бегом к нам!<br />МЫ ДРУГИЕ!</h2>
+                            </section>
+
+                            <section class="section">
+                                <h2>Открытые вакансии</h2>
+                                <div class="vacancy__list">
+                                    <div class="vacancy__item tile tile--white">
+                                        <div class="vacancy__name text--big">Печатник/Оператор цифровой печати</div>
+                                        <div class="vacancy__info">
+                                            <p>Опыт работы: 1–3 года</p>
+                                            <p>Полная занятость, полный день</p>
+                                            <p><strong>Обязанности:</strong></p>
+                                            <ul>
+                                                <li>Печать на ЦПМ Ricoh (7100, 7200, 9200, 8200)</li>
+                                                <li>Контроль качества тиражей</li>
+                                                <li>Профилактический уход за оборудованием</li>
+                                            </ul>
+                                            <p><strong>Требования:</strong></p>
+                                            <ul>
+                                                <li>Опыт работы от года на ЦПМ</li>
+                                                <li>Аккуратность</li>
+                                                <li>Ответственность</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="circulation" name="circulation">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                            <option value="50">до 50</option>
-                                            <option value="100">до 100</option>
-                                            <option value="500">до 500</option>
-                                            <option value="1000">до 1000</option>
-                                            <option value="5000">до 5000</option>
-                                            <option value="5000+">от 5000</option>
-                                        </select>
+                                    <div class="vacancy__item tile tile--white">
+                                        <div class="vacancy__name text--big">Верстальщик-дизайнер</div>
+                                        <div class="vacancy__info">
+                                            <p>Опыт работы: 1–3 года</p>
+                                            <p>Полная занятость, полный день</p>
+                                            <p><strong>Обязанности:</strong></p>
+                                            <ul>
+                                                <li>Верстать</li>
+                                                <li>Дизайнить</li>
+                                                <li>Хорошо выполнять первые 2 пункта</li>
+                                            </ul>
+                                            <p><strong>Требования:</strong></p>
+                                            <ul>
+                                                <li>Навык верстки</li>
+                                                <li>Навык дизайна</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="form__row d-none">
-                                        <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
+                                    <div class="vacancy__item tile tile--white">
+                                        <div class="vacancy__name text--big">Менеджер по продажам</div>
+                                        <div class="vacancy__info">
+                                            <p>Опыт работы: 1–3 года</p>
+                                            <p>Полная занятость, полный день</p>
+                                            <p><strong>Обязанности:</strong></p>
+                                            <ul>
+                                                <li>Управлять</li>
+                                                <li>Продавать</li>
+                                                <li>Управлять продажами</li>
+                                            </ul>
+                                            <p><strong>Требования:</strong></p>
+                                            <ul>
+                                                <li>Командность</li>
+                                                <li>Управляемость</li>
+                                                <li>Ответственность</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="form__row d-none">
-                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
-                                    </div>
-                                    <div class="form__row form__row--button">
-                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                </div>
+                            </section>
+
+                            <section class="section">
+                                <form action="" class="form form--vacancy tile tile--white">
+                                    <h2 class="form__title">Оставьте заявку</h2>
+                                    <div class="row form__row">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form__row">
+                                                <input class="form__field field input" name="name" placeholder="Ваше имя" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form__row">
+                                                <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form__row">
+                                                <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <div class="form__row">
+                                                <select class="form__select form__field select field" name="vacancy">
+                                                    <option disabled="disabled" selected="selected" value="-1">Выберите вакансию</option>
+                                                    <option value="1">Печатник/Оператор цифровой печати</option>
+                                                    <option value="2">Верстальщик-дизайнер</option>
+                                                    <option value="3">Менеджер по продажам</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="d-none d-md-block col-4"></div>
+                                        <div class="col-12 col-md-8">
+                                            <div class="form__row">
+                                                <textarea class="form__field field textarea" name="message" rows="3" placeholder="Сопроводительное письмо"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form__row">
+                                                recaptcha
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form__row form__row--button">
+                                                <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Отправить</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form__row">
+                                                <label class="form__field--file text--main2" for="resumeFile">Прикрепите ваше резюме</label>
+                                                <input id="resumeFile" class="d-none" type="file" name="resume" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Требования к файлам</div>
-                                    <div class="aside__text text--small text--gray4">
-                                        Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.
-                                    </div>
-                                    <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
+                            </section>
+                        </div>
+                        <div class="col-12 col-xl-3 track">
+                            <aside class="aside">
+                                <div class="aside__title">Москва, ул. Балтийская, 11</div>
+                                <div class="aside__text text--small text--gray4">Работаем в будние дни с 9:00 до 19:00.</div>
+                                <a class="aside__link text--small" href="tel:order10@tipografiya.online" target="_blank">order10@tipografiya.online</a>
+                                <a class="aside__link text--small" href="tel:+74993482597" target="_blank">+7 (499) 348-25-97</a>
+                            </aside>
+                            <aside class="aside">
+                                <div class="aside__title">Ближайшие станции метро</div>
+                                <div class="metro grid grid-1 grid-sm-2 grid-md-3 grid-xl-1">
+                                    <div class="aside__text metro__item metro__item--green">Сокол — 540 м</div>
+                                    <div class="aside__text metro__item metro__item--green">Водный стадион — 3,1 км</div>
+                                    <div class="aside__text metro__item metro__item--green">Войковская — 2,5 км</div>
+                                    <div class="aside__text metro__item metro__item--green">Аэропорт — 3,7 км</div>
+                                    <div class="aside__text metro__item metro__item--green">Динамо — 5,7 км</div>
+                                    <div class="aside__text metro__item metro__item--green">Белорусская — 8,1 км</div>
+                                    <div class="aside__text metro__item metro__item--purple">Сходненская — 13 км</div>
+                                    <div class="aside__text metro__item metro__item--purple">Тушинская — 13 км</div>
+                                    <div class="aside__text metro__item metro__item--purple">Планерная — 13 км</div>
+                                    <div class="aside__text metro__item metro__item--purple">Октябрьское поле — 13 км</div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section clients">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="clients__title">Наши клиенты</h2>
+                            <div class="clients__list grid grid-3 grid-md-6 grid-xl-8">
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-1.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-2.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-3.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-4.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-5.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-6.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-7.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-8.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-9.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-10.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-11.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-12.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-13.svg" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-14.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-15.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-16.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-17.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-18.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-19.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-20.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-21.svg" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-22.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-23.png" />
+                                </div>
+                                <div class="client__item">
+                                    <img alt="Клиент" class="client__img" src="./local/img/client/client-24.png" />
                                 </div>
                             </div>
                         </div>
@@ -520,6 +743,6 @@
             <span>Вверх</span>
         </a>
 
-        <script type="text/javascript" src="./local/js/script.js?3296f06b4959f1278af9"></script>
+        <script type="text/javascript" src="./local/js/script.js?6e649306bda90ea877c4"></script>
     </body>
 </html>
