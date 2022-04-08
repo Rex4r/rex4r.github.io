@@ -17,6 +17,9 @@
 [Отзывы](https://rex4r.github.io/pmg/2/review.html) <br>
 [Вакансии](https://rex4r.github.io/pmg/2/vacancy.html) <br>
 
+## Клиентам:
+[FAQ](https://rex4r.github.io/pmg/2/faq.html) <br>
+
 # В работе: <br>
 [Поиск](https://rex4r.github.io/pmg/) <br>
 [Онлайн-редактор макетов](https://rex4r.github.io/pmg/) <br>
@@ -41,7 +44,6 @@
 [Политика конфиденциальности данных](https://rex4r.github.io/pmg/) <br>
 
 ## Клиентам:
-[FAQ](https://rex4r.github.io/pmg/) <br>
 [Информация](https://rex4r.github.io/pmg/) <br>
 [Портфолио](https://rex4r.github.io/pmg/) <br>
 
