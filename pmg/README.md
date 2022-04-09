@@ -19,6 +19,8 @@
 [Материалы](https://rex4r.github.io/pmg/2/materials.html) <br>
 [Новости](https://rex4r.github.io/pmg/2/news.html) <br>
 [Одна новость](https://rex4r.github.io/pmg/2/news-single.html) <br>
+[Жалоба](https://rex4r.github.io/pmg/2/complaint.html) <br>
+[Сертификаты](https://rex4r.github.io/pmg/2/certificates.html) <br>
 
 ## Клиентам:
 [FAQ](https://rex4r.github.io/pmg/2/faq.html) <br>
@@ -39,8 +41,6 @@
 [Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
 
 ## Компания: <br>
-[Жалоба](https://rex4r.github.io/pmg/) <br>
-[Сертификаты](https://rex4r.github.io/pmg/) <br>
 [Акции](https://rex4r.github.io/pmg/) <br>
 [Статьи](https://rex4r.github.io/pmg/) <br>
 [Политика конфиденциальности данных](https://rex4r.github.io/pmg/) <br>
