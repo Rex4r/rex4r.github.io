@@ -7,7 +7,7 @@
         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <title>PMG - Наши партнёры</title>
+        <title>PMG - Портфолио упаковки</title>
         <link href="./local/template_styles.css?9a25c61d2d15af0dd562" rel="stylesheet" />
     </head>
 
@@ -335,7 +335,7 @@
                         <div class="breadcrumb__list text--small">
                             <div class="breadcrumb__item"><a href="/">Главная</a></div>
                             <div class="breadcrumb__item"><a href="/">Компания</a></div>
-                            <div class="breadcrumb__item text--gray4">Наши партнёры</div>
+                            <div class="breadcrumb__item text--gray4">Портфолио упаковки</div>
                         </div>
                     </div>
                 </div>
@@ -347,11 +347,32 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-xl-9">
-                            <h2 class="first-screen__title">Наши партнёры</h2>
-                            <div class="first-screen__text">Наши постоянные партнёры получают лучший сервис и высочайший стандарт качества печати.<br />Как результат — многолетнее сотрудничество. Становитесь и вы нашими партнёрами!</div>
+                            <div class="swiper swiper--main swiper--tall">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
+                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/portfolio.png" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
+                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/portfolio.png" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
+                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/portfolio.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+
+                                <div class="swiper__button swiper__button--prev d-none d-md-flex"></div>
+                                <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
+                            </div>
                         </div>
 
-                        <div class="col-12 col-xl-3">
+                        <div class="d-none d-xl-block col-3">
                             <div class="tile tile--white d-none d-xl-block">
                                 <a class="link link--button link--account" href="#">
                                     <div>Личный кабинет</div>
@@ -363,7 +384,7 @@
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
-                            <div class="float d-none d-xl-block" data-track-selector=".track" data-breakpoint="xl">
+                            <div class="float" data-track-selector=".track">
                                 <form action="#" class="form form--calculate tile tile--white">
                                     <div class="form__title">Узнайте стоимость вашего проекта</div>
                                     <div class="form__row">
@@ -395,126 +416,82 @@
                                         <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
                                     </div>
                                 </form>
+                                <aside class="aside aside--border_left spoiler" data-visible-count="8">
+                                    <div class="aside__title">Вас может заинтересовать</div>
+                                    <div class="aside__text spoiler__wrapper">
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Открытки</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Буклеты</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Плакаты</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Ежедневники</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">О компании</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Публикации</a>
+                                    </div>
+                                </aside>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section--partner partner">
+            <section class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-xl-9">
-                            <div class="partner__list grid grid-1 grid-sm-2 grid-md-3 grid-xl-2 grid-xxl-3">
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Иль Де Ботэ</h3>
-                                    <img src="./local/img/partner/partner-1.png" alt="Иль Де Ботэ" class="partner__img" />
-                                    <div class="partner__text">Сеть магазинов и косметики</div>
-                                    <a class="partner__link text--small" href="https://www.iledebeaute.ru">www.iledebeaute.ru</a>
+                            <section class="section">
+                                <div class="info">
+                                    <h2 class="info__title">Портфолио упаковки</h2>
+                                    <div class="info__text">
+                                        PMG — типография полного цикла. Мы выпускаем широкий ассортимент полиграфической продукции — от бланков до упаковки сложных форм и всех размеров, от черно-белых визиток до полноцветных рекламных
+                                        каталогов и предоставляем услуги высокого качества — начиная с создания концепции продукта до упаковки готового тиража и доставки его клиенту.
+                                    </div>
                                 </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Почта России</h3>
-                                    <img src="./local/img/partner/partner-2.png" alt="Почта России" class="partner__img" />
-                                    <div class="partner__text">Национальный почтовый оператор</div>
-                                    <a class="partner__link text--small" href="https://www.russianpost.ru">www.russianpost.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">General Electric</h3>
-                                    <img src="./local/img/partner/partner-3.png" alt="General Electric" class="partner__img" />
-                                    <div class="partner__text">Многоотраслевая корпорация</div>
-                                    <a class="partner__link text--small" href="https://www.ge.com">www.ge.com</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Евроцемент груп</h3>
-                                    <img src="./local/img/partner/partner-4.png" alt="Евроцемент груп" class="partner__img" />
-                                    <div class="partner__text">Сеть магазинов парфюмерии и косметики</div>
-                                    <a class="partner__link text--small" href="https://www.med-rf.ru">www.med-rf.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Канал Disney</h3>
-                                    <img src="./local/img/partner/partner-5.png" alt="Канал Disney" class="partner__img" />
-                                    <div class="partner__text">Телевизионный детский и подростковый канал</div>
-                                    <a class="partner__link text--small" href="https://kanal.disney.ru">kanal.disney.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Иль Де Ботэ</h3>
-                                    <img src="./local/img/partner/partner-6.png" alt="Иль Де Ботэ" class="partner__img" />
-                                    <div class="partner__text">Сеть продуктовых и вещевых гипермаркетов</div>
-                                    <a class="partner__link text--small" href="https://www.metro-cc.ru">www.metro-cc.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Иль Де Ботэ</h3>
-                                    <img src="./local/img/partner/partner-1.png" alt="Иль Де Ботэ" class="partner__img" />
-                                    <div class="partner__text">Сеть магазинов и косметики</div>
-                                    <a class="partner__link text--small" href="https://www.iledebeaute.ru">www.iledebeaute.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Почта России</h3>
-                                    <img src="./local/img/partner/partner-2.png" alt="Почта России" class="partner__img" />
-                                    <div class="partner__text">Национальный почтовый оператор</div>
-                                    <a class="partner__link text--small" href="https://www.russianpost.ru">www.russianpost.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">General Electric</h3>
-                                    <img src="./local/img/partner/partner-3.png" alt="General Electric" class="partner__img" />
-                                    <div class="partner__text">Многоотраслевая корпорация</div>
-                                    <a class="partner__link text--small" href="https://www.ge.com">www.ge.com</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Евроцемент груп</h3>
-                                    <img src="./local/img/partner/partner-4.png" alt="Евроцемент груп" class="partner__img" />
-                                    <div class="partner__text">Сеть магазинов парфюмерии и косметики</div>
-                                    <a class="partner__link text--small" href="https://www.med-rf.ru">www.med-rf.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Канал Disney</h3>
-                                    <img src="./local/img/partner/partner-5.png" alt="Канал Disney" class="partner__img" />
-                                    <div class="partner__text">Телевизионный детский и подростковый канал</div>
-                                    <a class="partner__link text--small" href="https://kanal.disney.ru">kanal.disney.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Иль Де Ботэ</h3>
-                                    <img src="./local/img/partner/partner-6.png" alt="Иль Де Ботэ" class="partner__img" />
-                                    <div class="partner__text">Сеть продуктовых и вещевых гипермаркетов</div>
-                                    <a class="partner__link text--small" href="https://www.metro-cc.ru">www.metro-cc.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Иль Де Ботэ</h3>
-                                    <img src="./local/img/partner/partner-1.png" alt="Иль Де Ботэ" class="partner__img" />
-                                    <div class="partner__text">Сеть магазинов и косметики</div>
-                                    <a class="partner__link text--small" href="https://www.iledebeaute.ru">www.iledebeaute.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Почта России</h3>
-                                    <img src="./local/img/partner/partner-2.png" alt="Почта России" class="partner__img" />
-                                    <div class="partner__text">Национальный почтовый оператор</div>
-                                    <a class="partner__link text--small" href="https://www.russianpost.ru">www.russianpost.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">General Electric</h3>
-                                    <img src="./local/img/partner/partner-3.png" alt="General Electric" class="partner__img" />
-                                    <div class="partner__text">Многоотраслевая корпорация</div>
-                                    <a class="partner__link text--small" href="https://www.ge.com">www.ge.com</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Евроцемент груп</h3>
-                                    <img src="./local/img/partner/partner-4.png" alt="Евроцемент груп" class="partner__img" />
-                                    <div class="partner__text">Сеть магазинов парфюмерии и косметики</div>
-                                    <a class="partner__link text--small" href="https://www.med-rf.ru">www.med-rf.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Канал Disney</h3>
-                                    <img src="./local/img/partner/partner-5.png" alt="Канал Disney" class="partner__img" />
-                                    <div class="partner__text">Телевизионный детский и подростковый канал</div>
-                                    <a class="partner__link text--small" href="https://kanal.disney.ru">kanal.disney.ru</a>
-                                </div>
-                                <div class="partner__item tile tile--lightgray">
-                                    <h3 class="partner__title">Иль Де Ботэ</h3>
-                                    <img src="./local/img/partner/partner-6.png" alt="Иль Де Ботэ" class="partner__img" />
-                                    <div class="partner__text">Сеть продуктовых и вещевых гипермаркетов</div>
-                                    <a class="partner__link text--small" href="https://www.metro-cc.ru">www.metro-cc.ru</a>
-                                </div>
-                            </div>
+                            </section>
+
+                            <section class="section">
+                                <form action="" class="form form--order tile tile--white">
+                                    <h2 class="form__title">Заказать изготовление упаковки</h2>
+                                    <div class="row form__row">
+                                        <div class="col-12 col-lg-8">
+                                            <div class="form__grid grid grid-1 grid-md-2">
+                                                <div class="form__row">
+                                                    <select class="form__select form__field select field" id="type" name="type">
+                                                        <option disabled="disabled" selected="selected" value="-1">Выберите тип упаковки</option>
+                                                        <option value="Тип 1">Тип 1</option>
+                                                        <option value="Тип 2">Тип 2</option>
+                                                        <option value="Тип 3">Тип 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form__row">
+                                                    <select class="form__select form__field select field" id="circulation" name="circulation">
+                                                        <option disabled="disabled" selected="selected" value="-1">Выберите объём продукции</option>
+                                                        <option value="50">до 50</option>
+                                                        <option value="100">до 100</option>
+                                                        <option value="500">до 500</option>
+                                                        <option value="1000">до 1000</option>
+                                                        <option value="5000">до 5000</option>
+                                                        <option value="5000+">от 5000</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form__row">
+                                                    <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
+                                                </div>
+                                                <div class="form__row">
+                                                    <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
+                                                </div>
+                                                <div class="form__row form__row--button">
+                                                    <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="aside aside--form">
+                                                <div class="aside__title aside__title--bg">Менеджер свяжется с вами для дополнительной информации</div>
+                                                <div class="aside__text text--small text--gray4">Вы можете воспользоваться нашим <a href="#">онлайн-редактором</a> для подготовки файла к печати.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </section>
                         </div>
                         <div class="d-none d-xl-block col-xl-3 track"></div>
                     </div>

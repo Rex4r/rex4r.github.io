@@ -16,9 +16,12 @@
 [Оплата и доставка](https://rex4r.github.io/pmg/2/payment.html) <br>
 [Отзывы](https://rex4r.github.io/pmg/2/review.html) <br>
 [Вакансии](https://rex4r.github.io/pmg/2/vacancy.html) <br>
+[Материалы](https://rex4r.github.io/pmg/2/materials.html) <br>
 
 ## Клиентам:
 [FAQ](https://rex4r.github.io/pmg/2/faq.html) <br>
+[Информация](https://rex4r.github.io/pmg/2/info.html) <br>
+[Портфолио](https://rex4r.github.io/pmg/2/portfolio-categories.html) <br>
 
 # В работе: <br>
 [Поиск](https://rex4r.github.io/pmg/) <br>
@@ -34,7 +37,6 @@
 [Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
 
 ## Компания: <br>
-[Материалы](https://rex4r.github.io/pmg/) <br>
 [Новости](https://rex4r.github.io/pmg/) <br>
 [Одна новость](https://rex4r.github.io/pmg/) <br>
 [Жалоба](https://rex4r.github.io/pmg/) <br>
@@ -43,9 +45,6 @@
 [Статьи](https://rex4r.github.io/pmg/) <br>
 [Политика конфиденциальности данных](https://rex4r.github.io/pmg/) <br>
 
-## Клиентам:
-[Информация](https://rex4r.github.io/pmg/) <br>
-[Портфолио](https://rex4r.github.io/pmg/) <br>
 
 ## Личный кабинет
 [Вход](https://rex4r.github.io/pmg/) <br>
