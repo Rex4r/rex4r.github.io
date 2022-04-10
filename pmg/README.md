@@ -1,5 +1,5 @@
 # Готово:
-+ [Главная](https://rex4r.github.io/pmg/2/index.html) <br>
+[Главная](https://rex4r.github.io/pmg/2/index.html) <br>
 
 ## Услуги: <br>
 [Услуги](https://rex4r.github.io/pmg/2/services.html) <br>
@@ -23,6 +23,7 @@
 [Жалоба](https://rex4r.github.io/pmg/2/complaint.html) <br>
 [Сертификаты](https://rex4r.github.io/pmg/2/certificates.html) <br>
 [Акции](https://rex4r.github.io/pmg/2/deals.html) <br>
+[Статьи](https://rex4r.github.io/pmg/2/publication.html) <br>
 
 ## Клиентам:
 [FAQ](https://rex4r.github.io/pmg/2/faq.html) <br>
@@ -42,7 +43,6 @@
 [Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
 
 ## Компания: <br>
-[Статьи](https://rex4r.github.io/pmg/) <br>
 [Политика конфиденциальности данных](https://rex4r.github.io/pmg/) <br>
 
 
