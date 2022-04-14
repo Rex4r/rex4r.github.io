@@ -7,7 +7,7 @@
         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <title>PMG - Широкоформатная печать</title>
+        <title>PMG - Главная</title>
         <link href="./local/template_styles.css?3a59a3f5f678c14bd6e4" rel="stylesheet" />
     </head>
 
@@ -328,23 +328,8 @@
             </div>
         </header>
 
-        <section class="breadcrumb">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="breadcrumb__list text--small">
-                            <div class="breadcrumb__item"><a href="/">Главная</a></div>
-                            <div class="breadcrumb__item"><a href="/client.html">Клиентам</a></div>
-                            <div class="breadcrumb__item"><a href="/services.html">Наши услуги</a></div>
-                            <div class="breadcrumb__item text--gray4">Широкоформатная печать</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <main class="main">
-            <section class="section section--first-screen">
+            <section class="section section--first-screen first-screen">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-xl-9">
@@ -352,17 +337,17 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="swiper__img-wrapper swiper__img-wrapper--fill">
-                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/large-format-printing.png" />
+                                            <img alt="" class="swiper__img" src="./local/demodata/productiya.png" />
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="swiper__img-wrapper swiper__img-wrapper--fill">
-                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/large-format-printing.png" />
+                                            <img alt="" class="swiper__img" src="./local/demodata/productiya.png" />
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="swiper__img-wrapper swiper__img-wrapper--fill">
-                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/large-format-printing.png" />
+                                            <img alt="" class="swiper__img" src="./local/demodata/productiya.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -371,9 +356,14 @@
                                 <div class="swiper__button swiper__button--prev d-none d-md-flex"></div>
                                 <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
                             </div>
+                            <h1 class="first-screen__title">Продукция</h1>
+                            <div class="first-screen__text">
+                                Абстракция непредвзято преобразует структурализм. Веданта принимает во внимание трагический гедонизм, ломая рамки привычных представлений. Априори, принцип восприятия естественно заполняет смысл жизни.
+                                Конфликт оспособляет закон исключённого третьего, изменяя привычную реальность.
+                            </div>
                         </div>
 
-                        <div class="d-none d-xl-block col-3">
+                        <div class="col-12 col-xl-3">
                             <div class="tile tile--white d-none d-xl-block">
                                 <a class="link link--button link--account" href="#">
                                     <div>Личный кабинет</div>
@@ -385,292 +375,147 @@
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
-                            <div class="float" data-track-selector=".track--right">
-                                <form action="#" class="form form--calculate tile tile--white">
-                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="type" name="type">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
-                                            <option value="Тип 1">Тип 1</option>
-                                            <option value="Тип 2">Тип 2</option>
-                                            <option value="Тип 3">Тип 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="circulation" name="circulation">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                            <option value="50">до 50</option>
-                                            <option value="100">до 100</option>
-                                            <option value="500">до 500</option>
-                                            <option value="1000">до 1000</option>
-                                            <option value="5000">до 5000</option>
-                                            <option value="5000+">от 5000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row d-none">
-                                        <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
-                                    </div>
-                                    <div class="form__row d-none">
-                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
-                                    </div>
-                                    <div class="form__row form__row--button">
-                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
-                                    </div>
-                                </form>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Требования к файлам</div>
-                                    <div class="aside__text text--small text--gray4">
-                                        Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.
-                                    </div>
-                                    <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
+                            <form action="#" class="form form--calculate tile tile--white">
+                                <div class="form__title">Узнайте стоимость вашего проекта</div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="type" name="type">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
+                                        <option value="Тип 1">Тип 1</option>
+                                        <option value="Тип 2">Тип 2</option>
+                                        <option value="Тип 3">Тип 3</option>
+                                    </select>
                                 </div>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Полезно знать!</div>
-                                    <div class="aside__text text--small text--gray4">Вы можете воспользоваться нашим <a href="#">онлайн-редактором</a> для подготовки файла к печати.</div>
+                                <div class="form__row">
+                                    <select class="form__select form__field select field" id="circulation" name="circulation">
+                                        <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
+                                        <option value="50">до 50</option>
+                                        <option value="100">до 100</option>
+                                        <option value="500">до 500</option>
+                                        <option value="1000">до 1000</option>
+                                        <option value="5000">до 5000</option>
+                                        <option value="5000+">от 5000</option>
+                                    </select>
                                 </div>
+                                <div class="form__row d-none">
+                                    <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
+                                </div>
+                                <div class="form__row d-none">
+                                    <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
+                                </div>
+                                <div class="form__row form__row--button">
+                                    <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                </div>
+                            </form>
+                            <div class="aside aside--border_left">
+                                <div class="aside__title aside__title--bg">Требования к файлам</div>
+                                <div class="aside__text text--small text--gray4">Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.</div>
+                                <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section services">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-3 d-none d-xl-block track--left">
-                            <div class="float" data-track-selector=".track--left">
-                                <aside class="aside aside--border_right spoiler" data-visible-count="8">
-                                    <div class="aside__title">Вас может заинтересовать</div>
-                                    <div class="aside__text spoiler__wrapper">
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Широкоформатная печать на самоклеящейся пленке</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Широкоформатная печать а1</a>
-                                    </div>
-                                </aside>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-9 col-xl-6">
-                            <section class="section section--info">
-                                <h1 class="info__title">Широкоформатная печать</h1>
-                                <div class="info">
-                                    <div class="info__text">
-                                        <p>
-                                            Широкоформатные цифровые принтеры позволяют получить высококачественные полноцветные изображения любого, в том числе очень большого, размера практически на любом носителе — бумаге, пластике,
-                                            баннерной ткани, пленке, холсте, а современные технологии позволили сделать широкоформатную печать доступной и востребованной.
-                                        </p>
-                                        <p>
-                                            Оперативная широкоформатная печать используется для производства наружной рекламы больших форматов, рекламных баннеров, афиш. Полноцветная печать больших форматов — для качественного оформления
-                                            офисов, торговых комплексов, выставочных экспозиций, или просто для украшения дома. Нашей типографии можно заказывать изготовление постеров, плакатов, высококачественных копий художественных
-                                            полотен, и даже интерьерной ткани — ее дизайн будет уникальным!
-                                        </p>
-                                        <p>Заказать широкоформатную печать типографии PMG можно круглосуточно онлайн, по телефону или приехав в офис типографии.</p>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <div class="info__subtitle">Заказать срочную широкоформатную печать</div>
-                                    <div class="info__text">
-                                        <p>
-                                            Наша типография располагает собственным современным оборудованием для оперативной полиграфии — это широкоформатный латексный принтер HP. Технология HP Latex обеспечивает гибкость производства и
-                                            высокую скорость выполнения даже очень крупных заказов. Отпечатки на выходе сухие, а это значит, что во многих случаях вы сможете получить готовую продукцию буквально на следующий день после
-                                            оформления заказа.
-                                        </p>
-                                        <p>Срочная широкоформатная печать возможна на любых доступных материалах, наша типография поддерживает запас наиболее востребованных видов баннерной ткани и бумаги.</p>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <div class="info__subtitle">На каких материалах возможна широкоформатная печать?</div>
-                                    <div class="info__text">
-                                        <p>Типографии можно заказать изготовление широкоформатной печати на:</p>
-                                        <ul>
-                                            <li>Баннерной ткани;</li>
-                                            <li>Баннерной сетке;</li>
-                                            <li>Самоклеящейся пленке и бумаге;</li>
-                                            <li>Бумаге;</li>
-                                            <li>Фотобумаге;</li>
-                                            <li>Фотообоях;</li>
-                                            <li>Холсте.</li>
-                                        </ul>
-                                        <p>
-                                            Полноцветная широкоформатная печать на баннерной сетке или ткани — оптимальный выбор при изготовлении крупных рекламных конструкций, как по стоимости, так и по сроку эксплуатации. Баннерная сетка
-                                            — недорогой, но долговечный носитель. Изделия из нее долго не выгорают и не выцветают, она не подвержена коррозии, устойчива к перепадам температуры, не рвется от ветра.
-                                        </p>
-                                        <p>
-                                            Печать на бумаге используется при изготовлении плакатов, постеров, календарей, оформления для выставочных стендов. Типография может печатать также на самоклеящейся глянцевой и матовой бумаги
-                                            различных сортов и плотности, при печати широкоформатной продукции мы рекомендуем дополнительно применять ламинирование, чтобы облегчить монтаж изделия.
-                                        </p>
-                                        <p>
-                                            Виниловая пленка с нанесенным на нее изображением или рекламой может быть наклеена на любую ровную поверхность. Разнообразие материалов-основ открывает широкие возможности для использования таких
-                                            изделий в рекламе и дизайне: они позволяют встраивать изображения в интерьер или, к примеру, наносить их на кузов и стекла автотранспорта.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <div class="info__subtitle">Преимущества широкоформатной печати</div>
-                                    <div class="info__text">
-                                        <ul>
-                                            <li>Формат. Технология широкоформатной печати позволяет изготовить рекламные носители практически любого размера.</li>
-                                            <li>Универсальность. Изображения можно нанести в конечном счете на любую поверхность.</li>
-                                            <li>Экономичность. Мы предлагаем заказчикам адекватные цены, поскольку выполняем заказ на собственном оборудовании и с оптимальной себестоимостью.</li>
-                                            <li>Высокое качество печати изображений, что важно, например, для интерьерной печати.</li>
-                                            <li>Оперативность изготовления.</li>
-                                            <li>Стойкость красок. Изображение можно отпечатать на носителях, устойчивых к внешнему воздействию, даже при длительной эксплуатации продукция сохранит первоначальный вид и красочность.</li>
-                                            <li>Оперативная полиграфия позволяет создавать продукцию с учетом сроков ее эксплуатации: продолжительной, кратковременной или разовой.</li>
-                                            <li>В типографии широкоформатную печать можно заказать круглосуточно.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="col-12 col-md-3 track--right">
-                            <div class="d-xl-none float" data-track-selector=".track--right">
-                                <aside class="aside aside--border_left spoiler" data-visible-count="8">
-                                    <div class="aside__title">Вас может заинтересовать</div>
-                                    <div class="aside__text spoiler__wrapper">
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Широкоформатная печать на самоклеящейся пленке</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Широкоформатная печать а1</a>
-                                    </div>
-                                </aside>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Требования к файлам</div>
-                                    <div class="aside__text text--small text--gray4">
-                                        Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.
-                                    </div>
-                                    <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
-                                </div>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Полезно знать!</div>
-                                    <div class="aside__text text--small text--gray4">Вы можете воспользоваться нашим <a href="#">онлайн-редактором</a> для подготовки файла к печати.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    <h2 class="services__title">Наши услуги</h2>
 
-            <section class="section clients">
-                <div class="container">
-                    <h2 class="clients__title">Наши клиенты</h2>
-                    <div class="clients__list grid grid-3 grid-md-6 grid-xl-8">
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-1.png" />
+                    <div class="swiper swiper--services">
+                        <div class="services__list swiper-wrapper grid-md grid-md-2 grid-xl-3">
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Офсетная печать" class="services__img" src="./local/img/service/service-1.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Офсетная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Офсетный вид остаётся самым популярным и одновременно классическим способом.</div>
+                                    <a class="services__link" href="#">Заказать офсетную печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Цифровая печать" class="services__img" src="./local/img/service/service-2.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Цифровая печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Цифровой вид намного оперативнее и быстро решает вопросы, связанные со скоростью и сложностью выполнения любых работ.</div>
+                                    <a class="services__link" href="#">Заказать цифровую печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Широкоформатная печать" class="services__img" src="./local/img/service/service-3.png" />
+                                </div>
+                                <a class="services__item-title" href="/service.html">Широкоформатная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Широкоформатная — используется для баннеров перетяжек, стендов.</div>
+                                    <a class="services__link" href="#">Заказать широкоформатную печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Разработка дизайна" class="services__img" src="./local/img/service/service-4.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Разработка дизайна</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Мы предлагаем услуги разработки дизайна, верстки различной рекламной продукции.</div>
+                                    <a class="services__link" href="#">Заказать дизайн</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Ульрафиолетовая печать" class="services__img" src="./local/img/service/service-5.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Ульрафиолетовая печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">УФ — это технология с использованием красок, твердеющих при просвечивании лучами ультрафиолета.</div>
+                                    <a class="services__link" href="#">Заказать ультрафиолетовую печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Рекламная полиграфия" class="services__img" src="./local/img/service/service-6.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Рекламная полиграфия</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Это любой вид продукции используемой для продвижения товаров, услуг или компании.</div>
+                                    <a class="services__link" href="#">Заказать рекламную полиграфию</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Офисная полиграфия" class="services__img" src="./local/img/service/service-7.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Офисная полиграфия</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Различная продукция для офисов.</div>
+                                    <a class="services__link" href="#">Заказать офисную печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Срочная печать" class="services__img" src="./local/img/service/service-8.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Срочная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Как правило, выполняется с использованием цифровых технологий, поскольку допечатная подготовка в этом случае не требует значительного времени.</div>
+                                    <a class="services__link" href="#">Заказать срочную печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Цветная печать" class="services__img" src="./local/img/service/service-9.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Цветная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Большую часть продукции заказчики сегодня предполагают распечатать в цвете. Возможно с использованием как офсетной, так и цифровой технологии.</div>
+                                    <a class="services__link" href="#">Заказать цветную печать</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-2.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-3.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-4.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-5.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-6.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-7.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-8.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-9.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-10.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-11.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-12.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-13.svg" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-14.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-15.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-16.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-17.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-18.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-19.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-20.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-21.svg" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-22.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-23.png" />
-                        </div>
-                        <div class="client__item">
-                            <img alt="Клиент" class="client__img" src="./local/img/client/client-24.png" />
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="section">
-                <div class="container">
-                    <form action="" class="form form--order tile tile--white">
-                        <h2 class="form__title">Рассчитать заказ</h2>
-                        <div class="row form__row">
-                            <div class="col-12 col-lg-7">
-                                <div class="form__grid grid grid-1 grid-md-2">
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="type" name="type">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
-                                            <option value="Тип 1">Широкоформатная печать</option>
-                                            <option value="Тип 2">Тип 2</option>
-                                            <option value="Тип 3">Тип 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="circulation" name="circulation">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                            <option value="50">до 50</option>
-                                            <option value="100">до 100</option>
-                                            <option value="500">до 500</option>
-                                            <option value="1000">до 1000</option>
-                                            <option value="5000">до 5000</option>
-                                            <option value="5000+">от 5000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row">
-                                        <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
-                                    </div>
-                                    <div class="form__row">
-                                        <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
-                                    </div>
-                                    <div class="form__row form__row--button">
-                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-5">
-                                <div class="aside aside--form">
-                                    <div class="aside__title aside__title--bg">Менеджер свяжется с вами для дополнительной информации</div>
-                                    <div class="aside__text text--small text--gray4">Вы можете воспользоваться нашим <a href="#">онлайн-редактором</a> для подготовки файла к печати.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </section>
 
@@ -768,74 +613,274 @@
                 </div>
             </section>
 
-            <section class="section step">
+            <section class="section">
                 <div class="container">
-                    <h2 class="step__title">Этапы печати</h2>
-
                     <div class="row">
                         <div class="col-12 col-xl-9">
-                            <div class="step__list grid grid-10 grid-md-4 grid-lg-5">
-                                <div class="step__item tile tile--lightgray" data-step="1">
-                                    <img class="step__img" src="./local/img/step/step-1.svg" />
-                                    <div class="tile__title">Заявка</div>
+                            <form action="" class="form form--calculator tile tile--white">
+                                <h2>Онлайн-калькулятор</h2>
+                                <div class="row form__row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form__row">
+                                            <label class="form__label form__label--big label" for="calc-type">Тип&nbsp;изделия</label>
+                                            <select class="form__select form__field select field" name="calc-type" id="calc-type">
+                                                <option value="Каталог">Каталог</option>
+                                                <option value="Визитка">Визитка</option>
+                                                <option value="Брошюра">Брошюра</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h3>Обложка</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-cover-paper">Плотность&nbsp;бумаги</label>
+                                            <select class="form__select form__field select field" name="calc-cover-paper" id="calc-cover-paper" type="text">
+                                                <option value="120 глянец">120 г/м2 бумага глянцевая</option>
+                                                <option value="120 мат">120 г/м2 бумага матовая</option>
+                                                <option value="240 глянец">240 г/м2 бумага глянцевая</option>
+                                                <option value="240 мат">240 г/м2 бумага матовая</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-cover-print">Печать</label>
+                                            <select class="form__select form__field select field" name="calc-cover-print" id="calc-cover-print" type="text">
+                                                <option value="чб 1">Чернобелая, с одной сторон</option>
+                                                <option value="чб 2">Чернобелая, с двух сторон</option>
+                                                <option value="цв 1">Полноцветн., с одной сторон</option>
+                                                <option value="цв 2">Полноцветн., с двух сторон</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h3>Развороты</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-page-paper">Плотность&nbsp;бумаги</label>
+                                            <select class="form__select form__field select field" name="calc-page-paper" id="calc-page-paper" type="text">
+                                                <option value="120 глянец">120 г/м2 бумага глянцевая</option>
+                                                <option value="120 мат">120 г/м2 бумага матовая</option>
+                                                <option value="240 глянец">240 г/м2 бумага глянцевая</option>
+                                                <option value="240 мат">240 г/м2 бумага матовая</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-page-print">Печать</label>
+                                            <select class="form__select form__field select field" name="calc-page-print" id="calc-page-print" type="text">
+                                                <option value="чб 1">Чернобелая, с одной сторон</option>
+                                                <option value="чб 2">Чернобелая, с двух сторон</option>
+                                                <option value="цв 1">Полноцветн., с одной сторон</option>
+                                                <option value="цв 2">Полноцветн., с двух сторон</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h3>Формат каталога</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-page-count">Количество страниц с учётом обложки</label>
+                                            <input class="form__field field input" name="calc-page-count" id="calc-page-count" type="number" />
+                                        </div>
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-page-orientation">Ориентация</label>
+                                            <select class="form__select form__field select field" name="calc-page-orientation" id="calc-page-orientation" type="text">
+                                                <option value="Книжная">Книжная</option>
+                                                <option value="Альбомная">Альбомная</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-page-format">Формат</label>
+                                            <select class="form__select form__field select field" name="calc-page-format" id="calc-page-format" type="text">
+                                                <option value="А1">А1, 999×999 мм </option>
+                                                <option value="А2">А2, 999×999 мм </option>
+                                                <option value="А3">А3, 999×999 мм </option>
+                                                <option value="А4">А4, 999×999 мм </option>
+                                                <option value="А5">А5, 999×999 мм </option>
+                                                <option value="А6">А6, 999×999 мм </option>
+                                            </select>
+                                        </div>
+                                        <div class="form__row">
+                                            <label class="form__label label" for="calc-page-circulation">Тираж</label>
+                                            <input class="form__field field input" name="calc-page-circulation" id="calc-page-circulation" type="number" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <hr />
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form__row">
+                                            <input class="form__field field input" name="name" placeholder="Ваше имя" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form__row">
+                                            <input class="form__field field input" name="phone" placeholder="Ваш телефон" type="tel" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form__row">
+                                            <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="form__row form__row--button">
+                                            <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Отправить</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="text--small text--gray4">Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных в соответствии с <a href="#">правилами сайта</a></div>
+                                    </div>
+                                    <div class="col-12 col-lg-4"></div>
                                 </div>
-                                <div class="step__item tile tile--lightgray" data-step="2">
-                                    <img class="step__img" src="./local/img/step/step-2.svg" />
-                                    <div class="tile__title">Расчёт стоимости</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="3">
-                                    <img class="step__img" src="./local/img/step/step-3.svg" />
-                                    <div class="tile__title">Проверка макета</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="4">
-                                    <img class="step__img" src="./local/img/step/step-4.svg" />
-                                    <div class="tile__title">Оплата</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="5">
-                                    <img class="step__img" src="./local/img/step/step-5.svg" />
-                                    <div class="tile__title">Допечатная подготовка</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="6">
-                                    <img class="step__img" src="./local/img/step/step-6.svg" />
-                                    <div class="tile__title">Согласование</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="7">
-                                    <img class="step__img" src="./local/img/step/step-7.svg" />
-                                    <div class="tile__title">Печать</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="8">
-                                    <img class="step__img" src="./local/img/step/step-8.svg" />
-                                    <div class="tile__title">Постпечатная обработка</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="9">
-                                    <img class="step__img" src="./local/img/step/step-9.svg" />
-                                    <div class="tile__title">Контроль качества</div>
-                                </div>
-                                <div class="step__item tile tile--lightgray" data-step="10">
-                                    <img class="step__img" src="./local/img/step/step-10.svg" />
-                                    <div class="tile__title">Доставка/самовывоз</div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-xl-3 track-2">
+                            <div class="float" data-track-selector=".track-2" data-breakpoint="xl">
+                                <div class="aside aside--border_left">
+                                    <div class="aside__title aside__title--bg">FAQ</div>
+                                    <div class="aside__text text--small text--gray4">
+                                        Если у вас остались вопросы, вы можете найти ответы в нашем разделе
+                                        <a href="/">FAQ</a> или позвоните нам по телефону
+                                        <a href="tel:+74993482597">+7&nbsp;(499)&nbsp;348-25-97</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
 
-                        <div class="col-12 col-xl-3">
-                            <div class="how-we-work how-we-work--small">
-                                <div class="how-we-work__bg"></div>
-                                <a class="how-we-work__inner" href="#" target="_blank">
-                                    <div class="how-we-work__play">
-                                        <svg class="how-we-work__icon" fill="none" height="28" viewBox="0 0 33 37" width="22" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M31 15.0359C33.6667 16.5755 33.6667 20.4245 31 21.9641L6.24999 36.2535C3.58333 37.7931 0.25 35.8686 0.25 32.7894L0.250001 4.21055C0.250001 1.13135 3.58334 -0.793144 6.25 0.746457L31 15.0359Z"
-                                                fill="#002677"
-                                            />
-                                        </svg>
-                                    </div>
-                                    <div class="how-we-work__text-area">
-                                        <div class="how-we-work__text text--gray4">Смотрите видео</div>
-                                        <div class="how-we-work__title text--main2">Как мы работаем?</div>
-                                    </div>
-                                </a>
+            <section class="section">
+                <div class="container">
+                    <div class="info">
+                        <h3 class="info__title">Полиграфия — одна из быстро развивающихся отраслей</h3>
+                        <div class="info__text">
+                            Полиграфия — одна из быстро развивающихся отраслей. Наша типография оснащена мощным современным оборудованием для офсетной, цифровой, широкоформатной печати и послепечатной обработки. Мы выполняем как крупные,
+                            так и небольшие заказы. При этом вся полиграфическая продукция проходит контроль качества в ходе производства.
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info__subtitle">Виды продукции</div>
+                        <div class="info__text">Типография выполняет заказы на изготовление полноцветной и черно-белой полиграфической продукции всех групп:</div>
+                        <hr class="info__hr" />
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li><strong>Рекламная и сувенирная продукция</strong>, например, листовки, буклеты, этикетки, стикеры и наклейки, приглашения, POS-материалы, открытки, календари.</li>
+                                    <li><strong>Широкоформатная полиграфическая продукция</strong>, в том числе баннеры, плакаты, афиши, интерьерные ткани с уникальным дизайном, пленка для оклейки автотранспорта.</li>
+                                    <li>
+                                        <strong>Представительская продукция</strong> — визитные карточки, брошюры, каталоги, фирменные бланки, грамоты, открытки и конверты, годовые отчеты. Для любого вида представительской полиграфической
+                                        продукции можно заказать разработку уникального дизайна в фирменном стиле клиента.
+                                    </li>
+                                </ul>
                             </div>
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li>
+                                        <strong>Упаковка</strong>, в том числе для пищевых продуктов, пакеты, конверты любого размера. Типография может разработать оригинальный дизайн упаковки, либо выполнить брендирование готовых изделий
+                                        по заказу клиента.
+                                    </li>
+                                    <li>
+                                        <strong>Оперативная полиграфия</strong>. Типографии можно заказать срочное копирование, черно-белую и цветную печать документов, чертежей, а также многих видов рекламной полиграфической продукции.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="info__hr" />
+                        Менеджеры типографии с удовольствием проконсультируют вас по видам продукции, выпускаемым нашей типографией, сориентируют по срокам и ценам.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section clients">
+                <div class="container">
+                    <h2 class="clients__title">Наши клиенты</h2>
+                    <div class="clients__list grid grid-3 grid-md-6 grid-xl-8">
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-1.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-2.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-3.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-4.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-5.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-6.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-7.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-8.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-9.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-10.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-11.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-12.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-13.svg" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-14.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-15.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-16.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-17.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-18.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-19.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-20.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-21.svg" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-22.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-23.png" />
+                        </div>
+                        <div class="client__item">
+                            <img alt="Клиент" class="client__img" src="./local/img/client/client-24.png" />
                         </div>
                     </div>
                 </div>
@@ -912,65 +957,75 @@
 
             <section class="section">
                 <div class="container">
-                    <h2>Способы оплаты</h2>
-                    <div class="row">
-                        <div class="col-12 col-md-9">
-                            <div class="tile tile--white tile--info">
-                                <div class="tile__img-wrapper">
-                                    <img alt="Безналичный рассчёт" class="tile__img" src="./local/img/payment-info/payment-info-1.svg" />
-                                </div>
-                                <div class="tile__info">
-                                    <div class="tile__title">Безналичный рассчёт</div>
-                                    <div class="tile__text">
-                                        Менеджер отправит счёт на оплату в момент формирования заказа.
-                                    </div>
-                                </div>
+                    <div class="info">
+                        <h3 class="info__title">Этапы сотрудничества и производства полиграфической продукции</h3>
+                        <div class="info__text">
+                            <p>Мы можем выполнить работу по производству полиграфической продукции «под ключ», либо взять на себя отдельные операции, например, печать и доставку тиража заказчику.</p>
+                            <p>Ниже приводится перечень типичных операций в производстве полиграфической продукции.</p>
+                        </div>
+                        <hr class="info__hr" />
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li><strong>Дизайн.</strong> Разработка концепции полиграфической продукции; создание дизайн-макета с учетом фирменного стиля заказчика, подготовка иллюстраций. Верстка.</li>
+                                    <li><strong>Допечатная подготовка.</strong> Обработка сверстанных файлов с учетом технических требований типографии. Если необходимо — изготовление печатных форм, трафаретов.</li>
+                                </ul>
                             </div>
-                            <div class="tile tile--white tile--info">
-                                <div class="tile__img-wrapper">
-                                    <img alt="Банковская карта" class="tile__img" src="./local/img/payment-info/payment-info-2.svg" />
-                                </div>
-                                <div class="tile__info">
-                                    <div class="tile__title">
-                                        Банковская карта
-                                        <img alt="Оплата в иностранной валюте" class="tile__title-img" src="./local/img/payment-info/payment-info-logos.png" />
-                                    </div>
-                                    <div class="tile__text">
-                                        <p>
-                                            Для того, чтобы произвести оплату товара с использованием банковской карты, необходимо перейти по ссылке пулученную к вашего меннеджера. Происходит данная операция через ПАО Сбербанк с
-                                            использованием платежных систем <strong>МИР, Visa, Mastercard, JCB</strong>.
-                                        </p>
-                                        <div class="tile__note text--small text--gray4">
-                                            <p>
-                                                После введения реквизитов Вашей банковской карты, Вы будете перенаправлены на авторизационную страницу ПАО СБЕРБАНК. Соединение с ним и передача информации осуществляется в специальном
-                                                защищённом режиме с применением протокола шифрования SSL. В ситуации, если Ваш банк поддерживает технологию безопасного проведения интернет-платежей (таких, как Verified By Visa, Master Card
-                                                SecureCode, MIR Accept, J-Secure), для проведения оплаты для аутентификации может потребоваться ввод специального пароля.
-                                            </p>
-                                            <p>
-                                                Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Эта информация недоступна третьим лицам, исключение составляют случаи, предусмотренные законодательством РФ.
-                                                Проведение платежей, с использованием банковских карт, осуществляется строго в соответствии с требованиями платёжных систем МИР, Visa Int., MasterCard Europe Sprl, JCB.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tile tile--white tile--info">
-                                <div class="tile__img-wrapper">
-                                    <img alt="Оплата в иностранной валюте" class="tile__img" src="./local/img/payment-info/payment-info-3.svg" />
-                                </div>
-                                <div class="tile__info">
-                                    <div class="tile__title">Возможна оплата в иностранной валюте на валютный расчетный счет</div>
-                                    <div class="tile__text">Свяжитесь с вашим менеджером для оплаты в иностранной валюте.</div>
-                                </div>
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li><strong>Печать.</strong></li>
+                                    <li><strong>Послепечатная обработка</strong>, например, брошюрование, ламинирование, фальцовка, переплет. Послепечатная обработка придает изделиям полиграфии завершенный и оригинальный вид.</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
-                            <div class="aside aside--border_left">
-                                <div class="aside__title aside__title--bg">Перезвоним вам</div>
-                                <div class="aside__text text--small text--gray4">
-                                    Если у вас есть вопросы по оплате и вы не нашли ответа на этой странице, оставьте ваш номер, мы вам обязательно перезвоним и ответим на все ваши вопросы.
-                                </div>
-                                <div class="button">Перезвоните мне</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section advantage">
+                <div class="container">
+                    <h2 class="advantage__title">Преимущества типографии&nbsp;PMG</h2>
+                    <div class="advantage__list grid grid-md-2 grid-lg-3">
+                        <div class="tile tile--advantage tile--with-img">
+                            <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-1.svg" />
+                            <div class="tile__info">
+                                <div class="tile__title">Решение любой задачи</div>
+                                <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                            </div>
+                        </div>
+                        <div class="tile tile--advantage tile--with-img">
+                            <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-2.svg" />
+                            <div class="tile__info">
+                                <div class="tile__title">Срочные заказы</div>
+                                <div class="tile__text text--small text--gray4">В литературе неоднократно описано, как призма доступна</div>
+                            </div>
+                        </div>
+                        <div class="tile tile--advantage tile--with-img">
+                            <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-3.svg" />
+                            <div class="tile__info">
+                                <div class="tile__title">Нестандартные решения</div>
+                                <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось</div>
+                            </div>
+                        </div>
+                        <div class="tile tile--advantage tile--with-img">
+                            <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-4.svg" />
+                            <div class="tile__info">
+                                <div class="tile__title">Гарантия качества</div>
+                                <div class="tile__text text--small text--gray4">Гуминовая кислота отражает удельный фрактал как при нагреве.</div>
+                            </div>
+                        </div>
+                        <div class="tile tile--advantage tile--with-img">
+                            <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-5.svg" />
+                            <div class="tile__info">
+                                <div class="tile__title">Современное автоматизированное производство</div>
+                                <div class="tile__text text--small text--gray4">Гумин увлажняет ортзанд</div>
+                            </div>
+                        </div>
+                        <div class="tile tile--advantage tile--with-img">
+                            <img alt="Решение любой задачи" class="tile__img" src="./local/img/advantage/advantage-6.svg" />
+                            <div class="tile__info">
+                                <div class="tile__title">Только проверенные надежные материалы</div>
+                                <div class="tile__text text--small text--gray4">Сорбция адсорбирует смешанный</div>
                             </div>
                         </div>
                     </div>
@@ -979,42 +1034,142 @@
 
             <section class="section">
                 <div class="container">
-                    <h2>Доставка</h2>
                     <div class="row">
-                        <div class="col-12 col-md-9">
-                            <div class="tile tile--white tile--info">
-                                <div class="tile__img-wrapper">
-                                    <img alt="Доставка продукции курьером" class="tile__img" src="./local/img/delivery-info/delivery-info-1.svg" />
+                        <div class="col-12">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.0172785033608!2d37.51254584344862!3d55.8100004503388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5483b5fbbfc33%3A0x7ad4267d32e694f7!2z0KLQuNC_0L7Qs9GA0LDRhNC40Y8g0J_QnNCT!5e0!3m2!1sru!2sru!4v1561932858689!5m2!1sru!2sru"
+                                width="100%"
+                                height="332"
+                                frameborder="0"
+                                style="border:0"
+                                allowfullscreen=""
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--cooperation">
+                <div class="container">
+                    <h2 class="portfolio__title">Сотрудничество с типографией PMG</h2>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С частными лицами" class="cooperation__img" src="./local/img/cooperation/cooperation-1.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С частными лицами</div>
+                                <div class="cooperation__text">Полиграфическая печать, несмотря на стремительное развитие цифровых технологий, продолжает оставаться основным средством не только информации, но и рекламы.</div>
+                                <div class="cooperation__note text--small text--gray4">
+                                    PMG — это типография со своим производством , которая оперативно выпускает дешевые и эксклюзивные печатные издания в большом ассортименте, разные по назначению и периодичности:
                                 </div>
-                                <div class="tile__info">
-                                    <div class="tile__title">1—3 дня. Доставка продукции курьером (по Москве в пределах МКАД)</div>
-                                    <div class="tile__text">Доставка производится с понедельника по пятницу с 10.00 до 20.00.<br />В день доставки заказа с вами свяжется курьер для согласования деталей доставки.</div>
-                                </div>
+                                <a class="cooperation__link button button--full-width" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cooperation-modal">Начать сотрудничество</a>
                             </div>
-                            <div class="tile tile--white tile--info">
-                                <div class="tile__img-wrapper">
-                                    <img alt="Доставка продукции курьером" class="tile__img" src="./local/img/delivery-info/delivery-info-2.svg" />
+                        </div>
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С корпоративными клиентами" class="cooperation__img" src="./local/img/cooperation/cooperation-2.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С корпоративными клиентами</div>
+                                <div class="cooperation__text">
+                                    Для того, чтобы постоянно поддерживать статус лучшей в МСК типографии, мы совершенствуем собственный профессионализм, обучаемся, оснащаем производство лучшим импортным оборудованием.
                                 </div>
-                                <div class="tile__info">
-                                    <div class="tile__attention">Самая быстрая</div>
-                                    <div class="tile__title">Срочная доставка продукции в день готовности заказа на такси (Москва и область)</div>
-                                    <div class="tile__text">Стоимость зависит от адреса доставки.<br />Точную стоимость сообщит менеджер после оформления заказа.<br />Максимально вес заказа — не более 20 кг.</div>
+                                <div class="cooperation__note text--small text--gray4">Это позволяет гарантировать каждому клиенту изготовление печатной продукции точно в срок, независимо от сложности проекта и объема тиража.</div>
+                                <a class="cooperation__link button button--full-width" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cooperation-modal">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С рекламными агентствами" class="cooperation__img" src="./local/img/cooperation/cooperation-3.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С рекламными агентствами</div>
+                                <div class="cooperation__text">Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат.</div>
+                                <div class="cooperation__note text--small text--gray4">
+                                    К тому же на сайте компании есть онлайн-калькулятор, позволяющий рассчитать примерную стоимость заказа. Удобное сотрудничество. Хорошее месторасположение в Москве (находится типография возле метро, до нее
+                                    удобно добраться на городском или личном транспорте).
+                                </div>
+                                <a class="cooperation__link button button--full-width" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cooperation-modal">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--info">
+                <div class="container">
+                    <div class="info__subtitle">Преимущество сотрудничества</div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>
+                                        «Типография ПМГ» — это типография, которая рядом, благодаря особому подходу к клиенту и качественному сервису. Есть много причин, по которым стоит стать клиентом нашей компании. Вот несколько из них.
+                                    </p>
+                                    <p>
+                                        Доступная цена. Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат. К тому же на сайте компании
+                                        есть онлайн-калькулятор, позволяющий рассчитать примерную стоимость заказа.
+                                    </p>
+                                    <p>
+                                        Удобное сотрудничество. Хорошее месторасположение в Москве (находится типография возле метро, до нее удобно добраться на городском или личном транспорте). Также возможно оформление заказа удаленно —
+                                        достаточно отправить на электронный адрес компании техническое задание и менеджер приступит к реализации поставленной задачи. Для быстрой связи на сайте указан телефон компании.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
-                            <div class="aside aside--border_left">
-                                <div class="aside__title aside__title--bg">FAQ</div>
-                                <div class="aside__text text--small text--gray4">
-                                    Если у вас остались вопросы, вы можете найти ответы в нашем разделе
-                                    <a href="/">FAQ</a> или позвоните нам по телефону
-                                    <a href="tel:+74993482597">+7&nbsp;(499)&nbsp;348-25-97</a>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>
+                                        Безупречное качество печатной полиграфии. В штате компании только высококвалифицированные специалисты (дизайнеры, печатники, верстальщики, тиснильщики, резчики), поэтому заказчик всегда остается
+                                        доволен полученным результатом.
+                                    </p>
+                                    <p>
+                                        Оперативность. Понимая темп работы и важность своевременного изготовления полиграфии, наш типографский цех работает по графику 24/7, что позволяет в сжатые сроки выпускать издания для выставок,
+                                        конференций, презентаций и прочих промо-мероприятий.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <div class="modal fade" id="cooperation-modal" tabindex="-1" aria-labelledby="cooperation-modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form action="" class="form form--in-modal form--cooperation">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="cooperation-modalLabel">Начать сотрудничество</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form__row">
+                                    <input class="form__field field input" name="name" placeholder="Ваше имя" required type="text" />
+                                </div>
+                                <div class="form__row">
+                                    <input class="form__field field input" name="phone" placeholder="Ваш телефон" required type="tel" />
+                                </div>
+                                <div class="form__row">
+                                    <input class="form__field field input" name="email" placeholder="Ваш e-mail" required type="email" />
+                                </div>
+                                <div class="form__row">
+                                    <textarea class="form__field field textarea" name="message" placeholder="Ваш вопрос"></textarea>
+                                </div>
+                                <div class="form__row">
+                                    <input type="file" class="form__field field" name="file" />
+                                </div>
+                                <div class="form__row">
+                                    recaptcha
+                                </div>
+                                <div class="text--small text--gray4">
+                                    Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных в соответствии с
+                                    <a href="#">правилами сайта</a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="form__button button button--gray4" data-bs-dismiss="modal">Закрыть</button>
+                                <button type="submit" class="form__button form__button--submit button">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="footer text--small">

@@ -7,6 +7,8 @@
 [Полиграфическая продукция](https://rex4r.github.io/pmg/2/products.html) <br>
 [Продукция - Изготовление упаковки](https://rex4r.github.io/pmg/2/product.html) <br>
 [Дизайн брошюр](https://rex4r.github.io/pmg/2/design-item.html) <br>
+[Классификация конвертов](https://rex4r.github.io/pmg/2/design-item-2.html) <br>
+[Продукция](https://rex4r.github.io/pmg/2/productiya.html) <br>
 
 ## Компания: <br>
 [Наша команда](https://rex4r.github.io/pmg/2/team.html) <br>
@@ -37,7 +39,6 @@
 [Продукция](https://rex4r.github.io/pmg/) <br>
 
 ## Услуги: <br>
-[Классификация конвертов](https://rex4r.github.io/pmg/) <br>
 [Требования к файлам и макетам](https://rex4r.github.io/pmg/) <br>
 [Каталог дизайн студии](https://rex4r.github.io/pmg/) <br>
 [Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
