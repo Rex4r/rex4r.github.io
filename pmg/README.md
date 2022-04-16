@@ -26,12 +26,14 @@
 [Сертификаты](https://rex4r.github.io/pmg/2/certificates.html) <br>
 [Акции](https://rex4r.github.io/pmg/2/deals.html) <br>
 [Статьи](https://rex4r.github.io/pmg/2/publication.html) <br>
+[Политика конфиденциальности данных](https://rex4r.github.io/pmg/2/text.html) <br>
 
 ## Клиентам:
 [FAQ](https://rex4r.github.io/pmg/2/faq.html) <br>
 [Информация](https://rex4r.github.io/pmg/2/info.html) <br>
 [Портфолио](https://rex4r.github.io/pmg/2/portfolio-categories.html) <br>
 
+---
 # В работе: <br>
 [Поиск](https://rex4r.github.io/pmg/) <br>
 [Онлайн-редактор макетов](https://rex4r.github.io/pmg/) <br>
@@ -43,8 +45,6 @@
 [Каталог дизайн студии](https://rex4r.github.io/pmg/) <br>
 [Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
 
-## Компания: <br>
-[Политика конфиденциальности данных](https://rex4r.github.io/pmg/) <br>
 
 
 ## Личный кабинет
