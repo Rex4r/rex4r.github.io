@@ -39,12 +39,12 @@
 [Информация](https://rex4r.github.io/pmg/2/info.html) <br>
 [Портфолио](https://rex4r.github.io/pmg/2/portfolio-categories.html) <br>
 
+## Личный кабинет
+[Вход](https://rex4r.github.io/pmg/2/login.html) <br>
+[Личный кабинет](https://rex4r.github.io/pmg/2/account.html) <br>
+
 ---
 # В работе: <br>
 [Контакты](https://rex4r.github.io/pmg/) <br>
 
-
-## Личный кабинет
-[Вход](https://rex4r.github.io/pmg/) <br>
-[Заказы](https://rex4r.github.io/pmg/) <br>
 
