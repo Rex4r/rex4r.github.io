@@ -10,6 +10,8 @@
 [Классификация конвертов](https://rex4r.github.io/pmg/2/design-item-2.html) <br>
 [Продукция](https://rex4r.github.io/pmg/2/productiya.html) <br>
 [Требования к файлам и макетам](https://rex4r.github.io/pmg/2/file-requirements.html) <br>
+[Классификация конвертов](https://rex4r.github.io/pmg/2/file-requirements.html) <br>
+[Генератор QR-кода](https://rex4r.github.io/pmg/2/qr-generator.html) <br>
 
 ## Компания: <br>
 [Наша команда](https://rex4r.github.io/pmg/2/team.html) <br>

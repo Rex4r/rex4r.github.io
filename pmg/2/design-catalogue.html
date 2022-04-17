@@ -7,7 +7,7 @@
         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <title>PMG - Дизайн брошюр</title>
+        <title>PMG - Каталог дизайн студии</title>
         <link href="./local/template_styles.css?00d3c71b4ca851fb6d41" rel="stylesheet" />
     </head>
 
@@ -334,9 +334,7 @@
                     <div class="col-12">
                         <div class="breadcrumb__list text--small">
                             <div class="breadcrumb__item"><a href="/">Главная</a></div>
-                            <div class="breadcrumb__item"><a href="/client.html">Клиентам</a></div>
-                            <div class="breadcrumb__item"><a href="/services.html">Наши услуги</a></div>
-                            <div class="breadcrumb__item text--gray4">Дизайн брошюр</div>
+                            <div class="breadcrumb__item text--gray4">Полиграфическая продукция</div>
                         </div>
                     </div>
                 </div>
@@ -344,36 +342,18 @@
         </section>
 
         <main class="main">
-            <section class="section section--first-screen">
+            <section class="section section--first-screen first-screen">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-xl-9">
-                            <div class="swiper swiper--main">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
-                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/design-item.png" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
-                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/design-item.png" />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper__img-wrapper swiper__img-wrapper--fill">
-                                            <img alt="" class="swiper__img swiper__img" src="./local/demodata/design-item.png" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-
-                                <div class="swiper__button swiper__button--prev d-none d-md-flex"></div>
-                                <div class="swiper__button swiper__button--next d-none d-md-flex"></div>
+                            <h1 class="first-screen__title">Каталог дизайн студии</h1>
+                            <div class="first-screen__text">
+                                PMG — типография полного цикла. Мы выпускаем широкий ассортимент полиграфической продукции — от бланков до упаковки сложных форм и всех размеров, от черно-белых визиток до полноцветных рекламных каталогов и
+                                предоставляем услуги высокого качества — начиная с создания концепции продукта до упаковки готового тиража и доставки его клиенту.
                             </div>
                         </div>
 
-                        <div class="d-none d-xl-block col-3">
+                        <div class="col-12 col-xl-3">
                             <div class="tile tile--white d-none d-xl-block">
                                 <a class="link link--button link--account" href="#">
                                     <div>Личный кабинет</div>
@@ -385,222 +365,336 @@
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
-                            <div class="float" data-track-selector=".track--right">
-                                <form action="#" class="form form--calculate tile tile--white">
-                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="type" name="type">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
-                                            <option value="Тип 1">Тип 1</option>
-                                            <option value="Тип 2">Тип 2</option>
-                                            <option value="Тип 3">Тип 3</option>
-                                        </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section production">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-9">
+                            <div class="production__list grid grid-1 grid-sm-2 grid-md-3 text--main2">
+                                <div class="production__item tile tile--white">
+                                    <img alt="Коробки и упаковка" class="production__img" src="./local/img/product/product-1.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Коробки и упаковка</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать упаковку</a>
                                     </div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="circulation" name="circulation">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                            <option value="50">до 50</option>
-                                            <option value="100">до 100</option>
-                                            <option value="500">до 500</option>
-                                            <option value="1000">до 1000</option>
-                                            <option value="5000">до 5000</option>
-                                            <option value="5000+">от 5000</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row d-none">
-                                        <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
-                                    </div>
-                                    <div class="form__row d-none">
-                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
-                                    </div>
-                                    <div class="form__row form__row--button">
-                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
-                                    </div>
-                                </form>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Требования к файлам</div>
-                                    <div class="aside__text text--small text--gray4">
-                                        Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.
-                                    </div>
-                                    <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
                                 </div>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Полезно знать!</div>
-                                    <div class="aside__text text--small text--gray4">Вы можете воспользоваться нашим <a href="#">онлайн-редактором</a> для подготовки файла к печати.</div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Конверты" class="production__img" src="./local/img/product/product-2.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Конверты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать конверты</a>
+                                    </div>
                                 </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Блокноты" class="production__img" src="./local/img/product/product-3.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Блокноты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать блокноты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Открытки" class="production__img" src="./local/img/product/product-4.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Открытки</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать открытки</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Буклеты" class="production__img" src="./local/img/product/product-5.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Буклеты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать буклеты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Визитки" class="production__img" src="./local/img/product/product-6.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Визитки</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать визитки</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Коробки и упаковка" class="production__img" src="./local/img/product/product-1.png" />
+                                    <div class="production__info">
+                                        <div class="tile__title">
+                                            <div class="tile__top">
+                                                <a class="tile__title" href="#">Коробки и упаковка</a>
+                                            </div>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать упаковку</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Конверты" class="production__img" src="./local/img/product/product-2.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Конверты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать конверты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Блокноты" class="production__img" src="./local/img/product/product-3.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Блокноты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать блокноты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Открытки" class="production__img" src="./local/img/product/product-4.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Открытки</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать открытки</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Буклеты" class="production__img" src="./local/img/product/product-5.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Буклеты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать буклеты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Визитки" class="production__img" src="./local/img/product/product-6.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Визитки</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать визитки</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Коробки и упаковка" class="production__img" src="./local/img/product/product-1.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Коробки и упаковка</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать упаковку</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Конверты" class="production__img" src="./local/img/product/product-2.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Конверты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать конверты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Блокноты" class="production__img" src="./local/img/product/product-3.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Блокноты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать блокноты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Открытки" class="production__img" src="./local/img/product/product-4.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Открытки</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать открытки</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Буклеты" class="production__img" src="./local/img/product/product-5.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Буклеты</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать буклеты</a>
+                                    </div>
+                                </div>
+                                <div class="production__item tile tile--white">
+                                    <img alt="Визитки" class="production__img" src="./local/img/product/product-6.png" />
+                                    <div class="production__info">
+                                        <div class="tile__top">
+                                            <a class="tile__title" href="#">Визитки</a>
+                                        </div>
+                                        <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
+                                        <a class="tile__link" href="#">Заказать визитки</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block col-3 track">
+                            <div class="float" data-track-selector=".track">
+                                <aside class="aside aside--border_left spoiler" data-visible-count="12">
+                                    <div class="aside__title">Вас может заинтересовать</div>
+                                    <div class="aside__text spoiler__wrapper">
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн визиток</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн буклетов</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн листовок</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн брошюр</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн пакетов</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн афиши</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн флаеров</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн сертификата</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн блокнотов</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн плакатов</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн календаря</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн приглашений</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн открыток</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн конвертов</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн каталога</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн наклейки</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн упаковки</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн годовых отчетов</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн дисконтной карты</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн презентации</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн ценников</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн ролл ап</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн стаканов</a>
+                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн этикетки</a>
+                                    </div>
+                                </aside>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section services">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-3 d-none d-xl-block track--left">
-                            <div class="float" data-track-selector=".track--left">
-                                <aside class="aside aside--border_right spoiler" data-visible-count="8">
-                                    <div class="aside__title">Вас может заинтересовать</div>
-                                    <div class="aside__text spoiler__wrapper">
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн визиток</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн буклетов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн листовок</a>
-                                        <a href="javascript:void(0);" class="aside__link aside__link--active text--gray4 spoiler__item">Дизайн брошюр</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн пакетов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн афиши</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн флаеров</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн сертификата</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн блокнотов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн плакатов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн календаря</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн приглашений</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн открыток</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн конвертов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн каталога</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн наклейки</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">дизайн упаковки</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн годовых отчетов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн дисконтной карты</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн презентации</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн ценников</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн ролл ап</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн стаканов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн этикетки</a>
-                                    </div>
-                                </aside>
+                    <h2 class="services__title">Наши услуги</h2>
+
+                    <div class="swiper swiper--services">
+                        <div class="services__list swiper-wrapper grid-md grid-md-2 grid-xl-3">
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Офсетная печать" class="services__img" src="./local/img/service/service-1.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Офсетная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Офсетный вид остаётся самым популярным и одновременно классическим способом.</div>
+                                    <a class="services__link" href="#">Заказать офсетную печать</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-9 col-xl-6">
-                            <section class="section section--info">
-                                <h1 class="info__title">Дизайн брошюр</h1>
-                                <div class="info">
-                                    <div class="info__text">
-                                        <p>
-                                            Брошюра — это тот тип полиграфической продукции, который очень часто применяется при проведении рекламных кампаний. В отличие от листовок, такие печатные изделия имеют несколько страниц,
-                                            скрепленных между собой при помощи скобы, КБС или колец. Несмотря на кажущуюся простоту брошюр, при их изготовлении особое внимание необходимо уделить вопросу разработки дизайна полиграфии. Так
-                                            как именно от того, насколько профессионально были выполнены подготовительные работы, во многом зависит эффективность рекламируемого товара или услуги.
-                                        </p>
-                                        <p>
-                                            Стильный и эксклюзивный дизайн брошюр — одна из услуг «Типографии ПМГ», работающей на рынке полиграфии более 13 лет. Здесь вы сможете заказать не только разработку макета с нуля, но также и
-                                            напечатать брошюры, а также ее постпечатную обработку. При создании дизайна брошюры будут учтены личные предпочтения заказчика, назначение печатного издания. Как правило, клиенту предлагается
-                                            несколько концепций, чтобы в результате был выбран самый оптимальный вариант.
-                                        </p>
-                                    </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Цифровая печать" class="services__img" src="./local/img/service/service-2.png" />
                                 </div>
-                                <div class="info">
-                                    <h4>Стоимость разработки дизайна брошюр</h4>
-                                    <div class="info__text">
-                                        <p>Стоимость разработки дизайна брошюр формируется из таких факторов:</p>
-                                        <ul>
-                                            <li>наличие у заказчика предварительных набросков будущего макета, фирменных оттенков и графических элементов, которые нужно скомпоновать;</li>
-                                            <li>формат изделия (размер, количество страниц);</li>
-                                            <li>сложность разработки (количество графических элементов, так, например, эксклюзивный дизайн обойдется дороже);</li>
-                                            <li>объем контента.</li>
-                                        </ul>
-                                        <p>Итоговая сумма, в какую обойдется разработка дизайна брошюры, рассчитывается индивидуально, с учетом всех пожеланий заказчика и сложности исполнения:</p>
-                                        <div class="info__focus">
-                                            <div class="info__focus--item">
-                                                <h3 class="info__focus--title text--gray4">I категория</h3>
-                                                <div class="info__focus--text">Разработка макета по готовым материалам.</div>
-                                            </div>
-                                            <div class="info__focus--item">
-                                                <h3 class="info__focus--title text--gray4">II категория</h3>
-                                                <div class="info__focus--text">Заказчик предоставляет контент, графические материалы, требующие обработки.</div>
-                                            </div>
-                                            <div class="info__focus--item">
-                                                <h3 class="info__focus--title text--gray4">III категория</h3>
-                                                <div class="info__focus--text">Дизайн с нуля, по согласованной с заказчиком теме полиграфии.</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <a class="services__item-title" href="#">Цифровая печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Цифровой вид намного оперативнее и быстро решает вопросы, связанные со скоростью и сложностью выполнения любых работ.</div>
+                                    <a class="services__link" href="#">Заказать цифровую печать</a>
                                 </div>
-
-                                <div class="info">
-                                    <h4>Этапы создания дизайна</h4>
-                                    <div class="info__text">
-                                        <p>Дизайн-макет брошюры создается поэтапно.</p>
-                                        <div class="info__focus">
-                                            <div class="info__focus--item">
-                                                <h3 class="info__focus--title text--gray4">I этап</h3>
-                                                <div class="info__focus--text">
-                                                    Получение от заказчика основной информации: место распространения брошюр, их назначение, целевая аудитория, задачи, которые возлагаются на дизайн полиграфии (продвижение услуги/продукта,
-                                                    информирование о событии, создание имиджа компании и т.д.).
-                                                </div>
-                                            </div>
-                                            <div class="info__focus--item">
-                                                <h3 class="info__focus--title text--gray4">II этап</h3>
-                                                <div class="info__focus--text">
-                                                    Разработка концепции. На основе полученных данных дизайнер «Типографии ПМГ» подготавливает несколько вариантов макета. Каждый из которых включает иллюстрации, текст со стилистическими
-                                                    шрифтами, а также креативные графические элементы. Концепция создается с учетом предварительно согласованной стоимости, назначения брошюры и прочих параметров заказа.
-                                                </div>
-                                            </div>
-                                            <div class="info__focus--item">
-                                                <h3 class="info__focus--title text--gray4">III этап</h3>
-                                                <div class="info__focus--text">Согласование готового макета. При необходимости вносятся правки.</div>
-                                            </div>
-                                        </div>
-                                        <p>В дальнейшем, утвержденный дизайн брошюр отправляется на производство, для верстки и печати продукции.</p>
-                                    </div>
-                                    <img src="./local/demodata/design-item-2.png" alt="" class="info__img" />
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Широкоформатная печать" class="services__img" src="./local/img/service/service-3.png" />
                                 </div>
-
-                                <div class="info">
-                                    <h4>Выбор формата брошюр</h4>
-                                    <div class="info__text">
-                                        <p>
-                                            Разработка дизайна брошюры начинается с определения формата печатного издания. Выбор размера же определяется исходя от контента, количества иллюстраций, которые необходимо разместить, а также от
-                                            общей идеи и места, где изделие будет распространяться. В «Типографии ПМГ» дизайнеры подготовят макеты, как стандартных форматов, так и нестандартных, чтобы воплотить все пожелания заказчика.
-                                            Разработка дизайна полиграфической продукции, в том числе и брошюры, должна, без сомнения, осуществляться профессионалами, с аналитическим складом ума. Именно такие сотрудники и входят в штат
-                                            «Типографии ПМГ». Им под силу разработка самого креативного дизайна брошюр, благодаря которому будет 100% эффект от проведения рекламной кампании.
-                                        </p>
-                                    </div>
+                                <a class="services__item-title" href="/service.html">Широкоформатная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Широкоформатная — используется для баннеров перетяжек, стендов.</div>
+                                    <a class="services__link" href="#">Заказать широкоформатную печать</a>
                                 </div>
-                            </section>
-                        </div>
-                        <div class="col-12 col-md-3 track--right">
-                            <div class="d-xl-none float" data-track-selector=".track--right">
-                                <aside class="aside aside--border_left spoiler" data-visible-count="8">
-                                    <div class="aside__title">Вас может заинтересовать</div>
-                                    <div class="aside__text spoiler__wrapper">
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн визиток</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн буклетов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн листовок</a>
-                                        <a href="javascript:void(0);" class="aside__link aside__link--active text--gray4 spoiler__item">Дизайн брошюр</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн пакетов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн афиши</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн флаеров</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн сертификата</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн блокнотов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн плакатов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн календаря</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн приглашений</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн открыток</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн конвертов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн каталога</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн наклейки</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">дизайн упаковки</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн годовых отчетов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн дисконтной карты</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн презентации</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн ценников</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн ролл ап</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн стаканов</a>
-                                        <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Дизайн этикетки</a>
-                                    </div>
-                                </aside>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Требования к файлам</div>
-                                    <div class="aside__text text--small text--gray4">
-                                        Мы подготовили целый раздел, чтобы рассказать как должны быть подготовлены файлы для печати, чтобы результат максимально соответствовал вашим ожиданиям.
-                                    </div>
-                                    <a class="aside__link text--small" href="#" target="_blank">Перейти к требованиям к файлам</a>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Разработка дизайна" class="services__img" src="./local/img/service/service-4.png" />
                                 </div>
-                                <div class="aside aside--border_left">
-                                    <div class="aside__title aside__title--bg">Полезно знать!</div>
-                                    <div class="aside__text text--small text--gray4">Вы можете воспользоваться нашим <a href="#">онлайн-редактором</a> для подготовки файла к печати.</div>
+                                <a class="services__item-title" href="#">Разработка дизайна</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Мы предлагаем услуги разработки дизайна, верстки различной рекламной продукции.</div>
+                                    <a class="services__link" href="#">Заказать дизайн</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Ульрафиолетовая печать" class="services__img" src="./local/img/service/service-5.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Ульрафиолетовая печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">УФ — это технология с использованием красок, твердеющих при просвечивании лучами ультрафиолета.</div>
+                                    <a class="services__link" href="#">Заказать ультрафиолетовую печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Рекламная полиграфия" class="services__img" src="./local/img/service/service-6.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Рекламная полиграфия</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Это любой вид продукции используемой для продвижения товаров, услуг или компании.</div>
+                                    <a class="services__link" href="#">Заказать рекламную полиграфию</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Офисная полиграфия" class="services__img" src="./local/img/service/service-7.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Офисная полиграфия</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Различная продукция для офисов.</div>
+                                    <a class="services__link" href="#">Заказать офисную печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Срочная печать" class="services__img" src="./local/img/service/service-8.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Срочная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Как правило, выполняется с использованием цифровых технологий, поскольку допечатная подготовка в этом случае не требует значительного времени.</div>
+                                    <a class="services__link" href="#">Заказать срочную печать</a>
+                                </div>
+                            </div>
+                            <div class="services__item swiper-slide">
+                                <div class="services__img-wrapper">
+                                    <img alt="Цветная печать" class="services__img" src="./local/img/service/service-9.png" />
+                                </div>
+                                <a class="services__item-title" href="#">Цветная печать</a>
+                                <div class="services__item-content text--gray4">
+                                    <div class="services__item-text">Большую часть продукции заказчики сегодня предполагают распечатать в цвете. Возможно с использованием как офсетной, так и цифровой технологии.</div>
+                                    <a class="services__link" href="#">Заказать цветную печать</a>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -711,105 +805,68 @@
                 </div>
             </section>
 
-            <section class="section services">
+            <section class="section section--info">
                 <div class="container">
-                    <h2 class="services__title">Наши услуги</h2>
-
-                    <div class="swiper swiper--services">
-                        <div class="services__list swiper-wrapper grid-md grid-md-2 grid-xl-3">
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Офсетная печать" class="services__img" src="./local/img/service/service-1.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Офсетная печать</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Офсетный вид остаётся самым популярным и одновременно классическим способом.</div>
-                                    <a class="services__link" href="#">Заказать офсетную печать</a>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="info">
+                                <div class="info__subtitle">Полиграфия — одна из быстро развивающихся отраслей</div>
+                                <div class="info__text">
+                                    <p>
+                                        Полиграфия — одна из быстро развивающихся отраслей. Наша типография оснащена мощным современным оборудованием для офсетной, цифровой, широкоформатной печати и послепечатной обработки. Мы выполняем как
+                                        крупные, так и небольшие заказы. При этом вся полиграфическая продукция проходит контроль качества в ходе производства.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Цифровая печать" class="services__img" src="./local/img/service/service-2.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Цифровая печать</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Цифровой вид намного оперативнее и быстро решает вопросы, связанные со скоростью и сложностью выполнения любых работ.</div>
-                                    <a class="services__link" href="#">Заказать цифровую печать</a>
-                                </div>
-                            </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Широкоформатная печать" class="services__img" src="./local/img/service/service-3.png" />
-                                </div>
-                                <a class="services__item-title" href="/service.html">Широкоформатная печать</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Широкоформатная — используется для баннеров перетяжек, стендов.</div>
-                                    <a class="services__link" href="#">Заказать широкоформатную печать</a>
-                                </div>
-                            </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Разработка дизайна" class="services__img" src="./local/img/service/service-4.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Разработка дизайна</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Мы предлагаем услуги разработки дизайна, верстки различной рекламной продукции.</div>
-                                    <a class="services__link" href="#">Заказать дизайн</a>
-                                </div>
-                            </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Ульрафиолетовая печать" class="services__img" src="./local/img/service/service-5.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Ульрафиолетовая печать</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">УФ — это технология с использованием красок, твердеющих при просвечивании лучами ультрафиолета.</div>
-                                    <a class="services__link" href="#">Заказать ультрафиолетовую печать</a>
-                                </div>
-                            </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Рекламная полиграфия" class="services__img" src="./local/img/service/service-6.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Рекламная полиграфия</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Это любой вид продукции используемой для продвижения товаров, услуг или компании.</div>
-                                    <a class="services__link" href="#">Заказать рекламную полиграфию</a>
-                                </div>
-                            </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Офисная полиграфия" class="services__img" src="./local/img/service/service-7.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Офисная полиграфия</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Различная продукция для офисов.</div>
-                                    <a class="services__link" href="#">Заказать офисную печать</a>
-                                </div>
-                            </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Срочная печать" class="services__img" src="./local/img/service/service-8.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Срочная печать</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Как правило, выполняется с использованием цифровых технологий, поскольку допечатная подготовка в этом случае не требует значительного времени.</div>
-                                    <a class="services__link" href="#">Заказать срочную печать</a>
-                                </div>
-                            </div>
-                            <div class="services__item swiper-slide">
-                                <div class="services__img-wrapper">
-                                    <img alt="Цветная печать" class="services__img" src="./local/img/service/service-9.png" />
-                                </div>
-                                <a class="services__item-title" href="#">Цветная печать</a>
-                                <div class="services__item-content text--gray4">
-                                    <div class="services__item-text">Большую часть продукции заказчики сегодня предполагают распечатать в цвете. Возможно с использованием как офсетной, так и цифровой технологии.</div>
-                                    <a class="services__link" href="#">Заказать цветную печать</a>
+                            <div class="info">
+                                <div class="info__subtitle">Виды продукции</div>
+                                <div class="info__text">
+                                    <p>Типография выполняет заказы на изготовление полноцветной и черно-белой полиграфической продукции всех групп:</p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-pagination"></div>
+                        <div class="col-12">
+                            <hr class="d-none d-lg-block" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text">
+                                    <ul>
+                                        <li><strong>Рекламная и сувенирная продукция</strong>, например, листовки, буклеты, этикетки, стикеры и наклейки, приглашения, POS-материалы, открытки, календари.</li>
+                                        <li><strong>Широкоформатная полиграфическая продукция</strong>, в том числе баннеры, плакаты, афиши, интерьерные ткани с уникальным дизайном, пленка для оклейки автотранспорта.</li>
+                                        <li>
+                                            <strong>Представительская продукция</strong> — визитные карточки, брошюры, каталоги, фирменные бланки, грамоты, открытки и конверты, годовые отчеты. Для любого вида представительской
+                                            полиграфической продукции можно заказать разработку уникального дизайна в фирменном стиле клиента.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text">
+                                    <ul>
+                                        <li>
+                                            <strong>Упаковка</strong>, в том числе для пищевых продуктов, пакеты, конверты любого размера. Типография может разработать оригинальный дизайн упаковки, либо выполнить брендирование готовых
+                                            изделий по заказу клиента.
+                                        </li>
+                                        <li>
+                                            <strong>Оперативная полиграфия.</strong> Типографии можно заказать срочное копирование, черно-белую и цветную печать документов, чертежей, а также многих видов рекламной полиграфической продукции.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <hr class="d-none d-lg-block" />
+                        </div>
+                        <div class="col-12">
+                            <div class="info">
+                                <div class="info__text">
+                                    <p>Менеджеры типографии с удовольствием проконсультируют вас по видам продукции, выпускаемым нашей типографией, сориентируют по срокам и ценам.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -908,6 +965,45 @@
                 </div>
             </section>
 
+            <section class="section section--info">
+                <div class="container">
+                    <div class="row">
+                        <div class="info__subtitle">Преимущество сотрудничества</div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>
+                                        «Типография ПМГ» — это типография, которая рядом, благодаря особому подходу к клиенту и качественному сервису. Есть много причин, по которым стоит стать клиентом нашей компании. Вот несколько из них.
+                                    </p>
+                                    <p>
+                                        Доступная цена. Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат. К тому же на сайте компании
+                                        есть онлайн-калькулятор, позволяющий рассчитать примерную стоимость заказа.
+                                    </p>
+                                    <p>
+                                        Удобное сотрудничество. Хорошее месторасположение в Москве (находится типография возле метро, до нее удобно добраться на городском или личном транспорте). Также возможно оформление заказа удаленно —
+                                        достаточно отправить на электронный адрес компании техническое задание и менеджер приступит к реализации поставленной задачи. Для быстрой связи на сайте указан телефон компании.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>
+                                        Безупречное качество печатной полиграфии. В штате компании только высококвалифицированные специалисты (дизайнеры, печатники, верстальщики, тиснильщики, резчики), поэтому заказчик всегда остается
+                                        доволен полученным результатом.
+                                    </p>
+                                    <p>
+                                        Оперативность. Понимая темп работы и важность своевременного изготовления полиграфии, наш типографский цех работает по графику 24/7, что позволяет в сжатые сроки выпускать издания для выставок,
+                                        конференций, презентаций и прочих промо-мероприятий.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="section review">
                 <div class="container">
                     <h2 class="review__title">Отзывы о работе с типографией</h2>
@@ -980,7 +1076,7 @@
             <section class="section">
                 <div class="container">
                     <form action="" class="form form--design tile tile--white">
-                        <h2 class="form__title">Заказать дизайн брошюр</h2>
+                        <h2 class="form__title">Заказать дизайн</h2>
                         <div class="row form__row">
                             <div class="col-12 col-lg-9">
                                 <div class="row">
@@ -1012,7 +1108,24 @@
                 </div>
             </section>
 
-            <section class="section"></section>
+            <section class="section motif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-2">
+                            <h2 class="motif__motif">
+                                <img src="./local/img/motif/editor.svg" alt="" class="motif__img" />
+                            </h2>
+                        </div>
+                        <div class="col-9 col-xl-8 col-xxl-7">
+                            <h3 class="motif__title">Создайте дизайн вашей брошюры самостоятельно</h3>
+                            <div class="motif__text">Наша типография круглосуточно производит качественную печать и другие смежные услуги, чтобы покрыть сдавать работу качественно, в срок, и радовать клиентов.</div>
+                            <a href="#" class="motif__button button button--secondary">Открыть онлайн-редактор</a>
+                        </div>
+                        <div class="d-none d-xl-block col-1 col-xxl-2"></div>
+                    </div>
+                </div>
+            </section>
 
             <section class="section clients">
                 <div class="container">
@@ -1089,6 +1202,45 @@
                         </div>
                         <div class="client__item">
                             <img alt="Клиент" class="client__img" src="./local/img/client/client-24.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="info">
+                                <div class="info__subtitle">Этапы сотрудничества и производства полиграфической продукции</div>
+                                <div class="info__text">
+                                    <p>Мы можем выполнить работу по производству полиграфической продукции «под ключ», либо взять на себя отдельные операции, например, печать и доставку тиража заказчику.</p>
+                                    <p>Ниже приводится перечень типичных операций в производстве полиграфической продукции.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <hr class="d-none d-lg-block" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text">
+                                    <ul>
+                                        <li><strong>Дизайн.</strong> Разработка концепции полиграфической продукции; создание дизайн-макета с учетом фирменного стиля заказчика, подготовка иллюстраций. Верстка.</li>
+                                        <li><strong>Допечатная подготовка.</strong> Обработка сверстанных файлов с учетом технических требований типографии. Если необходимо — изготовление печатных форм, трафаретов.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text">
+                                    <ul>
+                                        <li><strong>Печать.</strong></li>
+                                        <li><strong>Послепечатная обработка</strong>, например, брошюрование, ламинирование, фальцовка, переплет. Послепечатная обработка придает изделиям полиграфии завершенный и оригинальный вид.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
