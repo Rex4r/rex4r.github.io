@@ -1,6 +1,7 @@
 # Готово:
 [Главная](https://rex4r.github.io/pmg/2/index.html) <br>
 [Поиск](https://rex4r.github.io/pmg/2/search.html) <br>
+[Онлайн-редактор макетов](https://rex4r.github.io/pmg/2/online-editor.html) <br>
 
 ## Услуги: <br>
 [Услуги](https://rex4r.github.io/pmg/2/services.html) <br>
@@ -13,6 +14,7 @@
 [Требования к файлам и макетам](https://rex4r.github.io/pmg/2/file-requirements.html) <br>
 [Классификация конвертов](https://rex4r.github.io/pmg/2/file-requirements.html) <br>
 [Генератор QR-кода](https://rex4r.github.io/pmg/2/qr-generator.html) <br>
+[Каталог дизайн студии](https://rex4r.github.io/pmg/2/design-catalogue.html) <br>
 
 ## Компания: <br>
 [Наша команда](https://rex4r.github.io/pmg/2/team.html) <br>
@@ -39,14 +41,7 @@
 
 ---
 # В работе: <br>
-[Онлайн-редактор макетов](https://rex4r.github.io/pmg/) <br>
 [Контакты](https://rex4r.github.io/pmg/) <br>
-[Продукция](https://rex4r.github.io/pmg/) <br>
-
-## Услуги: <br>
-[Каталог дизайн студии](https://rex4r.github.io/pmg/) <br>
-[Генератор QR-кода](https://rex4r.github.io/pmg/) <br>
-
 
 
 ## Личный кабинет
