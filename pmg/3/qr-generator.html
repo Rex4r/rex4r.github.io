@@ -356,28 +356,486 @@
                             </p>
                             <a href="#">Печать наклеек с QR-кодом.</a>
 
-                            <div class="generator">
-                                <div class="generator__list">
-                                    <a class="generator__item generator__item--active">Ссылка</a>
-                                    <a class="generator__item">Настройки Wi-Fi</a>
-                                    <a class="generator__item">Визитка</a>
-                                    <a class="generator__item">Текст</a>
-                                    <a class="generator__item">Событие</a>
-                                    <a class="generator__item">Геолокация</a>
-                                </div>
-                                <div class="generator__body">
-                                    <div class="generator__qr">
-                                        <img alt="" class="generator__img" src="./local/demodata/qr.png" />
-                                        <a href="#" class="button button--secondary">Заказать печать</a>
-                                        <a href="#" class="button button--white">Скачать PNG</a>
-                                        <a href="#" class="button button--white">Скачать SVG</a>
+                            <link href="https://test.pmg.ru/react/build/static/css/2.a8b4a62f.chunk.css" rel="stylesheet" />
+                            <link href="https://test.pmg.ru/react/build/static/css/main.ec77317e.chunk.css" rel="stylesheet" />
+                            <div class="generator" id="root">
+                                <div class="Header">
+                                    <div class="container">
+                                        <div class="Header__top-block">
+                                            <div class="Header__top-part">
+                                                <div class="Top-logo"></div>
+                                                <span class="icon-triangle"></span>
+                                            </div>
+                                        </div>
+                                        <div class="Top-menu">
+                                            <div class="Top-menu__button Top-menu__button--active">
+                                                <div class="Top-menu__button-icon Top-menu__button-icon--link"></div>
+                                                <div class="Top-menu__button-title">Ссылка</div>
+                                            </div>
+                                            <div class="Top-menu__button">
+                                                <div class="Top-menu__button-icon Top-menu__button-icon--wifi"></div>
+                                                <div class="Top-menu__button-title">Настройки Wi-Fi</div>
+                                            </div>
+                                            <div class="Top-menu__button">
+                                                <div class="Top-menu__button-icon Top-menu__button-icon--contact"></div>
+                                                <div class="Top-menu__button-title">Визитка</div>
+                                            </div>
+                                            <div class="Top-menu__button">
+                                                <div class="Top-menu__button-icon Top-menu__button-icon--text"></div>
+                                                <div class="Top-menu__button-title">Текст</div>
+                                            </div>
+                                            <div class="Top-menu__button">
+                                                <div class="Top-menu__button-icon Top-menu__button-icon--event"></div>
+                                                <div class="Top-menu__button-title">Событие</div>
+                                            </div>
+                                            <div class="Top-menu__button">
+                                                <div class="Top-menu__button-icon Top-menu__button-icon--geo"></div>
+                                                <div class="Top-menu__button-title">Геолокация</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="generator__text">
-                                        <p>Чтобы самому сделать QR-код со ссылкой, введите адрес в QR-генератор и сохраните готовое изображение в подходящем для Вас формате — например, в векторе для печати.</p>
-                                        <p>Благодаря QR-коду клиентам не придётся вводить вручную ссылку на Вашу страницу ВКонтакте, сайт или любой другой онлайн-ресурс. Достаточно отсканировать QR-код.</p>
+                                </div>
+                                <div class="container">
+                                    <div class="Parts">
+                                        <div class="Parts__left">
+                                            <div class="White-block">
+                                                <div class="White-block__info">
+                                                    <p>Чтобы самому сделать QR-код со ссылкой, введите адрес в QR-генератор и сохраните готовое изображение в подходящем для Вас формате — например, в векторе для печати.</p>
+                                                    <p>Благодаря QR-коду клиентам не придётся вводить вручную ссылку на Вашу страницу ВКонтакте, сайт или любой другой онлайн-ресурс. Достаточно отсканировать QR-код.</p>
+                                                </div>
+                                                <div class="Form-input">
+                                                    <div class="Form-input__name">URL-адрес</div>
+                                                    <input maxlength="110" type="text" placeholder="Введите адрес" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="White-block mt">
+                                                <div class="Accordion Accordion--open">
+                                                    <div class="Accordion__title">Внешний вид</div>
+                                                    <div class="Accordion__content">
+                                                        <div class="Group-form">
+                                                            <div class="Group-form__name">Тип</div>
+                                                            <div class="Group-form__radio">
+                                                                <div class="Form-radio"><input type="radio" id="radio-type-1" name="radio-box-type" value="1" checked="" /><label for="radio-type-1">Только код</label></div>
+                                                                <div class="Form-radio"><input type="radio" id="radio-type-2" name="radio-box-type" value="2" /><label for="radio-type-2">С рамкой</label></div>
+                                                                <div class="Form-radio"><input type="radio" id="radio-type-3" name="radio-box-type" value="3" /><label for="radio-type-3">С фоном</label></div>
+                                                                <div class="Form-radio"><input type="radio" id="radio-type-4" name="radio-box-type" value="4" /><label for="radio-type-4">Карточка</label></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Group-form">
+                                                            <div class="Group-form__name">Цвет кода</div>
+                                                            <div class="Group-form__radio">
+                                                                <div class="Form-radio-color color-black"><input type="radio" id="radio-style-1" name="radio-box-style1" value="1" checked="" /><label for="radio-style-1"></label></div>
+                                                                <div class="Form-radio-color color-blue"><input type="radio" id="radio-style-2" name="radio-box-style1" value="2" /><label for="radio-style-2"></label></div>
+                                                                <div class="Form-radio-color color-gradient">
+                                                                    <input type="radio" id="radio-style-3" name="radio-box-style1" value="3" /><label for="radio-style-3"><span class="Form-radio-color__option"></span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="White-block mt">
+                                                <div class="Accordion Accordion--open">
+                                                    <div class="Accordion__title">Дополнительно</div>
+                                                    <div class="Accordion__content">
+                                                        <div class="Group-form">
+                                                            <div class="Group-form__name">Иконка</div>
+                                                            <div class="Group-form__radio">
+                                                                <div class="Form-radio-icon">
+                                                                    <input type="radio" id="radio-icon-1" name="radio-icon" value="1" /><label for="radio-icon-1"><span class="Form-radio-icon__img Form-radio-icon__none"></span></label>
+                                                                </div>
+                                                                <div class="Form-radio-icon">
+                                                                    <input type="radio" id="radio-icon-2" name="radio-icon" value="2" /><label for="radio-icon-2"><span class="Form-radio-icon__img Form-radio-icon__vk"></span></label>
+                                                                </div>
+                                                                <div class="Form-radio-icon">
+                                                                    <input type="radio" id="radio-icon-3" name="radio-icon" value="3" checked="" /><label for="radio-icon-3"
+                                                                        ><span class="Form-radio-icon__img Form-radio-icon__vk-black"></span
+                                                                    ></label>
+                                                                </div>
+                                                                <div class="Form-radio-icon Form-radio-icon__dash">
+                                                                    <div class="Form-radio-icon_div-upload-icon"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="White-block mt Retargeting">
+                                                <div class="Retargeting-left">
+                                                    <div class="Retargeting-left__icon"></div>
+                                                </div>
+                                                <div class="Retargeting-right">
+                                                    <div class="Retargeting-right__title">
+                                                        <div class="Retargeting-right__title-caption">text</div>
+                                                        <div class="Retargeting-right__title-close">
+                                                            <div class="Icon Icon--24 Icon--cancel_24" style="width: 24px; height: 24px;">
+                                                                <svg viewBox="0 0 24 24" width="24" height="24" style="display: block;">
+                                                                    <use xlink:href="#cancel_24" style="fill: currentcolor; color: rgb(196, 200, 204);"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Retargeting-right__desc"></div>
+                                                    <div class="Retargeting-right__btn">
+                                                        <button class="Button">Подробнее</button>
+                                                        <a id="link-retargeting" href="http://vk.com/@business-retarg-qr" target="_blank" class="hide-it"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Parts__right">
+                                            <div class="White-block QR-block">
+                                                <div class="QR-block__qr" id="qr-svg">
+                                                    <div>
+                                                        <span>
+                                                            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <defs>
+                                                                    <clipPath id="main-mask-86098">
+                                                                        <rect x="0" y="0" width="250" height="250" rx="10"></rect>
+                                                                    </clipPath>
+                                                                    <clipPath id="avatar-mask-86098">
+                                                                        <circle cx="125" cy="60" r="28" fill="#000"></circle>
+                                                                    </clipPath>
+
+                                                                    <g id="qr-86098">
+                                                                        <svg
+                                                                            version="1.1"
+                                                                            viewBox="0 0 2079 2079"
+                                                                            width="190px"
+                                                                            height="190px"
+                                                                            class="qr-code"
+                                                                            xml:space="preserve"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                        >
+                                                                            <defs>
+                                                                                <rect id="rect-86098" width="100" height="100" fill="#000000"></rect>
+                                                                                <path
+                                                                                    id="empty-86098"
+                                                                                    d="M0,28.6v42.9C0,87.3,12.8,100,28.6,100h42.9c15.9,0,28.6-12.8,28.6-28.6V28.6C100,12.7,87.2,0,71.4,0H28.6 C12.8,0,0,12.8,0,28.6z"
+                                                                                    fill="#000000"
+                                                                                ></path>
+                                                                                <path
+                                                                                    id="b-86098"
+                                                                                    d="M0,0 L66,0 C84.7776815,-3.44940413e-15 100,15.2223185 100,34 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z"
+                                                                                    transform="rotate(-90 50 50)"
+                                                                                    fill="#000000"
+                                                                                ></path>
+                                                                                <path
+                                                                                    id="r-86098"
+                                                                                    d="M0,0 L66,0 C84.7776815,-3.44940413e-15 100,15.2223185 100,34 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z"
+                                                                                    transform="rotate(-180 50 50)"
+                                                                                    fill="#000000"
+                                                                                ></path>
+                                                                                <path
+                                                                                    id="l-86098"
+                                                                                    d="M0,0 L66,0 C84.7776815,-3.44940413e-15 100,15.2223185 100,34 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z"
+                                                                                    fill="#000000"
+                                                                                ></path>
+                                                                                <path
+                                                                                    id="t-86098"
+                                                                                    d="M0,0 L66,0 C84.7776815,-3.44940413e-15 100,15.2223185 100,34 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z"
+                                                                                    transform="rotate(90 50 50)"
+                                                                                    fill="#000000"
+                                                                                ></path>
+                                                                                <path id="l-86098" d="M0,0 L100,0 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z" transform="rotate(-90 50 50)" fill="#000000"></path>
+                                                                                <path id="lt-86098" d="M0,0 L100,0 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z" fill="#000000"></path>
+                                                                                <path id="lb-86098" d="M0,0 L100,0 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z" transform="rotate(-90 50 50)" fill="#000000"></path>
+                                                                                <path id="rb-86098" d="M0,0 L100,0 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z" transform="rotate(-180 50 50)" fill="#000000"></path>
+                                                                                <path id="rt-86098" d="M0,0 L100,0 L100,66 C100,84.7776815 84.7776815,100 66,100 L0,100 L0,0 Z" transform="rotate(90 50 50)" fill="#000000"></path>
+                                                                                <path id="n_lt-86098" d="M30.5,2V0H0v30.5h2C2,14.7,14.8,2,30.5,2z" fill="#000000"></path>
+                                                                                <path id="n_lb-86098" d="M2,69.5H0V100h30.5v-2C14.7,98,2,85.2,2,69.5z" fill="#000000"></path>
+                                                                                <path id="n_rt-86098" d="M98,30.5h2V0H69.5v2C85.3,2,98,14.8,98,30.5z" fill="#000000"></path>
+                                                                                <path id="n_rb-86098" d="M69.5,98v2H100V69.5h-2C98,85.3,85.2,98,69.5,98z" fill="#000000"></path>
+                                                                                <path
+                                                                                    id="point-86098"
+                                                                                    fill="#000000"
+                                                                                    d="M600.001786,457.329333 L600.001786,242.658167 C600.001786,147.372368 587.039517,124.122784 581.464617,118.535383 C575.877216,112.960483 552.627632,99.9982143 457.329333,99.9982143 L242.670667,99.9982143 C147.372368,99.9982143 124.122784,112.960483 118.547883,118.535383 C112.972983,124.122784 99.9982143,147.372368 99.9982143,242.658167 L99.9982143,457.329333 C99.9982143,552.627632 112.972983,575.877216 118.547883,581.464617 C124.122784,587.027017 147.372368,600.001786 242.670667,600.001786 L457.329333,600.001786 C552.627632,600.001786 575.877216,587.027017 581.464617,581.464617 C587.039517,575.877216 600.001786,552.627632 600.001786,457.329333 Z M457.329333,0 C653.338333,0 700,46.6616668 700,242.658167 C700,438.667167 700,261.332833 700,457.329333 C700,653.338333 653.338333,700 457.329333,700 C261.332833,700 438.667167,700 242.670667,700 C46.6616668,700 0,653.338333 0,457.329333 C0,261.332833 0,352.118712 0,242.658167 C0,46.6616668 46.6616668,0 242.670667,0 C438.667167,0 261.332833,0 457.329333,0 Z M395.996667,200 C480.004166,200 500,220.008332 500,303.990835 C500,387.998334 500,312.001666 500,395.996667 C500,479.991668 480.004166,500 395.996667,500 C312.001666,500 387.998334,500 304.003333,500 C220.008332,500 200,479.991668 200,395.996667 C200,312.001666 200,350.906061 200,303.990835 C200,220.008332 220.008332,200 304.003333,200 C387.998334,200 312.001666,200 395.996667,200 Z"
+                                                                                ></path>
+                                                                                <g id="vk_logo-86098">
+                                                                                    <path
+                                                                                        fill="#000000"
+                                                                                        d="M253.066667,0 C457.466667,0 272.533333,0 476.933333,0 C681.333333,0 730,48.6666667 730,253.066667 C730,457.466667 730,272.533333 730,476.933333 C730,681.333333 681.333333,730 476.933333,730 C272.533333,730 457.466667,730 253.066667,730 C48.6666667,730 0,681.333333 0,476.933333 C0,272.533333 0,367.206459 0,253.066667 C0,48.6666667 48.6666667,0 253.066667,0 Z"
+                                                                                    ></path>
+                                                                                    <path
+                                                                                        fill="#FFF"
+                                                                                        d="M597.816744,251.493445 C601.198942,240.214758 597.816746,231.927083 581.719678,231.927083 L528.490512,231.927083 C514.956087,231.927083 508.716524,239.08642 505.332448,246.981031 C505.332448,246.981031 478.263599,312.960647 439.917002,355.818719 C427.510915,368.224806 421.871102,372.172112 415.10389,372.172112 C411.720753,372.172112 406.822917,368.224806 406.822917,356.947057 L406.822917,251.493445 C406.822917,237.95902 402.895137,231.927083 391.615512,231.927083 L307.969678,231.927083 C299.511836,231.927083 294.425223,238.208719 294.425223,244.162063 C294.425223,256.99245 313.597583,259.951287 315.573845,296.043086 L315.573845,374.428788 C315.573845,391.614583 312.470184,394.730425 305.702972,394.730425 C287.658011,394.730425 243.763595,328.456052 217.730151,252.620844 C212.628223,237.881107 207.511068,231.927083 193.907178,231.927083 L140.678012,231.927083 C125.469678,231.927083 122.427826,239.08642 122.427826,246.981031 C122.427826,261.079625 140.473725,331.006546 206.452402,423.489903 C250.437874,486.648674 312.410515,520.885417 368.803012,520.885417 C402.638134,520.885417 406.823845,513.28125 406.823845,500.183098 L406.823845,452.447917 C406.823845,437.239583 410.029185,434.204421 420.743703,434.204421 C428.638315,434.204421 442.172739,438.151727 473.753063,468.603713 C509.843923,504.694573 515.79398,520.885417 536.094678,520.885417 L589.323845,520.885417 C604.532178,520.885417 612.136345,513.28125 607.749619,498.274853 C602.949226,483.318593 585.717788,461.619053 562.853283,435.89599 C550.446258,421.234166 531.837128,405.444943 526.197316,397.548454 C518.302704,387.399043 520.558441,382.88663 526.197316,373.864619 C526.197316,373.864619 591.049532,282.508661 597.816744,251.493445 Z"
+                                                                                    ></path>
+                                                                                </g>
+                                                                                <clipPath id="logo-mask-86098">
+                                                                                    <rect x="0" y="0" width="750" height="750"></rect>
+                                                                                </clipPath>
+                                                                            </defs>
+
+                                                                            <g transform="translate(0,0)">
+                                                                                <g transform="translate(873,0)"><use xlink:href="#empty-86098"></use></g>
+                                                                                <g transform="translate(873,97)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(970,97)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(1067,97)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(776,194)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(873,194)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(970,194)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1067,194)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1164,194)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(776,291)"><use xlink:href="#rt-86098"></use></g>
+                                                                                <g transform="translate(873,291)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(970,291)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1164,291)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(873,388)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(970,388)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1067,388)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(873,485)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(1067,485)"><use xlink:href="#rt-86098"></use></g>
+                                                                                <g transform="translate(1164,485)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(776,582)"><use xlink:href="#empty-86098"></use></g>
+                                                                                <g transform="translate(970,582)"><use xlink:href="#empty-86098"></use></g>
+                                                                                <g transform="translate(1164,582)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(291,776)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(388,776)"><use xlink:href="#l-86098"></use></g>
+                                                                                <g transform="translate(582,776)"><use xlink:href="#empty-86098"></use></g>
+                                                                                <g transform="translate(1552,776)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(1649,776)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(1746,776)"><use xlink:href="#l-86098"></use></g>
+                                                                                <g transform="translate(0,873)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(97,873)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(485,873)"><use xlink:href="#b-86098"></use></g>
+                                                                                <g transform="translate(1358,873)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(1455,873)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(1552,873)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1649,873)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1843,873)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1940,873)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(0,970)"><use xlink:href="#rt-86098"></use></g>
+                                                                                <g transform="translate(97,970)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(485,970)"><use xlink:href="#rt-86098"></use></g>
+                                                                                <g transform="translate(582,970)"><use xlink:href="#l-86098"></use></g>
+                                                                                <g transform="translate(1358,970)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1455,970)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1649,970)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(1940,970)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(97,1067)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(194,1067)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(291,1067)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(388,1067)"><use xlink:href="#l-86098"></use></g>
+                                                                                <g transform="translate(1455,1067)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1552,1067)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(1746,1067)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(1843,1067)"><use xlink:href="#b-86098"></use></g>
+                                                                                <g transform="translate(0,1164)"><use xlink:href="#empty-86098"></use></g>
+                                                                                <g transform="translate(194,1164)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(291,1164)"><use xlink:href="#lt-86098"></use></g>
+                                                                                <g transform="translate(582,1164)"><use xlink:href="#empty-86098"></use></g>
+                                                                                <g transform="translate(1358,1164)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1455,1164)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1552,1164)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1649,1164)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1746,1164)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1843,1164)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1940,1164)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(1746,1261)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1843,1261)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1940,1261)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(776,1358)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(873,1358)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(970,1358)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(1261,1358)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(1358,1358)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(1649,1358)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1746,1358)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1940,1358)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(873,1455)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(970,1455)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1067,1455)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(1261,1455)"><use xlink:href="#rt-86098"></use></g>
+                                                                                <g transform="translate(1358,1455)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1746,1455)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(776,1552)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(873,1552)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1067,1552)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(1358,1552)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(1455,1552)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(1552,1552)"><use xlink:href="#b-86098"></use></g>
+                                                                                <g transform="translate(1746,1552)"><use xlink:href="#rt-86098"></use></g>
+                                                                                <g transform="translate(1843,1552)"><use xlink:href="#l-86098"></use></g>
+                                                                                <g transform="translate(776,1649)"><use xlink:href="#rt-86098"></use></g>
+                                                                                <g transform="translate(873,1649)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1067,1649)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(1164,1649)"><use xlink:href="#b-86098"></use></g>
+                                                                                <g transform="translate(1455,1649)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(1552,1649)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(873,1746)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(1067,1746)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1164,1746)"><use xlink:href="#lt-86098"></use></g>
+                                                                                <g transform="translate(1455,1746)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1552,1746)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1649,1746)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(1843,1746)"><use xlink:href="#rb-86098"></use></g>
+                                                                                <g transform="translate(1940,1746)"><use xlink:href="#lb-86098"></use></g>
+                                                                                <g transform="translate(1261,1843)"><use xlink:href="#empty-86098"></use></g>
+                                                                                <g transform="translate(1358,1843)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(1455,1843)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1649,1843)"><use xlink:href="#t-86098"></use></g>
+                                                                                <g transform="translate(1746,1843)"><use xlink:href="#n_rb-86098"></use></g>
+                                                                                <g transform="translate(1843,1843)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1940,1843)"><use xlink:href="#lt-86098"></use></g>
+                                                                                <g transform="translate(970,1940)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1067,1940)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1164,1940)"><use xlink:href="#l-86098"></use></g>
+                                                                                <g transform="translate(1358,1940)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1455,1940)"><use xlink:href="#rect-86098"></use></g>
+                                                                                <g transform="translate(1552,1940)"><use xlink:href="#l-86098"></use></g>
+                                                                                <g transform="translate(1746,1940)"><use xlink:href="#r-86098"></use></g>
+                                                                                <g transform="translate(1843,1940)"><use xlink:href="#lt-86098"></use></g>
+                                                                                <use fill-rule="evenodd" transform="translate(0,0)" xlink:href="#point-86098"></use>
+                                                                                <use fill-rule="evenodd" transform="translate(1344,0)" xlink:href="#point-86098"></use>
+                                                                                <use fill-rule="evenodd" transform="translate(0,1344)" xlink:href="#point-86098"></use>
+
+                                                                                <use
+                                                                                    style="width: 750px; height: 750px;"
+                                                                                    width="750"
+                                                                                    height="750"
+                                                                                    fill="none"
+                                                                                    fill-rule="evenodd"
+                                                                                    transform="translate(712,712) scale(0.85)"
+                                                                                    xlink:href="#vk_logo-86098"
+                                                                                ></use>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </g>
+                                                                </defs>
+                                                                <g clip-path="url(#main-mask-86098)">
+                                                                    <rect width="250" height="250" style="fill:#ffffff"></rect>
+                                                                    <use x="30" y="30" xlink:href="#qr-86098" transform="scale(1)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                                </g></svg
+                                                        ></span>
+                                                    </div>
+                                                </div>
+                                                <div class="QR-error">QR-код слишком большой и может плохо читаться. Рекомендуем размещать его на носителях большого размера или уменьшить количество символов.</div>
+                                                <div class="QR-block__buttons">
+                                                    <button class="Button QR-block__buttons-b1">Скачать PNG</button>
+                                                    <button class="Button QR-block__buttons-b2">Скачать SVG</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Footer">
+                                        <div class="Footer__review-result">
+                                            ru
+                                            <div class="Footer__review-result_close"></div>
+                                        </div>
                                     </div>
                                 </div>
+                                <h1 class="hide-vis">QR-код со ссылкой</h1>
                             </div>
+                            <script>
+                                !(function(a) {
+                                    function e(e) {
+                                        for (var r, t, n = e[0], o = e[1], u = e[2], l = 0, i = []; l < n.length; l++) {
+                                            (t = n[l]), Object.prototype.hasOwnProperty.call(p, t) && p[t] && i.push(p[t][0]), (p[t] = 0);
+                                        }
+                                        for (r in o) {
+                                            Object.prototype.hasOwnProperty.call(o, r) && (a[r] = o[r]);
+                                        }
+                                        for (s && s(e); i.length; ) {
+                                            i.shift()();
+                                        }
+                                        return c.push.apply(c, u || []), f();
+                                    }
+
+                                    function f() {
+                                        for (var e, r = 0; r < c.length; r++) {
+                                            for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
+                                                var u = t[o];
+                                                0 !== p[u] && (n = !1);
+                                            }
+                                            n && (c.splice(r--, 1), (e = l((l.s = t[0]))));
+                                        }
+                                        return e;
+                                    }
+
+                                    var t = {},
+                                        p = { 1: 0 },
+                                        c = [];
+
+                                    function l(e) {
+                                        if (t[e]) {
+                                            return t[e].exports;
+                                        }
+                                        var r = (t[e] = {
+                                            i: e,
+                                            l: !1,
+                                            exports: {}
+                                        });
+                                        return a[e].call(r.exports, r, r.exports, l), (r.l = !0), r.exports;
+                                    }
+
+                                    (l.m = a),
+                                        (l.c = t),
+                                        (l.d = function(e, r, t) {
+                                            l.o(e, r) ||
+                                                Object.defineProperty(e, r, {
+                                                    enumerable: !0,
+                                                    get: t
+                                                });
+                                        }),
+                                        (l.r = function(e) {
+                                            "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 });
+                                        }),
+                                        (l.t = function(r, e) {
+                                            if ((1 & e && (r = l(r)), 8 & e)) {
+                                                return r;
+                                            }
+                                            if (4 & e && "object" == typeof r && r && r.__esModule) {
+                                                return r;
+                                            }
+                                            var t = Object.create(null);
+                                            if (
+                                                (l.r(t),
+                                                Object.defineProperty(t, "default", {
+                                                    enumerable: !0,
+                                                    value: r
+                                                }),
+                                                2 & e && "string" != typeof r)
+                                            ) {
+                                                for (var n in r) {
+                                                    l.d(
+                                                        t,
+                                                        n,
+                                                        function(e) {
+                                                            return r[e];
+                                                        }.bind(null, n)
+                                                    );
+                                                }
+                                            }
+                                            return t;
+                                        }),
+                                        (l.n = function(e) {
+                                            var r =
+                                                e && e.__esModule
+                                                    ? function() {
+                                                          return e.default;
+                                                      }
+                                                    : function() {
+                                                          return e;
+                                                      };
+                                            return l.d(r, "a", r), r;
+                                        }),
+                                        (l.o = function(e, r) {
+                                            return Object.prototype.hasOwnProperty.call(e, r);
+                                        }),
+                                        (l.p = "/react/build/");
+                                    var r = (window["webpackJsonpqr-web"] = window["webpackJsonpqr-web"] || []),
+                                        n = r.push.bind(r);
+                                    (r.push = e), (r = r.slice());
+                                    for (var o = 0; o < r.length; o++) {
+                                        e(r[o]);
+                                    }
+                                    var s = n;
+                                    f();
+                                })([]);
+                            </script>
+                            <script src="https://test.pmg.ru/react/build/static/js/2.da90df71.chunk.js"></script>
+                            <script src="https://test.pmg.ru/react/build/static/js/main.e4340050.chunk.js"></script>
                         </div>
 
                         <div class="col-12 col-xl-3 track">
