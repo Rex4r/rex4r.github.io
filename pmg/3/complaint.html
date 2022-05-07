@@ -8,7 +8,7 @@
         <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <title>PMG - Жалоба</title>
-        <link href="./local/template_styles.css?922edc64cf15ff41a08b" rel="stylesheet" />
+        <link href="./local/template_styles.css" rel="stylesheet" />
     </head>
 
     <body class="text">
@@ -370,23 +370,12 @@
                                         </div>
                                         <div class="col-12 col-md-8">
                                             <div class="form__row">
-                                                <select class="form__select form__field select field" name="vacancy">
-                                                    <option disabled="disabled" selected="selected" value="-1">Выберите вакансию</option>
-                                                    <option value="1">Печатник/Оператор цифровой печати</option>
-                                                    <option value="2">Верстальщик-дизайнер</option>
-                                                    <option value="3">Менеджер по продажам</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="d-none d-md-block col-4"></div>
-                                        <div class="col-12 col-md-8">
-                                            <div class="form__row">
-                                                <textarea class="form__field field textarea" name="message" rows="3" placeholder="Сопроводительное письмо"></textarea>
+                                                <textarea class="form__field form__textarea field textarea" name="message" rows="3" placeholder="Сопроводительное письмо"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-4">
                                             <div class="form__row">
-                                                recaptcha
+                                                recaptcha data-size="compact"
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-4">
@@ -394,7 +383,7 @@
                                                 <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Отправить</button>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4">
+                                        <div class="col-12 col-md-8">
                                             <div class="form__row">
                                                 <label class="form__field--file text--main2" for="resumeFile">Прикрепите ваше резюме</label>
                                                 <input id="resumeFile" class="d-none" type="file" name="resume" />
@@ -656,6 +645,6 @@
             <span>Вверх</span>
         </a>
 
-        <script type="text/javascript" src="./local/js/script.js?922edc64cf15ff41a08b"></script>
+        <script type="text/javascript" src="./local/js/script.js"></script>
     </body>
 </html>
