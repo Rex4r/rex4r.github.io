@@ -78,6 +78,7 @@
 * [Сертификаты](https://rex4r.github.io/pmg/3/certificates.html) <br>
 * [Акции](https://rex4r.github.io/pmg/3/deals.html) <br>
 * [Статьи](https://rex4r.github.io/pmg/3/publication.html) <br>
+* [Статьи без дополнительных блоков](https://rex4r.github.io/pmg/3/publication-2.html) <br>
 * [Политика конфиденциальности данных](https://rex4r.github.io/pmg/3/text.html) <br>
 * [FAQ](https://rex4r.github.io/pmg/3/faq.html) <br>
 * [Информация](https://rex4r.github.io/pmg/3/info.html) <br>
