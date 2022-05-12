@@ -61,6 +61,7 @@
 * [Требования к файлам и макетам](https://rex4r.github.io/pmg/3/file-requirements.html) <br>
 * [Генератор QR-кода](https://rex4r.github.io/pmg/3/qr-generator.html) <br>
 * [Каталог дизайн студии](https://rex4r.github.io/pmg/3/design-catalogue.html) <br>
+* [Каталог дизайн студии без доп блоков](https://rex4r.github.io/pmg/3/design-catalogue-2.html) <br>
 
 ## Компания: <br>
 * [Наша команда](https://rex4r.github.io/pmg/3/team.html) <br>
