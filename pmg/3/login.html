@@ -408,13 +408,19 @@
                         <div class="col-12 col-xl-4">
                             <form action="#" class="form form--login d-none d-xl-block">
                                 <h4 class="form__title d-none d-xl-block">Вход в личный кабинет</h4>
-
+                                <div class="sign-in__tabs">
+                                    <a href="javascript:void(0);" class="sign-in__tab sign-in__tab--active" data-type="email">E-mail</a>
+                                    <a href="javascript:void(0);" class="sign-in__tab" data-type="phone">Телефон</a>
+                                </div>
                                 <div class="form__grid grid grid-1 grid-md-2 grid-xl-1">
                                     <div class="form__row">
                                         <input class="form__field form__field--email field input" id="login-email" name="login-email" placeholder="E-mail" type="email" />
                                     </div>
+                                    <div class="form__row d-none">
+                                        <input class="form__field form__field--phone field input" id="login-phone" name="login-phone" placeholder="Телефон" type="tel" />
+                                    </div>
                                     <div class="form__row">
-                                        <input class="form__field form__field--email field input" id="login-password" name="login-password" placeholder="Пароль" type="password" />
+                                        <input class="form__field field input" id="login-password" name="login-password" placeholder="Пароль" type="password" />
                                     </div>
                                     <div class="form__row">
                                         recaptcha
