@@ -379,33 +379,48 @@
                                 <div class="form__title">Узнайте стоимость вашего проекта</div>
                                 <div class="form__grid grid grid-1 grid-md-2 grid-xl-1">
                                     <div class="form__row">
-                                        <select class="form__select form__field select field" id="type" name="type">
+                                        <select class="form__select form__field select field" id="type" name="type" data-additional-field-selector="#type-custom" data-additional-field-hide-select="true">
                                             <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
                                             <option value="Тип 1">Тип 1</option>
                                             <option value="Тип 2">Тип 2</option>
                                             <option value="Тип 3">Тип 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__row">
-                                        <select class="form__select form__field select field" id="circulation" name="circulation" data-additional-field-selector="#count">
-                                            <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                            <option value="50">до 50</option>
-                                            <option value="100">до 100</option>
-                                            <option value="500">до 500</option>
-                                            <option value="1000">до 1000</option>
-                                            <option value="5000">до 5000</option>
-                                            <option value="5000+">от 5000</option>
                                             <option value="custom">Своё значение</option>
                                         </select>
                                     </div>
                                     <div class="form__row form__row--additional">
-                                        <input class="form__field field input" id="count" name="count" placeholder="Количество экземпляров" type="text" disabled="disabled" />
+                                        <input class="form__field field input" id="type-custom" name="type-custom" placeholder="Введите тип проекта" type="text" disabled="disabled" />
+                                    </div>
+                                    <!--
+    <div class="form__row">
+      <select class="form__select form__field select field" id="circulation" name="circulation" data-additional-field-selector="#count">
+        <option disabled selected value="-1">Выберите тираж</option>
+        <option value="50">до 50</option>
+        <option value="100">до 100</option>
+        <option value="500">до 500</option>
+        <option value="1000">до 1000</option>
+        <option value="5000">до 5000</option>
+        <option value="5000+">от 5000</option>
+        <option value="custom">Своё значение</option>
+      </select>
+    </div>
+    <div class="form__row form__row--additional">
+      <input class="form__field field input" id="count" name="count" placeholder="Количество экземпляров" type="text" disabled>
+    </div>
+    -->
+                                    <div class="form__row d-none">
+                                        <input
+                                            class="form__field form__field--contact field input"
+                                            id="contact"
+                                            name="contact"
+                                            placeholder="Куда отправить расчет?"
+                                            type="text"
+                                            title="Введите телефон или e-mail"
+                                            pattern="\+[0-9]{1,4}[0-9]{1,10}|(.*)@(.*)\.[a-z]{2,5}"
+                                            required
+                                        />
                                     </div>
                                     <div class="form__row d-none">
-                                        <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
-                                    </div>
-                                    <div class="form__row d-none">
-                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
+                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="3"></textarea>
                                     </div>
                                     <div class="form__row form__row--button">
                                         <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
@@ -1352,7 +1367,7 @@
                     <div class="modal-content">
                         <form action="" class="form form--in-modal form--cooperation">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="cooperation-modalLabel">Начать сотрудничество</h5>
+                                <div class="modal-title h5" id="cooperation-modalLabel">Начать сотрудничество</div>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">

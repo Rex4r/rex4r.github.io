@@ -345,9 +345,245 @@
             <section class="section section--margin_20">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-xl-9"></div>
+                        <div class="col-12 col-xl-9 order-2 order-xl-1">
+                            <section class="section order">
+                                <h3 class="order__title">Мои заказы</h3>
+                                <div class="order__top">
+                                    <div class="order__tab-titles">
+                                        <div class="order__tab-title order__tab-title--active" data-tab="active">Активные</div>
+                                        <div class="order__tab-title" data-tab="completed">Завершенные</div>
+                                    </div>
+                                    <div class="order___filter">
+                                        <select class="order__select" name="filter-year" id="filter-year">
+                                            <option selected="selected">2022</option>
+                                            <option>2021</option>
+                                            <option>2020</option>
+                                            <option>2019</option>
+                                            <option>2018</option>
+                                            <option>2017</option>
+                                        </select>
+                                        <select class="order__select" name="filter-month" id="filter-month">
+                                            <option selected="selected">Январь</option>
+                                            <option>Февраль</option>
+                                            <option>Март</option>
+                                            <option>Апрель</option>
+                                            <option>Май</option>
+                                            <option>Июнь</option>
+                                            <option>Июль</option>
+                                            <option>Август</option>
+                                            <option>Сентябрь</option>
+                                            <option>Октябрь</option>
+                                            <option>Ноябрь</option>
+                                            <option>Декабрь</option>
+                                        </select>
+                                    </div>
+                                    <div class="order___sort">
+                                        <span>Сортировать</span>
+                                        <select class="order__select" name="sort-active" id="sort-active">
+                                            <option value="num">по номеру</option>
+                                            <option value="status" selected="selected">по статусу</option>
+                                            <option value="date">по дате завершения</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="order__tabs">
+                                    <div class="order__list" data-tab="active">
+                                        <div class="order__item tile tile--white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--progress">В производстве</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
 
-                        <div class="col-12 col-xl-3">
+                                            <div class="order__position">
+                                                <div class="order__date">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__item tile tile--white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--get-status" data-order-id="5992-32">Узнать статус</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
+
+                                            <div class="order__position">
+                                                <div class="order__date text--small text--gray4">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__list order__list--completed d-none" data-tab="completed">
+                                        <div class="order__item tile tile--tr-white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--done">Успешно завершён</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
+
+                                            <div class="order__position">
+                                                <div class="order__date">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__item tile tile--tr-white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--canceled">Отменён клиентом</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
+
+                                            <div class="order__position">
+                                                <div class="order__date text--small text--gray4">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+                                        <div class="order__item tile tile--tr-white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--done">Успешно завершён</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
+
+                                            <div class="order__position">
+                                                <div class="order__date">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__item tile tile--tr-white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--canceled">Отменён клиентом</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
+
+                                            <div class="order__position">
+                                                <div class="order__date text--small text--gray4">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+                                        <div class="order__item tile tile--tr-white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--done">Успешно завершён</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
+
+                                            <div class="order__position">
+                                                <div class="order__date">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__item tile tile--tr-white">
+                                            <div class="order__details">
+                                                <div>
+                                                    <div class="order__num text--big">№5992-32</div>
+                                                    <div class="order__status order__status--canceled">Отменён клиентом</div>
+                                                </div>
+                                                <a href="#" class="order__contract">Договор</a>
+                                            </div>
+
+                                            <div class="order__position">
+                                                <div class="order__date text--small text--gray4">15 сентября 2021</div>
+                                                <div class="order__product">Дизайн буклета</div>
+                                                <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
+                                            </div>
+
+                                            <div class="order__manager">
+                                                <div class="order__manager-text">Ваш менеджер по этому заказу</div>
+                                                <div class="order__manager-name">Татьяна Аверьянова</div>
+                                                <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
+                                                <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pagination">
+                                    <a href="#" class="pagination__item">1</a>
+                                    <a href="#" class="pagination__item">2</a>
+                                    <a href="#" class="pagination__item">3</a>
+                                    <div class="pagination__item pagination__item--space">...</div>
+                                    <a href="#" class="pagination__item">48</a>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-xl-3 track order-1 order-xl-2">
                             <div class="float" data-track-selector=".track" data-breakpoint="xl">
                                 <div class="account tile tile--white">
                                     <div class="account__info">
@@ -363,7 +599,7 @@
                                     </div>
                                     <div class="account__controls">
                                         <a href="#" class="account__control">Сменить пароль</a>
-                                        <a href="#" class="account__control">Выход</a>
+                                        <button class="account__control">Выход</button>
                                     </div>
                                 </div>
 
@@ -373,257 +609,62 @@
                                     </a>
                                 </div>
 
-                                <form action="#" class="form form--calculate tile tile--white">
-                                    <div class="form__title">Узнайте стоимость вашего проекта</div>
-                                    <div class="form__grid grid grid-1 grid-md-2 grid-xl-1">
-                                        <div class="form__row">
-                                            <select class="form__select form__field select field" id="type" name="type">
-                                                <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
-                                                <option value="Тип 1">Тип 1</option>
-                                                <option value="Тип 2">Тип 2</option>
-                                                <option value="Тип 3">Тип 3</option>
-                                            </select>
+                                <div class="d-none d-xl-block">
+                                    <form action="#" class="form form--calculate tile tile--white">
+                                        <div class="form__title">Узнайте стоимость вашего проекта</div>
+                                        <div class="form__grid grid grid-1 grid-md-2 grid-xl-1">
+                                            <div class="form__row">
+                                                <select class="form__select form__field select field" id="type" name="type" data-additional-field-selector="#type-custom" data-additional-field-hide-select="true">
+                                                    <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
+                                                    <option value="Тип 1">Тип 1</option>
+                                                    <option value="Тип 2">Тип 2</option>
+                                                    <option value="Тип 3">Тип 3</option>
+                                                    <option value="custom">Своё значение</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__row form__row--additional">
+                                                <input class="form__field field input" id="type-custom" name="type-custom" placeholder="Введите тип проекта" type="text" disabled="disabled" />
+                                            </div>
+                                            <!--
+    <div class="form__row">
+      <select class="form__select form__field select field" id="circulation" name="circulation" data-additional-field-selector="#count">
+        <option disabled selected value="-1">Выберите тираж</option>
+        <option value="50">до 50</option>
+        <option value="100">до 100</option>
+        <option value="500">до 500</option>
+        <option value="1000">до 1000</option>
+        <option value="5000">до 5000</option>
+        <option value="5000+">от 5000</option>
+        <option value="custom">Своё значение</option>
+      </select>
+    </div>
+    <div class="form__row form__row--additional">
+      <input class="form__field field input" id="count" name="count" placeholder="Количество экземпляров" type="text" disabled>
+    </div>
+    -->
+                                            <div class="form__row d-none">
+                                                <input
+                                                    class="form__field form__field--contact field input"
+                                                    id="contact"
+                                                    name="contact"
+                                                    placeholder="Куда отправить расчет?"
+                                                    type="text"
+                                                    title="Введите телефон или e-mail"
+                                                    pattern="\+[0-9]{1,4}[0-9]{1,10}|(.*)@(.*)\.[a-z]{2,5}"
+                                                    required
+                                                />
+                                            </div>
+                                            <div class="form__row d-none">
+                                                <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="3"></textarea>
+                                            </div>
+                                            <div class="form__row form__row--button">
+                                                <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                            </div>
                                         </div>
-                                        <div class="form__row">
-                                            <select class="form__select form__field select field" id="circulation" name="circulation" data-additional-field-selector="#count">
-                                                <option disabled="disabled" selected="selected" value="-1">Выберите тираж</option>
-                                                <option value="50">до 50</option>
-                                                <option value="100">до 100</option>
-                                                <option value="500">до 500</option>
-                                                <option value="1000">до 1000</option>
-                                                <option value="5000">до 5000</option>
-                                                <option value="5000+">от 5000</option>
-                                                <option value="custom">Своё значение</option>
-                                            </select>
-                                        </div>
-                                        <div class="form__row form__row--additional">
-                                            <input class="form__field field input" id="count" name="count" placeholder="Количество экземпляров" type="text" disabled="disabled" />
-                                        </div>
-                                        <div class="form__row d-none">
-                                            <input class="form__field form__field--email field input" id="email" name="email" placeholder="Куда отправить расчет?" type="email" />
-                                        </div>
-                                        <div class="form__row d-none">
-                                            <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="10"></textarea>
-                                        </div>
-                                        <div class="form__row form__row--button">
-                                            <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section order">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-xl-9">
-                            <div class="order__top">
-                                <h3 class="order__title">Мои активные заказы</h3>
-                                <div class="order___sort">
-                                    <span>Сортировать</span>
-                                    <select class="order__select" name="sort-active" id="sort-active">
-                                        <option value="num">по номеру</option>
-                                        <option value="status" selected="selected">по статусу</option>
-                                        <option value="date">по дате завершения</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="order__list">
-                                <div class="order__item tile tile--white">
-                                    <div class="order__details">
-                                        <div>
-                                            <div class="order__num text--big">№5992-32</div>
-                                            <div class="order__status order__status--progress">В производстве</div>
-                                        </div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-
-                                <div class="order__item tile tile--white">
-                                    <div class="order__details">
-                                        <div class="order__num text--big">№5992-32</div>
-                                        <div class="order__status order__status--ready">Готов к отгрузке</div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date text--small text--gray4">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="order__top">
-                                <h3 class="order__title">Мои завершенные заказы</h3>
-                                <div class="order___sort">
-                                    <span>Сортировать</span>
-                                    <select class="order__select" name="sort-completed" id="sort-completed">
-                                        <option value="num">по номеру</option>
-                                        <option value="status">по статусу</option>
-                                        <option value="date" selected="selected">по дате завершения</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="order__list order__list--completed">
-                                <div class="order__item tile tile--tr-white">
-                                    <div class="order__details">
-                                        <div class="order__num text--big">№5992-32</div>
-                                        <div class="order__status order__status--done">Успешно завершён</div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-
-                                <div class="order__item tile tile--tr-white">
-                                    <div class="order__details">
-                                        <div class="order__num text--big">№5992-32</div>
-                                        <div class="order__status order__status--canceled">Отменён клиентом</div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date text--small text--gray4">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-                                <div class="order__item tile tile--tr-white">
-                                    <div class="order__details">
-                                        <div class="order__num text--big">№5992-32</div>
-                                        <div class="order__status order__status--done">Успешно завершён</div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-
-                                <div class="order__item tile tile--tr-white">
-                                    <div class="order__details">
-                                        <div class="order__num text--big">№5992-32</div>
-                                        <div class="order__status order__status--canceled">Отменён клиентом</div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date text--small text--gray4">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-                                <div class="order__item tile tile--tr-white">
-                                    <div class="order__details">
-                                        <div class="order__num text--big">№5992-32</div>
-                                        <div class="order__status order__status--done">Успешно завершён</div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-
-                                <div class="order__item tile tile--tr-white">
-                                    <div class="order__details">
-                                        <div class="order__num text--big">№5992-32</div>
-                                        <div class="order__status order__status--canceled">Отменён клиентом</div>
-                                        <a href="#" class="order__contract">Договор</a>
-                                    </div>
-
-                                    <div class="order__position">
-                                        <div class="order__date text--small text--gray4">15 сентября 2021</div>
-                                        <div class="order__product">Дизайн буклета</div>
-                                        <div class="order__description text--small text--gray4">450×570 мм, сгиб по широкой стороне и другие пометки о заказе могут быть здесь.</div>
-                                    </div>
-
-                                    <div class="order__manager">
-                                        <div class="order__manager-text">Ваш менеджер по этому заказу</div>
-                                        <div class="order__manager-name">Татьяна Аверьянова</div>
-                                        <a href="tel:89261234567" class="order__manager-phone">+7 926 123-45-67</a>
-                                        <a href="mailto:av_tata@pmg.ru" class="order__manager-email">av_tata@pmg.ru</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pagination">
-                                <a href="#" class="pagination__item">1</a>
-                                <a href="#" class="pagination__item">2</a>
-                                <a href="#" class="pagination__item">3</a>
-                                <div class="pagination__item pagination__item--space">...</div>
-                                <a href="#" class="pagination__item">48</a>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-xl-3 track"></div>
                     </div>
                 </div>
             </section>
