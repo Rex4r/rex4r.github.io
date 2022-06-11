@@ -353,8 +353,8 @@
                                         <div class="order__tab-title order__tab-title--active" data-tab="active">Активные</div>
                                         <div class="order__tab-title" data-tab="completed">Завершенные</div>
                                     </div>
-                                    <div class="order___filter">
-                                        <select class="order__select" name="filter-year" id="filter-year">
+                                    <div class="order__filter">
+                                        <select class="order__select" name="filter-year" id="filter-year" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
                                             <option selected="selected">2022</option>
                                             <option>2021</option>
                                             <option>2020</option>
@@ -362,7 +362,7 @@
                                             <option>2018</option>
                                             <option>2017</option>
                                         </select>
-                                        <select class="order__select" name="filter-month" id="filter-month">
+                                        <select class="order__select" name="filter-month" id="filter-month" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
                                             <option selected="selected">Январь</option>
                                             <option>Февраль</option>
                                             <option>Март</option>
@@ -377,9 +377,9 @@
                                             <option>Декабрь</option>
                                         </select>
                                     </div>
-                                    <div class="order___sort">
-                                        <span>Сортировать</span>
-                                        <select class="order__select" name="sort-active" id="sort-active">
+                                    <div class="order__sort">
+                                        <span>Сортировать&nbsp;</span>
+                                        <select class="order__select" name="sort-active" id="sort-active" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
                                             <option value="num">по номеру</option>
                                             <option value="status" selected="selected">по статусу</option>
                                             <option value="date">по дате завершения</option>
@@ -614,8 +614,15 @@
                                         <div class="form__title">Узнайте стоимость вашего проекта</div>
                                         <div class="form__grid grid grid-1 grid-md-2 grid-xl-1">
                                             <div class="form__row">
-                                                <select class="form__select form__field select field" id="type" name="type" data-additional-field-selector="#type-custom" data-additional-field-hide-select="true">
-                                                    <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
+                                                <select
+                                                    class="form__select form__field select field"
+                                                    id="type"
+                                                    name="type"
+                                                    data-additional-field-selector="#type-custom"
+                                                    data-additional-field-hide-select="true"
+                                                    data-placeholder="Выберите тип проекта"
+                                                >
+                                                    <option></option>
                                                     <option value="Тип 1">Тип 1</option>
                                                     <option value="Тип 2">Тип 2</option>
                                                     <option value="Тип 3">Тип 3</option>
