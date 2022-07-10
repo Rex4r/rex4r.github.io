@@ -348,51 +348,55 @@
                         <div class="col-12 col-xl-9 order-2 order-xl-1">
                             <section class="section order">
                                 <h3 class="order__title">Мои заказы</h3>
-                                <div class="order__top">
-                                    <div class="order__tab-titles">
-                                        <div class="order__tab-title order__tab-title--active" data-tab="active">Активные</div>
-                                        <div class="order__tab-title" data-tab="completed">Завершенные</div>
+                                <form id="filter-sort" method="get">
+                                    <div class="order__top">
+                                        <div class="order__tab-titles">
+                                            <div class="order__tab-title order__tab-title--active" data-tab="active">Активные</div>
+                                            <div class="order__tab-title" data-tab="completed">Завершенные</div>
+                                        </div>
+                                        <div class="order__filter">
+                                            <select class="order__select" name="filterYear" id="filter-year" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
+                                                <option selected="selected">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                            </select>
+                                            <select class="order__select" name="filterMonth" id="filter-month" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
+                                                <option value="01">Январь</option>
+                                                <option value="02">Февраль</option>
+                                                <option value="03">Март</option>
+                                                <option value="04">Апрель</option>
+                                                <option value="05">Май</option>
+                                                <option value="06">Июнь</option>
+                                                <option value="07">Июль</option>
+                                                <option value="08">Август</option>
+                                                <option value="09">Сентябрь</option>
+                                                <option value="10">Октябрь</option>
+                                                <option value="11">Ноябрь</option>
+                                                <option value="12">Декабрь</option>
+                                            </select>
+                                        </div>
+                                        <div class="order__sort">
+                                            <span>Сортировать&nbsp;</span>
+                                            <select class="order__select" name="sort" id="sort" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
+                                                <option value="num">по номеру</option>
+                                                <option value="status" selected="selected">по статусу</option>
+                                                <option value="date">по дате завершения</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="order__filter">
-                                        <select class="order__select" name="filter-year" id="filter-year" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
-                                            <option selected="selected">2022</option>
-                                            <option>2021</option>
-                                            <option>2020</option>
-                                            <option>2019</option>
-                                            <option>2018</option>
-                                            <option>2017</option>
-                                        </select>
-                                        <select class="order__select" name="filter-month" id="filter-month" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
-                                            <option selected="selected">Январь</option>
-                                            <option>Февраль</option>
-                                            <option>Март</option>
-                                            <option>Апрель</option>
-                                            <option>Май</option>
-                                            <option>Июнь</option>
-                                            <option>Июль</option>
-                                            <option>Август</option>
-                                            <option>Сентябрь</option>
-                                            <option>Октябрь</option>
-                                            <option>Ноябрь</option>
-                                            <option>Декабрь</option>
-                                        </select>
-                                    </div>
-                                    <div class="order__sort">
-                                        <span>Сортировать&nbsp;</span>
-                                        <select class="order__select" name="sort-active" id="sort-active" data-width="width: auto;" data-theme="no-border" data-minimum-results-for-search="Infinity" data-dropdown-auto-width="true">
-                                            <option value="num">по номеру</option>
-                                            <option value="status" selected="selected">по статусу</option>
-                                            <option value="date">по дате завершения</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                </form>
                                 <div class="order__tabs">
                                     <div class="order__list" data-tab="active">
-                                        <div class="order__item tile tile--white">
+                                        <div class="order__item tile tile--white" data-order-id="4544">
                                             <div class="order__details">
                                                 <div>
-                                                    <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--progress">В производстве</div>
+                                                    <div class="order__num text--big">№4544</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--get-status">Узнать статус</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -411,11 +415,13 @@
                                             </div>
                                         </div>
 
-                                        <div class="order__item tile tile--white">
+                                        <div class="order__item tile tile--white" data-order-id="4545">
                                             <div class="order__details">
                                                 <div>
-                                                    <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--get-status" data-order-id="5992-32">Узнать статус</div>
+                                                    <div class="order__num text--big">№4545</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--get-status">Узнать статус</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -439,7 +445,9 @@
                                             <div class="order__details">
                                                 <div>
                                                     <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--done">Успешно завершён</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--white">Успешно завершён</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -462,7 +470,9 @@
                                             <div class="order__details">
                                                 <div>
                                                     <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--canceled">Отменён клиентом</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--red">Отменён клиентом</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -484,7 +494,9 @@
                                             <div class="order__details">
                                                 <div>
                                                     <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--done">Успешно завершён</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--white">Успешно завершён</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -507,7 +519,9 @@
                                             <div class="order__details">
                                                 <div>
                                                     <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--canceled">Отменён клиентом</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--red">Отменён клиентом</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -529,7 +543,9 @@
                                             <div class="order__details">
                                                 <div>
                                                     <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--done">Успешно завершён</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--white">Успешно завершён</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -552,7 +568,9 @@
                                             <div class="order__details">
                                                 <div>
                                                     <div class="order__num text--big">№5992-32</div>
-                                                    <div class="order__status order__status--canceled">Отменён клиентом</div>
+                                                    <div class="order__status">
+                                                        <div class="order__status-text order__status-text--red">Отменён клиентом</div>
+                                                    </div>
                                                 </div>
                                                 <a href="#" class="order__contract">Договор</a>
                                             </div>
@@ -698,10 +716,11 @@
                                     <a class="footer__link" href="tel:+74993482597">+7 (499) 348-25-97</a>
                                 </div>
                                 <div class="social">
-                                    <a class="social__item" href="#"><img alt="Facebook" src="./local/img/social/facebook.svg"/></a>
+                                    <!--              <a class="social__item" href="#"><img alt="Facebook" src="./local/img/social/facebook.svg"></a>-->
                                     <a class="social__item" href="#"><img alt="YouTube" src="./local/img/social/youtube.svg"/></a>
-                                    <a class="social__item" href="#"><img alt="instagram" src="./local/img/social/instagram.svg"/></a>
+                                    <!--              <a class="social__item" href="#"><img alt="instagram" src="./local/img/social/instagram.svg"></a>-->
                                     <a class="social__item" href="#"><img alt="ВКонтакте" src="./local/img/social/vk.svg"/></a>
+                                    <a class="social__item" href="#"><img alt="Яндекс Дзен" src="./local/img/social/yandex_zen.svg"/></a>
                                 </div>
                             </div>
                         </div>
@@ -736,6 +755,7 @@
                             <div class="footer__title payment__title">Оплата</div>
                             <p class="text--gray4 payment__text">Мы принимаем разные виды оплаты, как от физических, так и от юридических лиц</p>
                             <div class="payment__list">
+                                <img alt="МИР" class="payment__item" src="./local/img/payment/mir.svg" />
                                 <img alt="Visa" class="payment__item" src="./local/img/payment/visa.svg" />
                                 <img alt="Mastercard" class="payment__item" src="./local/img/payment/mastercard.svg" />
                                 <img alt="Maestro" class="payment__item" src="./local/img/payment/maestro.svg" />
