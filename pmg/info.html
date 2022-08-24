@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport" />
+
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
+        <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>PMG - Информация</title>
+        <link href="./local/template_styles.css" rel="stylesheet" />
+    </head>
+
+    <body class="text">
+        <header class="header">
+            <div class="header__top text--white">
+                <div class="header__wrapper container">
+                    <div class="header__address d-none d-md-block">
+                        Москва, ул. Балтийская, 11<br />
+                        <span class="text--gray text--small">Работаем в будние дни с 9:00 до 19:00</span>
+                    </div>
+                    <a class="header__help d-none d-xl-block" href="#">Оплата и доставка</a>
+                    <a class="header__phone" href="tel:84993482567">+7 (499) 348-25-97</a>
+                    <a class="header__email-ico d-lg-none" href="mailto:order14@tipografiya.online">@</a>
+                    <div class="header__callback">
+                        <button class="button button--white header__button d-none d-md-block">Перезвоним</button>
+                    </div>
+                    <a class="header__email d-none d-lg-block" href="mailto:order14@tipografiya.online">order14@tipografiya.online</a>
+                    <div class="header__lang">
+                        <a href="javascript:void(0);" class="text--gray2">EN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 col-md-4 col-xl-2 d-flex align-items-center">
+                            <a href="/">
+                                <img alt="PMG" class="header__logo-img" src="./local/img/logo.svg" />
+                            </a>
+                            <a class="header__logo-phone d-none" href="tel:84993482567">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18 14.2207C18 14.1328 18 14.0274 17.9649 13.9395C17.8594 13.6231 15.293 12.3223 14.8008 12.041C14.4668 11.8477 14.0625 11.461 13.6582 11.461C12.8848 11.461 11.7422 13.7637 11.0567 13.7637C10.7051 13.7637 10.2656 13.4473 9.94923 13.2715C7.6289 11.9707 6.02929 10.3711 4.72852 8.0508C4.55275 7.73438 4.23633 7.29495 4.23633 6.94337C4.23633 6.25781 6.53907 5.11523 6.53907 4.34181C6.53907 3.93751 6.15236 3.53321 5.95899 3.19923C5.67774 2.70704 4.37694 0.140613 4.06056 0.0351612C3.97267 4.31669e-07 3.86719 0 3.7793 0C3.32228 0 2.42578 0.210934 2.00392 0.386707C0.843766 0.914056 0 3.12891 0 4.34178C0 5.51953 0.474624 6.59179 0.878896 7.68162C2.28514 11.5312 6.46875 15.7149 10.3184 17.1211C11.4082 17.5254 12.4805 18 13.6582 18C14.8711 18 17.086 17.1562 17.6133 15.9961C17.7891 15.5742 18 14.6778 18 14.2207Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                            <a class="header__logo-email d-none" href="mailto:order14@tipografiya.online">@</a>
+                        </div>
+                        <div class="col-4 col-md-8 col-xl-10 d-flex align-items-center">
+                            <nav class="header__nav nav">
+                                <div class="nav__wrapper nav__wrapper--mobile">
+                                    <ul class="nav__list nav__list--mobile">
+                                        <li class="nav__item d-none d-md-block">
+                                            <a class="tile tile--white" href="">
+                                                <svg class="nav__ico nav__ico--editor" fill="none" height="30" viewBox="0 0 31 30" width="31" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4 16L20 4" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle cx="3.0332" cy="16.7998" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle cx="21.2646" cy="3" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle cx="12.5" cy="9.62891" fill="#002677" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path
+                                                        clip-rule="evenodd"
+                                                        d="M18.1631 8.05335C18.5259 8.01804 18.8935 8 19.265 8C19.6365 8 20.004 8.01804 20.3668 8.05335L20.1731 10.0439C19.8746 10.0149 19.5717 10 19.265 10C18.9583 10 18.6553 10.0149 18.3568 10.0439L18.1631 8.05335ZM13.9604 9.32689C14.6048 8.98179 15.2868 8.69748 15.9988 8.48177L16.5787 10.3958C15.9943 10.5729 15.4342 10.8063 14.9048 11.0899L13.9604 9.32689ZM22.5312 8.48177C23.2432 8.69748 23.9252 8.98179 24.5695 9.32689L23.6252 11.0899C23.0957 10.8063 22.5356 10.5729 21.9512 10.3958L22.5312 8.48177ZM10.5692 12.1123C11.0367 11.5433 11.5589 11.021 12.1279 10.5535L13.3976 12.0988C12.9292 12.4837 12.4993 12.9136 12.1145 13.382L10.5692 12.1123ZM8.49739 15.9831C8.71311 15.2711 8.99742 14.5891 9.34252 13.9448L11.1055 14.8891C10.822 15.4186 10.5885 15.9787 10.4115 16.5631L8.49739 15.9831ZM8.01562 19.2493C8.01562 18.8778 8.03367 18.5103 8.06897 18.1475L10.0596 18.3412C10.0305 18.6397 10.0156 18.9426 10.0156 19.2493C10.0156 19.6161 10.0369 19.9774 10.0783 20.3323L8.09169 20.5637C8.04142 20.1322 8.01562 19.6936 8.01562 19.2493ZM9.89144 25.471C9.40807 24.7441 9.00678 23.9574 8.70107 23.1242L10.5787 22.4353C10.8296 23.1193 11.1593 23.7657 11.5568 24.3636L9.89144 25.471ZM12.6064 28.3172C12.252 28.0566 11.9135 27.7757 11.5926 27.4763L12.957 26.014C13.2211 26.2604 13.4997 26.4916 13.7913 26.706C13.9878 26.8505 14.6375 27.1842 14.8453 27.313L13.7913 29.0127C13.5386 28.856 13.092 28.6743 12.6064 28.3172Z"
+                                                        fill="#002677"
+                                                        fill-rule="evenodd"
+                                                    />
+                                                    <path
+                                                        d="M19.3935 14.1577C19.3158 13.3081 20.2692 12.7576 20.9661 13.2497L29.0234 18.9388C29.736 19.4419 29.5078 20.5525 28.6545 20.7338L25.0391 21.502C24.8324 21.5459 24.645 21.6541 24.5037 21.8111L22.0307 24.5581C21.447 25.2064 20.3711 24.8488 20.2917 23.9801L19.3935 14.1577Z"
+                                                        fill="white"
+                                                        stroke="#002677"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                    />
+                                                </svg>
+                                                <span>Онлайн-редактор</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav__item d-none d-md-block">
+                                            <a class="tile tile--white" href="#">
+                                                <svg class="nav__ico nav__ico--account" fill="none" height="24" viewBox="0 0 27 24" width="27" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect height="16" rx="1" stroke="#002677" stroke-linejoin="round" stroke-width="2" width="13" x="13" y="1" />
+                                                    <path d="M0 10H9" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path
+                                                        d="M17 7.80705C17 7.48036 17.1596 7.17426 17.4274 6.98721L24.4274 2.09831C25.0903 1.63536 26 2.10962 26 2.91816V16.193C26 16.5196 25.8404 16.8257 25.5726 17.0128L18.5726 21.9017C17.9097 22.3646 17 21.8904 17 21.0818V7.80705Z"
+                                                        fill="white"
+                                                        stroke="#002677"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                    />
+                                                    <path d="M5 5L9.29289 9.29289C9.68342 9.68342 9.68342 10.3166 9.29289 10.7071L5 15" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                </svg>
+                                                <span>Личный кабинет</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav__item nav__item--search search">
+                                            <a href="javascript:void(0);" class="tile tile--white search__open">
+                                                <svg fill="none" height="18" viewBox="0 0 17 18" width="17" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                </svg>
+                                            </a>
+                                            <form action="" class="form form--search d-none">
+                                                <div class="form__row">
+                                                    <input class="form__field field input" name="search" placeholder="Поиск" type="text" />
+                                                </div>
+                                                <svg class="form__close" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="11.2217" y="25.3638" width="20" height="2" transform="rotate(-45 11.2217 25.3638)" fill="#002677"></rect>
+                                                    <rect x="12.636" y="11.2217" width="20" height="2" transform="rotate(45 12.636 11.2217)" fill="#002677"></rect>
+                                                </svg>
+                                            </form>
+                                        </li>
+                                        <li class="nav__item nav__item--menu">
+                                            <svg fill="none" height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                                                <rect fill="#E35205" height="38" rx="6" width="38" />
+                                                <rect fill="white" height="2" width="20" x="9" y="12" />
+                                                <rect fill="white" height="2" width="20" x="9" y="18" />
+                                                <rect fill="white" height="2" width="20" x="9" y="24" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+
+                                    <div class="nav__modal">
+                                        <div class="nav__modal-top">
+                                            <a href="/">
+                                                <img alt="PMG" class="header__logo-img" src="./local/img/logo.svg" />
+                                            </a>
+                                            <svg class="nav__close" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="38" height="38" rx="6" fill="#333333" />
+                                                <rect x="11.2217" y="25.3638" width="20" height="2" transform="rotate(-45 11.2217 25.3638)" fill="white" />
+                                                <rect x="12.636" y="11.2217" width="20" height="2" transform="rotate(45 12.636 11.2217)" fill="white" />
+                                            </svg>
+                                        </div>
+
+                                        <ul class="nav__list nav__list--modal">
+                                            <li class="nav__item nav__item--dropdown" data-dropdown="client">
+                                                <a href="javascript:void(0);">Клиентам</a>
+                                            </li>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="client">
+                                                <li class="nav__item"><a href="#">Акции</a></li>
+                                                <li class="nav__item"><a href="#">Новости</a></li>
+                                                <li class="nav__item nav__item--dropdown" data-dropdown="about">
+                                                    <a href="javascript:void(0);">О компании</a>
+                                                </li>
+                                                <ul class="nav__list nav__list--secondary" data-dropdown="about">
+                                                    <li class="nav__item"><a href="#">Отзывы</a></li>
+                                                    <li class="nav__item"><a href="#">Cертификация</a></li>
+                                                    <li class="nav__item"><a href="#">Вакансии</a></li>
+                                                    <li class="nav__item"><a href="#">Реквизиты</a></li>
+                                                    <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
+                                                </ul>
+                                                <li class="nav__item"><a href="/services.html">Наши услуги</a></li>
+                                                <li class="nav__item"><a href="#">Портфолио</a></li>
+                                                <li class="nav__item"><a href="#">Статьи</a></li>
+                                                <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
+                                                <li class="nav__item"><a href="#">Требования к файлам</a></li>
+                                                <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
+                                                <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
+                                            </ul>
+
+                                            <li class="nav__item nav__item--dropdown" data-dropdown="product">
+                                                <a href="javascript:void(0);">Полиграфическая продукция</a>
+                                            </li>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="product">
+                                                <li class="nav__item"><a href="#">Офсетная печать</a></li>
+                                                <li class="nav__item"><a href="#">Цифровая печать</a></li>
+                                                <li class="nav__item"><a href="/service.html">Широкоформатная печать</a></li>
+                                                <li class="nav__item"><a href="#">Плоттерная резка</a></li>
+                                                <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
+                                                <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
+                                                <li class="nav__item"><a href="#">Срочная пeчать</a></li>
+                                                <li class="nav__item"><a href="#">Черно-белая печать</a></li>
+                                                <li class="nav__item"><a href="#">Цветная печать</a></li>
+                                                <li class="nav__item"><a href="#">Шелкография</a></li>
+                                                <li class="nav__item"><a href="#">Печать переменных данных</a></li>
+                                                <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
+                                                <li class="nav__item"><a href="#">Печать на бэклите</a></li>
+                                                <li class="nav__item"><a href="#">Пур клей</a></li>
+                                                <li class="nav__item"><a href="#">Печать больших форматов</a></li>
+                                                <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
+                                            </ul>
+
+                                            <li class="nav__item nav__item--dropdown">
+                                                <a href="javascript:void(0);">Услуги</a>
+                                            </li>
+
+                                            <li class="nav__item nav__item--dropdown">
+                                                <a href="javascript:void(0);">Дизайн-студия</a>
+                                            </li>
+
+                                            <li class="nav__item">
+                                                <a href="#">Сувенирная продукция</a>
+                                            </li>
+
+                                            <li class="nav__item">
+                                                <a href="#">Контакты</a>
+                                            </li>
+
+                                            <li class="nav__item">
+                                                <a href="#">Оплата и доставка</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="nav__list nav__list--modal nav__list--bottom">
+                                            <li class="nav__item">
+                                                <a href="javascript:void(0);">Онлайн-редактор</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="javascript:void(0);">Личный кабинет</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="nav__wrapper nav__wrapper--desktop">
+                                    <ul class="nav__list nav__list--main">
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="client"><a href="#">Клиентам</a></li>
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="product">
+                                            <a href="#">Полиграфическая продукция</a>
+                                        </li>
+                                        <li class="nav__item nav__item--dropdown"><a href="#">Услуги</a></li>
+                                        <li class="nav__item nav__item--dropdown"><a href="#">Дизайн-студия</a></li>
+                                        <li class="nav__item"><a href="#">Сувенирная продукция</a></li>
+                                        <li class="nav__item"><a href="#">Контакты</a></li>
+                                        <li class="nav__item nav__item--search search">
+                                            <a href="javascript:void(0);" class="tile tile--white search__open">
+                                                <svg fill="none" height="18" viewBox="0 0 17 18" width="17" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                    <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                                </svg>
+                                            </a>
+                                            <form action="" class="form form--search d-none">
+                                                <div class="form__row">
+                                                    <input class="form__field field input" name="search" placeholder="Поиск" type="text" />
+                                                </div>
+                                                <svg class="form__close" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="11.2217" y="25.3638" width="20" height="2" transform="rotate(-45 11.2217 25.3638)" fill="#002677"></rect>
+                                                    <rect x="12.636" y="11.2217" width="20" height="2" transform="rotate(45 12.636 11.2217)" fill="#002677"></rect>
+                                                </svg>
+                                            </form>
+                                        </li>
+                                    </ul>
+
+                                    <div class="nav__dropdown">
+                                        <div class="nav__dropdown-menu d-none" data-dropdown="client">
+                                            <div class="grid grid-4">
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Акции</a></li>
+                                                    <li class="nav__item"><a href="#">Новости</a></li>
+                                                    <li class="nav__item nav__item--subdropdown">
+                                                        <a href="#">О компании</a>
+                                                        <ul class="nav__list nav__list--tertiary">
+                                                            <li class="nav__item"><a href="#">Отзывы</a></li>
+                                                            <li class="nav__item"><a href="#">Cертификация</a></li>
+                                                            <li class="nav__item"><a href="#">Вакансии</a></li>
+                                                            <li class="nav__item"><a href="#">Реквизиты</a></li>
+                                                            <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav__item"><a href="#">Портфолио</a></li>
+                                                    <li class="nav__item"><a href="#">Статьи</a></li>
+                                                    <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
+                                                </ul>
+
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="/services.html">Наши услуги</a></li>
+                                                    <li class="nav__item"><a href="#">Требования к файлам</a></li>
+                                                    <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
+                                                    <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
+                                                </ul>
+
+                                                <a class="nav__preview" href="#">
+                                                    <img alt="Промо упаковка" class="nav__preview_img" src="./local/demodata/demo1.png" />
+                                                    <div class="nav__preview_text">Для чего нужна промо упаковка?</div>
+                                                </a>
+
+                                                <a class="nav__preview" href="#">
+                                                    <img alt="Ricoh Pro C7100X" class="nav__preview_img" src="./local/demodata/demo2.png" />
+                                                    <div class="nav__preview_text">Первая в России 6-цветная цифровая печатная машина Ricoh Pro C7100X</div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="nav__dropdown-menu d-none" data-dropdown="product">
+                                            <div class="grid grid-4">
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Офсетная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Цифровая печать</a></li>
+                                                    <li class="nav__item"><a href="/service.html">Широкоформатная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Плоттерная резка</a></li>
+                                                    <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
+                                                    <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
+                                                </ul>
+
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Срочная пeчать</a></li>
+                                                    <li class="nav__item"><a href="#">Черно-белая печать</a></li>
+                                                    <li class="nav__item"><a href="#">Цветная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Шелкография</a></li>
+                                                    <li class="nav__item"><a href="#">Печать переменных данных</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                </ul>
+
+                                                <ul class="nav__list nav__list--secondary">
+                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на бэклите</a></li>
+                                                    <li class="nav__item"><a href="#">Пур клей</a></li>
+                                                    <li class="nav__item"><a href="#">Печать больших форматов</a></li>
+                                                    <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
+                                                </ul>
+
+                                                <a class="nav__preview" href="#">
+                                                    <img alt="Промо упаковка" class="nav__preview_img" src="./local/demodata/demo3.png" />
+                                                    <div class="nav__preview_text">Когда начнется революция? Рассматриваем технологию LANDA</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb__list text--small">
+                            <div class="breadcrumb__item"><a href="/">Главная</a></div>
+                            <div class="breadcrumb__item"><a href="/">Компания</a></div>
+                            <div class="breadcrumb__item text--gray4">Информация</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="main">
+            <section class="section section--first-screen first-screen">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xl-9">
+                            <section class="section">
+                                <h1 class="first-screen__title">Информация</h1>
+                                <div class="first-screen__text">
+                                    PMG — типография полного цикла. Мы выпускаем широкий ассортимент полиграфической продукции — от бланков до упаковки сложных форм и всех размеров, от черно-белых визиток до полноцветных рекламных каталогов
+                                    и предоставляем услуги высокого качества — начиная с создания концепции продукта до упаковки готового тиража и доставки его клиенту.
+                                </div>
+                            </section>
+
+                            <section class="section clients">
+                                <h2 class="clients__title">Наши клиенты</h2>
+                                <div class="clients__list grid grid-3 grid-md-6">
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-1.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-2.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-3.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-4.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-5.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-6.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-7.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-8.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-9.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-10.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-11.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-12.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-13.svg" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-14.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-15.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-16.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-17.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-18.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-19.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-20.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-21.svg" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-22.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-23.png" />
+                                    </div>
+                                    <div class="client__item">
+                                        <img alt="Клиент" class="client__img" src="./local/img/client/client-24.png" />
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-xl-3 track">
+                            <div class="tile tile--white d-none d-xl-block">
+                                <a class="link link--button link--account" href="#">
+                                    <div>Личный кабинет</div>
+                                    <div class="text--gray text--small text--gray4">Проверить статус заказа</div>
+                                </a>
+                            </div>
+                            <div class="tile tile--white d-none d-xl-block">
+                                <a class="link link--button link--editor" href="#">
+                                    <div>Онлайн-редактор</div>
+                                </a>
+                            </div>
+                            <form action="#" class="form form--calculate tile tile--white">
+                                <div class="form__title">Узнайте стоимость вашего проекта</div>
+                                <div class="form__grid grid grid-1 grid-md-2 grid-xl-1">
+                                    <div class="form__row">
+                                        <select
+                                            class="form__select form__field select field"
+                                            id="type"
+                                            name="type"
+                                            data-additional-field-selector="#type-custom"
+                                            data-additional-field-hide-select="true"
+                                            data-placeholder="Выберите тип проекта"
+                                        >
+                                            <option></option>
+                                            <option value="Тип 1">Тип 1</option>
+                                            <option value="Тип 2">Тип 2</option>
+                                            <option value="Тип 3">Тип 3</option>
+                                            <option value="custom">Своё значение</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__row form__row--additional">
+                                        <input class="form__field field input" id="type-custom" name="type-custom" placeholder="Введите тип проекта" type="text" disabled="disabled" />
+                                    </div>
+                                    <!--
+    <div class="form__row">
+      <select class="form__select form__field select field" id="circulation" name="circulation" data-additional-field-selector="#count">
+        <option disabled selected value="-1">Выберите тираж</option>
+        <option value="50">до 50</option>
+        <option value="100">до 100</option>
+        <option value="500">до 500</option>
+        <option value="1000">до 1000</option>
+        <option value="5000">до 5000</option>
+        <option value="5000+">от 5000</option>
+        <option value="custom">Своё значение</option>
+      </select>
+    </div>
+    <div class="form__row form__row--additional">
+      <input class="form__field field input" id="count" name="count" placeholder="Количество экземпляров" type="text" disabled>
+    </div>
+    -->
+                                    <div class="form__row d-none">
+                                        <input
+                                            class="form__field form__field--contact field input"
+                                            id="contact"
+                                            name="contact"
+                                            placeholder="Куда отправить расчет?"
+                                            type="text"
+                                            title="Введите телефон или e-mail"
+                                            pattern="\+[0-9]{1,4}[0-9]{1,10}|(.*)@(.*)\.[a-z]{2,5}"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form__row d-none">
+                                        <textarea class="form__field form__textarea textarea" cols="30" name="question" placeholder="Ваш вопрос" rows="3"></textarea>
+                                    </div>
+                                    <div class="form__row form__row--button">
+                                        <button class="form__button form__button--submit button button--secondary button--full-width" type="submit">Рассчитать стоимость</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <aside class="aside aside--border_left spoiler" data-visible-count="8">
+                                <div class="aside__title">Вас может заинтересовать</div>
+                                <div class="aside__text spoiler__wrapper">
+                                    <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Справочник полиграфии</a>
+                                    <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Сгенерировать qr-код</a>
+                                    <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Акции</a>
+                                    <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Требования к файлам</a>
+                                    <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">О компании</a>
+                                    <a href="javascript:void(0);" class="aside__link text--gray4 spoiler__item">Публикации</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--cooperation">
+                <div class="container">
+                    <h2 class="portfolio__title">Сотрудничество с типографией PMG</h2>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С частными лицами" class="cooperation__img" src="./local/img/cooperation/cooperation-1.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С частными лицами</div>
+                                <div class="cooperation__text">Полиграфическая печать, несмотря на стремительное развитие цифровых технологий, продолжает оставаться основным средством не только информации, но и рекламы.</div>
+                                <div class="cooperation__note text--small text--gray4">
+                                    PMG — это типография со своим производством , которая оперативно выпускает дешевые и эксклюзивные печатные издания в большом ассортименте, разные по назначению и периодичности:
+                                </div>
+                                <a class="cooperation__link button button--full-width" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cooperation-modal">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С корпоративными клиентами" class="cooperation__img" src="./local/img/cooperation/cooperation-2.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С корпоративными клиентами</div>
+                                <div class="cooperation__text">
+                                    Для того, чтобы постоянно поддерживать статус лучшей в МСК типографии, мы совершенствуем собственный профессионализм, обучаемся, оснащаем производство лучшим импортным оборудованием.
+                                </div>
+                                <div class="cooperation__note text--small text--gray4">Это позволяет гарантировать каждому клиенту изготовление печатной продукции точно в срок, независимо от сложности проекта и объема тиража.</div>
+                                <a class="cooperation__link button button--full-width" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cooperation-modal">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 cooperation">
+                            <img alt="С рекламными агентствами" class="cooperation__img" src="./local/img/cooperation/cooperation-3.svg" />
+                            <div class="cooperation__wrapper">
+                                <div class="cooperation__title">С рекламными агентствами</div>
+                                <div class="cooperation__text">Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат.</div>
+                                <div class="cooperation__note text--small text--gray4">
+                                    К тому же на сайте компании есть онлайн-калькулятор, позволяющий рассчитать примерную стоимость заказа. Удобное сотрудничество. Хорошее месторасположение в Москве (находится типография возле метро, до нее
+                                    удобно добраться на городском или личном транспорте).
+                                </div>
+                                <a class="cooperation__link button button--full-width" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#cooperation-modal">Начать сотрудничество</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--info">
+                <div class="container">
+                    <div class="info__subtitle">Преимущество сотрудничества</div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>
+                                        «Типография ПМГ» — это типография, которая рядом, благодаря особому подходу к клиенту и качественному сервису. Есть много причин, по которым стоит стать клиентом нашей компании. Вот несколько из них.
+                                    </p>
+                                    <p>
+                                        Доступная цена. Каждому заказчику всегда предоставляется право выбора — сделать бюджетное издание или более дорогое, в зависимости от запланированных им денежных затрат. К тому же на сайте компании
+                                        есть онлайн-калькулятор, позволяющий рассчитать примерную стоимость заказа.
+                                    </p>
+                                    <p>
+                                        Удобное сотрудничество. Хорошее месторасположение в Москве (находится типография возле метро, до нее удобно добраться на городском или личном транспорте). Также возможно оформление заказа удаленно —
+                                        достаточно отправить на электронный адрес компании техническое задание и менеджер приступит к реализации поставленной задачи. Для быстрой связи на сайте указан телефон компании.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="info">
+                                <div class="info__text text--gray4">
+                                    <p>
+                                        Безупречное качество печатной полиграфии. В штате компании только высококвалифицированные специалисты (дизайнеры, печатники, верстальщики, тиснильщики, резчики), поэтому заказчик всегда остается
+                                        доволен полученным результатом.
+                                    </p>
+                                    <p>
+                                        Оперативность. Понимая темп работы и важность своевременного изготовления полиграфии, наш типографский цех работает по графику 24/7, что позволяет в сжатые сроки выпускать издания для выставок,
+                                        конференций, презентаций и прочих промо-мероприятий.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal fade" id="cooperation-modal" tabindex="-1" aria-labelledby="cooperation-modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form action="" class="form form--in-modal form--cooperation">
+                            <div class="modal-header">
+                                <div class="modal-title h4" id="cooperation-modalLabel">Начать сотрудничество</div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form__row">
+                                    <input class="form__field field input" name="name" placeholder="Ваше имя" required type="text" />
+                                </div>
+                                <div class="form__row">
+                                    <input class="form__field field input" name="phone" placeholder="Ваш телефон" required type="tel" />
+                                </div>
+                                <div class="form__row">
+                                    <input class="form__field field input" name="email" placeholder="Ваш e-mail" required type="email" />
+                                </div>
+                                <div class="form__row">
+                                    <textarea class="form__field field textarea" name="message" placeholder="Ваш вопрос"></textarea>
+                                </div>
+                                <div class="form__row">
+                                    <input type="file" class="form__field field" name="file" />
+                                </div>
+                                <div class="form__row">
+                                    recaptcha
+                                </div>
+                                <div class="text--small text--gray4">
+                                    Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных в соответствии с
+                                    <a href="#">правилами сайта</a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="form__button button button--gray4" data-bs-dismiss="modal">Закрыть</button>
+                                <button type="submit" class="form__button form__button--submit button">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer text--small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-5">
+                        <div class="row footer__row">
+                            <div class="col-12 col-lg-5 footer__col">
+                                <div class="footer__logo">
+                                    <a href="/">
+                                        <img alt="PMG" src="./local/img/logo.svg" />
+                                    </a>
+                                </div>
+                                <div class="d-none d-lg-block text--small text--gray4">© 2006-2021<br />сайт полиграфических услуг типографии PMG.</div>
+                            </div>
+                            <div class="col-12 col-lg-7 footer__col">
+                                <div class="footer__contact">
+                                    <div class="footer__title footer__contact-title">Москва, ул. Балтийская, 11</div>
+                                    <div class="text--small text--gray4">Работаем в будние дни с&nbsp;9:00&nbsp;до&nbsp;19:00</div>
+                                    <a class="footer__link" href="mailto:order10@tipografiya.online">order10@tipografiya.online</a>
+                                    <a class="footer__link" href="tel:+74993482597">+7 (499) 348-25-97</a>
+                                </div>
+                                <div class="social">
+                                    <!--              <a class="social__item" href="#"><img alt="Facebook" src="./local/img/social/facebook.svg"></a>-->
+                                    <a class="social__item" href="#"><img alt="YouTube" src="./local/img/social/youtube.svg"/></a>
+                                    <!--              <a class="social__item" href="#"><img alt="instagram" src="./local/img/social/instagram.svg"></a>-->
+                                    <a class="social__item" href="#"><img alt="ВКонтакте" src="./local/img/social/vk.svg"/></a>
+                                    <a class="social__item" href="#"><img alt="Яндекс Дзен" src="./local/img/social/yandex_zen.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="footer__title">Услуги</div>
+                        <a class="footer__link" href="">Офсетная печать</a>
+                        <a class="footer__link" href="">Цифровая печать</a>
+                        <a class="footer__link" href="/service.html">Широкоформатная печать</a>
+                        <a class="footer__link" href="">Плоттерная резка</a>
+                        <a class="footer__link" href="">УФ Печать</a>
+                        <a class="footer__link" href="">Рекламная полиграфия</a>
+                        <a class="footer__link" href="">Срочная печать</a>
+                        <a class="footer__link" href="">Чёрно-белая печать</a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="footer__title">Клиентам</div>
+                        <a class="footer__link" href="">Требования к файлам</a>
+                        <a class="footer__link" href="">О компании</a>
+                        <a class="footer__link" href="">Публикации</a>
+                        <a class="footer__link" href="">Сгенерировать QR-код</a>
+                        <a class="footer__link" href="">Справочник Полиграфии</a>
+                        <a class="footer__link" href="">Акции</a>
+                        <a class="footer__link" href="">Оплата и доставка</a>
+                        <a class="footer__link" href="">Контакты</a>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex d-lg-none footer__copyright">
+                        <div class="text--small text--gray4" style="margin-top: auto">© 2006-2021 сайт полиграфических услуг типографии PMG.</div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-3 footer__col">
+                        <div class="payment">
+                            <div class="footer__title payment__title">Оплата</div>
+                            <p class="text--gray4 payment__text">Мы принимаем разные виды оплаты, как от физических, так и от юридических лиц</p>
+                            <div class="payment__list">
+                                <img alt="МИР" class="payment__item" src="./local/img/payment/mir.svg" />
+                                <img alt="Visa" class="payment__item" src="./local/img/payment/visa.svg" />
+                                <img alt="Mastercard" class="payment__item" src="./local/img/payment/mastercard.svg" />
+                                <img alt="Maestro" class="payment__item" src="./local/img/payment/maestro.svg" />
+                            </div>
+                            <p class="text--gray4">Реквизиты<br />ИНН: 7733321953 ОГРН: 1177746637749</p>
+                        </div>
+                        <a class="footer__link" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="tile tile--white to-top text--gray4">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.84277 10.8434L9.99962 2.68652L18.1565 10.8434" stroke="#7B8791" stroke-width="3" />
+            </svg>
+            <span>Вверх</span>
+        </a>
+
+        <script src="./local/js/jGrowl.js"></script>
+
+        <script type="text/javascript" src="./local/js/script.js"></script>
+    </body>
+</html>
