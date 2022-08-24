@@ -1,5 +1,5 @@
 # Основные страницы:
-* [Главная](https://rex4r.github.io/pmg/index.html) <br>
+* [Главная](https://rex4r.github.io/pmg/main.html) <br>
 * [Поиск](https://rex4r.github.io/pmg/search.html) <br>
 * [Онлайн-редактор макетов](https://rex4r.github.io/pmg/online-editor.html) <br>
 * [404](https://rex4r.github.io/pmg/404.html) <br>
