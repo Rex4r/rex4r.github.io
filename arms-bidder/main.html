@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport" />
+
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
+        <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>Canadian arms bidder - Main</title>
+        <link href="./local/template_styles.css" rel="stylesheet" />
+    </head>
+
+    <body class="page">
+        <header class="header page__header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-lg-3 header__left">
+                        <div class="header__logo">
+                            <img alt="Canadian arms bidder" class="header__logo-img" src="./local/img/logo.png" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 header__center">
+                        <div class="header__title">
+                            Canadian arms bidder
+                        </div>
+                        <form class="header__search search">
+                            <input class="search__input" type="text" name="search" placeholder="Search..." />
+                            <div class="search__category">
+                                <select name="search-category" id="search-category" data-theme="search" data-width="150px">
+                                    <option selected="selected">All Categories</option>
+                                    <optgroup label="Category group 1">
+                                        <option>Category 1.1</option>
+                                        <option>Category 1.2</option>
+                                    </optgroup>
+                                    <optgroup label="Category group 2">
+                                        <option>Category 2.1</option>
+                                        <option>Category 2.2</option>
+                                    </optgroup>
+                                    <option>Category 3</option>
+                                </select>
+                            </div>
+                            <button class="search__submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-7 col-sm-8 col-md-9 col-lg-3 header__right">
+                        <div class="header__account-menu account-menu">
+                            <div class="account-menu__list">
+                                <a class="account-menu__item" href="/my-bidder.html">
+                                    <div class="account-menu__icon-wrapper">
+                                        <i class="account-menu__icon fa-solid fa-user"></i>
+                                        <div class="account-menu__notification d-none"></div>
+                                    </div>
+                                    <div class="account-menu__text account-menu__text--with-notification">
+                                        <span>My account</span>
+                                        <div class="account-menu__notification account-menu__notification--small">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="account-menu__item" href="#">
+                                    <div class="account-menu__icon-wrapper account-menu__icon-wrapper--with-notification">
+                                        <i class="account-menu__icon fa-solid fa-list"></i>
+                                        <div class="account-menu__notification">12</div>
+                                    </div>
+                                    <div class="account-menu__text">
+                                        <span>Wishlist</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="col-2 col-sm-1 col-md-12 header__menu main-menu">
+                        <div class="main-menu__open d-md-none">
+                            <i class="d-block fa-solid fa-bars"></i>
+                        </div>
+                        <div class="d-none d-md-flex main-menu__list">
+                            <div class="main-menu__close d-md-none">
+                                <i class="d-block fa-solid fa-xmark"></i>
+                            </div>
+                            <div class="main-menu__item main-menu__item--buy main-menu__item--active">
+                                <a class="main-menu__text" href="#">Buy</a>
+                            </div>
+
+                            <div class="main-menu__item main-menu__item--dropdown">
+                                <span class="main-menu__text">Sell</span>
+                                <div class="main-menu__dropdown main-menu__dropdown--main">
+                                    <div class="main-menu__dropdown-list">
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 1</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__item--dropdown main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 2</span>
+                                            <div class="main-menu__dropdown main-menu__dropdown--sub">
+                                                <div class="main-menu__dropdown-list">
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 1</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 2</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 3</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 4</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 5</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 3</span>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 4</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-menu__item main-menu__item--dropdown">
+                                <span class="main-menu__text">Coupons</span>
+                                <div class="main-menu__dropdown main-menu__dropdown--main">
+                                    <div class="main-menu__dropdown-list">
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 1</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__item--dropdown main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 2</span>
+                                            <div class="main-menu__dropdown main-menu__dropdown--sub">
+                                                <div class="main-menu__dropdown-list">
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 1</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 2</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 3</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 4</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 5</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 3</span>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 4</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-menu__item main-menu__item--dropdown">
+                                <span class="main-menu__text">Deals</span>
+                                <div class="main-menu__dropdown main-menu__dropdown--main">
+                                    <div class="main-menu__dropdown-list">
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 1</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__item--dropdown main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 2</span>
+                                            <div class="main-menu__dropdown main-menu__dropdown--sub">
+                                                <div class="main-menu__dropdown-list">
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 1</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 2</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 3</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 4</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 5</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 3</span>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 4</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-menu__item main-menu__item--dropdown">
+                                <span class="main-menu__text">Articles</span>
+                                <div class="main-menu__dropdown main-menu__dropdown--main">
+                                    <div class="main-menu__dropdown-list">
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 1</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__item--dropdown main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 2</span>
+                                            <div class="main-menu__dropdown main-menu__dropdown--sub">
+                                                <div class="main-menu__dropdown-list">
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 1</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 2</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 3</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 4</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 5</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 3</span>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 4</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-menu__item main-menu__item--dropdown">
+                                <span class="main-menu__text">Videos</span>
+                                <div class="main-menu__dropdown main-menu__dropdown--main">
+                                    <div class="main-menu__dropdown-list">
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 1</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__item--dropdown main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 2</span>
+                                            <div class="main-menu__dropdown main-menu__dropdown--sub">
+                                                <div class="main-menu__dropdown-list">
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 1</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 2</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 3</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 4</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 5</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 3</span>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 4</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-menu__item main-menu__item--dropdown">
+                                <span class="main-menu__text">Help</span>
+                                <div class="main-menu__dropdown main-menu__dropdown--main">
+                                    <div class="main-menu__dropdown-list">
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 1</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__item--dropdown main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 2</span>
+                                            <div class="main-menu__dropdown main-menu__dropdown--sub">
+                                                <div class="main-menu__dropdown-list">
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 1</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 2</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 3</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 4</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a href="#" class="main-menu__subtext">Subsubmenu 5</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 3</span>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 4</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a href="#" class="main-menu__subtext">Submenu 5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-menu__item main-menu__item--dropdown main-menu__item--right">
+                                <span class="main-menu__text">Browse Categories</span>
+                                <div class="main-menu__dropdown main-menu__dropdown--main">
+                                    <div class="main-menu__dropdown-list">
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a class="main-menu__subtext" href="#">Submenu 1</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__item--dropdown main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 2</span>
+                                            <div class="main-menu__dropdown main-menu__dropdown--sub">
+                                                <div class="main-menu__dropdown-list">
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a class="main-menu__subtext" href="#">Subsubmenu 1</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a class="main-menu__subtext" href="#">Subsubmenu 2</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a class="main-menu__subtext" href="#">Subsubmenu 3</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a class="main-menu__subtext" href="#">Subsubmenu 4</a>
+                                                    </div>
+                                                    <div class="main-menu__item main-menu__dropdown-item">
+                                                        <a class="main-menu__subtext" href="#">Subsubmenu 5</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <span class="main-menu__subtext">Submenu 3</span>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a class="main-menu__subtext" href="#">Submenu 4</a>
+                                        </div>
+                                        <div class="main-menu__item main-menu__dropdown-item">
+                                            <a class="main-menu__subtext" href="#">Submenu 5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main page__main">
+            <section class="section fs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xxl-9">
+                            <div class="swiper fs__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide fs__slide">
+                                        <div class="fs__slide fs__grid grid grid--3x2">
+                                            <a href="#" class="fs__slide-item fs__slide-item--small grid__item grid__item--left-top">
+                                                <div class="fs__slide-text">Archery/Bow Hunting</div>
+                                                <div class="fs__slide-img-wrapper">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-1.png" alt="" />
+                                                </div>
+                                            </a>
+                                            <a href="#" class="fs__slide-item fs__slide-item--small grid__item grid__item--left-bottom">
+                                                <div class="fs__slide-text">Game Cameras</div>
+                                                <div class="fs__slide-img-wrapper">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-2.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                            <a href="#" class="fs__slide-item grid__item grid__item--right-big">
+                                                <div class="fs__slide-img-wrapper fs__slide-img-wrapper--fill">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-3.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="fs__slide fs__grid grid grid--2x2">
+                                            <a href="#" class="fs__slide-item fs__slide-item--small grid__item grid__item--left-top">
+                                                <div class="fs__slide-text">Archery/Bow Hunting</div>
+                                                <div class="fs__slide-img-wrapper">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-1.png" alt="" />
+                                                </div>
+                                            </a>
+                                            <a href="#" class="fs__slide-item fs__slide-item--small grid__item grid__item--left-bottom">
+                                                <div class="fs__slide-text">Game Cameras</div>
+                                                <div class="fs__slide-img-wrapper">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-2.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                            <a href="#" class="fs__slide-item fs__slide-item--small grid__item grid__item--right-top">
+                                                <div class="fs__slide-text">Game Cameras</div>
+                                                <div class="fs__slide-img-wrapper">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-2.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                            <a href="#" class="fs__slide-item fs__slide-item--small grid__item grid__item--right-bottom">
+                                                <div class="fs__slide-text">Archery/Bow Hunting</div>
+                                                <div class="fs__slide-img-wrapper">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-1.png" alt="" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="fs__slide">
+                                            <a href="#" class="fs__slide-item">
+                                                <div class="fs__slide-img-wrapper fs__slide-img-wrapper--fill">
+                                                    <img class="fs__slide-img" src="./local/demodata/main-slider-3.jpg" alt="" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper__button swiper__button--prev"></div>
+                                <div class="swiper__button swiper__button--next"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xxl-3">
+                            <div class="row fs__side">
+                                <div class="col-4 col-xxl-12 d-flex">
+                                    <a href="#" class="fs__side-item">
+                                        <div class="fs__side-img-wrapper">
+                                            <img class="fs__side-img" src="./local/demodata/main-side-1.jpg" alt="" />
+                                        </div>
+                                        <div class="fs__side-text">Gun Cases & Gun Storage</div>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-xxl-12 d-flex">
+                                    <a href="#" class="fs__side-item">
+                                        <div class="fs__side-img-wrapper">
+                                            <img class="fs__side-img" src="./local/demodata/main-side-2.jpg" alt="" />
+                                        </div>
+                                        <div class="fs__side-text">Gun Safes & Trigger Locks</div>
+                                    </a>
+                                </div>
+                                <div class="col-4 col-xxl-12 d-flex">
+                                    <a href="#" class="fs__side-item">
+                                        <div class="fs__side-img-wrapper">
+                                            <img class="fs__side-img" src="./local/demodata/main-side-3.jpg" alt="" />
+                                        </div>
+                                        <div class="fs__side-text">Furniture & Cabinets</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section featured">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 swiper featured__swiper">
+                            <div class="swiper-wrapper featured__swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide featured__swiper-slide">
+                                    <div class="featured__item product product--new">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info product__info--white">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name 1</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Buy now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide featured__swiper-slide">
+                                    <div class="featured__item product product--sale">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info product__info--white">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name 2</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Buy now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide featured__swiper-slide">
+                                    <div class="featured__item product product--new">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info product__info--white">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name 3</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Bid</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide featured__swiper-slide">
+                                    <div class="featured__item product product--new">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info product__info--white">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name 4</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Bid</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide featured__swiper-slide">
+                                    <div class="featured__item product product--new">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info product__info--white">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name 5</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Bid</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide featured__swiper-slide">
+                                    <div class="featured__item product product--new">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info product__info--white">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name 6</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Bid</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper__button swiper__button--prev"></div>
+                            <div class="swiper__button swiper__button--next"></div>
+
+                            <div class="swiper__pagination featured__pagination pagination__list"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section products">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="products__tab-list">
+                                <div class="products__tab-item products__tab-item--active" data-tab="new"><span>New</span> arrival</div>
+                                <div class="products__tab-item" data-tab="hot"><span>Hot</span> sale</div>
+                                <div class="products__tab-item" data-tab="high_caliber"><span>High caliber</span> gifts</div>
+                            </div>
+
+                            <div class="products__list grid grid-1 grid-xsm-2 grid-md-3 grid-lg-4" data-tab="new">
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">NEW Product name 6</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__list grid grid-1 grid-sm-2 grid-md-3 grid-lg-4 d-none" data-tab="hot">
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">HOT Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__list grid grid-1 grid-sm-2 grid-md-3 grid-lg-4 d-none" data-tab="high_caliber">
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__item product">
+                                    <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                    <div class="product__info">
+                                        <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                        <div class="product__rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="product__price">$ 2,209.93</div>
+                                        <div class="product__buttons">
+                                            <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                            <button class="product__button product__button--star button button--black button--rounded">
+                                                <i class="fa-solid fa-star"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pagination products__pagination">
+                                <div class="pagination__list">
+                                    <span class="pagination__item pagination__item--active">1</span>
+                                    <a class="pagination__item" href="#">2</a>
+                                    <a class="pagination__item" href="#">3</a>
+                                    <a class="pagination__item" href="#">4</a>
+                                    <a class="pagination__item" href="#">5</a>
+                                    <a class="pagination__item" href="#">6</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="banner banner--big">
+            <img class="banner__img" src="./local/demodata/banner.png" alt="" />
+        </div>
+
+        <footer class="footer page__footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3 footer__block">
+                            <div class="footer__title">Popular topics</div>
+                            <div class="footer__info">
+                                <a href="#" class="footer__text">Browning</a>
+                                <a href="#" class="footer__text">CZ-USA</a>
+                                <a href="#" class="footer__text">Gun Sights</a>
+                                <a href="#" class="footer__text">KEL-TEC</a>
+                                <a href="#" class="footer__text">Remington</a>
+                                <a href="#" class="footer__text">Scopes & Optics</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 footer__block">
+                            <div class="footer__title">Popular</div>
+                            <div class="footer__info">
+                                <a href="#" class="footer__text">Popular Searches</a>
+                                <a href="#" class="footer__text">Popular Gun Accessories</a>
+                                <a href="#" class="footer__text">Popular Ammo</a>
+                                <a href="#" class="footer__text">Gun Models</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 footer__block">
+                            <div class="footer__title">Manufacturers</div>
+                            <div class="footer__info">
+                                <a href="#" class="footer__text">Gun Manufacturers</a>
+                                <a href="#" class="footer__text">Rifle Manufacturers</a>
+                                <a href="#" class="footer__text">Pistol Manufacturers</a>
+                                <a href="#" class="footer__text">Shotgun Manufacturers</a>
+                                <a href="#" class="footer__text">Parts/Accessories Manufacturers</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 footer__block">
+                            <div class="footer__title">Newsletter</div>
+                            <form class="footer__info">
+                                <label class="footer__text footer__label" for="subscribe">Sign Up for Our Newsletter:</label>
+                                <input class="footer__input text-field" id="subscribe" type="email" required />
+                                <button class="footer__button button button--red button--rounded" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="footer__copyright">© 2019 armsbidders.com All rights reserved worldwide. (03 7.0.11.2398)</div>
+                            <nav class="footer__navigation">
+                                <a class="footer__nav-link" href="#"> Copyright & Trademarks</a>
+                                <span class="footer__nav-link">|</span>
+                                <a class="footer__nav-link" href="#"> User Agreement</a>
+                                <span class="footer__nav-link">|</span>
+                                <a class="footer__nav-link" href="#"> Privacy Policy</a>
+                                <span class="footer__nav-link">|</span>
+                                <a class="footer__nav-link" href="#"> Accessibility</a>
+                                <span class="footer__nav-link">|</span>
+                                <a class="footer__nav-link" href="#"> Legal Terms</a>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="footer__payment-systems" src="./local/img/ps.png" alt="Payment Systems" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./local/js/script.js"></script>
+    </body>
+</html>
