@@ -20,6 +20,7 @@
                             <img alt="Canadian arms bidder" class="header__logo-img" src="./local/img/logo.png" />
                         </div>
                     </div>
+
                     <div class="col-12 col-lg-6 header__center">
                         <div class="header__title">
                             Canadian arms bidder
@@ -43,10 +44,12 @@
                             <button class="search__submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
+
                     <div class="col-7 col-sm-8 col-md-9 col-lg-3 header__right">
                         <div class="header__account-menu account-menu">
                             <div class="account-menu__list">
-                                <a class="account-menu__item" href="/my-bidder.html">
+                                <!-- Link trigger Login Modal -->
+                                <a href="#" class="account-menu__item" data-bs-toggle="modal" data-bs-target="#loginModal">
                                     <div class="account-menu__icon-wrapper">
                                         <i class="account-menu__icon fa-solid fa-user"></i>
                                         <div class="account-menu__notification d-none"></div>
@@ -70,6 +73,7 @@
                             </div>
                         </div>
                     </div>
+
                     <nav class="col-2 col-sm-1 col-md-12 header__menu main-menu">
                         <div class="main-menu__open d-md-none">
                             <i class="d-block fa-solid fa-bars"></i>
@@ -379,6 +383,50 @@
                     </nav>
                 </div>
             </div>
+
+            <!-- Login Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title" id="loginModalLabel">Sign in Arms Bidder</div>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+                                <span aria-hidden="true"><i class="d-block fa-solid fa-xmark"></i></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form">
+                                <div class="form__row">
+                                    <label class="form__label text--bold text--upper" for="login">User name <span class="text--small">(or email address)</span></label>
+                                    <input type="text" class="form__field text-field" id="login" name="login" placeholder="Enter your user name" />
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__label text--bold text--upper" for="password">Password</label>
+                                    <input type="password" class="form__field text-field" id="password" name="password" placeholder="Enter your password" />
+                                </div>
+                                <div class="form__row">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" name="remember" id="remember" />
+                                        <label class="checkbox__label text--small" for="remember">Remember my log information</label>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <a href="#" class="link">Forgot your password?</a>
+                                </div>
+                                <div class="form__row">
+                                    <button type="submit" class="form__button button button--red">Login</button>
+                                </div>
+                                <hr />
+                                <div class="form__row">
+                                    <div class="form__label text--bold text--upper">Register</div>
+                                    <div class="text--small">Not a member? Register and get started today.</div>
+                                    <button type="submit" class="form__button button button--green">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <main class="main page__main">
@@ -523,7 +571,7 @@
                                             </div>
                                             <div class="product__price">$ 2,209.93</div>
                                             <div class="product__buttons">
-                                                <button class="product__button button button--black button--rounded">Buy now</button>
+                                                <button class="product__button button button--black button--rounded" data-bs-target="#createAuctionModal" data-bs-toggle="modal">Buy now</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1129,6 +1177,89 @@
                 </div>
             </section>
         </main>
+
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="createAuctionModalLabel" class="modal fade" id="createAuctionModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="createAuctionModalLabel">Create Auction</div>
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+                            <span aria-hidden="true"><i class="d-block fa-solid fa-xmark"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form">
+                            <div class="form__row">
+                                <label class="form__label text--bold text--upper" for="deal-type">Deal type</label>
+                                <select class="select" data-minimum-results-for-search="Infinity" data-placeholder="Chose your deal type" id="deal-type" name="deal-type">
+                                    <option></option>
+                                    <optgroup label="Deal group 1">
+                                        <option>Deal 1.1</option>
+                                        <option>Deal 1.2</option>
+                                    </optgroup>
+                                    <optgroup label="Deal group 2">
+                                        <option>Deal 2.1</option>
+                                        <option>Deal 2.2</option>
+                                    </optgroup>
+                                    <option>Deal 3</option>
+                                </select>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label text--small" for="republish">is auto republish</label>
+                                <input class="form__field text-field" id="republish" name="republish" placeholder="Enter your republish" type="text" />
+                            </div>
+                            <hr />
+                            <div class="form__row">
+                                <label class="form__label text--bold text--upper" for="term">Duration long term</label>
+                                <select class="select" data-minimum-results-for-search="Infinity" data-placeholder="Chose your term" id="term" name="term">
+                                    <option></option>
+                                    <optgroup label="Term group 1">
+                                        <option>Term 1.1</option>
+                                        <option>Term 1.2</option>
+                                    </optgroup>
+                                    <optgroup label="Term group 2">
+                                        <option>Term 2.1</option>
+                                        <option>Term 2.2</option>
+                                    </optgroup>
+                                    <option>Term 3</option>
+                                </select>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label text--small" for="term-num">number</label>
+                                <input class="form__field text-field" id="term-num" name="term-num" placeholder="Enter your number" type="number" />
+                            </div>
+                            <hr />
+                            <div class="form__row">
+                                <label class="form__label text--bold text--upper" for="starting-price">Starting price</label>
+                                <input class="form__field text-field" id="starting-price" name="starting-price" placeholder="Enter your starting price" type="number" />
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label text--bold text--upper" for="minimum-price">Minimum price</label>
+                                <input class="form__field text-field" id="minimum-price" name="minimum-price" placeholder="Enter your minimum price" type="number" />
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label text--bold text--upper" for="selling-price">Ready to sell for</label>
+                                <input class="form__field text-field" id="selling-price" name="selling-price" placeholder="Enter your selling price" type="number" />
+                            </div>
+                            <hr />
+                            <div class="form__row">
+                                <label class="form__label text--bold text--upper" for="contact">Your contact information</label>
+                                <input class="form__field text-field" id="contact" name="contact" placeholder="Enter your contacts" type="text" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-buttons">
+                            <button class="button button--green" type="button">Save changes</button>
+                            <button class="button button--red" type="button">Next stage</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="banner banner--big">
             <img class="banner__img" src="./local/demodata/banner.png" alt="" />
