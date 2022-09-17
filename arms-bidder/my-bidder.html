@@ -25,8 +25,8 @@
                         <div class="header__title">
                             Canadian arms bidder
                         </div>
-                        <form class="header__search search">
-                            <input class="search__input" type="text" name="search" placeholder="Search..." />
+                        <form class="header__search search field">
+                            <input class="search__input field__input field__input--with-button" type="text" name="search" placeholder="Search..." />
                             <div class="search__category">
                                 <select name="search-category" id="search-category" data-theme="search" data-width="150px">
                                     <option selected="selected">All Categories</option>
@@ -41,7 +41,7 @@
                                     <option>Category 3</option>
                                 </select>
                             </div>
-                            <button class="search__submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button class="search__submit field__button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
 
@@ -429,12 +429,472 @@
             </div>
         </header>
 
+        <section class="section breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb__wrapper">
+                            <div class="breadcrumb__list">
+                                <div class="breadcrumb__item">
+                                    <a href="#">Home</a>
+                                </div>
+                                <div class="breadcrumb__item">
+                                    <a href="#">My bidder</a>
+                                </div>
+                                <div class="breadcrumb__item">
+                                    <a href="#">Watchlist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <main class="main page__main">
-            <section class="section">
+            <section class="section my-bidder">
                 <div class="container">
+                    <div class="my-bidder__header">
+                        <div class="my-bidder__header-top">
+                            <div class="row">
+                                <div class="col-12 col-xl-3">
+                                    <span class="text--big">Welcome to Your Bidder room!</span>
+                                </div>
+                                <div class="col-12 col-xl-9 my-bidder__filters">
+                                    <select class="my-bidder__filter" data-minimum-results-for-search="Infinity" data-placeholder="Active" data-theme="filter" name="active" id="active">
+                                        <option></option>
+                                        <option>Active</option>
+                                        <option>Ended</option>
+                                    </select>
+                                    <select class="my-bidder__filter" data-minimum-results-for-search="Infinity" data-placeholder="Starting Date" data-theme="filter" name="start-date" id="start-date">
+                                        <option></option>
+                                        <option>All Available</option>
+                                        <option>Going Gone</option>
+                                        <option>New today</option>
+                                        <option>Ending today</option>
+                                        <option>New in last 24</option>
+                                        <option>New in last 48</option>
+                                        <option>Ending in 24 hours</option>
+                                        <option>Ending in 48 hours</option>
+                                        <option>Ending last week</option>
+                                    </select>
+                                    <select class="my-bidder__filter" data-minimum-results-for-search="Infinity" data-placeholder="Ending Date" data-theme="filter" name="ending-date" id="ending-date">
+                                        <option></option>
+                                        <option>All Available</option>
+                                        <option>Going Gone</option>
+                                        <option>New today</option>
+                                        <option>Ending today</option>
+                                        <option>New in last 24</option>
+                                        <option>New in last 48</option>
+                                        <option>Ending in 24 hours</option>
+                                        <option>Ending in 48 hours</option>
+                                        <option>Ending last week</option>
+                                    </select>
+                                    <select class="my-bidder__filter" data-minimum-results-for-search="Infinity" data-placeholder="Ascending" data-theme="filter" name="ascending" id="ascending">
+                                        <option></option>
+                                        <option>Ascending 1</option>
+                                        <option>Ascending 2</option>
+                                    </select>
+                                    <button class="button button--rounded button--white">Remove</button>
+                                    <button class="button button--rounded button--white">Create</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-bidder__header-bottom">
+                            <div class="row">
+                                <div class="col-12 col-lg-3">
+                                    <div class="sidebar__header">
+                                        <div class="sidebar__header-top">
+                                            <div class="sidebar__title text--big text--upper">Buy</div>
+                                            <div class="sidebar__tabs">
+                                                <div class="sidebar__tab sidebar__tab--active text--small">All</div>
+                                                <div class="sidebar__tab text--small">Watchlist</div>
+                                                <div class="sidebar__tab text--small">Bidding on</div>
+                                            </div>
+                                        </div>
+                                        <div class="text--small">Manage your buying activities here.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-9 my-bidder__search">
+                                    <form class="search field">
+                                        <input class="search__input field__input field__input--with-button field__input--small" type="text" name="my-bidder-search" placeholder="Search..." />
+                                        <button class="search__submit field__button field__button--small" type="submit">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-12">
-                            my-bidder.html
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <div class="sidebar sidebar--green">
+                                <div class="sidebar__list">
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Watchlist</div>
+                                    </div>
+                                    <div class="sidebar__item sidebar__item--active">
+                                        <div class="sidebar__title">Bidding On</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Offers Made</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Won Items</div>
+                                        <div class="sidebar__notification sidebar__notification--red">3</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Won Orders</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Lost Auctions</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar sidebar--red">
+                                <div class="sidebar__header">
+                                    <div class="sidebar__header-top">
+                                        <div class="sidebar__title text--big text--upper">Sell</div>
+                                        <div class="sidebar__tabs">
+                                            <div class="sidebar__tab sidebar__tab--active text--small">All</div>
+                                            <div class="sidebar__tab text--small">Scheduled</div>
+                                            <div class="sidebar__tab text--small">Selling</div>
+                                        </div>
+                                    </div>
+                                    <div class="text--small">The sell section allows you to view and manage your items and orders.</div>
+                                </div>
+                                <div class="sidebar__list">
+                                    <div class="sidebar__item sidebar__item--active">
+                                        <div class="sidebar__title">Scheduled</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Selling</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Offers Received</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Sold Items</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Sold Orders</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Ended</div>
+                                        <div class="sidebar__notification sidebar__notification--white">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar sidebar--gray">
+                                <div class="sidebar__header">
+                                    <div class="sidebar__header-top">
+                                        <div class="sidebar__title text--big text--upper">My account <i class="fa-solid fa-envelope"></i></div>
+                                    </div>
+                                    <div class="text--small">The sell section allows you to view and manage your items and orders.</div>
+                                </div>
+                                <div class="sidebar__list">
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Saved Searches</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Shipping</div>
+                                    </div>
+                                    <div class="sidebar__item sidebar__item--active">
+                                        <div class="sidebar__title">Toolbox</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Account</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Message</div>
+                                        <div class="sidebar__notification sidebar__notification--red">3</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Support</div>
+                                    </div>
+                                    <div class="sidebar__item">
+                                        <div class="sidebar__title">Favourite sellers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-9">
+                            <div class="products">
+                                <div class="products__control">
+                                    <select name="products-count" id="products-count" data-minimum-results-for-search="Infinity" data-theme="filter">
+                                        <option value="12" selected="selected">12</option>
+                                        <option value="24">24</option>
+                                        <option value="36">36</option>
+                                        <option value="48">48</option>
+                                    </select>
+                                    <span class="text--small">results per page</span>
+                                </div>
+                                <div class="products__grid">
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product product--gray">
+                                        <div class="product__notification">5's bid</div>
+                                        <a class="product__img-wrapper" href="#">
+                                            <img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png" />
+                                        </a>
+                                        <div class="product__info">
+                                            <div class="product__name">
+                                                <a class="product__name-link" href="#">Product name</a>
+                                            </div>
+                                            <div class="product__ending-time">
+                                                <div class="product__ending-time-title">Ending time</div>
+                                                <div class="product__ending-time-time text--red">12/5/2021 8:00 PM</div>
+                                                <div class="product__ending-time-left text--small text--gray">Time Left | <span class="text--red">15 min rule</span></div>
+                                            </div>
+                                            <div class="product__bid">
+                                                <div class="product__bid-title text--small text--gray">Current bid</div>
+                                                <div class="product__bid-price">$ 2,209.93</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pagination products__pagination">
+                                <div class="pagination__list">
+                                    <span class="pagination__item pagination__item--active">1</span>
+                                    <a class="pagination__item" href="#">2</a>
+                                    <a class="pagination__item" href="#">3</a>
+                                    <a class="pagination__item" href="#">4</a>
+                                    <a class="pagination__item" href="#">5</a>
+                                    <a class="pagination__item" href="#">6</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
