@@ -622,13 +622,24 @@
                         <div class="col-12 col-md-8 col-lg-9">
                             <div class="products">
                                 <div class="products__control">
-                                    <select name="products-count" id="products-count" data-minimum-results-for-search="Infinity" data-theme="filter">
-                                        <option value="12" selected="selected">12</option>
-                                        <option value="24">24</option>
-                                        <option value="36">36</option>
-                                        <option value="48">48</option>
-                                    </select>
-                                    <span class="text--small">results per page</span>
+                                    <div class="products__control-item">
+                                        <span>Sort by:</span>
+                                        <select name="products-sort" data-minimum-results-for-search="Infinity" data-theme="filter">
+                                            <option value="price-asc" selected="selected">Price: Low to High</option>
+                                            <option value="price-desc">Price: High to Low</option>
+                                            <option value="rating">Avg. Customer Review</option>
+                                            <option value="new">Newest Arrivals</option>
+                                        </select>
+                                    </div>
+                                    <div class="products__control-item">
+                                        <span>Results per page</span>
+                                        <select name="products-count" data-minimum-results-for-search="Infinity" data-theme="filter">
+                                            <option value="12" selected="selected">12</option>
+                                            <option value="24">24</option>
+                                            <option value="36">36</option>
+                                            <option value="48">48</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="products__grid">
                                     <div class="product product--gray">
