@@ -429,12 +429,418 @@
             </div>
         </header>
 
+        <section class="section breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb__wrapper">
+                            <div class="breadcrumb__list">
+                                <div class="breadcrumb__item">
+                                    <a href="#">Home</a>
+                                </div>
+                                <div class="breadcrumb__item">
+                                    <a href="#">All</a>
+                                </div>
+                                <div class="breadcrumb__item">
+                                    <a href="#">Gun & Firearms</a>
+                                </div>
+                                <div class="breadcrumb__item">
+                                    <a href="#">Rifles</a>
+                                </div>
+                                <div class="breadcrumb__item">
+                                    <a href="#">Semi Auto Rifles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <main class="main page__main">
-            <section class="section">
+            <section class="section product-details">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            product-details.html
+                    <div class="product-details__main">
+                        <div class="row">
+                            <div class="col-12 col-lg-5">
+                                <div class="product-details__img-wrapper">
+                                    <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__img" />
+                                </div>
+
+                                <div class="product-details__swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper__button swiper__button--prev"></div>
+                                    <div class="swiper__button swiper__button--next"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-7">
+                                <div class="product-details__header">
+                                    <div class="product-details__header-left">
+                                        <div class="product-details__name text--big text--bold">Rock River Arms LAR15</div>
+                                        <div class="product-details__vendor product-details__vendor--certified">
+                                            <div class="product-details__vendor-name">
+                                                <a href="#" class="text--big text--bold link link--green">Nikita Malcin A+12000</a>
+                                            </div>
+                                            <div class="product-details__vendor-status product-details__vendor-status--top text--upper text--small text--bold text--white">Top<br />seller</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-details__header-right">
+                                        <div class="product-details__subscribe link">subscribe <i class="fa-regular fa-star"></i></div>
+                                    </div>
+                                </div>
+
+                                <div class="product-details__evaluation">
+                                    <div class="product-details__evaluation-item product-details__evaluation-item--rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="product-details__evaluation-item product-details__evaluation-item--review">1 Review(s)</div>
+                                    <div class="product-details__evaluation-item product-details__evaluation-item--add-review">Add Your Review</div>
+                                    <div class="product-details__evaluation-item product-details__evaluation-item--add-favorite">Add Favorite Seller</div>
+                                    <a href="#" class="product-details__evaluation-item product-details__evaluation-item--other-item link">Seller Other Item</a>
+                                </div>
+
+                                <div class="product-details__auction">
+                                    <div class="product-details__auction-status">
+                                        Status: <span class="text--green text--bold">active</span> /
+                                        <span class="text--red text--bold">closed</span>
+                                    </div>
+                                    <div class="product-details__auction-bid-list">
+                                        <div class="product-details__auction-bid-item">
+                                            <div class="product-details__auction-bid-title text--gray text--bold">Current Bid</div>
+                                            <div class="product-details__auction-bid-price text--big text--green text--bold">$5,025.00</div>
+                                        </div>
+                                        <div class="product-details__auction-bid-item">
+                                            <div class="product-details__auction-bid-title text--gray text--bold">Starting Bid</div>
+                                            <div class="product-details__auction-bid-price text--big text--green text--bold">$0.01</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details__auction-rules">
+                                        <p>The seller of this item assumes all responsibility for this listing. You must contact the seller to resolve any questions or concerns before placing a bid.</p>
+                                        <p>Payment must be made using U.S. dollars ($) unless otherwise stated in the listing. Firearms may only be shipped to a licensed dealer (FFL Holder).</p>
+                                    </div>
+                                    <div class="product-details__auction-auth">
+                                        <a href="#" class="text--bold link">Sign in/Register to Bid</a>
+                                    </div>
+                                    <div class="product-details__auction-make-bid">
+                                        <form class="product-details__auction-field">
+                                            <label for="bid" class="text--small label">Enter your <b>maximum</b> bid.</label>
+                                            <div class="field">
+                                                <input type="text" id="bid" class="field__input field__input--with-button" placeholder="Enter Amount" />
+                                                <button class="field__button" type="submit">Bid</button>
+                                            </div>
+                                        </form>
+                                        <div class="product-details__auction-times" data-ending-date="Dec 5, 2022 15:37:25">
+                                            <div class="product-details__auction-time-left">
+                                                <span class="text--small text--gray">Time Left |</span>
+                                                <a href="#" class="link text--small">15 min rule</a>
+                                                <div class="product-details__auction-time-left-timer">
+                                                    <span class="timer__enlarged text--bold"></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-details__auction-ending">
+                                                <div class="text--small text--gray">Ending Time</div>
+                                                <div class="product-details__auction-ending-time text--red text--big"></div>
+                                            </div>
+                                        </div>
+                                        <div class="product-details__auction-timer timer">
+                                            <div class="timer__item timer__days">
+                                                <div class="timer__number text--white text--big">0</div>
+                                                <div class="timer__text text--white">Days</div>
+                                            </div>
+                                            <div class="timer__item timer__hours">
+                                                <div class="timer__number text--white text--big">0</div>
+                                                <div class="timer__text text--white">Hours</div>
+                                            </div>
+                                            <div class="timer__item timer__minutes">
+                                                <div class="timer__number text--white text--big">0</div>
+                                                <div class="timer__text text--white">Minutes</div>
+                                            </div>
+                                            <div class="timer__item timer__seconds">
+                                                <div class="timer__number text--white text--big">0</div>
+                                                <div class="timer__text text--white">Seconds</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-details__auction-buy">
+                                        <form class="product-details__auction-field">
+                                            <label for="buy" class="text--small label">Enter your <b>maximum</b> bid.</label>
+                                            <div class="field">
+                                                <input type="text" id="buy" class="field__input field__input--with-button" placeholder="Buy now price" />
+                                                <button class="field__button field__button--red" type="submit">Buy now</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details__additional">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab">
+                                    <div class="tab__title-list">
+                                        <div class="tab__title-item tab__title-item--active text--bold text--bold text--gray text--upper" data-tab="description">Description</div>
+                                        <div class="tab__title-item text--bold text--bold text--gray text--upper" data-tab="reviews">Reviews</div>
+                                        <div class="tab__title-item text--bold text--bold text--gray text--upper" data-tab="bid_history">Bid history</div>
+                                        <div class="tab__title-item text--bold text--bold text--gray text--upper" data-tab="questions">Questions</div>
+                                    </div>
+                                    <div class="tab__content-list">
+                                        <div class="tab__content-item tab__content-item--active" data-tab="description">
+                                            <div class="product-description">
+                                                <div class="product-description--row">
+                                                    <div class="text--bold">Item</div>
+                                                    <div>916277990</div>
+                                                </div>
+                                                <div class="product-description--row">
+                                                    <div class="text--bold">Location</div>
+                                                    <div>Acworth, GA 30102</div>
+                                                </div>
+                                                <div class="product-description--row">
+                                                    <div class="text--bold">Shipping</div>
+                                                    <div>Buyer pays estimated shipping for the following option(s): GroundView estimated shipping cost<br />No international shipments</div>
+                                                </div>
+                                                <div class="product-description--row">
+                                                    <div class="text--bold">Payment Methods</div>
+                                                    <div>Visa / MasterCard, American Express, Discover</div>
+                                                </div>
+                                                <div class="product-description--row">
+                                                    <div class="text--bold">Checkout</div>
+                                                    <div>Immediate Checkout - Credit Card + NO Credit Card Fee</div>
+                                                </div>
+                                                <div class="product-description--row">
+                                                    <div class="text--bold">Applicable Taxes and Fees</div>
+                                                    <div>Sales tax collected based on ship to address</div>
+                                                </div>
+                                                <div class="product-description--row">
+                                                    <div class="text--bold">Inspection/ Return Policy</div>
+                                                    <div>AS IS - No refund or exchange</div>
+                                                </div>
+                                                <div class="product-description--row">
+                                                    The seller of this item assumes all responsibility for this listing. You must contact the seller to resolve any questions or concerns before placing a bid. Payment must be made using U.S.
+                                                    dollars ($) unless otherwise stated in the listing. Firearms may only be shipped to a licensed dealer (FFL Holder). Some listed items may not be legal in every state. Complete your
+                                                    purchase within the law.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab__content-item" data-tab="reviews">
+                                            <div class="text--bold text--upper">John Doe</div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices tellus arcu, ac rutrum sem mollis id. Cras sollicitudin malesuada iaculis. Duis sed dolor in leo aliquet auctor. Proin
+                                                aliquam ipsum sed leo ornare, vel iaculis velit tincidunt. Vivamus non magna eu leo faucibus condimentum. Duis sed aliquam odio, eget luctus dui. Suspendisse pharetra pharetra cursus. Quisque
+                                                tellus eros, gravida ac ligula in, placerat tincidunt ante. Praesent quis massa lacus.
+                                            </p>
+                                            <div class="text--bold text--upper">John Doe</div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices tellus arcu, ac rutrum sem mollis id. Cras sollicitudin malesuada iaculis. Duis sed dolor in leo aliquet auctor. Proin
+                                                aliquam ipsum sed leo ornare, vel iaculis velit tincidunt. Vivamus non magna eu leo faucibus condimentum. Duis sed aliquam odio, eget luctus dui. Suspendisse pharetra pharetra cursus. Quisque
+                                                tellus eros, gravida ac ligula in, placerat tincidunt ante. Praesent quis massa lacus.
+                                            </p>
+                                            <div class="text--bold text--upper">John Doe</div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices tellus arcu, ac rutrum sem mollis id. Cras sollicitudin malesuada iaculis. Duis sed dolor in leo aliquet auctor. Proin
+                                                aliquam ipsum sed leo ornare, vel iaculis velit tincidunt. Vivamus non magna eu leo faucibus condimentum. Duis sed aliquam odio, eget luctus dui. Suspendisse pharetra pharetra cursus. Quisque
+                                                tellus eros, gravida ac ligula in, placerat tincidunt ante. Praesent quis massa lacus.
+                                            </p>
+                                        </div>
+                                        <div class="tab__content-item" data-tab="bid_history">
+                                            <div class="tab__content-title text--bold text--upper">Bids</div>
+                                            <table class="tab__content-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="tab__content-table-date">Date</th>
+                                                        <th>Name</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1/18/2022 9:38:01 PM</td>
+                                                        <td>C***o A+(4)</td>
+                                                        <td>$715.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab__content-item" data-tab="questions">
+                                            <div class="text--bold text--upper">What is Lorem ipsum ?</div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices tellus arcu, ac rutrum sem mollis id. Cras sollicitudin malesuada iaculis. Duis sed dolor in leo aliquet auctor. Proin
+                                                aliquam ipsum sed leo ornare, vel iaculis velit tincidunt. Vivamus non magna eu leo faucibus condimentum. Duis sed aliquam odio, eget luctus dui. Suspendisse pharetra pharetra cursus. Quisque
+                                                tellus eros, gravida ac ligula in, placerat tincidunt ante. Praesent quis massa lacus.
+                                            </p>
+                                            <div class="text--bold text--upper">Why do we use it?</div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices tellus arcu, ac rutrum sem mollis id. Cras sollicitudin malesuada iaculis. Duis sed dolor in leo aliquet auctor. Proin
+                                                aliquam ipsum sed leo ornare, vel iaculis velit tincidunt. Vivamus non magna eu leo faucibus condimentum. Duis sed aliquam odio, eget luctus dui. Suspendisse pharetra pharetra cursus. Quisque
+                                                tellus eros, gravida ac ligula in, placerat tincidunt ante. Praesent quis massa lacus.
+                                            </p>
+                                            <div class="text--bold text--upper">Where does it come from?</div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices tellus arcu, ac rutrum sem mollis id. Cras sollicitudin malesuada iaculis. Duis sed dolor in leo aliquet auctor. Proin
+                                                aliquam ipsum sed leo ornare, vel iaculis velit tincidunt. Vivamus non magna eu leo faucibus condimentum. Duis sed aliquam odio, eget luctus dui. Suspendisse pharetra pharetra cursus. Quisque
+                                                tellus eros, gravida ac ligula in, placerat tincidunt ante. Praesent quis massa lacus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details__recommended">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="products__list grid grid-1 grid-xsm-2 grid-lg-4">
+                                    <div class="products__item product">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info">
+                                            <div class="product__name"><a class="product__name-link" href="#">NEW Product name 6</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                                <button class="product__button product__button--star button button--black button--rounded">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__item product">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                                <button class="product__button product__button--star button button--black button--rounded">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__item product">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                                <button class="product__button product__button--star button button--black button--rounded">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__item product">
+                                        <a class="product__img-wrapper" href="#"><img alt="Product Name" class="product__img" src="./local/demodata/crossbow.png"/></a>
+                                        <div class="product__info">
+                                            <div class="product__name"><a class="product__name-link" href="#">Product name</a></div>
+                                            <div class="product__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="product__price">$ 2,209.93</div>
+                                            <div class="product__buttons">
+                                                <button class="product__button button button--black button--rounded">Add to Cart</button>
+                                                <button class="product__button product__button--star button button--black button--rounded">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
