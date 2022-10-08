@@ -24,16 +24,22 @@
             <hr />
             <section class="section">
                 <div class="container">
-                    <label for="input1" style="margin-bottom: 0">Дата</label>
-                    <input type="text" id="input1" name="input1" data-mask="00/00/0000" />
-                    <br />
-                    <br />
-                    <label for="input2" style="margin-bottom: 0">Телефон</label>
-                    <input type="text" id="input2" name="input2" data-mask="+7 (000) 000-00-00" />
-                    <br />
-                    <br />
-                    <label for="input3" style="margin-bottom: 0">3 любых символа, 3 буквы, 3 цифры</label>
-                    <input type="text" id="input3" name="input3" data-mask="AAA SSS 000" />
+                    <form action="" class="form tile tile--white">
+                        <div class="form__row d-block">
+                            <label class="form__label" for="input1" style="margin-bottom: 0">Дата. Маска "00/00/0000" </label>
+                            <input class="form__field field input" type="text" id="input1" name="input1" data-mask="00/00/0000" />
+                        </div>
+
+                        <div class="form__row d-block">
+                            <label class="form__label" for="input2" style="margin-bottom: 0">Телефон. Маска "+7 (000) 000-00-00" </label>
+                            <input class="form__field form__field--phone field input" type="text" id="input2" name="input2" data-mask="+7 (000) 000-00-00" />
+                        </div>
+
+                        <div class="form__row d-block">
+                            <label class="form__label" for="input3" style="margin-bottom: 0">3 любых символа, 3 буквы, 3 цифры. Маска "AAA SSS 000" </label>
+                            <input class="form__field field input" type="text" id="input3" name="input3" data-mask="AAA SSS 000" />
+                        </div>
+                    </form>
                 </div>
             </section>
             <hr />
