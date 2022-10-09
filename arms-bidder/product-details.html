@@ -463,29 +463,32 @@
                     <div class="product-details__main">
                         <div class="row">
                             <div class="col-12 col-lg-5">
-                                <div class="product-details__img-wrapper">
+                                <a href="#" class="product-details__img-wrapper" data-bs-toggle="modal" data-bs-target="#productImgModal">
                                     <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__img" />
-                                </div>
+                                </a>
 
                                 <div class="product-details__swiper swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
+                                        <div class="product-details__slide swiper-slide">
                                             <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        <div class="product-details__slide swiper-slide">
+                                            <img src="./local/demodata/main-side-1.jpg" alt="Product img" class="product-details__slide-img" />
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        <div class="product-details__slide swiper-slide">
+                                            <img src="./local/demodata/main-side-2.jpg" alt="Product img" class="product-details__slide-img" />
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        <div class="product-details__slide swiper-slide">
+                                            <img src="./local/demodata/main-side-3.jpg" alt="Product img" class="product-details__slide-img" />
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        <div class="product-details__slide swiper-slide">
+                                            <img src="./local/demodata/main-slider-1.png" alt="Product img" class="product-details__slide-img" />
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="./local/demodata/crossbow.png" alt="Product img" class="product-details__slide-img" />
+                                        <div class="product-details__slide swiper-slide">
+                                            <img src="./local/demodata/main-slider-2.jpg" alt="Product img" class="product-details__slide-img" />
+                                        </div>
+                                        <div class="product-details__slide swiper-slide">
+                                            <img src="./local/demodata/main-slider-3.jpg" alt="Product img" class="product-details__slide-img" />
                                         </div>
                                     </div>
 
@@ -846,6 +849,22 @@
                 </div>
             </section>
         </main>
+
+        <!-- Product Img Modal -->
+        <div class="modal fade" id="productImgModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+                            <span aria-hidden="true"><i class="d-block fa-solid fa-xmark"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" alt="" class="product-details__modal-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="banner">
             <img class="banner__img" src="./local/demodata/banner.png" alt="" />
