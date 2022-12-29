@@ -350,11 +350,15 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="swiper__img-wrapper swiper__img-wrapper--fill">
-                                            <img alt="" class="swiper__img" src="./local/demodata/main-slider.png" />
-                                        </div>
-                                        <div class="swiper__content">
-                                            <div class="swiper__title text--white">Визитные карточки</div>
-                                            <div class="swiper__text text--gray2">При изготовлении дизайнерских визиток, чаще всего, применяется технология печати — шелкография.</div>
+                                            <picture>
+                                                <source media="(min-width: 1400px)" srcset="./local/demodata/banner-xxl.jpg" />
+                                                <source media="(min-width: 1200px)" srcset="./local/demodata/banner-xl.jpg" />
+                                                <source media="(min-width: 992px)" srcset="./local/demodata/banner-lg.jpg" />
+                                                <source media="(min-width: 768px)" srcset="./local/demodata/banner-md.jpg" />
+                                                <source media="(min-width: 576px)" srcset="./local/demodata/banner-sm.jpg" />
+                                                <source media="(max-width: 575px)" srcset="./local/demodata/banner-xs.jpg" />
+                                                <img alt="Banner" class="swiper__img" src="./local/demodata/banner-xxl.jpg" />
+                                            </picture>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
