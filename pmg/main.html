@@ -909,7 +909,7 @@
 
                             <section class="section how-we-work">
                                 <div class="how-we-work__bg"></div>
-                                <a class="how-we-work__inner" href="javascript:void(0);" data-bs-target="#how-we-work" data-bs-toggle="modal">
+                                <a class="how-we-work__inner" href="javascript:void(0);" data-bs-target="#how-we-work-modal" data-bs-toggle="modal">
                                     <div class="how-we-work__play">
                                         <svg class="how-we-work__icon" fill="none" height="37" viewBox="0 0 33 37" width="33" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -923,15 +923,11 @@
                                         <div class="how-we-work__title text--main2">Как мы работаем?</div>
                                     </div>
                                 </a>
-                                <div aria-hidden="true" class="modal fade text" id="how-we-work" tabindex="-1">
+                                <div aria-hidden="true" class="modal fade text" id="how-we-work-modal" tabindex="-1">
                                     <div class="modal-dialog modal-dialog-centered how-we-work__modal">
                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                <div class="modal-title h4">Как мы работаем?</div>
-                                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                                            </div>
                                             <div class="modal-body">
-                                                <video controls="controls" class="how-we-work__video">
+                                                <video controls="controls" controlslist="nodownload" class="how-we-work__video">
                                                     <source src="https://pmg.ru/assets/video/finalPMG.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                                                 </video>
                                             </div>
