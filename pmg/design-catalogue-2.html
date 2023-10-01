@@ -464,6 +464,9 @@
                                     <div>Онлайн-редактор</div>
                                 </a>
                             </div>
+                            <div class="tile tile--white d-none d-xl-block">
+                                <div class="link link--button link--order" data-bs-toggle="modal" data-bs-target="#order-design-modal">Заказать дизайн</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -749,6 +752,49 @@
                 </div>
             </section>
         </main>
+
+        <div class="modal fade" id="order-design-modal" tabindex="-1" aria-labelledby="order-design-modal-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form method="post" class="form form--in-modal form--order-design-modal ajax_form" id="callback_order-design-modal">
+                        <div class="modal-header">
+                            <div class="modal-title h5" id="order-design-modal-modalLabel">Заказать дизайн</div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form__row">
+                                <input type="hidden" name="page-name" value="FSC листовки" />
+                                <input class="form__field field input" name="name" placeholder="Ваше имя" required type="text" />
+                            </div>
+                            <div class="form__row">
+                                <input class="form__field form__field--phone field input" name="phone" placeholder="Ваш телефон" type="tel" />
+                            </div>
+                            <div class="form__row">
+                                <input class="form__field field input" name="email" placeholder="Ваш e-mail" type="email" />
+                            </div>
+                            <div class="form__row">
+                                <textarea class="form__field field textarea" name="message" placeholder="Опишите ваш запрос"></textarea>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                recaptcha
+                            </div>
+                            <div class="text--small text--gray4">
+                                Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных в соответствии с
+                                <a href="/informacziya/o-kompanii/politika-konfidenczialnosti-dannyix" target="_blank">правилами сайта</a>
+
+                                <img class="loading_gif d-none" src="assets/preloader.gif" style="width: 100%;" />
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="form__button button button--gray4" data-bs-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="form__button form__button--submit button">Отправить</button>
+                        </div>
+
+                        <input type="hidden" name="af_action" value="034e7e51852200907747ef972694c6c5" />
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <footer class="footer text--small">
             <div class="container">
