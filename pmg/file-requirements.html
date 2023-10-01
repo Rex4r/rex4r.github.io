@@ -28,11 +28,11 @@
                     <a class="header__email d-none d-lg-block" href="mailto:order14@tipografiya.online">order14@tipografiya.online</a>
                     <div class="header__lang">
                         <img alt="RU" class="language__img" data-bs-target="#lang-modal" data-bs-toggle="modal" src="./local/img/lang/lang__ru.png" title="Select your language" />
-                        <div aria-hidden="true" aria-labelledby="cooperation-modalLabel" class="modal fade text" id="lang-modal" tabindex="-1">
+                        <div aria-hidden="true" aria-labelledby="lang-modal-modalLabel" class="modal fade text" id="lang-modal" tabindex="-1">
                             <div class="modal-dialog modal-dialog-centered lang-modal">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <div class="modal-title h4" id="cooperation-modalLabel">Выберите язык</div>
+                                        <div class="modal-title h4" id="lang-modal-modalLabel">Выберите язык</div>
                                         <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
                                     </div>
                                     <div class="modal-body">
@@ -187,7 +187,7 @@
                                                     <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
                                                 </svg>
                                             </a>
-                                            <form action="" class="form form--search d-none">
+                                            <form class="form form--search d-none">
                                                 <div class="form__row">
                                                     <input class="form__field field input" name="search" placeholder="Поиск" type="text" />
                                                 </div>
@@ -220,54 +220,54 @@
                                         </div>
 
                                         <ul class="nav__list nav__list--modal">
-                                            <li class="nav__item nav__item--dropdown" data-dropdown="client">
-                                                <a href="javascript:void(0);">Клиентам</a>
-                                            </li>
-                                            <ul class="nav__list nav__list--secondary" data-dropdown="client">
-                                                <li class="nav__item"><a href="#">Акции</a></li>
-                                                <li class="nav__item"><a href="#">Новости</a></li>
-                                                <li class="nav__item nav__item--dropdown" data-dropdown="about">
-                                                    <a href="javascript:void(0);">О компании</a>
-                                                </li>
-                                                <ul class="nav__list nav__list--secondary" data-dropdown="about">
-                                                    <li class="nav__item"><a href="#">Отзывы</a></li>
-                                                    <li class="nav__item"><a href="#">Cертификация</a></li>
-                                                    <li class="nav__item"><a href="#">Вакансии</a></li>
-                                                    <li class="nav__item"><a href="#">Реквизиты</a></li>
-                                                    <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
+                                            <li>
+                                                <a class="nav__item nav__item--dropdown" data-dropdown="client" href="javascript:void(0);">Клиентам</a>
+                                                <ul class="nav__list nav__list--secondary" data-dropdown="client">
+                                                    <li class="nav__item"><a href="#">Акции</a></li>
+                                                    <li class="nav__item"><a href="#">Новости</a></li>
+                                                    <li class="nav__item">
+                                                        <a class="nav__item--dropdown" data-dropdown="about" href="javascript:void(0);">О компании</a>
+                                                        <ul class="nav__list nav__list--secondary" data-dropdown="about">
+                                                            <li class="nav__item"><a href="#">Отзывы</a></li>
+                                                            <li class="nav__item"><a href="#">Cертификация</a></li>
+                                                            <li class="nav__item"><a href="#">Вакансии</a></li>
+                                                            <li class="nav__item"><a href="#">Реквизиты</a></li>
+                                                            <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav__item"><a href="/services.html">Наши услуги</a></li>
+                                                    <li class="nav__item"><a href="#">Портфолио</a></li>
+                                                    <li class="nav__item"><a href="#">Статьи</a></li>
+                                                    <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
+                                                    <li class="nav__item"><a href="#">Требования к файлам</a></li>
+                                                    <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
+                                                    <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
                                                 </ul>
-                                                <li class="nav__item"><a href="/services.html">Наши услуги</a></li>
-                                                <li class="nav__item"><a href="#">Портфолио</a></li>
-                                                <li class="nav__item"><a href="#">Статьи</a></li>
-                                                <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
-                                                <li class="nav__item"><a href="#">Требования к файлам</a></li>
-                                                <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
-                                                <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
-                                            </ul>
-
-                                            <li class="nav__item nav__item--dropdown" data-dropdown="product">
-                                                <a href="javascript:void(0);">Полиграфическая продукция</a>
                                             </li>
-                                            <ul class="nav__list nav__list--secondary" data-dropdown="product">
-                                                <li class="nav__item"><a href="#">Офсетная печать</a></li>
-                                                <li class="nav__item"><a href="#">Цифровая печать</a></li>
-                                                <li class="nav__item"><a href="/service.html">Широкоформатная печать</a></li>
-                                                <li class="nav__item"><a href="#">Плоттерная резка</a></li>
-                                                <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
-                                                <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
-                                                <li class="nav__item"><a href="#">Срочная пeчать</a></li>
-                                                <li class="nav__item"><a href="#">Черно-белая печать</a></li>
-                                                <li class="nav__item"><a href="#">Цветная печать</a></li>
-                                                <li class="nav__item"><a href="#">Шелкография</a></li>
-                                                <li class="nav__item"><a href="#">Печать переменных данных</a></li>
-                                                <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
-                                                <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
-                                                <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
-                                                <li class="nav__item"><a href="#">Печать на бэклите</a></li>
-                                                <li class="nav__item"><a href="#">Пур клей</a></li>
-                                                <li class="nav__item"><a href="#">Печать больших форматов</a></li>
-                                                <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
-                                            </ul>
+
+                                            <li>
+                                                <a class="nav__item nav__item--dropdown" data-dropdown="product" href="javascript:void(0);">Полиграфическая продукция</a>
+                                                <ul class="nav__list nav__list--secondary" data-dropdown="product">
+                                                    <li class="nav__item"><a href="#">Офсетная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Цифровая печать</a></li>
+                                                    <li class="nav__item"><a href="/service.html">Широкоформатная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Плоттерная резка</a></li>
+                                                    <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
+                                                    <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
+                                                    <li class="nav__item"><a href="#">Срочная пeчать</a></li>
+                                                    <li class="nav__item"><a href="#">Черно-белая печать</a></li>
+                                                    <li class="nav__item"><a href="#">Цветная печать</a></li>
+                                                    <li class="nav__item"><a href="#">Шелкография</a></li>
+                                                    <li class="nav__item"><a href="#">Печать переменных данных</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
+                                                    <li class="nav__item"><a href="#">Печать на бэклите</a></li>
+                                                    <li class="nav__item"><a href="#">Пур клей</a></li>
+                                                    <li class="nav__item"><a href="#">Печать больших форматов</a></li>
+                                                    <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
+                                                </ul>
+                                            </li>
 
                                             <li class="nav__item nav__item--dropdown">
                                                 <a href="javascript:void(0);">Услуги</a>
@@ -318,7 +318,7 @@
                                                     <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
                                                 </svg>
                                             </a>
-                                            <form action="" class="form form--search d-none">
+                                            <form class="form form--search d-none">
                                                 <div class="form__row">
                                                     <input class="form__field field input" name="search" placeholder="Поиск" type="text" />
                                                 </div>
@@ -739,7 +739,7 @@
                                                 data-additional-field-hide-select="true"
                                                 data-placeholder="Выберите тип проекта"
                                             >
-                                                <option></option>
+                                                <option disabled="disabled" selected="selected" value="-1">Выберите тип проекта</option>
                                                 <option value="Тип 1">Тип 1</option>
                                                 <option value="Тип 2">Тип 2</option>
                                                 <option value="Тип 3">Тип 3</option>
