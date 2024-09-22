@@ -45,3 +45,6 @@
 ## Личный кабинет
 * [Вход](https://rex4r.github.io/pmg.ru/login.html) <br>
 * [Личный кабинет](https://rex4r.github.io/pmg.ru/account.html) <br>
+
+## Разное
+* [Слайдер для макетов](https://rex4r.github.io/pmg.ru/projects-slider.html) <br>
