@@ -101,275 +101,226 @@
                         </div>
                         <div class="col-4 col-md-8 col-xl-10 d-flex align-items-center">
                             <nav class="header__nav nav">
-                                <div class="nav__wrapper nav__wrapper--mobile">
-                                    <ul class="nav__list nav__list--mobile">
-                                        <li class="nav__item d-none d-md-block">
-                                            <a class="tile tile--white" href="">
-                                                <svg class="nav__ico nav__ico--editor" fill="none" height="30" viewBox="0 0 31 30" width="31" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4 16L20 4" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                    <circle cx="3.0332" cy="16.7998" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                    <circle cx="21.2646" cy="3" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                    <circle cx="12.5" cy="9.62891" fill="#002677" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                    <path
-                                                        clip-rule="evenodd"
-                                                        d="M18.1631 8.05335C18.5259 8.01804 18.8935 8 19.265 8C19.6365 8 20.004 8.01804 20.3668 8.05335L20.1731 10.0439C19.8746 10.0149 19.5717 10 19.265 10C18.9583 10 18.6553 10.0149 18.3568 10.0439L18.1631 8.05335ZM13.9604 9.32689C14.6048 8.98179 15.2868 8.69748 15.9988 8.48177L16.5787 10.3958C15.9943 10.5729 15.4342 10.8063 14.9048 11.0899L13.9604 9.32689ZM22.5312 8.48177C23.2432 8.69748 23.9252 8.98179 24.5695 9.32689L23.6252 11.0899C23.0957 10.8063 22.5356 10.5729 21.9512 10.3958L22.5312 8.48177ZM10.5692 12.1123C11.0367 11.5433 11.5589 11.021 12.1279 10.5535L13.3976 12.0988C12.9292 12.4837 12.4993 12.9136 12.1145 13.382L10.5692 12.1123ZM8.49739 15.9831C8.71311 15.2711 8.99742 14.5891 9.34252 13.9448L11.1055 14.8891C10.822 15.4186 10.5885 15.9787 10.4115 16.5631L8.49739 15.9831ZM8.01562 19.2493C8.01562 18.8778 8.03367 18.5103 8.06897 18.1475L10.0596 18.3412C10.0305 18.6397 10.0156 18.9426 10.0156 19.2493C10.0156 19.6161 10.0369 19.9774 10.0783 20.3323L8.09169 20.5637C8.04142 20.1322 8.01562 19.6936 8.01562 19.2493ZM9.89144 25.471C9.40807 24.7441 9.00678 23.9574 8.70107 23.1242L10.5787 22.4353C10.8296 23.1193 11.1593 23.7657 11.5568 24.3636L9.89144 25.471ZM12.6064 28.3172C12.252 28.0566 11.9135 27.7757 11.5926 27.4763L12.957 26.014C13.2211 26.2604 13.4997 26.4916 13.7913 26.706C13.9878 26.8505 14.6375 27.1842 14.8453 27.313L13.7913 29.0127C13.5386 28.856 13.092 28.6743 12.6064 28.3172Z"
-                                                        fill="#002677"
-                                                        fill-rule="evenodd"
-                                                    />
-                                                    <path
-                                                        d="M19.3935 14.1577C19.3158 13.3081 20.2692 12.7576 20.9661 13.2497L29.0234 18.9388C29.736 19.4419 29.5078 20.5525 28.6545 20.7338L25.0391 21.502C24.8324 21.5459 24.645 21.6541 24.5037 21.8111L22.0307 24.5581C21.447 25.2064 20.3711 24.8488 20.2917 23.9801L19.3935 14.1577Z"
-                                                        fill="white"
-                                                        stroke="#002677"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                    />
-                                                </svg>
-                                                <span>Онлайн-редактор</span>
-                                            </a>
+                                <div class="nav__main">
+                                    <div class="nav__main-header d-xl-none">
+                                        <a href="/">
+                                            <img alt="PMG" class="header__logo-img" src="./local/img/logo.svg" />
+                                        </a>
+                                        <svg class="nav__close" fill="none" height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                                            <rect fill="#333333" height="38" rx="6" width="38" />
+                                            <rect fill="white" height="2" transform="rotate(-45 11.2217 25.3638)" width="20" x="11.2217" y="25.3638" />
+                                            <rect fill="white" height="2" transform="rotate(45 12.636 11.2217)" width="20" x="12.636" y="11.2217" />
+                                        </svg>
+                                    </div>
+                                    <ul class="nav__list">
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="produkcziya">
+                                            <a href="/produkcziya">Полиграфическая продукция</a>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="produkcziya">
+                                                <li class="nav__item d-xl-none"><a href="/produkcziya">Вся продукция</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pos-materialyi">POS материалы</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-afish">Афиши</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/izgotovlenie-beydzhey">Бейджи</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-biletov">Билеты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/izgotovlenie-birok">Бирки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-bloknotov">Блокноты и Кубарики</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/broshyury">Брошюры</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/buklety">Буклеты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/bumazhnyh">Бумажные пакеты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/izgotovlenie-stakanov-s-logotipom">Бумажные стаканы</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/vizitki">Визитки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/katalogi/pechat-godovogo-otcheta">Годовые отчеты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-gurnalov">Журналы</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/kalendari">Календари</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-kart">Карты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/katalogi">Каталоги</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-knig">Книги</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/konverty">Конверты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-i-izgotovlenie-upakovki">Коробки и Упаковка</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/listovaya-produkcziya">Листовая продукция</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/listovki">Листовки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/liflety">Лифлеты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/lookbook">Лукбуки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-menyu">Меню</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/naklejki-i-stikery">Наклейки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/otkrytki">Открытки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/papki">Папки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/plakaty">Плакаты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/dlya-vyistavki">Полиграфия для выставки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/poligrafiya-po-otraslyam">Полиграфия по отраслям</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/izgotovlenie-prezentatsij">Презентации</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/izgotovlenie-prejskurantov">Прейскуранты</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-tetradej">Тетради</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-uchebnyh-posobij">Учебные пособия</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/izgotovlenie-firmennyh-blankov">Фирменные бланки</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/izgotovlenie-flaerov">Флаеры</a></li>
+                                                <li class="nav__item"><a href="/produkcziya/pechat-etiketok">Этикетки</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="nav__item d-none d-md-block">
-                                            <a class="tile tile--white" href="#">
-                                                <svg class="nav__ico nav__ico--account" fill="none" height="24" viewBox="0 0 27 24" width="27" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect height="16" rx="1" stroke="#002677" stroke-linejoin="round" stroke-width="2" width="13" x="13" y="1" />
-                                                    <path d="M0 10H9" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                    <path
-                                                        d="M17 7.80705C17 7.48036 17.1596 7.17426 17.4274 6.98721L24.4274 2.09831C25.0903 1.63536 26 2.10962 26 2.91816V16.193C26 16.5196 25.8404 16.8257 25.5726 17.0128L18.5726 21.9017C17.9097 22.3646 17 21.8904 17 21.0818V7.80705Z"
-                                                        fill="white"
-                                                        stroke="#002677"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                    />
-                                                    <path d="M5 5L9.29289 9.29289C9.68342 9.68342 9.68342 10.3166 9.29289 10.7071L5 15" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                </svg>
-                                                <span>Личный кабинет</span>
-                                            </a>
+
+                                        <li class="nav__item"><a href="https://gift.pmg.ru" target="_blank">Сувенирная продукция</a></li>
+
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="uslugi">
+                                            <a href="/uslugi">Услуги</a>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="uslugi">
+                                                <li class="nav__item"><a href="/uslugi/pur-kley">PUR клей</a></li>
+                                                <li class="nav__item"><a href="/uslugi/ofsetnaya-pechat">Офсетная печать</a></li>
+                                                <li class="nav__item"><a href="/uslugi/bolshoi-format">Печать больших форматов</a></li>
+                                                <li class="nav__item"><a href="/uslugi/pechat-na-beklite">Печать на бэклите</a></li>
+                                                <li class="nav__item">
+                                                    <a href="/uslugi/pechat-na-samokleyushchejsya-plenke">Печать на самоклеющейся пленке</a>
+                                                </li>
+                                                <li class="nav__item"><a href="/uslugi/pechat-na-suvenirah">Печать на сувенирах</a></li>
+                                                <li class="nav__item"><a href="/uslugi/pechat-peremennyh-dannyh">Печать переменных данных</a></li>
+                                                <li class="nav__item"><a href="/uslugi/plotternaya-rezka">Плоттерная резка</a></li>
+                                                <li class="nav__item"><a href="/uslugi/reklamnaya-poligrafiya">Рекламная полиграфия</a></li>
+                                                <li class="nav__item"><a href="/uslugi/srochnaya-pechat">Срочная печать</a></li>
+                                                <li class="nav__item"><a href="/uslugi/uv-pechat">УФ Печать</a></li>
+                                                <li class="nav__item"><a href="/uslugi/cvetnaya-pechat">Цветная печать</a></li>
+                                                <li class="nav__item">
+                                                    <a href="/uslugi/tsifrovaya-pechat"><img alt="Цифровая печать" class="nav__preview_img" src="https://pmg.ru/assets/new_images/iconki/cifrovaya_pechat.png" />Цифровая печать</a>
+                                                </li>
+                                                <li class="nav__item"><a href="/uslugi/chyorno-belaya-pechat">Чёрно-белая печать</a></li>
+                                                <li class="nav__item"><a href="/uslugi/shelkografiya">Шелкография</a></li>
+                                                <li class="nav__item"><a href="/uslugi/shirokoformatnaya-pechat">Широкоформатная печать</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="nav__item nav__item--search search">
-                                            <a href="javascript:void(0);" class="tile tile--white search__open">
-                                                <svg fill="none" height="18" viewBox="0 0 17 18" width="17" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                    <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                </svg>
-                                            </a>
-                                            <form class="form form--search d-none">
-                                                <div class="form__row">
-                                                    <input class="form__field field input" name="search" placeholder="Поиск" type="text" />
-                                                </div>
-                                                <svg class="form__close" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="11.2217" y="25.3638" width="20" height="2" transform="rotate(-45 11.2217 25.3638)" fill="#002677"></rect>
-                                                    <rect x="12.636" y="11.2217" width="20" height="2" transform="rotate(45 12.636 11.2217)" fill="#002677"></rect>
-                                                </svg>
-                                            </form>
+
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="dizajn">
+                                            <a href="/dizajn">Дизайн полиграфии</a>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="dizajn">
+                                                <li class="nav__item"><a href="/dizajn/razrabotka-dizajna-roll-up">Roll-up</a></li>
+                                                <li class="nav__item"><a href="/dizajn/afishi">Афиши</a></li>
+                                                <li class="nav__item"><a href="/dizajn/birok">Бирки</a></li>
+                                                <li class="nav__item"><a href="/dizajn/bloknotov">Блокноты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/broshyur">Брошюры</a></li>
+                                                <li class="nav__item"><a href="/dizajn/bukletov">Буклеты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/stakanov">Бумажные стаканы</a></li>
+                                                <li class="nav__item"><a href="/dizajn/vizitok">Визитки</a></li>
+                                                <li class="nav__item"><a href="/dizajn/gazety">Газеты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/godovyh-otchetov">Годовые отчёты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/diskontnoj-kartyi">Дисконтные карты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/kalendarya">Календари</a></li>
+                                                <li class="nav__item"><a href="/dizajn/kataloga">Каталоги</a></li>
+                                                <li class="nav__item"><a href="/dizajn/konvertov">Конверты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/kubarikov">Кубарики</a></li>
+                                                <li class="nav__item"><a href="/dizajn/listovok">Листовки</a></li>
+                                                <li class="nav__item"><a href="/dizajn/nakleyki">Наклейки</a></li>
+                                                <li class="nav__item"><a href="/dizajn/otkrytok">Открытки</a></li>
+                                                <li class="nav__item"><a href="/dizajn/paketov">Пакеты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/papok-dlya-dokumentov">Папки для документов</a></li>
+                                                <li class="nav__item"><a href="/dizajn/plakatov">Плакаты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/prezentatsii">Презентации</a></li>
+                                                <li class="nav__item"><a href="/dizajn/press-woll">Прессволы</a></li>
+                                                <li class="nav__item"><a href="/dizajn/priglashenij">Приглашения</a></li>
+                                                <li class="nav__item"><a href="/dizajn/sertifikata">Сертификаты</a></li>
+                                                <li class="nav__item"><a href="/dizajn/upakovki">Упаковка</a></li>
+                                                <li class="nav__item"><a href="/dizajn/flaerov">Флаеры</a></li>
+                                                <li class="nav__item"><a href="/dizajn/tsennikov">Ценники</a></li>
+                                                <li class="nav__item"><a href="/dizajn/etiketok">Этикетки</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="nav__item nav__item--menu">
-                                            <svg fill="none" height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
-                                                <rect fill="#E35205" height="38" rx="6" width="38" />
-                                                <rect fill="white" height="2" width="20" x="9" y="12" />
-                                                <rect fill="white" height="2" width="20" x="9" y="18" />
-                                                <rect fill="white" height="2" width="20" x="9" y="24" />
-                                            </svg>
+
+                                        <li class="nav__item nav__item--dropdown" data-dropdown="informacziya">
+                                            <a href="/informacziya">Информация</a>
+                                            <ul class="nav__list nav__list--secondary" data-dropdown="informacziya">
+                                                <li class="nav__item"><a href="/informacziya/akcii">Акции</a></li>
+                                                <li class="nav__item"><a href="/informacziya/o-kompanii/nashi-vakansii">Вакансии</a></li>
+                                                <li class="nav__item"><a href="/informacziya/o-kompanii">О компании</a></li>
+                                                <li class="nav__item"><a href="/informacziya/o-kompanii/otzyivyi">Отзывы</a></li>
+                                                <li class="nav__item">
+                                                    <a href="/informacziya/o-kompanii/politika-konfidenczialnosti-dannyix">Политика конфиденциальности</a>
+                                                </li>
+                                                <li class="nav__item"><a href="/informacziya/faq">Популярные вопросы</a></li>
+                                                <li class="nav__item"><a href="/portfolio">Портфолио</a></li>
+                                                <li class="nav__item"><a href="/informacziya/publikaczii">Публикации</a></li>
+                                                <li class="nav__item"><a href="https://pmg.ru/redaktor">Редактор макетов</a></li>
+                                                <li class="nav__item"><a href="/informacziya/o-kompanii/rekvizityi">Реквизиты</a></li>
+                                                <li class="nav__item"><a href="/informacziya/svyazatsya-s-rukovodstvom">Связаться с руководством</a></li>
+                                                <li class="nav__item"><a href="/vk-qr">Сгенерировать QR-код</a></li>
+                                                <li class="nav__item"><a href="/informacziya/o-kompanii/fsc">Сертификация</a></li>
+                                                <li class="nav__item"><a href="/informacziya/spravochnik-poligrafii">Справочник Полиграфии</a></li>
+                                                <li class="nav__item"><a href="/informacziya/trebovaniya-k-fajlam">Требования к файлам</a></li>
+                                                <li class="nav__item"><a href="/informacziya/formatyi-pechati">Форматы печати</a></li>
+                                            </ul>
                                         </li>
+                                        <li class="nav__item"><a href="/kontakty">Контакты</a></li>
+                                        <li class="nav__item d-xl-none"><a href="oplata-i-dostavka">Оплата и доставка</a></li>
                                     </ul>
 
-                                    <div class="nav__modal">
-                                        <div class="nav__modal-top">
-                                            <a href="/">
-                                                <img alt="PMG" class="header__logo-img" src="./local/img/logo.svg" />
-                                            </a>
-                                            <svg class="nav__close" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="38" height="38" rx="6" fill="#333333" />
-                                                <rect x="11.2217" y="25.3638" width="20" height="2" transform="rotate(-45 11.2217 25.3638)" fill="white" />
-                                                <rect x="12.636" y="11.2217" width="20" height="2" transform="rotate(45 12.636 11.2217)" fill="white" />
-                                            </svg>
-                                        </div>
-
-                                        <ul class="nav__list nav__list--modal">
-                                            <li>
-                                                <a class="nav__item nav__item--dropdown" data-dropdown="client" href="javascript:void(0);">Клиентам</a>
-                                                <ul class="nav__list nav__list--secondary" data-dropdown="client">
-                                                    <li class="nav__item"><a href="#">Акции</a></li>
-                                                    <li class="nav__item"><a href="#">Новости</a></li>
-                                                    <li class="nav__item">
-                                                        <a class="nav__item--dropdown" data-dropdown="about" href="javascript:void(0);">О компании</a>
-                                                        <ul class="nav__list nav__list--secondary" data-dropdown="about">
-                                                            <li class="nav__item"><a href="#">Отзывы</a></li>
-                                                            <li class="nav__item"><a href="#">Cертификация</a></li>
-                                                            <li class="nav__item"><a href="#">Вакансии</a></li>
-                                                            <li class="nav__item"><a href="#">Реквизиты</a></li>
-                                                            <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="nav__item"><a href="/services.html">Наши услуги</a></li>
-                                                    <li class="nav__item"><a href="#">Портфолио</a></li>
-                                                    <li class="nav__item"><a href="#">Статьи</a></li>
-                                                    <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
-                                                    <li class="nav__item"><a href="#">Требования к файлам</a></li>
-                                                    <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
-                                                    <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
-                                                </ul>
-                                            </li>
-
-                                            <li>
-                                                <a class="nav__item nav__item--dropdown" data-dropdown="product" href="javascript:void(0);">Полиграфическая продукция</a>
-                                                <ul class="nav__list nav__list--secondary" data-dropdown="product">
-                                                    <li class="nav__item"><a href="#">Офсетная печать</a></li>
-                                                    <li class="nav__item"><a href="#">Цифровая печать</a></li>
-                                                    <li class="nav__item"><a href="/service.html">Широкоформатная печать</a></li>
-                                                    <li class="nav__item"><a href="#">Плоттерная резка</a></li>
-                                                    <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
-                                                    <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
-                                                    <li class="nav__item"><a href="#">Срочная пeчать</a></li>
-                                                    <li class="nav__item"><a href="#">Черно-белая печать</a></li>
-                                                    <li class="nav__item"><a href="#">Цветная печать</a></li>
-                                                    <li class="nav__item"><a href="#">Шелкография</a></li>
-                                                    <li class="nav__item"><a href="#">Печать переменных данных</a></li>
-                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
-                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
-                                                    <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
-                                                    <li class="nav__item"><a href="#">Печать на бэклите</a></li>
-                                                    <li class="nav__item"><a href="#">Пур клей</a></li>
-                                                    <li class="nav__item"><a href="#">Печать больших форматов</a></li>
-                                                    <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
-                                                </ul>
-                                            </li>
-
-                                            <li class="nav__item nav__item--dropdown">
-                                                <a href="javascript:void(0);">Услуги</a>
-                                            </li>
-
-                                            <li class="nav__item nav__item--dropdown">
-                                                <a href="javascript:void(0);">Дизайн-студия</a>
-                                            </li>
-
-                                            <li class="nav__item">
-                                                <a href="#">Сувенирная продукция</a>
-                                            </li>
-
-                                            <li class="nav__item">
-                                                <a href="#">Контакты</a>
-                                            </li>
-
-                                            <li class="nav__item">
-                                                <a href="#">Оплата и доставка</a>
-                                            </li>
-                                        </ul>
-
-                                        <ul class="nav__list nav__list--modal nav__list--bottom">
-                                            <li class="nav__item">
-                                                <a href="javascript:void(0);">Онлайн-редактор</a>
-                                            </li>
-                                            <li class="nav__item">
-                                                <a href="javascript:void(0);">Личный кабинет</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <ul class="nav__dark d-xl-none">
+                                        <li class="nav__item"><a href="#">Онлайн-редактор</a></li>
+                                        <li class="nav__item"><a href="#">Личный кабинет</a></li>
+                                    </ul>
                                 </div>
 
-                                <div class="nav__wrapper nav__wrapper--desktop">
-                                    <ul class="nav__list nav__list--main">
-                                        <li class="nav__item nav__item--dropdown" data-dropdown="client"><a href="#">Клиентам</a></li>
-                                        <li class="nav__item nav__item--dropdown" data-dropdown="product">
-                                            <a href="#">Полиграфическая продукция</a>
-                                        </li>
-                                        <li class="nav__item nav__item--dropdown"><a href="#">Услуги</a></li>
-                                        <li class="nav__item nav__item--dropdown"><a href="#">Дизайн-студия</a></li>
-                                        <li class="nav__item"><a href="#">Сувенирная продукция</a></li>
-                                        <li class="nav__item"><a href="#">Контакты</a></li>
-                                        <li class="nav__item nav__item--search search">
-                                            <a href="javascript:void(0);" class="tile tile--white search__open">
-                                                <svg fill="none" height="18" viewBox="0 0 17 18" width="17" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                    <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
-                                                </svg>
-                                            </a>
-                                            <form class="form form--search d-none">
-                                                <div class="form__row">
-                                                    <input class="form__field field input" name="search" placeholder="Поиск" type="text" />
-                                                </div>
-                                                <svg class="form__close" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="11.2217" y="25.3638" width="20" height="2" transform="rotate(-45 11.2217 25.3638)" fill="#002677"></rect>
-                                                    <rect x="12.636" y="11.2217" width="20" height="2" transform="rotate(45 12.636 11.2217)" fill="#002677"></rect>
-                                                </svg>
-                                            </form>
-                                        </li>
-                                    </ul>
+                                <div class="nav__item d-none d-xl-none d-md-block">
+                                    <a class="nav__tile tile tile--white" href="#">
+                                        <svg class="nav__ico nav__ico--editor" fill="none" height="30" viewBox="0 0 31 30" width="31" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 16L20 4" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                            <circle cx="3.0332" cy="16.7998" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                            <circle cx="21.2646" cy="3" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                            <circle cx="12.5" cy="9.62891" fill="#002677" r="2" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                            <path
+                                                clip-rule="evenodd"
+                                                d="M18.1631 8.05335C18.5259 8.01804 18.8935 8 19.265 8C19.6365 8 20.004 8.01804 20.3668 8.05335L20.1731 10.0439C19.8746 10.0149 19.5717 10 19.265 10C18.9583 10 18.6553 10.0149 18.3568 10.0439L18.1631 8.05335ZM13.9604 9.32689C14.6048 8.98179 15.2868 8.69748 15.9988 8.48177L16.5787 10.3958C15.9943 10.5729 15.4342 10.8063 14.9048 11.0899L13.9604 9.32689ZM22.5312 8.48177C23.2432 8.69748 23.9252 8.98179 24.5695 9.32689L23.6252 11.0899C23.0957 10.8063 22.5356 10.5729 21.9512 10.3958L22.5312 8.48177ZM10.5692 12.1123C11.0367 11.5433 11.5589 11.021 12.1279 10.5535L13.3976 12.0988C12.9292 12.4837 12.4993 12.9136 12.1145 13.382L10.5692 12.1123ZM8.49739 15.9831C8.71311 15.2711 8.99742 14.5891 9.34252 13.9448L11.1055 14.8891C10.822 15.4186 10.5885 15.9787 10.4115 16.5631L8.49739 15.9831ZM8.01562 19.2493C8.01562 18.8778 8.03367 18.5103 8.06897 18.1475L10.0596 18.3412C10.0305 18.6397 10.0156 18.9426 10.0156 19.2493C10.0156 19.6161 10.0369 19.9774 10.0783 20.3323L8.09169 20.5637C8.04142 20.1322 8.01562 19.6936 8.01562 19.2493ZM9.89144 25.471C9.40807 24.7441 9.00678 23.9574 8.70107 23.1242L10.5787 22.4353C10.8296 23.1193 11.1593 23.7657 11.5568 24.3636L9.89144 25.471ZM12.6064 28.3172C12.252 28.0566 11.9135 27.7757 11.5926 27.4763L12.957 26.014C13.2211 26.2604 13.4997 26.4916 13.7913 26.706C13.9878 26.8505 14.6375 27.1842 14.8453 27.313L13.7913 29.0127C13.5386 28.856 13.092 28.6743 12.6064 28.3172Z"
+                                                fill="#002677"
+                                                fill-rule="evenodd"
+                                            />
+                                            <path
+                                                d="M19.3935 14.1577C19.3158 13.3081 20.2692 12.7576 20.9661 13.2497L29.0234 18.9388C29.736 19.4419 29.5078 20.5525 28.6545 20.7338L25.0391 21.502C24.8324 21.5459 24.645 21.6541 24.5037 21.8111L22.0307 24.5581C21.447 25.2064 20.3711 24.8488 20.2917 23.9801L19.3935 14.1577Z"
+                                                fill="white"
+                                                stroke="#002677"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                        <span class="d-none d-md-block">Онлайн-редактор</span>
+                                    </a>
+                                </div>
 
-                                    <div class="nav__dropdown">
-                                        <div class="nav__dropdown-menu d-none" data-dropdown="client">
-                                            <div class="grid grid-4">
-                                                <ul class="nav__list nav__list--secondary">
-                                                    <li class="nav__item"><a href="#">Акции</a></li>
-                                                    <li class="nav__item"><a href="#">Новости</a></li>
-                                                    <li class="nav__item nav__item--subdropdown">
-                                                        <a href="#">О компании</a>
-                                                        <ul class="nav__list nav__list--tertiary">
-                                                            <li class="nav__item"><a href="#">Отзывы</a></li>
-                                                            <li class="nav__item"><a href="#">Cертификация</a></li>
-                                                            <li class="nav__item"><a href="#">Вакансии</a></li>
-                                                            <li class="nav__item"><a href="#">Реквизиты</a></li>
-                                                            <li class="nav__item"><a href="#">Политика конфиденциальности</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="nav__item"><a href="#">Портфолио</a></li>
-                                                    <li class="nav__item"><a href="#">Статьи</a></li>
-                                                    <li class="nav__item"><a href="#">Вопросы и ответы</a></li>
-                                                </ul>
+                                <div class="nav__item d-none d-xl-none d-md-block">
+                                    <a class="nav__tile tile tile--white" href="#">
+                                        <svg class="nav__ico nav__ico--account" fill="none" height="24" viewBox="0 0 27 24" width="27" xmlns="http://www.w3.org/2000/svg">
+                                            <rect height="16" rx="1" stroke="#002677" stroke-linejoin="round" stroke-width="2" width="13" x="13" y="1" />
+                                            <path d="M0 10H9" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                            <path
+                                                d="M17 7.80705C17 7.48036 17.1596 7.17426 17.4274 6.98721L24.4274 2.09831C25.0903 1.63536 26 2.10962 26 2.91816V16.193C26 16.5196 25.8404 16.8257 25.5726 17.0128L18.5726 21.9017C17.9097 22.3646 17 21.8904 17 21.0818V7.80705Z"
+                                                fill="white"
+                                                stroke="#002677"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                            />
+                                            <path d="M5 5L9.29289 9.29289C9.68342 9.68342 9.68342 10.3166 9.29289 10.7071L5 15" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                        <span class="d-none d-md-block">Личный кабинет</span>
+                                    </a>
+                                </div>
 
-                                                <ul class="nav__list nav__list--secondary">
-                                                    <li class="nav__item"><a href="/services.html">Наши услуги</a></li>
-                                                    <li class="nav__item"><a href="#">Требования к файлам</a></li>
-                                                    <li class="nav__item"><a href="#">Справочник полиграфии</a></li>
-                                                    <li class="nav__item"><a href="#">Сгенерировать QR-код</a></li>
-                                                </ul>
-
-                                                <a class="nav__preview" href="#">
-                                                    <img alt="Промо упаковка" class="nav__preview_img" src="./local/demodata/demo1.png" />
-                                                    <div class="nav__preview_text">Для чего нужна промо упаковка?</div>
-                                                </a>
-
-                                                <a class="nav__preview" href="#">
-                                                    <img alt="Ricoh Pro C7100X" class="nav__preview_img" src="./local/demodata/demo2.png" />
-                                                    <div class="nav__preview_text">Первая в России 6-цветная цифровая печатная машина Ricoh Pro C7100X</div>
-                                                </a>
-                                            </div>
+                                <div class="nav__search search">
+                                    <a class="nav__tile tile tile--white search__open" href="javascript:void(0);">
+                                        <svg fill="none" height="18" viewBox="0 0 17 18" width="17" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="7" cy="7.58887" r="6" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                            <path d="M11.5 12.0889L15.8228 16.4116" stroke="#002677" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                    <form class="form form--search d-none">
+                                        <div class="form__row">
+                                            <input class="form__field field input" name="search" placeholder="Поиск" type="text" />
                                         </div>
+                                        <svg class="form__close" fill="none" height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                                            <rect fill="#002677" height="2" transform="rotate(-45 11.2217 25.3638)" width="20" x="11.2217" y="25.3638"></rect>
+                                            <rect fill="#002677" height="2" transform="rotate(45 12.636 11.2217)" width="20" x="12.636" y="11.2217"></rect>
+                                        </svg>
+                                    </form>
+                                </div>
 
-                                        <div class="nav__dropdown-menu d-none" data-dropdown="product">
-                                            <div class="grid grid-4">
-                                                <ul class="nav__list nav__list--secondary">
-                                                    <li class="nav__item"><a href="#">Офсетная печать</a></li>
-                                                    <li class="nav__item"><a href="#">Цифровая печать</a></li>
-                                                    <li class="nav__item"><a href="/service.html">Широкоформатная печать</a></li>
-                                                    <li class="nav__item"><a href="#">Плоттерная резка</a></li>
-                                                    <li class="nav__item"><a href="#">Ультрафиолетовая печать</a></li>
-                                                    <li class="nav__item"><a href="#">Рекламная полиграфия</a></li>
-                                                </ul>
-
-                                                <ul class="nav__list nav__list--secondary">
-                                                    <li class="nav__item"><a href="#">Срочная пeчать</a></li>
-                                                    <li class="nav__item"><a href="#">Черно-белая печать</a></li>
-                                                    <li class="nav__item"><a href="#">Цветная печать</a></li>
-                                                    <li class="nav__item"><a href="#">Шелкография</a></li>
-                                                    <li class="nav__item"><a href="#">Печать переменных данных</a></li>
-                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
-                                                </ul>
-
-                                                <ul class="nav__list nav__list--secondary">
-                                                    <li class="nav__item"><a href="#">Печать на сувенирах</a></li>
-                                                    <li class="nav__item"><a href="#">Печать на самоклеящейся пленке</a></li>
-                                                    <li class="nav__item"><a href="#">Печать на бэклите</a></li>
-                                                    <li class="nav__item"><a href="#">Пур клей</a></li>
-                                                    <li class="nav__item"><a href="#">Печать больших форматов</a></li>
-                                                    <li class="nav__item"><a href="#">Офисная полиграфия</a></li>
-                                                </ul>
-
-                                                <a class="nav__preview" href="#">
-                                                    <img alt="Промо упаковка" class="nav__preview_img" src="./local/demodata/demo3.png" />
-                                                    <div class="nav__preview_text">Когда начнется революция? Рассматриваем технологию LANDA</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="nav__menu d-xl-none">
+                                    <svg fill="none" height="38" viewBox="0 0 38 38" width="38" xmlns="http://www.w3.org/2000/svg">
+                                        <rect fill="#E35205" height="38" rx="6" width="38" />
+                                        <rect fill="white" height="2" width="20" x="9" y="12" />
+                                        <rect fill="white" height="2" width="20" x="9" y="18" />
+                                        <rect fill="white" height="2" width="20" x="9" y="24" />
+                                    </svg>
                                 </div>
                             </nav>
                         </div>
@@ -880,8 +831,6 @@
             </svg>
             <span>Вверх</span>
         </a>
-
-        <script src="./local/js/jGrowl.js"></script>
 
         <script type="text/javascript" src="./local/js/script.js"></script>
     </body>
