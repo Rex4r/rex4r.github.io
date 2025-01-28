@@ -47,5 +47,6 @@
 * [Личный кабинет](https://rex4r.github.io/pmg.ru/account.html) <br>
 
 ## Разное
+* [Типа ui-kit](https://rex4r.github.io/pmg.ru/ui-kit.html) <br>
 * [Слайдер для макетов](https://rex4r.github.io/pmg.ru/projects-slider.html) <br>
 * [Разворачивающийся спойлер в боковике с большим количеством пунктов и небольшим основным контентом](https://rex4r.github.io/pmg.ru/float-with-big-spoiler.html) <br>
