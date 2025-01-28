@@ -29,6 +29,36 @@
             <section class="section">
                 <div class="container">
                     <form action="" class="form tile tile--white">
+                        <div class="form__row form__row--checkbox">
+                            <input type="checkbox" class="form__checkbox checkbox" id="checkbox1" name="checkbox1" />
+                            <label for="checkbox1" class="form__label">Checkbox 1</label>
+                        </div>
+                        <div class="form__row form__row--checkbox">
+                            <input type="checkbox" class="form__checkbox checkbox" id="checkbox1" name="checkbox2" checked="checked" />
+                            <label for="checkbox2" class="form__label">Checkbox 2</label>
+                        </div>
+                        <hr />
+                        <div class="form__row form__row--radio">
+                            <input type="radio" class="form__radio" id="radio1" name="raadioGroup" value="radio1" />
+                            <label for="radio1" class="form__label">Radio1</label>
+                        </div>
+
+                        <div class="form__row form__row--radio">
+                            <input type="radio" class="form__radio" id="radio2" name="raadioGroup" value="radio2" checked="checked" />
+                            <label for="radio2" class="form__label">Radio2</label>
+                        </div>
+
+                        <div class="form__row form__row--radio">
+                            <input type="radio" class="form__radio" id="radio3" name="raadioGroup" value="radio3" />
+                            <label for="radio3" class="form__label">Radio3</label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <hr />
+            <section class="section">
+                <div class="container">
+                    <form action="" class="form tile tile--white">
                         <div class="form__row d-block">
                             <label class="form__label" for="input1">Дата. Маска "00/00/0000" </label>
                             <input class="form__field field input" type="text" id="input1" name="input1" data-mask="00/00/0000" />
@@ -88,7 +118,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать упаковку</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--pack production__item--envelope tile tile--white" data-order="2">
@@ -99,7 +129,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать конверты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item tile tile--white" data-order="3">
@@ -110,7 +140,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать блокноты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--card tile tile--white" data-order="4">
@@ -121,7 +151,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать открытки</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--list production__item--booklet tile tile--white" data-order="5">
@@ -132,7 +162,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать буклеты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item tile tile--white" data-order="6">
@@ -143,7 +173,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать визитки</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--list production__item--booklet tile tile--white" data-order="7">
@@ -154,7 +184,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать буклеты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item tile tile--white" data-order="8">
@@ -165,7 +195,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать визитки</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--list production__item--booklet tile tile--white" data-order="9">
@@ -176,7 +206,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать буклеты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item tile tile--white" data-order="10">
@@ -187,7 +217,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать визитки</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--pack production__item--new tile tile--white" data-order="11">
@@ -198,7 +228,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать упаковку</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--pack production__item--envelope tile tile--white" data-order="12">
@@ -209,7 +239,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать конверты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item tile tile--white" data-order="13">
@@ -220,7 +250,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать блокноты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--card tile tile--white" data-order="14">
@@ -231,7 +261,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать открытки</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--list production__item--booklet tile tile--white" data-order="15">
@@ -242,7 +272,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать буклеты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item tile tile--white" data-order="16">
@@ -253,7 +283,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать визитки</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item production__item--list production__item--booklet tile tile--white" data-order="17">
@@ -264,7 +294,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать буклеты</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                             <div class="mix production__item tile tile--white" data-order="18">
@@ -275,7 +305,7 @@
                                         <div class="tile__price text--secondary2 text--small">от 2700 <span class="rub">i</span></div>
                                     </div>
                                     <div class="tile__text text--small text--gray4">Оглинивание, как бы это ни казалось парадоксальным, вымывает в шкаф</div>
-                                    <a class="tile__link" href="#">Заказать визитки</a>
+                                    <button class="tile__link">Заказать</button>
                                 </div>
                             </div>
                         </div>
