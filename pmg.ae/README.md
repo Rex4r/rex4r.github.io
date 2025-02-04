@@ -26,6 +26,7 @@
 * [Оплата и доставка](https://rex4r.github.io/pmg.ae/payment.html) <br>
 * [Отзывы](https://rex4r.github.io/pmg.ae/review.html) <br>
 * [Вакансии](https://rex4r.github.io/pmg.ae/vacancy.html) <br>
+* [Вакансии - форма](https://rex4r.github.io/pmg.ae/vacancy-form.html) <br>
 * [Материалы](https://rex4r.github.io/pmg.ae/materials.html) <br>
 * [Новости](https://rex4r.github.io/pmg.ae/news.html) <br>
 * [Одна новость](https://rex4r.github.io/pmg.ae/news-single.html) <br>
